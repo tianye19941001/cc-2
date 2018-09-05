@@ -14,7 +14,9 @@
 <body>
 <div>
 	<div class="roya-nav">
-		<a href="index.html"></a>
+		<a class="logo" href="index.html">
+			<img src="images/logo.png" alt="">
+		</a>
 		<ul>
 			<li>工作</li>
 			<li>关于</li>
@@ -24,12 +26,20 @@
 		</ul>
 	</div>
 	<div class="roya-slider">
-		<ul>
-			<li>
-				<img src="" alt="">
-				<p>视觉化营销解决方案专家 5万3套商业模式全案<br />近10年经验行业人,服务超过10万+企业用户,范围超过20余个主流行业与近百个细分行业</p>
-			</li>
-		</ul>
+		<div class="swiper-container">
+		  <div class="swiper-wrapper">
+		    <div class="swiper-slide">
+		    	<a href=""><img src="images/temp.png"></a>
+		    </div>
+		    <div class="swiper-slide">
+		    	<a href=""><img src="images/bannar.png"></a>
+		    </div>
+		    <div class="swiper-slide">
+		    	<a href=""><img src="images/temp2.png"></a>
+		    </div>
+		  </div>
+		</div>
+		<div class="pagination"></div>
 	</div>
 	<div class="roya-pics">
 		<div class="pic-group">
@@ -245,5 +255,13 @@
 <script src="js/idangerous.swiper.min.js"></script>
 <script src="js/jquery.SuperSlide.2.1.1.js"></script>
 <script src="js/app.js"></script>
+<script>
+	var mySwiper = new Swiper('.swiper-container',{
+		pagination: '.pagination',
+		loop:true,
+		grabCursor: true,
+		paginationClickable: true
+	})
+</script>
 </body>
 </html>

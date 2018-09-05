@@ -3,6 +3,17 @@
 .oh{ overflow: hidden; }
 body{ background-color: #fff; font-family: "黑体"; min-width: 1300px; }
 
+// public and index
+.roya-nav { padding: 0 6%; line-height: 78px; height: 78px; @extend .clearfix; position: fixed; top: 0; left: 0; width: 100%; box-sizing: border-box;
+	.logo { float: left; vertical-align: middle; padding-top: 8px;
+		img {height: 60px;}
+	}
+	>ul{ float: right; @extend .clearfix;
+		>li{font-size: 22px; padding: 0 24px; float: left; 
+			img { width: 22px; cursor: pointer; vertical-align: -3px; }
+		}
+	}
+}
 
 // 手机
 .phone{ display: none; }
