@@ -14,6 +14,12 @@ body{ background-color: #fff; font-family: "黑体"; min-width: 1300px; }
 		}
 	}
 }
+.black { background-color: #000;
+	.roya-nav {
+		color: #fff;
+		a{ color: #fff; }
+	}
+}
 .roya-slider {
 	height: 700px;
 	width: 100%;
@@ -58,7 +64,154 @@ body{ background-color: #fff; font-family: "黑体"; min-width: 1300px; }
 	}
 }
 .show_more{
-	
+	width: 120px;
+	display: block;
+	margin: 0 auto;
+	font-size: 18px;
+}
+.roya-footer {
+	width: 1260px;
+	margin: 0 auto;
+	font-size: 18px;
+	color: #999;
+	overflow: hidden;
+	padding: 100px 0 24px;
+	@extend .clearfix;
+
+	span{
+		float: left;
+	}
+	ul { float: right;
+		li{float: left;}
+	}
+	a {
+		color: #999;
+		margin-left: 30px;
+	}
+	.advice {
+		margin-left: 50px;
+	}
+}
+.about {
+	padding-top: 150px;
+	color: #fff;
+	width: 1260px;
+	margin: 0 auto;
+	.head{
+		@extend .clearfix;
+		h2{
+			float: left;
+			width: 50%;
+			font-size: 36px;
+			font-weight: bold;
+		}
+	}
+	.words {
+		width: 50%;
+		display: block;
+		float: left;
+		font-size: 15px;
+		p{
+			margin-bottom: 24px;
+		}
+	}
+	.l{
+		float: left;
+		width: 40%;
+		font-size: 14px;
+		h2{
+			font-size: 42px;
+			font-weight: bold;
+		}
+		h3 {
+			font-size: 38px;
+			color: #666;
+			margin-bottom: 80px;
+		}
+		p{
+			margin-bottom: 30px;
+		}
+	}
+	.r{
+		float: right;
+		width: 50%;
+		img {
+			width: 100%;
+		}
+	}
+}
+.person-list {
+	width: 1260px;
+	overflow: hidden;
+	margin: 0 auto;
+	ul {
+		width: 1290px;
+		margin-left: -30px;
+		@extend .clearfix;
+		li{
+			width: 400px;
+			height: 500px;
+			margin-left: 30px;
+			float: left;
+			img{
+				width: 400px;
+				height: 400px;
+				display: block;
+				margin-bottom: 6px;
+			}
+			h4 {font-size: 18px;
+				text-decoration: underline;
+				cursor: pointer;
+			}
+			span {font-size: 16px; color: #666}
+		}
+	}
+}
+.connect {
+	padding-top: 150px;
+	width: 1260px;
+	margin: 0 auto;
+	h2 {
+		font-size: 44px;
+		color: #000;
+		margin-bottom: 80px;
+	}
+	ul{
+		@extend .clearfix;
+		width: 1260px;
+		margin: 0 auto;
+		li{
+			width: 600px;
+			float: left;
+			margin-left: 30px;
+			img{
+				width: 600px;
+			}
+			&:nth-child(odd){
+				margin-left: 0;
+			}
+			h3 {
+				font-size: 22px;
+				font-weight: bold;
+				margin-bottom: 40px;
+			}
+			.email {
+				font-size: 14px;
+				color: #666;
+				text-decoration: underline;
+			}
+			.tel{
+				display: block;
+				font-size: 14px;
+				color: #666;
+				margin-bottom: 40px;
+			}
+			.area {
+				font-size: 14px;
+				color: #666;
+			}
+		}
+	}
 }
 // 手机
 .phone{ display: none; }
