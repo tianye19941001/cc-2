@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 .oh{ overflow: hidden; }
-body{ background-color: #fff; font-family: "黑体"; min-width: 1300px; }
+body{ background-color: #fff; font-family: "微软雅黑"; min-width: 1300px; }
 
 // public and index
 .roya-nav { padding: 0 6%; line-height: 78px; height: 78px; @extend .clearfix; position: fixed; top: 0; left: 0; width: 100%; box-sizing: border-box; z-index: 2;
@@ -9,7 +9,7 @@ body{ background-color: #fff; font-family: "黑体"; min-width: 1300px; }
 		img {height: 60px;}
 	}
 	>ul{ float: right; @extend .clearfix;
-		>li{font-size: 22px; padding: 0 24px; float: left; 
+		>li{font-size: 22px; padding: 0 24px; float: left;
 			img { width: 22px; cursor: pointer; vertical-align: -3px; }
 		}
 	}
@@ -45,7 +45,7 @@ body{ background-color: #fff; font-family: "黑体"; min-width: 1300px; }
 			}
 		}
 		img{ display: block; }
-		li { 
+		li {
 			float: left;
 			width: 290px;
 			height: 216px;
@@ -222,7 +222,7 @@ body{ background-color: #fff; font-family: "黑体"; min-width: 1300px; }
 	border-bottom: 1px solid #999;
 	position: relative;
 
-	&:after {
+	&:before {
 		content: '';
 		display: block;
 		position: absolute;
@@ -240,12 +240,162 @@ body{ background-color: #fff; font-family: "黑体"; min-width: 1300px; }
 	}
 	ul{
 		width: 50%;
+		float: left;
 		@extend .clearfix;
 		li{
 			float: left;
 			width: 50%;
-			li{
+			color: #999;
+			cursor: pointer;
 
+			&:before{
+				content: '';
+				display: inline-block;
+				width: 6px;
+				height: 6px;
+				border: 1px solid #999;
+				margin: 0 6px;
+			}
+		}
+		.active{
+			color: #000;
+			a{color: #000;}
+			&:before{
+				border-color: #999;
+				background-color: #000;
+			}
+		}
+		a{
+			color: #999;
+		}
+	}
+}
+.news-con {
+	width: 1260px;
+	margin: 0 auto;
+
+	ul{
+		width: 1260 - 630px;
+		padding-left: 630px;
+		padding-top: 60px;
+		padding-bottom: 60px;
+		height: 500px;
+		overflow: hidden;
+		position: relative;
+		border-bottom: 1px solid #999;
+
+		li{
+			width: 600px;
+			margin: 0 0 30px 30px;
+			float: left;
+			img{ width: 220px; height: 220px; float: left;}
+			h4{ float: left; font-size: 20px;margin-bottom: 12px; padding-left: 20px; width: 200px; }
+			.tag{ float: left; font-size: 12px; color: #999; padding-left: 20px; width: 300px; }
+			.info{ display: none; font-size: 14px; }
+		}
+
+		.big{ position: absolute; left: 0; top: 60px; margin: 0;
+			img{width: 100%; height: auto;}
+			h4, .tag{ float: none; display: block; width: auto; padding-left: 0;}
+			.info{ display: block; }
+		}
+
+		&:nth-child(2n){ padding-left: 0; padding-right: 630px;
+			.big{left: auto; right: 0;}
+		}
+	}
+}
+
+.work-head {
+	border-bottom: 1px solid #999;
+	padding-top: 150px;
+	@extend .clearfix;
+	width: 1260px;
+	margin: 0 auto;
+	height: 66px;
+	line-height: 66px;
+	h2 {
+		font-size: 44px;
+		color: #000;
+		float: left;
+		width: 33%;
+	}
+	ul {
+		float: left;
+		li{
+			float: left;
+			display: block;
+			margin-left: 30px;
+			border-bottom: 1px solid #999;
+			padding: 0 12px;
+			font-size: 16px;
+			a {color: #999}
+		}
+		.active {
+			height: 65px;
+			border-bottom: 2px solid #000;
+			a {color: #000}
+		}
+	}
+}
+.work-type-1 {
+	width: 1260px;
+	padding-top: 40px;
+	margin: 0 auto;
+	ul{
+		width: 1290px;
+		margin-left: -30px;
+		li{
+			margin-left: 30px;
+			width: 400px;
+			float: left;
+			img{
+				width: 100%;
+				height: 250px;
+			}
+			h4{
+				height: 60px;
+				line-height: 70px;
+				overflow: hidden;
+				font-size: 18px;
+			}
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+.work-type-2 {
+	width: 1260px;
+	padding-top: 40px;
+	margin: 0 auto;
+	h3 { font-size: 30px; font-weight: bold;
+		a{ float: right; color: #e61428; font-size: 14px; font-weight: normal; line-height: 30px;
+			&:hover {text-decoration: underline}
+		}
+	}
+	ul{
+		width: 1280px;
+		margin-left: -20px;
+		padding: 24px 0;
+		@extend .clearfix;
+		li{
+			margin-left: 20px;
+			width: 300px;
+			float: left;
+			img{
+				width: 100%;
+				height: 190px;
+			}
+			h4{
+				height: 60px;
+				line-height: 70px;
+				overflow: hidden;
+				font-size: 18px;
+			}
+			&:hover{
+				text-decoration: underline;
 			}
 		}
 	}
@@ -254,5 +404,5 @@ body{ background-color: #fff; font-family: "黑体"; min-width: 1300px; }
 .phone{ display: none; }
 
 @media screen and (min-width:1px) and (max-width:1019px){
-	
+
 }
