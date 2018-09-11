@@ -493,13 +493,29 @@ body {
 
 .roya-slider {
   height: 700px;
-  width: 100%; }
+  width: 100%;
+  position: relative; }
   .roya-slider .swiper-container {
     width: 100%;
     height: 100%; }
     .roya-slider .swiper-container img {
       width: 100%;
       height: 100%; }
+  .roya-slider .next, .roya-slider .pre {
+    position: relative;
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-image: url(../images/left.png);
+    position: absolute;
+    background-size: 100%;
+    left: 50px;
+    top: 340px;
+    z-index: 1; }
+  .roya-slider .next {
+    transform: rotate(180deg);
+    left: auto;
+    right: 50px; }
 
 .roya-pics {
   width: 1260px;
@@ -565,6 +581,7 @@ body {
     color: #999;
     margin-left: 30px; }
   .roya-footer .advice {
+    cursor: pointer;
     margin-left: 50px; }
 
 .about {
@@ -851,6 +868,38 @@ body {
         font-size: 18px; }
       .work-type-2 ul li:hover {
         text-decoration: underline; }
+
+.newsletter, .search {
+  background: #f2f2f2;
+  width: 100%;
+  min-width: 1260px;
+  overflow: hidden; }
+  .newsletter .in, .search .in {
+    width: 1260px;
+    padding: 20px 0;
+    margin: 0 auto;
+    position: relative;
+    font-size: 40px; }
+    .newsletter .in .text, .search .in .text {
+      border: 0;
+      font-weight: 500;
+      background: #f2f2f2;
+      display: block;
+      width: calc(100% - 120px);
+      padding: 0;
+      border: 0 none;
+      height: 60px;
+      line-height: 60px;
+      outline: none; }
+    .newsletter .in .sub, .search .in .sub {
+      position: absolute;
+      right: 0;
+      top: 30px;
+      border: 0 none;
+      background: none;
+      outline: none;
+      cursor: pointer;
+      color: #999; }
 
 .phone {
   display: none; }

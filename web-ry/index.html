@@ -24,6 +24,12 @@
 			<li>联系</li>
 			<li><img src="images/search.png" alt=""></li>
 		</ul>
+		<div class="search">
+			<form class="in">
+				<input class="text" type="text" placeholder="请输入搜索词">
+				<input class="sub" type="submit" value="Search">
+			</form>
+		</div>
 	</div>
 	<div class="roya-slider">
 		<div class="swiper-container">
@@ -40,6 +46,8 @@
 		  </div>
 		</div>
 		<div class="pagination"></div>
+		<div class="next"></div>
+		<div class="pre"></div>
 	</div>
 	<div class="roya-pics">
 		<div class="pic-group">
@@ -248,8 +256,19 @@
 		</ul>
 	</div>
 </div>
-
+<div class="newsletter">
+	<form class="in">
+		<input class="text" type="text" placeholder="请填写你的邮箱">
+		<input class="sub" type="submit" value="Submit">
+	</form>
+</div>
 <script src="js/jquery.min.js"></script>
+<script>
+	$('.roya-slider').height($(window).width()/5120*2758);
+	$(window).resize(function(){
+		$('.roya-slider').height($(window).width()/5120*2758);
+	})
+</script>
 <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
 <script src="js/idangerous.swiper.min.js"></script>
 <script src="js/jquery.SuperSlide.2.1.1.js"></script>
@@ -260,6 +279,12 @@
 		loop:true,
 		grabCursor: true,
 		paginationClickable: true
+	})
+	$('.next').click(function(){
+		mySwiper.swipeNext();
+	})
+	$('.pre').click(function(){
+		mySwiper.swipePrev();
 	})
 </script>
 </body>
