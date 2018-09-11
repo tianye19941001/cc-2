@@ -213,6 +213,43 @@ body{ background-color: #fff; font-family: "黑体"; min-width: 1300px; }
 		}
 	}
 }
+.news-head {
+	padding-top: 150px;
+	width: 1260px;
+	margin: 0 auto;
+	@extend .clearfix;
+	padding-bottom: 80px;
+	border-bottom: 1px solid #999;
+	position: relative;
+
+	&:after {
+		content: '';
+		display: block;
+		position: absolute;
+		width: 100px;
+		bottom: -1px;
+		left: 0;
+		height: 1px;
+		background-color: #000;
+	}
+	h2 {
+		font-size: 44px;
+		color: #000;
+		float: left;
+		width: 50%;
+	}
+	ul{
+		width: 50%;
+		@extend .clearfix;
+		li{
+			float: left;
+			width: 50%;
+			li{
+
+			}
+		}
+	}
+}
 // 手机
 .phone{ display: none; }
 
