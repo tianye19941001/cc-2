@@ -4,7 +4,7 @@
 body{ background-color: #fff; font-family: "微软雅黑"; min-width: 1300px; }
 
 // public and index
-.roya-nav { padding: 0 6%; line-height: 78px; height: 78px; @extend .clearfix; position: fixed; top: 0; left: 0; width: 100%; box-sizing: border-box; z-index: 2;
+.roya-nav { padding: 0 6%; line-height: 78px; height: 78px; @extend .clearfix; position: fixed; top: 0; left: 0; width: 100%; box-sizing: border-box; z-index: 3;
 	.logo { float: left; vertical-align: middle; padding-top: 8px;
 		img {height: 60px;}
 	}
@@ -420,11 +420,13 @@ body{ background-color: #fff; font-family: "微软雅黑"; min-width: 1300px; }
 		}
 	}
 }
+
 .newsletter, .search {
 	background: #f2f2f2;
 	width: 100%;
 	min-width: 1260px;
 	overflow: hidden;
+	display: none;
 	.in{
 		width: 1260px;
 		padding: 20px 0;
@@ -453,6 +455,28 @@ body{ background-color: #fff; font-family: "微软雅黑"; min-width: 1300px; }
 			cursor: pointer;
 			color: #999;
 		}
+	}
+}
+.search { position: fixed; top: 0; left: 0; z-index: 2; background-color: #fff; padding-top: 100px;
+	.in .text{ background: #fff; }
+}
+.swiper-slide {
+	position: relative;
+}
+.slide-text {
+	position: absolute; 
+	left: 50%;
+	width: 1260px;
+	margin-left: -630px;
+	bottom: 20px;
+	z-index: 2;
+	font-size: 14px;
+	p{
+		float: left;
+	}
+	strong{
+		font-size: 18px;
+		float: right;
 	}
 }
 // 手机

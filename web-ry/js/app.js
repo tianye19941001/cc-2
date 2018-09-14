@@ -87,6 +87,15 @@
 			$('.newsletter').addClass('on').slideDown();
 		}
 		$('html,body').animate({scrollTop: $('body').height()},100);
+	});
+
+	$('#search').click(function() {
+		if($('.search').hasClass('on')){
+			$('.search').removeClass('on').slideUp();
+		} else {
+			$('.search').addClass('on').slideDown();
+		}
+		$('html,body').animate({scrollTop: 0},100);
 	})
 
 	if (document.body.clientWidth>=768) {
