@@ -111,6 +111,13 @@
 		    body.style.fontSize = docWidth / 32 + 'px';
 		}
 
+		$('.roya-nav .r').click(function(e) {
+			e.stopPropagation();
+			$('.roya-nav ul').toggle(100);
+		})
+		$('#search').click(function(){
+			$('.roya-nav ul').slideUp(100);
+		})
 	}
 
 	// 动画延时函数

@@ -75,7 +75,7 @@ body{ background-color: #fff; font-family: "微软雅黑"; min-width: 1300px; }
 	ul { width: 1290px; margin-left: -30px; @extend .clearfix;
 		li{ width: 400px; height: 500px; margin-left: 30px; float: left;
 			img{ width: 400px; height: 400px; display: block; margin-bottom: 6px;}
-			h4 {font-size: 18px; text-decoration: underline; cursor: pointer;}
+			h4 {font-size: 18px; text-decoration: underline; cursor: pointer; color: #fff;}
 			span {font-size: 16px; color: #666}
 		}
 	}
@@ -201,19 +201,23 @@ body{ background-color: #fff; font-family: "微软雅黑"; min-width: 1300px; }
 
 @media screen and (min-width:1px) and (max-width:1019px){
 	body{ min-width: 0;
-		.roya-nav { padding: 0 6%; line-height: 78px; height: 78px;  position: fixed; top: 0; left: 0; width: 100%; box-sizing: border-box; z-index: 3; display: none;
-			.logo { float: left; vertical-align: middle; padding-top: 8px;
-				img {height: 60px;}
+		.roya-nav { padding: 0 6%; line-height: rem(100); height: rem(100);  position: static; width: 100%; box-sizing: border-box; z-index: 3;
+			.logo { float: none; vertical-align: middle; padding-top: 0;
+				img {height: rem(70); padding-top: rem(15);}
 			}
-			>ul{ float: right; 
-				>li{font-size: 22px; padding: 0 24px; float: left;
+			>ul{ position: absolute; top: rem(98); left: 0; width: 100%; z-index: 3; text-align: center; background-color: #fff; display: none;
+				>li{font-size: rem(34); padding: 0 rem(10); float: none; 
 					img { width: 22px; cursor: pointer; vertical-align: -3px; }
 				}
 			}
+			.r{
+				display: block; height: rem(50); width: rem(50); position: absolute; right: rem(20); top: rem(25); background-image: url('../images/menu.png'); background-size: 100%;
+			}
 		}
 		.black { background-color: #000;
-			.roya-nav { color: #fff;
-				a{ color: #fff; }
+			.roya-nav { color: #000;
+				a{ color: #000; }
+				.r{background-image: url('../images/menu2.png');}
 			}
 		}
 		.roya-slider { height: 700px; width: 100%; position: relative;
@@ -242,7 +246,7 @@ body{ background-color: #fff; font-family: "微软雅黑"; min-width: 1300px; }
 			}
 		}
 		.show_more{ padding: rem(100) 0; }
-		.roya-footer { width: 100%; font-size: rem(24); padding: rem(60) rem(20); box-sizing: border-box; position: relative;
+		.roya-footer { width: 100%; font-size: rem(24); padding: rem(40) rem(20); box-sizing: border-box; position: relative;
 			span{float: left; width: 65%;}
 			ul { width: 35%; position: absolute; right: 0; top: rem(60);
 				li{float: left;}
@@ -250,109 +254,99 @@ body{ background-color: #fff; font-family: "微软雅黑"; min-width: 1300px; }
 			a { color: #999; margin-left: 30px;}
 			.advice {margin-left: 0;}
 		}
-		.about { padding-top: 150px; color: #fff; width: 1260px; margin: 0 auto;
+		.about { padding-top: rem(40); width: 100%;
 			.head{ 
-				h2{ float: left; width: 50%; font-size: 36px; font-weight: bold;}
+				h2{ float: none; width: 100%; box-sizing: border-box; padding: 0 rem(20); text-align: center; font-size: rem(40);}
 			}
-			.words { width: 50%; display: block; float: left; font-size: 15px;
-				p{ margin-bottom: 24px;}
+			.words { width: 100%; box-sizing: border-box; padding: 0 rem(20); float: none; font-size: rem(25);
+				p{ margin-bottom: rem(30);}
 			}
-			.l{ float: left; width: 40%; font-size: 14px;
-				h2{ font-size: 42px; font-weight: bold;}
-				h3 { font-size: 38px; color: #666; margin-bottom: 80px;}
-				p{ margin-bottom: 30px;}
+			.l{ float: none; width: 100%; font-size: rem(26); box-sizing: border-box; padding: 0 rem(20);
+				h2{ font-size: rem(46);}
+				h3 { font-size: rem(36); margin-bottom: rem(40);}
+				p{ margin-bottom: rem(30);}
 			}
-			.r{ float: right; width: 50%;
+			.r{ float: none; width: 100%; box-sizing: border-box; padding: 0 rem(20);
 				img { width: 100%;}
 			}
 		}
-		.person-list { width: 1260px; overflow: hidden; margin: 0 auto; padding-top: 40px;
-			ul { width: 1290px; margin-left: -30px; 
-				li{ width: 400px; height: 500px; margin-left: 30px; float: left;
-					img{ width: 400px; height: 400px; display: block; margin-bottom: 6px;}
-					h4 {font-size: 18px; text-decoration: underline; cursor: pointer;}
-					span {font-size: 16px; color: #666}
+		.person-list { width: 100%; box-sizing: border-box; overflow: hidden; margin: 0 auto; padding: rem(40) rem(20) 0;
+			ul { width: 100%; margin-left: 0; 
+				li{ width: 100%; height: auto; margin-left: 0; float: none; padding-bottom: rem(12);
+					img{ width: 100%; height: auto;margin-bottom: 6px;}
+					h4 {font-size: rem(36); padding: 0 rem(12);}
+					span {font-size: rem(26); display: block;  padding: 0 rem(12);}
 				}
 			}
 		}
-		.connect { padding-top: 150px; width: 1260px; margin: 0 auto;
-			h2 { font-size: 44px; color: #000; margin-bottom: 80px;}
-			ul{  width: 1260px; margin: 0 auto;
-				li{ width: 600px; float: left; margin-left: 30px;
-					img{ width: 600px;}
-					&:nth-child(odd){margin-left: 0;}
-					h3 { font-size: 22px; font-weight: bold; margin-bottom: 40px;}
-					.email { font-size: 14px; color: #666; text-decoration: underline;}
-					.tel{ display: block; font-size: 14px; color: #666; margin-bottom: 40px;}
-					.area { font-size: 14px; color: #666;}
+		.connect { padding-top: rem(40); width: 100%;
+			h2 { font-size: rem(48); margin-bottom: rem(40); padding-left: rem(20);}
+			ul{  width: 100%; box-sizing: border-box; padding: 0 rem(20);
+				li{ width: 100%; float: none; margin-left: 0;
+					img{ width: 100%;}
+					h3 { font-size: rem(30); margin-bottom: rem(40);}
+					.email { font-size: rem(24); }
+					.tel{ display: block; font-size: rem(24); margin-bottom: rem(30);}
+					.area { font-size: rem(24); margin-bottom: rem(80); }
 				}
 			}
 		}
-		.news-head { padding-top: 150px; width: 1260px; margin: 0 auto;  padding-bottom: 80px; border-bottom: 1px solid #999; position: relative;
-			&:before {content: '';display: block;position: absolute;width: 100px;bottom: -1px;left: 0;height: 1px;background-color: #000;}
-			h2 {font-size: 44px;color: #000;float: left;width: 50%;}
-			ul{width: 50%;float: left;
-				li{ float: left; width: 50%; color: #999; cursor: pointer;
+		.news-head { padding-top: rem(40); width: 100%; padding-bottom: rem(30); border-bottom: 1px solid #999;
+			&:before {display: none;}
+			h2 {font-size: rem(48); float: none;width: auto; padding-left: rem(20);}
+			ul{width: 100%;float: none; box-sizing: border-box; padding: rem(50) rem(20) rem(10);
+				li{ float: left; width: 50%; color: #999; cursor: pointer; font-size: rem(28);
 					&:before{ content: ''; display: inline-block; width: 6px; height: 6px; border: 1px solid #999; margin: 0 6px;}
 				}
-				.active{ color: #000;
-					a{color: #000;}
-					&:before{ border-color: #999; background-color: #000;}
-				}
-				a{ color: #999;}
 			}
 		}
-		.news-con { width: 1260px; margin: 0 auto;
-			ul{ width: 1260 - 630px; padding-left: 630px; padding-top: 60px; padding-bottom: 60px; height: 500px; overflow: hidden; position: relative;
-				li{ width: 600px; margin: 0 0 30px 30px; float: left;
-					img{ width: 220px; height: 220px; float: left;}
-					h4{ float: left; font-size: 20px;margin-bottom: 12px; padding-left: 20px; width: 200px; }
-					.tag{ float: left; font-size: 12px; color: #999; padding-left: 20px; width: 300px; }
-					.info{ display: none; font-size: 14px; }
+		.news-con { width: 100%; box-sizing: border-box; padding: rem(20);
+			ul{ width: 100%; padding-left: 0; padding: 0 0 rem(20); height: auto;
+				li{ width: 100%; margin: 0; float: none; padding-bottom: rem(20);
+					img{ width: 100%; height: auto; float: none;}
+					h4{ float: none; font-size: rem(36); margin-bottom: rem(20); padding-left: 0; width: 100%; }
+					.tag{ float: none; font-size: rem(24); padding-left: 0; width: 100%; }
+					.info{ display: block; font-size: rem(24); }
 				}
-				.big{ position: absolute; left: 0; top: 60px; margin: 0;
+				.big{ position: static; 
 					img{width: 100%; height: auto;}
 					h4, .tag{ float: none; display: block; width: auto; padding-left: 0;}
 					.info{ display: block; }
 				}
-				&:nth-child(2n){ padding-left: 0; padding-right: 630px;
+				&:nth-child(2n){ padding-right: 0;
 					.big{left: auto; right: 0;}
 				}
 			}
 		}
 
-		.work-head { border-bottom: 1px solid #999; padding-top: 150px;  width: 1260px; margin: 0 auto; height: 66px; line-height: 66px;
-			h2 { font-size: 44px; color: #000; float: left; width: 33%;}
-			ul { float: left;
-				li{ float: left; display: block; margin-left: 30px; border-bottom: 1px solid #999; padding: 0 12px; font-size: 16px;
+		.work-head { border-bottom: 1px solid #999; padding-top: rem(40); width: 100%; height: auto; line-height: rem(80);
+			h2 { font-size: rem(48); float: none; width: 33%; padding-left: rem(20);}
+			ul { float: none; display: block; overflow: hidden; padding-top: rem(50);
+				li{ width: 33%; float: left; display: block; margin-left: 0; border-bottom: 0; text-align: center; padding: 0; font-size: 16px;
 					a {color: #999}
 				}
-				.active { height: 65px; border-bottom: 2px solid #000;
+				.active { height: auto; border-bottom: 1px solid #000;
 					a {color: #000}
 				}
 			}
 		}
-		.work-type-1 { width: 1260px; padding-top: 40px; margin: 0 auto;
-			ul{ width: 1290px; margin-left: -30px;
-				li{ margin-left: 30px; width: 400px; float: left;
-					img{ width: 100%; height: 250px;}
-					h4{ height: 60px; line-height: 70px; overflow: hidden; font-size: 18px;}
-					&:hover{ text-decoration: underline;}
+		.work-type-1 { width: 100%; padding-top: rem(20);
+			ul{ width: 100%; margin-left: 0;
+				li{ margin-left: 0; width: 100%; float: none;
+					img{ width: 100%; height: auto;}
+					h4{ height: auto; padding-top: rem(30); padding-left: rem(20); line-height: rem(80); overflow: hidden; font-size: 18px; text-decoration: underline;}
 				}
 			}
 		}
 
-		.work-type-2 { width: 1260px; padding-top: 40px; margin: 0 auto;
-			h3 { font-size: 30px; font-weight: bold;
-				a{ float: right; color: #e61428; font-size: 14px; font-weight: normal; line-height: 30px;
-					&:hover {text-decoration: underline}
-				}
+		.work-type-2 { width: 100%; padding-top: rem(20);
+			h3 { font-size: rem(36); padding-left: rem(20);
+				a{ float: right; font-size: rem(24); line-height: 2; text-decoration: underline; padding-right: rem(20);}
 			}
-			ul{ width: 1280px; margin-left: -20px; padding: 24px 0; 
-				li{ margin-left: 20px; width: 300px; float: left;
-					img{ width: 100%; height: 190px;}
-					h4{ height: 60px; line-height: 70px; overflow: hidden; font-size: 18px;}
-					&:hover{ text-decoration: underline;}
+			ul{ width: 100%; margin-left: 0; padding: rem(20) 0; 
+				li{ margin-left: 0; width: 100%; float: left;
+					img{ width: 100%; height: auto;}
+					h4{ height: auto; line-height: 2.5; overflow: hidden; font-size: rem(28); text-decoration: underline; padding: 0 0 rem(20) rem(20);} 
 				}
 			}
 		}
@@ -363,7 +357,7 @@ body{ background-color: #fff; font-family: "微软雅黑"; min-width: 1300px; }
 				.sub{ top: rem(30); right: rem(20) }
 			}
 		}
-		.search { position: fixed; top: 0; left: 0; z-index: 2; background-color: #fff; padding-top: 100px;
+		.search { position: absolute; top: rem(100); left: 0; z-index: 2; background-color: #fff; padding-top: 0;
 			.in .text{ background: #fff; }
 		}
 		.swiper-slide {
@@ -373,20 +367,20 @@ body{ background-color: #fff; font-family: "微软雅黑"; min-width: 1300px; }
 			p{ float: left;}
 			strong{ position: absolute; bottom: rem(10); right: rem(20); font-size: rem(26); padding-top: rem(10); float: right;}
 		}
-		.work-item { width: 1260px; margin: 0 auto; padding-top: 150px;
-			.work-item-head { padding: 0 0 80px 0; 
-				.l{float: left; width: 50%;
-					h4{font-size: 40px; margin-bottom: 6px; font-weight: bold;}
-					em{font-size: 14px; color: #999}
+		.work-item { width: 100%; padding-top: rem(40);
+			.work-item-head { padding: 0 rem(20) rem(40); 
+				.l{float: none; width: 100%;
+					h4{font-size: rem(44); margin-bottom: rem(12);}
+					em{font-size: rem(24);}
 				}
-				.r{float: right; width: 50%; font-size: 14px;}
+				.r{float: none; width: 100%; font-size: rem(28); padding-top: rem(20);}
 			}
 			.pic-list{ 
-				>div{float: left; width: 620px; margin-bottom: 20px; height: 390px;
-					img{ display: block; width: 100%; height: 100%; }
+				>div{float: left; width: 100%; margin-bottom: rem(40); height: auto;
+					img{ display: block; width: 100%; height: auto; }
 					&:first-child{width: 100%; height: auto;}
-					&:nth-child(2n){width: 620px; margin-right: 20px;}
-					&:nth-child(4){width: 620px; height: 800px;}
+					&:nth-child(2n){width: 100%;}
+					&:nth-child(4){width: 100%; height: auto;}
 					&:last-child{margin-right: 0;}
 				}
 			}
