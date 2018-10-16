@@ -92,13 +92,10 @@ body{ background-color: #fff; font-family: "微软雅黑"; min-width: 1300px; }
 		li{ width: 600px; float: left; margin-left: 30px;
 			img{ width: 600px;}
 			&:nth-child(odd){margin-left: 0;}
-			h3 { font-size: 22px; font-weight: bold; margin-bottom: 40px;}
-			.email { font-size: 14px; color: #666;}
+			h3 { font-size: 22px; font-weight: bold; margin-bottom: 20px;}
+			.email { font-size: 14px; color: #666;text-decoration: underline;}
 			.tel{ display: block; font-size: 14px; color: #666; margin-bottom: 40px;}
 			.area { font-size: 14px; color: #666;}
-			&:hover {
-				.email {text-decoration: underline;}
-			}
 		}
 	}
 }
@@ -106,8 +103,11 @@ body{ background-color: #fff; font-family: "微软雅黑"; min-width: 1300px; }
 	&:before {content: '';display: block;position: absolute;width: 100px;bottom: -1px;left: 0;height: 1px;background-color: #000;}
 	h2 {font-size: 44px;color: #000;float: left;width: 50%;}
 	ul{width: 50%;float: left;@extend .clearfix;
-		li{ float: left; width: 50%; color: #999; cursor: pointer;
+		li{ float: left; width: 50%; color: #999; cursor: pointer; font-size: 16px;
 			&:before{ content: ''; display: inline-block; width: 6px; height: 6px; border: 1px solid #999; margin: 0 6px;}
+			&:hover { color: #000;
+				&:before{border-color: #000;}
+			}
 		}
 		.active{ color: #000;
 			a{color: #000;}
@@ -120,7 +120,9 @@ body{ background-color: #fff; font-family: "微软雅黑"; min-width: 1300px; }
 	ul{ width: 1260 - 630px; padding-left: 630px; padding-top: 60px; padding-bottom: 60px; height: 500px; overflow: hidden; position: relative;
 		li{ width: 600px; margin: 0 0 30px 30px; float: left;
 			img{ width: 220px; height: 220px; float: left;}
-			h4{ float: left; font-size: 20px;margin-bottom: 12px; padding-left: 20px; width: 200px; }
+			h4{ float: left; font-size: 20px;margin-bottom: 12px; padding-left: 20px; width: 200px;
+				&:hover {text-decoration: underline;}
+			}
 			.tag{ float: left; font-size: 12px; color: #999; padding-left: 20px; width: 300px; }
 			.info{ display: none; font-size: 14px; }
 		}
