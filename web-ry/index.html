@@ -14,23 +14,25 @@
 <body>
 <div>
 	<div class="roya-nav">
-		<a class="logo" href="index.html">
-			<img src="images/logo.png" alt="">
-		</a>
-		<span class="phone r"></span>
-		<ul>
-			<li><a href="work.html">工作</a></li>
-			<li><a href="about.html">关于</a></li>
-			<li><a href="news.html">新闻</a></li>
-			<li><a href="connect.html">联系</a></li>
-			<li><img id="search" src="images/search.png" alt=""></li>
-		</ul>
-	</div>
-	<div class="search">
-		<form class="in">
-			<input class="text" type="text" placeholder="请输入搜索词">
-			<input class="sub" type="submit" value="Search">
-		</form>
+		<div class="roya-nav-in">
+			<a class="logo" href="index.html">
+				<img src="images/logo.png" alt="">
+			</a>
+			<span class="phone r"></span>
+			<ul>
+				<li><a href="work.html">工作</a></li>
+				<li><a href="about.html">关于</a></li>
+				<li><a href="news.html">新闻</a></li>
+				<li><a href="connect.html">联系</a></li>
+				<li><img id="search" src="images/search.png" alt=""></li>
+			</ul>
+		</div>
+		<div class="search">
+			<form class="in">
+				<input class="text" type="text" placeholder="请输入搜索词">
+				<input class="sub" type="submit" value="Search">
+			</form>
+		</div>
 	</div>
 	<div class="roya-slider">
 		<div class="swiper-container">
@@ -277,9 +279,9 @@
 </div>
 <script src="js/jquery.min.js"></script>
 <script>
-	$('.roya-slider').height($(window).width()/5120*2758);
+	$('.roya-slider').height($(window).height());
 	$(window).resize(function(){
-		$('.roya-slider').height($(window).width()/5120*2758);
+		$('.roya-slider').height($(window).height());
 	})
 </script>
 <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>

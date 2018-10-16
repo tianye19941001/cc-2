@@ -71,10 +71,11 @@
 	$(window).scroll(function(){
 		//输出垂直的滚动距离
 		var top =  $(this).scrollTop();
-		if(top < 78) {
-			$('.roya-nav').css('background', 'rgba(255,255,255,'+ top/78 +')')
-		} else {
-			$('.roya-nav').css('background', 'rgba(255,255,255,1)')
+		var color = $('.black').length > 0 ? 'rgba(0,0,0,' : 'rgba(255,255,255,';
+		if(top > 78 || $('.black').length > 0) {
+			$('.roya-nav').css('background', color + '1)')
+		} else { 
+			$('.roya-nav').css('background', color+ top/78 +')')
 		}
 		//输出水平的滚动距离
 	});
@@ -99,7 +100,11 @@
 	})
 
 	if (document.body.clientWidth>=768) {
-		
+		$(window).scroll(function() {
+			var height = $(window).height();
+			var top = document.documentElement.scrollTop;
+			$('.roya-slider').css('background-color', 'rgba(0,0,0,' + top/height +')')
+	  	});
 	}else{
 		fnResize();
 		window.addEventListener("resize", function() {
@@ -113,9 +118,10 @@
 
 		$('.roya-nav .r').click(function(e) {
 			e.stopPropagation();
-			$('.roya-nav ul').toggle(100);
+			$('.roya-nav-in ul').toggle(100);
 		})
-		$('#search').click(function(){
+		$('#search').click(function(e){
+			e.stopPropagation();
 			$('.roya-nav ul').slideUp(100);
 		})
 	}
@@ -159,7 +165,7 @@
 	}
 
 	$(window).scroll(function() {
-  	animateInit();
+  		animateInit();
 	});
 
 	(function init(){
