@@ -21,18 +21,19 @@ body{ background-color: #fff; font-family: "微软雅黑"; min-width: 1300px; }
 		a{ color: #fff; }
 	}
 }
-.roya-slider { height: 700px; width: 100%; position: relative;
+.roya-slider { height: 700px; width: 100%; position: fixed; top: 0; left: 0; z-index: 1;
 	&:before{ content: ''; display: block; width: 100%; height: 100%; position: absolute; z-index: 2; left: 0; top: 0; bottom: 0; right: 0; pointer-events: none; background-color: inherit; }
-	.swiper-container { width: 100%; height: 100%;
-		img{ width: 100%; min-height: 100%; }
+	.swiper-container { width: 100%; height: 100%; position: relative;
+		img{ width: 100%; position: absolute; top: 50%; transform: translateY(-50%) }
 	}
 	.next,.pre{ cursor: pointer; position: relative; display: block; width: 32px; height: 32px; background-image: url(../images/left.png); position: absolute; background-size: 100%; left: 50px; top: 50%; margin-top: -16px; z-index: 1; }
 	.next{ transform: rotate(180deg); left: auto; right: 50px; }
 	
 }
-.roya-pics {
-	width: 1260px;
-	margin: 0 auto;
+.roya-pics-warp {
+	position: relative; z-index: 2; background-color: #fff;
+}
+.roya-pics { width: 1260px; margin: 0 auto;
 	.pic-group {padding: 20px 0; line-height: 36px; font-size: 18px;
 		ul { @extend .clearfix; padding-left: 620px; position: relative;
 			&:nth-child(even) { padding-left: 0; padding-right: 620px;
@@ -42,7 +43,11 @@ body{ background-color: #fff; font-family: "微软雅黑"; min-width: 1300px; }
 		}
 		img{ display: block; }
 		li { float: left; width: 290px; height: 216px; margin-left: 30px;
-			img{ width: 290px; height: 160px; }
+			img{ width: 290px; height: 160px; transition: all .3s;}
+			&:hover{
+				img{ opacity: 0.7;}
+				p{text-decoration: underline;}
+			}
 		}
 		.big { position: absolute; left: 0; top: 0; width: 610px; height: 440px; margin-left: 0;
 			img{ width: 610px; height: 376px; }
@@ -120,7 +125,7 @@ body{ background-color: #fff; font-family: "微软雅黑"; min-width: 1300px; }
 	ul{ width: 1260 - 630px; padding-left: 630px; padding-top: 60px; padding-bottom: 60px; height: 500px; overflow: hidden; position: relative;
 		li{ width: 600px; margin: 0 0 30px 30px; float: left;
 			img{ width: 220px; height: 220px; float: left;}
-			h4{ float: left; font-size: 20px;margin-bottom: 12px; padding-left: 20px; width: 200px;
+			h4{ float: left; font-size: 20px;margin-bottom: 12px; padding-left: 20px; width: 200px;x
 				&:hover {text-decoration: underline;}
 			}
 			.tag{ float: left; font-size: 12px; color: #999; padding-left: 20px; width: 300px; }
@@ -173,7 +178,7 @@ body{ background-color: #fff; font-family: "微软雅黑"; min-width: 1300px; }
 	}
 }
 
-.newsletter, .search { background: #f2f2f2; width: 100%; min-width: 1260px; overflow: hidden; display: none;
+.newsletter, .search { background: #f2f2f2; width: 100%; min-width: 1260px; overflow: hidden; display: none; position: relative; z-index: 2;
 	.in{ width: 1260px; padding: 20px 0; margin: 0 auto; position: relative; font-size: 40px;
 		.text{  border: 0; font-weight: 500; background: #f2f2f2; display: block; width: calc(100% - 120px); padding: 0; border: 0 none; height: 60px; line-height: 60px; outline: none; }
 		.sub{ position: absolute; right: 0; top: 30px; border: 0 none; background: none; outline: none; cursor: pointer; color: #999; }
@@ -212,11 +217,12 @@ body{ background-color: #fff; font-family: "微软雅黑"; min-width: 1300px; }
 
 @media screen and (min-width:1px) and (max-width:1019px){
 	body{ min-width: 0;
-		.roya-nav { padding: 0 6%; line-height: rem(100); height: rem(100);  position: static; width: 100%; box-sizing: border-box; z-index: 3;
+		.roya-nav { padding: 0 rem(20); line-height: rem(100); height: rem(100);  position: static; width: 100%; box-sizing: border-box; z-index: 3;
+			.roya-nav-in {width: 100%;}
 			.logo { float: none; vertical-align: middle; padding-top: 0;
 				img {height: rem(70); padding-top: rem(15);}
 			}
-			.roya-nav-in>ul{ position: absolute; top: rem(98); left: 0; width: 100%; z-index: 3; text-align: center; background-color: #fff; display: none;
+			.roya-nav-in>ul{ position: absolute; top: rem(98); left: rem(-20); width: rem(640); z-index: 3; text-align: center; background-color: #fff; display: none;
 				>li{font-size: rem(34); padding: 0 rem(10); float: none; 
 					img { width: 22px; cursor: pointer; vertical-align: -3px; }
 				}
@@ -231,9 +237,10 @@ body{ background-color: #fff; font-family: "微软雅黑"; min-width: 1300px; }
 				.r{background-image: url('../images/menu2.png');}
 			}
 		}
-		.roya-slider { height: 700px; width: 100%; position: relative;
-			.swiper-container { width: 100%; height: 100%;
-				img{ width: 100%; height: 100%; }
+		.roya-slider { height: rem(700); width: 100%; position: relative;
+			.swiper-container { width: 100%; height: 100%; overflow: hidden;
+				.swiper-slide{overflow: hidden;}
+				img{ width: auto; height: 100%; position: absolute; top: 0; left: 50%; transform: translateX(-50%) }
 			}
 			.next,.pre{ display: none; }
 			

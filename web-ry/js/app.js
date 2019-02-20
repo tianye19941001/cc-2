@@ -87,7 +87,7 @@
 		} else {
 			$('.newsletter').addClass('on').slideDown();
 		}
-		$('html,body').animate({scrollTop: $('body').height()},100);
+		$('html,body').animate({scrollTop: $('body').height() + 200},100);
 	});
 
 	$('#search').click(function() {
