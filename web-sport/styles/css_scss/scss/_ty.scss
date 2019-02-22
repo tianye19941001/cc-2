@@ -201,6 +201,34 @@ $color4: rgba(119,201,57,1);
 	}
 }
 
+.list-detial{
+	width:rem(500);
+	margin: 0 auto;
+	padding-top: rem(30);
+	li{
+		width:rem(500);
+		padding: 0 rem(20) 0 rem(40);
+		box-sizing: border-box;
+		height:rem(90);
+		line-height: rem(90);
+		border-radius:rem(45);
+		margin-bottom: rem(30);
+		border: rem(2) solid #fff;
+	}
+	em{
+		float: right;
+		margin-top: rem(15);
+		display: inline-block;
+		line-height: rem(56);
+		height: rem(56);
+		
+		color: #fff;
+		padding: 0 rem(15);
+		border-radius: rem(4) rem(56) rem(56) rem(4);
+		
+	}
+}
+
 .second-con{
 	margin-top: rem(50);
 	padding:  rem(50) rem(50) rem(20);
@@ -211,31 +239,43 @@ $color4: rgba(119,201,57,1);
 		font-weight:800;
 		
 	}
-	ul{
-		width:rem(500);
-		margin: 0 auto;
-		padding-top: rem(30);
-		li{
-			width:rem(500);
-			padding: 0 rem(20) 0 rem(40);
-			box-sizing: border-box;
-			height:rem(90);
-			line-height: rem(90);
-			border-radius:rem(45);
-			margin-bottom: rem(30);
-			border: rem(2) solid #fff;
+	ul{@extend .list-detial;}
+}
+
+.third-content{
+	.list-detial{ 
+		font-size: rem(30);
+		.style-1{
+			color:rgba(247,149,24,1);
+			border-color: rgba(248,146,18,1);
+			em{
+				background:rgba(254,186,9,1);
+				box-shadow: inset 0px 0px rem(10) 0px yellow;
+			}	
 		}
-		em{
-			float: right;
-			margin-top: rem(15);
-			display: inline-block;
-			line-height: rem(56);
-			height: rem(56);
-			
-			color: #fff;
-			padding: 0 rem(15);
-			border-radius: rem(4) rem(56) rem(56) rem(4);
-			
+		.style-2{
+			color:rgba(221,75,60,1);
+			border-color: rgba(235,78,62,1);
+			em{
+				background:rgba(235,78,62,1);
+				box-shadow: inset 0px 0px rem(10) 0px red;
+			}
+		}
+		.style-3{
+			color:rgba(85,163,254,1);
+			border-color: rgba(85,163,254,1);
+			em{
+				background:rgba(85,163,254,1);
+				box-shadow: inset 0px 0px rem(10) 0px blue;
+			}
+		}
+		.style-4{
+			color:rgba(83,179,24,1);
+			border-color: rgba(122,201,41,1);
+			em{
+				background:rgba(122,207,46,1);
+				box-shadow: inset 0px 0px rem(10) 0px green;
+			}
 		}
 	}
 }
