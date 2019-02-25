@@ -22,4 +22,18 @@ $(document).ready(function(){
 			$('html,body').animate({scrollTop: $(to).offset().top-60},600);
 		}
 	}
+
+
+	$('.third-tit').each(function(){
+		var text = $(this).text();
+		$(this).html(text + '<span>' + text +'</span>');
+	})
+
+	$('.case>span').click(function(){
+		$(this).parent('.case').toggleClass('open')
+	})
+
+	$('.open-why').click(function(){
+		$(this).parent('.hide-why').toggleClass('open')
+	})
 });
