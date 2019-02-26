@@ -130,10 +130,8 @@ $color4: rgba(119,201,57,1);
 				@extend .clearfix;
 				em{
 					float: left;
-					display: block;
 					font-size:rem(28);
 					padding: 0 rem(30);
-					line-height: 2;
 					border-radius: rem(42);
 					background: #fff;
 					margin-right: rem(10);
