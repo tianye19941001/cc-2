@@ -132,7 +132,7 @@ $color4: rgba(119,201,57,1);
 					float: left;
 					font-size:rem(28);
 					padding: 0 rem(30);
-					line-height: rem(40);
+					line-height: 1.5;
 					border-radius: rem(42);
 					background: #fff;
 					margin-right: rem(10);
@@ -635,7 +635,7 @@ $color4: rgba(119,201,57,1);
 	height:rem(100);
 	line-height: rem(100);
 	border-radius: rem(100);
-	background:rgba(255,255,240,1);
+	background:#fff;
 	display: block;
 }
 
