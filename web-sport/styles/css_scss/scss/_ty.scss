@@ -224,7 +224,7 @@ $color4: rgba(119,201,57,1);
 		float: right;
 		margin-top: rem(15);
 		display: inline-block;
-		line-height: rem(56);
+		line-height: rem(58);
 		height: rem(56);
 		color: #fff;
 		position: relative;
@@ -770,6 +770,7 @@ $color4: rgba(119,201,57,1);
 		&:after{box-shadow: inset 0px 0px rem(20) 0px #329e1d;}
 		&:before{box-shadow: inset 0px 0px rem(80) 0px #329e1d;}
 		-webkit-text-stroke: rem(8) #53b318;
+
 	}
 	.third-rec .case{
 		background:rgba(104,195,35,1);
