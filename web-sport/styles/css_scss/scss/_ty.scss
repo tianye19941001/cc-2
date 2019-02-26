@@ -225,12 +225,11 @@ $color4: rgba(119,201,57,1);
 		float: right;
 		margin-top: rem(15);
 		display: inline-block;
-		line-height: rem(56);
-		height: rem(56);
+		line-height: 1;
 		-webkit-box-pack: center;
 		color: #fff;
 		position: relative;
-		padding: 0 rem(15);
+		padding: rem(14) rem(15);
 		border-radius: rem(4) rem(56) rem(56) rem(4);
 		&:after{
 			content: '';
