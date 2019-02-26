@@ -187,7 +187,7 @@ $color4: rgba(119,201,57,1);
 .second-about, .second-con{
 	margin: 0 rem(40);
 	padding:  rem(50);
-	background-color:rgba(255,251,251,1);
+	background-color:#fff;
 	border-radius: rem(10);
 	font-size:rem(28);
 	line-height:rem(40);
@@ -226,11 +226,18 @@ $color4: rgba(119,201,57,1);
 		display: inline-block;
 		line-height: rem(56);
 		height: rem(56);
-		
 		color: #fff;
+		position: relative;
 		padding: 0 rem(15);
 		border-radius: rem(4) rem(56) rem(56) rem(4);
-		
+		&:after{
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			left: 0;top: 0;
+			border-radius: rem(4) rem(56) rem(56) rem(4);
+		}
 	}
 }
 
@@ -254,32 +261,36 @@ $color4: rgba(119,201,57,1);
 			color:rgba(247,149,24,1);
 			border-color: rgba(248,146,18,1);
 			em{
-				background:rgba(254,186,9,1);
-				box-shadow: inset 0px 0px rem(10) 0px yellow;
+				background:#fabd03;
+				box-shadow: inset 0px 0px rem(20) 0px #f79518;
+				&:after{box-shadow: inset 0px 0px rem(20) 0px #f79518;}
 			}	
 		}
 		.style-2{
 			color:rgba(221,75,60,1);
 			border-color: rgba(235,78,62,1);
 			em{
-				background:rgba(235,78,62,1);
-				box-shadow: inset 0px 0px rem(10) 0px red;
+				background:rgba(251,125,126,1);
+				box-shadow: inset 0px 0px rem(20) 0px rgba(221,75,60,1);
+				&:after{box-shadow: inset 0px 0px rem(20) 0px rgba(221,75,60,1);}
 			}
 		}
 		.style-3{
 			color:rgba(85,163,254,1);
 			border-color: rgba(85,163,254,1);
 			em{
-				background:rgba(85,163,254,1);
-				box-shadow: inset 0px 0px rem(10) 0px blue;
+				background:rgba(110,186,254,1);
+				box-shadow: inset 0px 0px rem(20) 0px #3a89e4;
+				&:after{box-shadow: inset 0px 0px rem(20) 0px #3a89e4;}
 			}
 		}
 		.style-4{
 			color:rgba(83,179,24,1);
 			border-color: rgba(122,201,41,1);
 			em{
-				background:rgba(122,207,46,1);
-				box-shadow: inset 0px 0px rem(10) 0px green;
+				background:rgba(104,195,35,1);
+				&:after{box-shadow: inset 0px 0px rem(20) 0px #329e1d;}
+				box-shadow: inset 0px 0px rem(20) 0px #329e1d;
 			}
 		}
 	}
@@ -297,8 +308,9 @@ $color4: rgba(119,201,57,1);
 		h3{-webkit-text-stroke:4px rgba(247,149,24,.3);}
 		ul li{border-color: rgba(248,146,18,1);}
 		em{
-			background:rgba(254,186,9,1);
-			box-shadow: inset 0px 0px rem(10) 0px yellow;
+			background:#fabd03;
+			box-shadow: inset 0px 0px rem(20) 0px #f79518;
+			&:after{box-shadow: inset 0px 0px rem(20) 0px #f79518;}
 		}
 	}
 }
@@ -315,8 +327,9 @@ $color4: rgba(119,201,57,1);
 		h3{-webkit-text-stroke:4px rgba(221,75,60,.3);}
 		ul li{border-color: rgba(235,78,62,1);}
 		em{
-			background:rgba(235,78,62,1);
-			box-shadow: inset 0px 0px rem(10) 0px red;
+			background:rgba(251,125,126,1);
+			box-shadow: inset 0px 0px rem(20) 0px rgba(221,75,60,1);
+			&:after{box-shadow: inset 0px 0px rem(20) 0px rgba(221,75,60,1);}
 		}
 	}
 }
@@ -333,8 +346,9 @@ $color4: rgba(119,201,57,1);
 		h3{-webkit-text-stroke:4px rgba(85,163,254,.3);}
 		ul li{border-color: rgba(85,163,254,1)}
 		em{
-			background:rgba(85,163,254,1);
-			box-shadow: inset 0px 0px rem(10) 0px blue;
+			background:rgba(110,186,254,1);
+			box-shadow: inset 0px 0px rem(20) 0px #3a89e4;
+			&:after{box-shadow: inset 0px 0px rem(20) 0px #3a89e4;}
 		}
 	}
 }
@@ -351,8 +365,9 @@ $color4: rgba(119,201,57,1);
 		h3{-webkit-text-stroke:4px rgba(83,179,24,.3);}
 		ul li{border-color: rgba(122,201,41,1)}
 		em{
-			background:rgba(122,207,46,1);
-			box-shadow: inset 0px 0px rem(10) 0px green;
+			background:rgba(104,195,35,1);
+			&:after{box-shadow: inset 0px 0px rem(20) 0px #329e1d;}
+			box-shadow: inset 0px 0px rem(20) 0px #329e1d;
 		}
 	}
 }
@@ -406,6 +421,7 @@ $color4: rgba(119,201,57,1);
 			text-align: center;
 			padding: 0 rem(15);
 			white-space: nowrap;
+			opacity: 0.9;
 		}
 		img{
 			width: rem(640);
@@ -587,7 +603,10 @@ $color4: rgba(119,201,57,1);
 		line-height:rem(40);
 		position: relative;
 		text-align: center;
-		z-index: 3;
+		span{
+			position: relative;
+			z-index: 3;
+		}
 		&:after{
 			content: '';
 			position: absolute;
@@ -625,7 +644,7 @@ $color4: rgba(119,201,57,1);
 	&::before{background-image: url(../../images/p3-bg-1.png);}
 	background-image: url(../../images/bg-1-1.png);
 	>div{
-		background:rgba(255,255,240,1);color: #F79518;
+		background:#fff;color: #F79518;
 		box-shadow:0 rem(8) rem(18) 0px rgba(247,149,24,0.3);
 		&:after{
 			box-shadow: inset 0px 0px rem(40) 0px rgba(254,204,1,1);
@@ -661,7 +680,7 @@ $color4: rgba(119,201,57,1);
 	&::before{background-image: url(../../images/p3-bg-2.png);}
 	background-image: url(../../images/bg-2-1.png);
 	>div{
-		background:rgba(255,255,240,1);color: #DD4B3C;
+		background:#fff;color: #DD4B3C;
 		box-shadow:0 rem(8) rem(18) 0px rgba(247, 24, 24,0.3);
 		&:after{
 			box-shadow: inset 0px 0px rem(40) 0px rgba(251,125,126,1);
@@ -697,7 +716,7 @@ $color4: rgba(119,201,57,1);
 	&::before{background-image: url(../../images/p3-bg-3.png);}
 	background-image: url(../../images/bg-3-1.png);
 	>div{
-		background:rgba(255,255,240,1);color: #55A3FE;
+		background:#fff;color: #55A3FE;
 		box-shadow:0 rem(8) rem(18) 0px rgba(24, 62, 247,0.3);
 		&:after{
 			box-shadow: inset 0px 0px rem(40) 0px rgba(110,186,254,1);
@@ -733,7 +752,7 @@ $color4: rgba(119,201,57,1);
 	&::before{background-image: url(../../images/p3-bg-4.png);}
 	background-image: url(../../images/bg-4-1.png);
 	>div{
-		background:rgba(255,255,240,1);color: #53B318;
+		background:#fff;color: #53B318;
 		box-shadow:0 rem(8) rem(18) 0px #329e1d;
 		&:after{
 			box-shadow: inset 0px 0px rem(40) 0px rgba(104,195,35,1);
