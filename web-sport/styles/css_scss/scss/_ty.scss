@@ -131,9 +131,8 @@ $color4: rgba(119,201,57,1);
 				em{
 					float: left;
 					font-size:rem(28);
-					padding: 0 rem(30);
-					height: rem(40);
-					line-height: rem(40);
+					padding: rem(6) rem(30);
+					line-height: 1;
 					-webkit-box-pack: center;
 					border-radius: rem(42);
 					background: #fff;
