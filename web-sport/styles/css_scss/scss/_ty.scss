@@ -238,7 +238,7 @@ $color4: rgba(119,201,57,1);
 	margin: 0 auto;
 	padding-top: rem(30);
 	li{
-		width:rem(500);
+		width:rem(520);
 		padding: 0 rem(20) 0 rem(40);
 		box-sizing: border-box;
 		height:rem(90);
@@ -515,7 +515,7 @@ $color4: rgba(119,201,57,1);
 				border-radius:rem(10);
 				pointer-events: none;
 			}
-			span{display: block; color: #fff; height: rem(78); line-height: rem(78);font-size: rem(30)}
+			>span{display: block; color: #fff; height: rem(78); line-height: rem(78);font-size: rem(30)}
 			i{
 				position: absolute;
 				top: rem(20);
@@ -554,7 +554,6 @@ $color4: rgba(119,201,57,1);
 			top: 0;
 			right: 0;
 			width: rem(185);
-			height: rem(270);
 			line-height: rem(30);
 			font-size:rem(28);
 			text-align: center;
@@ -571,9 +570,9 @@ $color4: rgba(119,201,57,1);
 				height: 100%;
 				border-radius:rem(10);
 			}
-			p:first-child{color:rgba(255,255,240,.5); padding: rem(30) 0 rem(42);}
-			p:nth-child(2){margin-bottom: rem(42); position: relative; height: rem(60); overflow: hidden; text-align: center;}
-			p:nth-child(2) span{display: block;width: 100%;position: absolute; top: 50%; transform: translateY(-50%)}
+			p{height: rem(85);position: relative; overflow: hidden; text-align: center;}
+			p:first-child{color:rgba(255,255,240,.5);line-height: rem(85);}
+			p span{display: block;width: 100%;position: absolute; top: 50%; transform: translateY(-50%)}
 		}
 	}
 	.hide-why{
