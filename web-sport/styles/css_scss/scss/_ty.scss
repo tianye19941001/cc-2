@@ -17,6 +17,26 @@ $color1: rgba(250,201,0,1);
 $color2: rgba(251,135,135,1);
 $color3: rgba(125,193,254,1);
 $color4: rgba(119,201,57,1);
+.back-btn{
+	display: block;
+	border-radius: rem(10);
+	margin: 0 rem(40) rem(50);
+	// padding:  rem(50);
+	font-size:rem(28);
+	line-height: rem(40);
+	position: relative;
+	z-index: 3;
+	&:after{
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		pointer-events: none;
+		border-radius: rem(43);
+	}
+}
 .sport-header{
 	.bannar{
 		display: block;
@@ -208,7 +228,7 @@ $color4: rgba(119,201,57,1);
 }
 
 .second-in{
-	padding: rem(347) 0 rem(85);
+	padding: rem(347) 0 rem(35);
 }
 
 .second-about, .second-con{
@@ -231,6 +251,7 @@ $color4: rgba(119,201,57,1);
 		z-index: 1;
 		pointer-events: none;
 	}
+	p{text-align: justify}
 }
 
 .list-detial{
@@ -345,6 +366,9 @@ $color4: rgba(119,201,57,1);
 			&:after{box-shadow: inset 0px 0px rem(20) 0px #f79518;}
 		}
 	}
+	.back-btn{color:#F79518;
+		&:after{box-shadow: inset 0px 0px rem(40) 0px rgba(254,204,1,.8);}
+	}
 }
 
 .second-2{
@@ -368,6 +392,9 @@ $color4: rgba(119,201,57,1);
 			box-shadow: inset 0px 0px rem(20) 0px rgba(221,75,60,1);
 			&:after{box-shadow: inset 0px 0px rem(20) 0px rgba(221,75,60,1);}
 		}
+	}
+	.back-btn{color:#DD4B3C;
+		&:after{box-shadow: inset 0px 0px rem(40) 0px rgba(251,125,126,.8);}
 	}
 }
 
@@ -393,6 +420,9 @@ $color4: rgba(119,201,57,1);
 			&:after{box-shadow: inset 0px 0px rem(20) 0px #3a89e4;}
 		}
 	}
+	.back-btn{color:#55A3FE;
+		&:after{box-shadow: inset 0px 0px rem(40) 0px rgba(110,186,254,.8);}
+	}
 }
 
 .second-4{
@@ -416,6 +446,9 @@ $color4: rgba(119,201,57,1);
 			&:after{box-shadow: inset 0px 0px rem(20) 0px #329e1d;}
 			box-shadow: inset 0px 0px rem(20) 0px #329e1d;
 		}
+	}
+	.back-btn{color:#53B318;
+		&:after{box-shadow: inset 0px 0px rem(40) 0px rgba(104,195,35,.8);}
 	}
 }
 
@@ -468,6 +501,7 @@ $color4: rgba(119,201,57,1);
 			pointer-events: none;
 			border-radius: rem(43);
 		}
+		p{text-align: justify}
 	}
 	.third-res{
 		h1{
@@ -691,7 +725,7 @@ $color4: rgba(119,201,57,1);
 		}
 	}
 }
-.third-main .back-btn{
+.back-btn{
 	padding:0;
 	text-align: center;
 	height:rem(100);
