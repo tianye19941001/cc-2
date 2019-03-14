@@ -478,11 +478,11 @@ $color4: rgba(119,201,57,1);
 		top: 0;
 		width: 100%;
 		height: 100%;
-		background-size: 100% auto;
+		background-size: 100% 100%;
 		background-repeat: no-repeat;
 		z-index: 1;
 	}
-	>div,.back-btn{
+	>div{
 		border-radius: rem(10);
 		position: relative;
 		margin: 0 rem(40) rem(50);
