@@ -376,6 +376,8 @@ body {
     float: right;
     margin-top: 0.5rem;
     display: inline-block;
+    min-width: 2rem;
+    text-align: center;
     line-height: 1;
     -webkit-box-pack: center;
     color: #fff;
@@ -856,12 +858,14 @@ body {
     .third-1 .third-tit:before, .third-1 .third-why .res:before {
       box-shadow: inset 0px 0px 2.6666666667rem 0px #f79518; }
   .third-1 .third-rec .case {
-    background: #fbc404;
+    background: #fabd03;
     box-shadow: -1px 0.2666666667rem 0.6rem 0px rgba(251, 205, 4, 0.6); }
     .third-1 .third-rec .case:after {
       box-shadow: inset 0px 0px 0.6666666667rem 0px rgba(247, 149, 24, 0.7); }
     .third-1 .third-rec .case:before {
       box-shadow: inset 0px 0px 1.3333333333rem 0px rgba(247, 149, 24, 0.7); }
+    .third-1 .third-rec .case p {
+      color: rgba(255, 255, 240, 0.9); }
   .third-1 .third-tit-2, .third-1 .third-tit-3 {
     color: #f79518; }
     .third-1 .third-tit-2:after, .third-1 .third-tit-3:after {

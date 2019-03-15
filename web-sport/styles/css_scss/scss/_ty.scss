@@ -272,6 +272,8 @@ $color4: rgba(119,201,57,1);
 		float: right;
 		margin-top: rem(15);
 		display: inline-block;
+		min-width: rem(60);
+		text-align: center;
 		line-height: 1;
 		-webkit-box-pack: center;
 		color: #fff;
@@ -760,10 +762,11 @@ $color4: rgba(119,201,57,1);
 		-webkit-text-stroke: rem(8) rgba(247,149,24,0.5);
 	}
 	.third-rec .case{
-		background:rgba(251,196,4,1);
+		background:rgba(250,189,3,1);
 		box-shadow:-1px rem(8) rem(18) 0px rgba(251,205,4,0.6);
 		&:after{box-shadow: inset 0px 0px rem(20) 0px rgba(247,149,24,.7);}
 		&:before{box-shadow: inset 0px 0px rem(40) 0px rgba(247,149,24,.7);}
+		p{color: rgba(255, 255, 240, .9)}
 	}
 	.third-tit-2,.third-tit-3{
 		color:rgba(247,149,24,1);
