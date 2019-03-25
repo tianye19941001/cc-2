@@ -36,4 +36,10 @@ $(document).ready(function(){
 	$('.open-why').click(function(){
 		$(this).parent('.hide-why').toggleClass('open')
 	})
+
+	$('.tabs-list>li').click(function(){
+		var index = $('.tabs-list>li').index($(this));
+		$('.tabs-boxs>ul').removeClass('active').eq(index).addClass('active');
+		$('.tabs-list>li').removeClass('active').eq(index).addClass('active');
+	})
 });
