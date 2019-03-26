@@ -151,12 +151,8 @@
 	&::after{background-image: url(../../images/bg-1-1.png);}
 	background-image: url(../../images/bg-1-1.png);
 	>div{
-		background:#fff;color: #F79518;
-		box-shadow:0 rem(8) rem(18) 0px rgba(247,149,24,0.3);
-		&:after{
-			box-shadow: inset 0px 0px rem(40) 0px rgba(254,204,1,1);
-			border-radius: rem(4);
-		}
+		background:#fff; color: #F79518;
+		box-shadow: inset 0px 0px 10px 0px rgba(128,206,147,1);
 	}
 	.back-btn{color:#F79518;
 		&:after{box-shadow: inset 0px 0px rem(40) 0px rgba(254,204,1,.8);}
@@ -191,10 +187,6 @@
 	>div{
 		background:#fff;color: #DD4B3C;
 		box-shadow:0 rem(8) rem(18) 0px rgba(247, 24, 24,0.3);
-		&:after{
-			box-shadow: inset 0px 0px rem(40) 0px rgba(251,125,126,1);
-			border-radius: rem(4);
-		}
 	}
 	.back-btn{color:#DD4B3C;
 		&:after{box-shadow: inset 0px 0px rem(40) 0px rgba(251,125,126,.8);}
@@ -228,10 +220,6 @@
 	>div{
 		background:#fff;color: #55A3FE;
 		box-shadow:0 rem(8) rem(18) 0px rgba(24, 62, 247,0.3);
-		&:after{
-			box-shadow: inset 0px 0px rem(40) 0px rgba(110,186,254,1);
-			border-radius: rem(4);
-		}
 	}
 	.back-btn{color:#55A3FE;
 		&:after{box-shadow: inset 0px 0px rem(40) 0px rgba(110,186,254,.8);}
@@ -265,10 +253,6 @@
 	>div{
 		background:#fff;color: #53B318;
 		box-shadow:0 rem(8) rem(18) 0px #329e1d;
-		&:after{
-			box-shadow: inset 0px 0px rem(40) 0px rgba(104,195,35,1);
-			border-radius: rem(4);
-		}
 	}
 	.back-btn{color:#53B318;
 		&:after{box-shadow: inset 0px 0px rem(40) 0px rgba(104,195,35,.8);}
