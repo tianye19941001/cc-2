@@ -36,58 +36,33 @@
 }
 
 .second-1{
-  &::before{background-image: url(../../images/p3-bg-1.png);}
+  	&::before{background-image: url(../../images/p3-bg-1.png);}
 	&::after{background-image: url(../../images/bg-1-1.png);}
 	h1{
 		text-shadow:rem(4) rem(12) rem(16)  $color1;
 		-webkit-text-stroke:rem(3)  $color1;
-		&:after{background:rgba(247,149,24,1);}
 	}
 	background-image: url(../../images/bg-1-1.png);
-	.second-about, .second-con{
-		box-shadow: 0 0 rem(30) 0px rgba(251,203,1,0.7);
-		color:rgba(247,149,24,1);
-		a{color:rgba(247,149,24,1);}
-		&::after{
-			box-shadow: inset 0 0 rem(30) 0px rgba(251,203,1,0.7);
-		}
-		h3{-webkit-text-stroke:4px rgba(247,149,24,.3);}
-		ul li{border-color: rgba(248,146,18,1);}
-		em{
-			background:#fabd03;
-			box-shadow: inset 0px 0px rem(20) 0px $color1;
-			&:after{box-shadow: inset 0px 0px rem(20) 0px $color1;}
-		}
-	}
 	.back-btn{color: #45875E;
 		&:after{box-shadow: inset 0px 0px rem(20) 0px rgba(128,206,147,1);}
 	}
 }
 
 .second-2{
+	&::before{background-image: url(../../images/p3-bg-2.png);}
+	&::after{background-image: url(../../images/bg-2-1.png);}
+	.tabs-and-boxs .tabs-boxs ul:first-child{
+		border-radius: .333rem;
+	}
+	.tabs-and-boxs .tabs-boxs ul{background:rgba(255,255,240,1);box-shadow: inset 0px 0px rem(20) 0px $color2;}
+	.box-s2{box-shadow:inset 0px 0px rem(30) 0px rgba(239,141,1,1);}
 	h1{
-		text-shadow:rem(4) rem(12) rem(16)  rgba(221,75,60,1);
-		-webkit-text-stroke:rem(3)  rgba(221,75,60,1);
-		&:after{background:rgba(221,75,60,1);}
+		text-shadow:rem(4) rem(12) rem(16)  $color2;
+		-webkit-text-stroke:rem(3)  $color2;
 	}
 	background-image: url(../../images/bg-2-1.png);
-	.second-about, .second-con{
-		color:rgba(221,75,60,1);
-		a{color:rgba(221,75,60,1);}
-		box-shadow: 0 0 rem(30) 0px rgba(251,125,126,0.7);
-		&::after{
-			box-shadow: inset 0 0 rem(30) 0px rgba(251,125,126,0.7);
-		}
-		h3{-webkit-text-stroke:4px rgba(221,75,60,.3);}
-		ul li{border-color: rgba(235,78,62,1);}
-		em{
-			background:rgba(251,125,126,1);
-			box-shadow: inset 0px 0px rem(20) 0px rgba(221,75,60,1);
-			&:after{box-shadow: inset 0px 0px rem(20) 0px rgba(221,75,60,1);}
-		}
-	}
-	.back-btn{color:#DD4B3C;
-		&:after{box-shadow: inset 0px 0px rem(40) 0px rgba(251,125,126,.8);}
+	.back-btn{color:$color2;
+		&:after{box-shadow: inset 0px 0px rem(40) 0px #FFD31C;}
 	}
 }
 
@@ -145,74 +120,84 @@
 	}
 }
 
+$tc1-1: #45875E;
+$tc2-1: #80CE93;
 
 .third-1{
 	&::before{background-image: url(../../images/p3-bg-1.png);}
 	&::after{background-image: url(../../images/bg-1-1.png);}
 	background-image: url(../../images/bg-1-1.png);
 	>div{
-		background:#fff; color: #45875E;
-		box-shadow: inset 0px 0px 10px 0px rgba(128,206,147,1);
+		background:#F0FFFA; color: $tc1-1;
+		box-shadow: inset 0px 0px 10px 0px $tc2-1;
 	}
-	.back-btn{color:#45875E;
-		&:after{box-shadow: inset 0px 0px rem(20) 0px rgba(128,206,147,1);}
+	.back-btn{color:$tc1-1;
+		&:after{box-shadow: inset 0px 0px rem(20) 0px $tc2-1;}
 	}
-	.third-res h1{background: #AADDBB;color: #45875E;}
+	.third-res h1{background: #AADDBB;color: $tc1-1;}
 	.third-tit{
-		color:#45875E;
-		-webkit-text-stroke: rem(2) rgba(128,206,147,1);
+		color:$tc1-1;
+		text-shadow: 0 0 rem(20) $tc2-1
 	}
 	.third-why .res{
-		box-shadow:-1px rem(8) rem(18) 0px rgba(251,205,4,0.6);
-		background:rgba(250,189,3,1);
-		&:after{box-shadow: inset 0px 0px rem(20) 0px rgba(247,149,24,1);}
-		&:before{box-shadow: inset 0px 0px rem(80) 0px rgba(247,149,24,1);}
-		-webkit-text-stroke: rem(8) rgba(247,149,24,0.5);
+		color: $tc2-1;
+		box-shadow:inset 0px 0px rem(20) 0px $tc2-1;
+		background:#71C828;
+		p:first-child{color: $tc1-1}
 	}
 	.third-rec .case{
-		background:rgba(250,189,3,1);
-		box-shadow:-1px rem(8) rem(18) 0px rgba(251,205,4,0.6);
-		&:after{box-shadow: inset 0px 0px rem(20) 0px rgba(247,149,24,.7);}
-		&:before{box-shadow: inset 0px 0px rem(40) 0px rgba(247,149,24,.7);}
-		p{color: rgba(255, 255, 240, .9)}
+		background: $tc2-1;
+		box-shadow: inset 0px 0px rem(20) 0px $tc2-1;
+		&:after{box-shadow: inset 0px 0px rem(20) 0px $tc1-1;}
 	}
 	.third-tit-2,.third-tit-3{
-		color: #45875E;
+		color: $tc1-1;
 	}
 	.hide-why i {background:rgba(250,189,3,1);}
+	table{th{color: $tc1-1;}}
+	.f-high{color: #FFDF5D;}
 }
+
+$tc1-2: #F79518;
+$tc2-2: #FFD31C;
 
 .third-2{
 	&::before{background-image: url(../../images/p3-bg-2.png);}
 	&::after{background-image: url(../../images/bg-2-1.png);}
 	background-image: url(../../images/bg-2-1.png);
+	.third-about .about-img{width: rem(243); margin: rem(130) rem(10) 0 0;}
 	>div{
-		background:#fff;color: #DD4B3C;
-		box-shadow:0 rem(8) rem(18) 0px rgba(247, 24, 24,0.3);
+		background:#FFFFF0;color: $tc1-2;
+		box-shadow:inset 0px 0px rem(20) 0px $tc1-2;
 	}
-	.back-btn{color:#DD4B3C;
-		&:after{box-shadow: inset 0px 0px rem(40) 0px rgba(251,125,126,.8);}
+	.back-btn{color:$tc1-2;
+		&:after{box-shadow: inset 0px 0px rem(40) 0px $tc2-2;}
 	}
-	box-shadow: 0 0 rem(30) 0px rgba(251,125,126,0.7);
-	.third-res h1{background: #FDCCCA;color: #DD4B3C;}
-	.third-tit,.third-why .res{
-		box-shadow:-1px rem(8) rem(18) 0px rgba(251,125,126,.5);
-		background:rgba(251,125,126,1);
-		&:after{box-shadow: inset 0px 0px rem(20) 0px rgba(221,75,60,1);}
-		&:before{box-shadow: inset 0px 0px rem(80) 0px rgba(221,75,60,1);}
-		-webkit-text-stroke: rem(8) rgba(221,75,60,.5);
+	.third-res h1{background: $tc2-2;color: $tc1-2;}
+	.third-tit{
+		color:$tc1-2;;
+		text-shadow: 0 0 rem(20) $tc2-2;
+	}
+	.third-why .res{
+		color: $tc2-2;
+		box-shadow:inset 0px 0px rem(20) 0px $tc2-2;
+		background:#FABD03;
+		p:first-child{color: $tc1-2}
+	}
+	table{
+		th{color: $tc1-2;}
 	}
 	.third-rec .case{
-		background:rgba(251,125,126,1);
-		box-shadow:-1px rem(8) rem(18) 0px rgba(251,125,126,.5);
-		&:after{box-shadow: inset 0px 0px rem(20) 0px rgba(221,75,60,1);}
-		&:before{box-shadow: inset 0px 0px rem(40) 0px rgba(221,75,60,1);}
+		background: $tc2-2;
+		box-shadow: inset 0px 0px rem(20) 0px $tc2-2;
+		&:after{box-shadow: inset 0px 0px rem(20) 0px $tc1-2;}
 	}
 	.third-tit-2,.third-tit-3{
-		color:#DD4B3C;
-		&:after{background:rgba(251,125,126,1);}
+		color: $tc1-2;
 	}
 	.hide-why i {background:rgba(251,125,126,1);}
+	.mg{background: $tc1-2}
+	.f-high{color: #6C5DFF}
 }
 
 .third-3{
