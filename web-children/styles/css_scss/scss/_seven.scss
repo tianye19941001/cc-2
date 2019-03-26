@@ -151,15 +151,18 @@
 	&::after{background-image: url(../../images/bg-1-1.png);}
 	background-image: url(../../images/bg-1-1.png);
 	>div{
-		background:#fff; color: #F79518;
+		background:#fff; color: #45875E;
 		box-shadow: inset 0px 0px 10px 0px rgba(128,206,147,1);
 	}
-	.back-btn{color:#F79518;
-		&:after{box-shadow: inset 0px 0px rem(40) 0px rgba(254,204,1,.8);}
+	.back-btn{color:#45875E;
+		&:after{box-shadow: inset 0px 0px rem(20) 0px rgba(128,206,147,1);}
 	}
-	box-shadow: 0 0 rem(30) 0px rgba(251,203,1,0.7);
-	.third-res h1{background: #FFD31C;color: #F79518;}
-	.third-tit,.third-why .res{
+	.third-res h1{background: #AADDBB;color: #45875E;}
+	.third-tit{
+		color:#45875E;
+		-webkit-text-stroke: rem(2) rgba(128,206,147,1);
+	}
+	.third-why .res{
 		box-shadow:-1px rem(8) rem(18) 0px rgba(251,205,4,0.6);
 		background:rgba(250,189,3,1);
 		&:after{box-shadow: inset 0px 0px rem(20) 0px rgba(247,149,24,1);}
@@ -174,8 +177,7 @@
 		p{color: rgba(255, 255, 240, .9)}
 	}
 	.third-tit-2,.third-tit-3{
-		color:rgba(247,149,24,1);
-		&:after{background:rgba(255,211,28,1);}
+		color: #45875E;
 	}
 	.hide-why i {background:rgba(250,189,3,1);}
 }

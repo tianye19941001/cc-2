@@ -23,12 +23,6 @@ $(document).ready(function(){
 		}
 	}
 
-
-	$('.third-tit').each(function(){
-		var text = $(this).text();
-		$(this).html(text + '<span>' + text +'</span>');
-	})
-
 	$('.case>span').click(function(){
 		$(this).parent('.case').toggleClass('open')
 	})
