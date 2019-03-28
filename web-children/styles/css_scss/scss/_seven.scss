@@ -94,29 +94,38 @@
 }
 
 .second-4{
+	&::before{background-image: url(../../images/p3-bg-4.png);}
+	&::after{background-image: url(../../images/bg-4-1.png);}
+	.tabs-and-boxs .tabs-boxs ul:first-child{
+		border-radius: .333rem;
+	}
+	.tabs-and-boxs .tabs-boxs ul{background:rgba(255,255,240,1);box-shadow: inset 0px 0px rem(20) 0px $color4;}
+	.box-s2{box-shadow:inset 0px 0px rem(30) 0px rgba(121,156,255,1);}
 	h1{
-		text-shadow:rem(4) rem(12) rem(16)  #329e1d;
-		-webkit-text-stroke:rem(3)  #329e1d;
-		&:after{background:rgba(83,179,24,1);}
+		text-shadow:rem(4) rem(12) rem(16)  $color4;
+		-webkit-text-stroke:rem(3)  $color4;
 	}
 	background-image: url(../../images/bg-4-1.png);
-	.second-about, .second-con{
-		color:rgba(83,179,24,1);
-		a{color:rgba(83,179,24,1);}
-		box-shadow: 0 0 rem(30) 0px rgba(104,195,35,0.7);
-		&::after{
-			box-shadow: inset 0 0 rem(30) 0px rgba(104,195,35,0.7);
-		}
-		h3{-webkit-text-stroke:4px rgba(83,179,24,.3);}
-		ul li{border-color: rgba(122,201,41,1)}
-		em{
-			background:rgba(104,195,35,1);
-			&:after{box-shadow: inset 0px 0px rem(20) 0px #329e1d;}
-			box-shadow: inset 0px 0px rem(20) 0px #329e1d;
-		}
+	.back-btn{color:$color4;
+		&:after{box-shadow: inset 0px 0px rem(40) 0px #88A3FF;}
 	}
-	.back-btn{color:#53B318;
-		&:after{box-shadow: inset 0px 0px rem(40) 0px rgba(104,195,35,.8);}
+}
+
+.second-5{
+	&::before{background-image: url(../../images/p3-bg-5.png);}
+	&::after{background-image: url(../../images/bg-5-1.png);}
+	.tabs-and-boxs .tabs-boxs ul:first-child{
+		border-radius: .333rem;
+	}
+	.tabs-and-boxs .tabs-boxs ul{background:rgba(255,255,240,1);box-shadow: inset 0px 0px rem(20) 0px $color5;}
+	.box-s2{box-shadow:inset 0px 0px rem(30) 0px rgba(193,145,240,1);;}
+	h1{
+		text-shadow:rem(4) rem(12) rem(16)  $color5;
+		-webkit-text-stroke:rem(3)  $color5;
+	}
+	background-image: url(../../images/bg-5-1.png);
+	.back-btn{color:$color5;
+		&:after{box-shadow: inset 0px 0px rem(40) 0px #DEBBFF;}
 	}
 }
 
@@ -165,7 +174,7 @@ $tc2-2: #FFD31C;
 	&::before{background-image: url(../../images/p3-bg-2.png);}
 	&::after{background-image: url(../../images/bg-2-1.png);}
 	background-image: url(../../images/bg-2-1.png);
-	.third-about .about-img{width: rem(243); margin: rem(130) rem(10) 0 0;}
+	.third-about .about-img{width: rem(243); margin: rem(150) rem(10) 0 0;}
 	>div{
 		background:#FFFFF0;color: $tc1-2;
 		box-shadow:inset 0px 0px rem(20) 0px $tc1-2;
@@ -180,7 +189,7 @@ $tc2-2: #FFD31C;
 	}
 	.third-why .res{
 		color: $tc2-2;
-		box-shadow:inset 0px 0px rem(20) 0px $tc2-2;
+		box-shadow:inset 0px 0px rem(20) 0px $tc1-2;
 		background:#FABD03;
 		p:first-child{color: $tc1-2}
 	}
@@ -188,17 +197,19 @@ $tc2-2: #FFD31C;
 		th{color: $tc1-2;}
 	}
 	.third-rec .case{
-		background: $tc2-2;
-		box-shadow: inset 0px 0px rem(20) 0px $tc2-2;
+		background: #FBC404;
+		box-shadow: inset 0px 0px rem(20) 0px #FBCD04;
 		&:after{box-shadow: inset 0px 0px rem(20) 0px $tc1-2;}
 	}
 	.third-tit-2,.third-tit-3{
 		color: $tc1-2;
 	}
-	.hide-why i {background:rgba(251,125,126,1);}
 	.mg{background: $tc1-2}
 	.f-high{color: #6C5DFF}
 }
+
+$tc1-3: #F79518;
+$tc2-3: #FFD31C;
 
 .third-3{
 	&::before{background-image: url(../../images/p3-bg-3.png);}
@@ -233,36 +244,84 @@ $tc2-2: #FFD31C;
 	.hide-why i {background:rgba(110,186,254,1);}
 }
 
+$tc1-4: #5675EB;
+$tc2-4: #88A3FF;
+
 .third-4{
 	&::before{background-image: url(../../images/p3-bg-4.png);}
 	&::after{background-image: url(../../images/bg-4-1.png);}
 	background-image: url(../../images/bg-4-1.png);
+	.third-about .about-img{width: rem(243); margin: rem(150) rem(10) 0 0;}
 	>div{
-		background:#fff;color: #53B318;
-		box-shadow:0 rem(8) rem(18) 0px #329e1d;
+		background:#FFFFF0;color: $tc1-4;
+		box-shadow:inset 0px 0px rem(20) 0px $tc1-4;
 	}
-	.back-btn{color:#53B318;
-		&:after{box-shadow: inset 0px 0px rem(40) 0px rgba(104,195,35,.8);}
+	.back-btn{color:$tc1-4;
+		&:after{box-shadow: inset 0px 0px rem(40) 0px $tc2-4;}
 	}
-	box-shadow: 0 0 rem(30) 0px rgba(104,195,35,0.7);
-	.third-res h1{background: #b7ec90;color: #53B318;}
-	.third-tit,.third-why .res{
-		box-shadow:-1px rem(8) rem(18) 0px rgba(104,195,35,.5);
-		background:rgba(104,195,35,1);
-		&:after{box-shadow: inset 0px 0px rem(20) 0px #329e1d;}
-		&:before{box-shadow: inset 0px 0px rem(80) 0px #329e1d;}
-		-webkit-text-stroke: rem(8) #53b318;
-
+	.third-res h1{background: #AEC1FE;color: $tc1-4;}
+	.third-tit{
+		color:$tc1-4;;
+		text-shadow: 0 0 rem(20) $tc2-4;
+	}
+	.third-why .res{
+		color: $tc2-4;
+		box-shadow:inset 0px 0px rem(40) 0px $tc1-4;
+		background: #84A2FC;
+		p:first-child{color: $tc1-4}
+	}
+	table{
+		th{color: $tc1-4;}
 	}
 	.third-rec .case{
-		background:rgba(104,195,35,1);
-		box-shadow:-1px rem(8) rem(18) 0px rgba(104,195,35,.5);
-		&:after{box-shadow: inset 0px 0px rem(20) 0px #329e1d;}
-		&:before{box-shadow: inset 0px 0px rem(40) 0px #329e1d;}
+		background: $tc2-4;
+		box-shadow: inset 0px 0px rem(20) 0px $tc2-4;
+		&:after{box-shadow: inset 0px 0px rem(20) 0px $tc1-4;}
 	}
 	.third-tit-2,.third-tit-3{
-		color:#53B318;
-		&:after{background:rgba(104,195,35,1);}
+		color: $tc1-4;
 	}
-	.hide-why i {background:rgba(104,195,35,1);}
+	.mg{background: $tc1-4}
+	.f-high{color: #FBC304}
+}
+
+$tc1-5: #A44ECD;
+$tc2-5: #DEBBFF;
+
+.third-5{
+	&::before{background-image: url(../../images/p3-bg-5.png);}
+	&::after{background-image: url(../../images/bg-5-1.png);}
+	background-image: url(../../images/bg-5-1.png);
+	.third-about .about-img{width: rem(243); margin: rem(150) rem(10) 0 0;}
+	>div{
+		background:#FFFFF0;color: $tc1-5;
+		box-shadow:inset 0px 0px rem(20) 0px $tc1-5;
+	}
+	.back-btn{color:$tc1-5;
+		&:after{box-shadow: inset 0px 0px rem(40) 0px $tc2-5;}
+	}
+	.third-res h1{background: $tc2-5;color: $tc1-5;}
+	.third-tit{
+		color:$tc1-5;;
+		text-shadow: 0 0 rem(20) $tc2-5;
+	}
+	.third-why .res{
+		color: $tc2-5;
+		box-shadow:inset 0px 0px rem(40) 0px $tc1-5;
+		background: #C89AF2;
+		p:first-child{color: $tc1-5}
+	}
+	table{
+		th{color: $tc1-5;}
+	}
+	.third-rec .case{
+		background: $tc2-5;
+		box-shadow: inset 0px 0px rem(20) 0px $tc2-5;
+		&:after{box-shadow: inset 0px 0px rem(20) 0px $tc1-5;}
+	}
+	.third-tit-2,.third-tit-3{
+		color: $tc1-5;
+	}
+	.mg{background: $tc1-5}
+	.f-high{color: #890CFF}
 }
