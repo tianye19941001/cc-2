@@ -11,6 +11,7 @@ body{
 }
 .mt60{margin-top: rem(60) !important;}
 .mb35{margin-bottom: rem(35) !important;}
+.mb50{margin-bottom: rem(50) !important;}
 .mb20{margin-bottom: rem(20) !important;}
 body{position: relative;}
 *{word-break: break-all}
@@ -425,6 +426,7 @@ $color7: rgba(68,189,207,1);
 			margin: rem(-50+15) 0 0 rem(-50+15);
 		}
 		.report-res{margin-top: rem(40);}
+		.report-res.double{position: relative; top: rem(15)}
 		p{float: right;width: rem(350);padding-top: rem(50);}
 	}
 	.third-about,.third-content,.third-rec{
@@ -446,42 +448,42 @@ $color7: rgba(68,189,207,1);
 	.third-rec{
 		>p{margin-bottom: rem(30);}
 		img{width: 100%;}
-		.case{
-			padding: 0 rem(30);
-			position: relative;
-			color:rgba(255,255,240,1);
-			margin-bottom: rem(20);
-			&:after{
-				content: '';
-				display: block;
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 100%;
-				border-radius:rem(10);
-				pointer-events: none;
+	}
+	.case{
+		padding: 0 rem(30);
+		position: relative;
+		color:rgba(255,255,240,1);
+		margin-bottom: rem(20);
+		&:after{
+			content: '';
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border-radius:rem(10);
+			pointer-events: none;
+		}
+		>span{display: block; color: #fff; height: rem(78); line-height: rem(78);font-size: rem(30)}
+		i{
+			position: absolute;
+			top: rem(20);
+			right: rem(30);
+			width: rem(30);
+			height: rem(30);
+			background-image: url(../../images/open-icon.png);
+			background-size: 100%;
+			transform: rotate(180deg);
+		}
+		p{color:rgba(255,255,240,.7); display: none;}
+		&.open {
+			padding-bottom: rem(30);
+			i{transform: rotate(0deg);}
+			p{
+				display: block
 			}
-			>span{display: block; color: #fff; height: rem(78); line-height: rem(78);font-size: rem(30)}
-			i{
-				position: absolute;
-				top: rem(20);
-				right: rem(30);
-				width: rem(30);
-				height: rem(30);
-				background-image: url(../../images/open-icon.png);
-				background-size: 100%;
-				transform: rotate(180deg);
-			}
-			p{color:rgba(255,255,240,.7); display: none;}
-			&.open {
-				padding-bottom: rem(30);
-				i{transform: rotate(0deg);}
-				p{
-					display: block
-				}
-				
-			}
+			
 		}
 	}
 
@@ -606,14 +608,22 @@ $color7: rgba(68,189,207,1);
 }
 // 
 .report-res{
-	width: rem(180);
-	height: rem(180);
+	width: rem(190);
+	height: rem(190);
 	display: inline-block;
-	line-height: rem(180);
+	line-height: rem(190);
 	color: #fff;
 	font-size: rem(40);
 	background-size: 100% 100%;
 	text-align: center;
+
+	&.double{
+		font-size:rem(30);
+		font-weight:bold;
+		line-height:rem(32);
+		box-sizing: border-box;
+		padding-top: rem(64);
+	}
 }
 .res-blue{
 	background-image: url(../../images/biaozhi1.png)
@@ -646,5 +656,108 @@ $color7: rgba(68,189,207,1);
 		width: rem(185);
 		height: rem(185);
 		border-radius: rem(185);
+	}
+}
+.third-3-advise{
+	em{
+		padding:0 rem(30);
+		line-height: rem(56);
+		font-size:rem(30);
+		font-weight:bold;
+		color:rgba(251,248,244,1);
+		border-radius: rem(56);
+		background: #FF95BE;
+		text-align: center;
+		display: inline-block;
+		margin: 0 rem(20) rem(30);
+	}
+}
+.third-3 .third-3-rec{
+	background:rgba(255,121,167,1);
+	box-shadow: inset 0px 0px rem(20) 0px #F96795;
+
+	.third-tit-2{
+		position: absolute;
+		font-size: rem(110);
+		top: rem(59);
+		right: rem(36);
+		color: #F0FFFA;
+		display: inline-block;
+	}
+
+	.commodity{
+		li{padding-left: rem(210);position: relative; margin-bottom: rem(50); min-height: rem(185);
+			&:last-child{margin-bottom: 0;}
+		}
+		img{position: absolute; left: 0;top: 0; width: rem(185); height: rem(185); background: #fff; border-radius: rem(190);}
+		h3{
+			font-size:rem(28);
+			font-weight:bold;
+			color:rgba(255,255,255,1);
+			line-height:rem(60);
+			margin-bottom: rem(30);
+		}
+		p{
+			font-size:rem(22);
+			color:rgba(240,255,250,1);
+			line-height:rem(40);
+		}
+	}
+}
+.third-main .third-3-advise{
+	overflow: initial;
+	.third-tit-4{
+		position: absolute;
+		top: rem(-20);
+		right: rem(50);
+		padding: 0 rem(40);
+		height:rem(100);
+		line-height: rem(100);
+		background:rgba(250,148,187,1);
+		border-radius: 0 0 rem(50) rem(50);
+		font-size:rem(42);
+		font-weight:bold;
+		color:rgba(255,255,255,1);
+	}
+	.advises{
+		padding-top: rem(70);
+		overflow: hidden;
+		width: rem(480+36);
+		margin: 0 auto;
+		li{
+			float: left;
+			width: rem(120);
+			height: rem(120);
+			margin-bottom: rem(12);
+			background:rgba(252,122,166,1);
+			color: #fff;
+			font-size:rem(24);
+			font-weight:bold;
+			line-height:rem(30);
+			text-align: center;
+			box-sizing: border-box;
+			position: relative;
+			margin-right: rem(11);
+			&:nth-child(4n){
+				margin-right: 0;
+			}
+		}
+		span{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+}
+
+.third-main .third-3-foods{
+	padding: 0;
+	li{
+		padding: 0;
+		margin: 0 rem(36);
+		padding: rem(36) 0;
+		border-bottom: 1px solid rgba(250,148,187,.6);
+		color: #F96795;
 	}
 }

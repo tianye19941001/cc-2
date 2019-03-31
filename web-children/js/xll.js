@@ -36,4 +36,11 @@ $(document).ready(function(){
 		$('.tabs-boxs>ul').removeClass('active').eq(index).addClass('active');
 		$('.tabs-list>li').removeClass('active').eq(index).addClass('active');
 	})
+
+	$('.report-res').each(function(){
+		var text = $(this).text();
+		if(text && text.length > 3) {
+			$(this).addClass('double');
+		}
+	})
 });
