@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, minimal-ui">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="format-detection" content="address=no">
+  <title>欧飞基因优惠券</title>
+  <script>
+    fnResize();
+    window.addEventListener("resize", function() {
+        fnResize()
+    }, false);
+
+    function fnResize(){
+        var docWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth,
+            body = document.getElementsByTagName('html')[0];
+        body.style.fontSize = docWidth / 25 + 'px';
+    }
+  </script>
+  <style>
+    body,html{margin: 0; padding: 0;}
+    p{margin: 0}
+    body{ position: absolute; height: 100%; width: 100%; left: 0; right: 0; top: 0; bottom: 0; background-image: url(./images/bg.png); background-size: 100% auto; }
+    .logo img{ position: absolute; top: 2rem; left: 0.64rem; width: 7.5rem;}
+    .ewm{ width: 100%; text-align: center; padding-bottom: 5rem; }
+    .ewm img{ width: 12.6rem; border:1px solid rgba(0, 0, 0, 0.2); margin-bottom:  .5rem;}
+    .ewm p{ font-size: 1.2rem; color:rgba(132,132,132,1); line-height:2rem;}
+    .main {padding-top: 7rem;text-align: center;}
+    .main img{ width: 20rem; height: 23rem; }
+    .main p{ font-size: 1.4rem; font-weight:300; color:rgba(4,127,188,1); line-height: 2rem; padding: 4rem 0; }
+    .main input{ display: block; margin: 1rem auto; width: 13rem; height: 2rem; line-height: 2rem; border: 1px solid blue; text-align: center; background: #fff; border-radius: 2rem;}
+    .mian button {}
+  </style>
+</head>
+<body>
+  <div class="coupon-main">
+    <a class="logo" href=""><img src="./images/logo.png" alt=""></a>
+    <div class="main">
+      <img src="./images/coupon.png" alt="">
+      <input id="phone" type="text" placeholder="请输入手机号" />
+      <button id="submit">立即领取</button>
+      <p id="success">您已成功领取，扫描下方二维<br />码进入欧飞商城即可优惠下单</p>
+    </div>
+    <div class="ewm">
+      <img src="./images/ewm.jpg" alt="">
+      <p>长按识别，关注欧飞基因</p>
+    </div>
+  </div>
+<script src="./js/jquery.min.js" type="text/javascript"></script>
+<script>
+  $('#phone').on('change', function(){
+    // 判断11位手机号
+    if($(this).val().length == 11 ) {
+      $('submit').addClass('on');
+    } else {
+      $('submit').removeClass('on');
+    }
+  })
+
+  $('#submit').on('click', function(){
+    if(!$(this).hasClass('on')) return;
+
+    // 异步后删除这两行代码，打开注释的下面代码
+    $('#phone, #submit').hide();
+    $('#success').show();
+    
+    // 异步ajax 后端根据接口修改
+    // $.post('/ajax/tel', {tel: $('#phone').val()},function(data){
+    //   if(data.code == 0) {
+    //     $('#phone, #submit').hide();
+    //     $('#success').show();
+    //   }
+    // })
+  })
+</script>
+</body>
+</html>
