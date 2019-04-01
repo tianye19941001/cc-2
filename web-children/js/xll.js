@@ -38,8 +38,8 @@ $(document).ready(function(){
 	})
 
 	$('.report-res').each(function(){
-		var text = $(this).text();
-		if(text && text.length > 3) {
+		var text = $(this).html();
+		if(text && text.indexOf('br') > 0) {
 			$(this).addClass('double');
 		}
 	})
