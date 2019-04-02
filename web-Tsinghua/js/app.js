@@ -59,8 +59,16 @@
 
 	$('.school_life_list a').click(function(){
 		var index =  $('.school_life_list a').index($(this));
-		$('.school_life_content').hide().eq(index).show()
+		$('.school_life_content').hide().eq(index).slideDown(500);
 		$('.school_life_list a').removeClass('active').eq(index).addClass('active')
+	})
+
+	$('#student-right').click(function(){
+		swiperStudent.slideNext()
+	})
+
+	$('#student-left').click(function(){
+		swiperStudent.slidePrev()
 	})
 
 
