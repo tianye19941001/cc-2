@@ -71,6 +71,18 @@
 		swiperStudent.slidePrev()
 	})
 
+	$('.menu-and-close').click(function(){
+		if(!$(this).hasClass('close')){
+			$('body').css('overflow','hidden');
+			$('.nav_list').show(300);
+			$(this).addClass('close');
+		} else {
+			$('body').css('overflow','auto');
+			$('.nav_list').hide(300);
+			$(this).removeClass('close');
+		}
+		
+	})
 
 	// 滚动到指定元素
 	function movescroll(to) {
@@ -134,10 +146,10 @@
 
 	// 动画
 	function animateInit(){
-		var toTop = '.red_index_main1 h2,.red_index_main1 h3,.red_index_main1 h4,.red_index_main2_list a, .jidiIn .middle, .gov .l,.red_intro1 img, .new_intro .pic_list, .time_list li, .pic_text li,.new_intro h2, .red_intro4 p, .intro_xm_text h2, .intro_xm_shop li';
-		var toLeft = '.red_index_main1 img, .red_index_main3 h3, .red_index_main5In .l ,.about1Int h3, .jidiIn .l, .red_intro1 h3, .listpic li, .intro_xm_text h3';
-		var toRight = '.red_index_main2 .tit, .Enterprise_intr p, .red_index_main5In .r ,.about1Int strong , .jidiIn .r, .red_intro1 p,.red_intro4 h2, .intro_xm_shop h2, .fengcai li';
-		var toBottom = '.red_index_main1 p, .red_tit_o, .red_index_main5In .m, .about1Int p, .about1In .red_abouttit, .tob_bannar img,.red_introtit, .wayin, .fengcai h2';
+		var toTop = '.content,.news-warp,.student_life,footer';
+		var toLeft = '.title,.ts-tit,.school_life_content';
+		var toRight = '.newList,.school_life_list';
+		var toBottom = '.e';
 		addAnimate($(toTop),'an_toTop');
 		addAnimate($(toLeft),'an_toLeft');
 		addAnimate($(toRight),'an_toRight');
