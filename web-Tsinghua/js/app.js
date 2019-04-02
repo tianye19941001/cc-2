@@ -78,9 +78,32 @@
 	}
 	
 	if (document.body.clientWidth >= 1024) {
-
+		var swiperNews = new Swiper('.news-swiper-container', {
+			slidesPerView: 2,
+			spaceBetween: 30,
+			pagination: {
+				el: '.news-boll',
+				clickable: true,
+			},
+			grabCursor: true,
+			speed: 1000,
+			paginationClickable: true,
+			autoplay: {
+				delay: 3000
+			}
+		});
 	}else{
-
+		var swiperNews = new Swiper('.news-swiper-container', {
+			pagination: {
+				el: '.news-boll',
+				clickable: true,
+			},
+			speed: 1000,
+			paginationClickable: true,
+			autoplay: {
+				delay: 3000
+			}
+		});
 	}
 
 	// 动画延时函数
