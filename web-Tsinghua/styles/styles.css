@@ -612,9 +612,10 @@ body {
       margin-top: 3rem; }
       body .new .new-item {
         display: block;
-        background-size: 9rem 100%;
         width: 26rem;
         height: 15rem; }
+        body .new .new-item:before {
+          width: 9.5rem; }
         body .new .new-item .title {
           display: inline-block;
           width: 3.3rem;
@@ -1238,11 +1239,21 @@ span {
     display: inline-block;
     width: 520px;
     height: 300px;
-    background-image: url(../images/new_bg.png);
-    background-size: auto 100%;
     background-repeat: no-repeat;
     transition: all .5s;
-    overflow: hidden; }
+    overflow: hidden;
+    position: relative; }
+    .new .new-item:before {
+      content: '';
+      display: block;
+      left: 0;
+      top: 0;
+      position: absolute;
+      width: 190px;
+      height: 100%;
+      background-image: url(../images/new_bg.png);
+      background-size: 100% 100%;
+      z-index: 2; }
     .new .new-item:hover img {
       transform: scale(1.1); }
     .new .new-item img {
@@ -1252,7 +1263,7 @@ span {
       height: 100%;
       left: 0;
       top: 0;
-      z-index: -1;
+      z-index: 1;
       transition: all .5s; }
     .new .new-item .title {
       display: inline-block;
@@ -1265,11 +1276,15 @@ span {
       font-size: 12px;
       color: white;
       line-height: 23px;
-      opacity: 0.67; }
+      opacity: 0.67;
+      position: relative;
+      z-index: 3; }
     .new .new-item .span {
       padding: 0 365px 0 43px;
       margin-top: 19px;
-      height: 171px; }
+      height: 171px;
+      position: relative;
+      z-index: 3; }
       .new .new-item .span p {
         color: white;
         font-size: 16px; }
@@ -1277,6 +1292,8 @@ span {
       display: inline-block;
       height: 13px;
       font-size: 12px;
+      position: relative;
+      z-index: 3;
       text-decoration: underline;
       color: white;
       opacity: 0.66;

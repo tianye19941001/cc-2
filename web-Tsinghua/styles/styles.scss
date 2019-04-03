@@ -389,11 +389,22 @@ span{outline: none}
     display: inline-block;
     width: 520px;
     height: 300px;
-    background-image: url(../images/new_bg.png);
-    background-size: auto 100%;
+    
     background-repeat: no-repeat;
     transition: all .5s;
     overflow: hidden;
+    position: relative;
+    &:before{
+      content: '';
+      display: block;
+      left: 0;top: 0;
+      position: absolute;
+      width: 190px;
+      height: 100%;
+      background-image: url(../images/new_bg.png);
+      background-size: 100% 100%;
+      z-index: 2;
+    }
     &:hover{
       img{transform: scale(1.1)}
     }
@@ -403,7 +414,7 @@ span{outline: none}
       width: 100%;
       height: 100%;
       left: 0;top: 0;
-      z-index: -1;
+      z-index: 1;
       transition: all .5s;
     }
     .title {
@@ -415,15 +426,18 @@ span{outline: none}
       border:1px solid rgba(255, 255, 255, 1);
       border-radius: 15px;
       font-size:12px;
-      
       color:rgba(255,255,255,1);
       line-height:23px;
       opacity:0.67; 
+      position: relative;
+      z-index: 3;
     }
     .span {
       padding: 0 365px 0 43px;
       margin-top: 19px;
       height: 171px;
+      position: relative;
+      z-index: 3;
       p {
         color:rgba(255,255,255,1);
         font-size: 16px;
@@ -433,7 +447,8 @@ span{outline: none}
       display: inline-block;
       height:13px;
       font-size:12px;
-      
+      position: relative;
+      z-index: 3;
       text-decoration:underline;
       color:rgba(255,255,255,1);
       opacity:0.66;

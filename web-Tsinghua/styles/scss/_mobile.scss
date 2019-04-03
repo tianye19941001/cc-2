@@ -216,9 +216,12 @@
             
             .new-item {
               display: block;
-              background-size: rem(180) 100%;
               width: rem(520);
               height: rem(300);
+
+              &:before{
+                width: rem(190);
+              }
               .title {
                 display: inline-block;
                 width: rem(66);
