@@ -106,6 +106,7 @@
 		});
 	}else{
 		var swiperNews = new Swiper('.news-swiper-container', {
+			slidesPerView: 1,
 			pagination: {
 				el: '.news-boll',
 				clickable: true,
@@ -146,7 +147,7 @@
 
 	// 动画
 	function animateInit(){
-		var toTop = '.content,.news-warp,.student_life,footer';
+		var toTop = '.content,.student_life,footer';
 		var toLeft = '.title,.ts-tit,.school_life_content';
 		var toRight = '.newList,.school_life_list';
 		var toBottom = '.e';
