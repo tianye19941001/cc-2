@@ -16,7 +16,11 @@
             .brand {
               width: auto;
               height: 100%;
-          
+              a{
+                display: block;
+                height: 100%;
+                background: #063456;
+              }
               &:after{
                 right: rem(-100);
                 height: rem(80);
@@ -39,14 +43,17 @@
                 top: rem(80);
                 box-sizing: border-box;
                 padding: rem(30) 0;
+                margin-left: 0;
               a {
+                float: none;
+                width: 100%;
                 display: block;
                 text-align: center;
                 margin:  0 rem(20);
                 border-bottom: 1px solid #fff;
                 font-size:rem(24);
                 text-align: left;
-                line-height: rem(80);
+                line-height: rem(60);
                 color:#fff;
                 margin-bottom: rem(20);
                 text-indent: 1rem;
@@ -101,14 +108,16 @@
               }
               .left {
                 position: absolute;
-                top: rem(456-43);
+                top: auto;
+                bottom: 0;
                 width: rem(80);
                 height: rem(80);
                 background-size: 100% 100%;
               }
               .right {
                 position: absolute;
-                top: rem(456-43);
+                top: auto;
+                bottom: 0;
                 width: rem(80);
                 height: rem(80);
                 background-size: 100% 100%;
@@ -165,6 +174,7 @@
                   width: rem(48);
                   height: rem(20);
                   margin-top: rem(32);
+                  background-size: 100% 100%;
                 }
                 span:last-child {
                   width:auto;
@@ -206,7 +216,7 @@
             
             .new-item {
               display: block;
-
+              background-size: rem(180) 100%;
               width: rem(520);
               height: rem(300);
               .title {
@@ -267,7 +277,7 @@
               .left {
                 width: rem(56);
                 height: rem(80);
-                background: url(../images/new_bg2.png) no-repeat top left;
+                background: url(../images/new_bg2.png) top left;
                 padding: rem(12);
                 margin-top: rem(5);
                 text-align: center;
@@ -282,10 +292,12 @@
                     line-height: rem(24);
                   }
                   &.l_new {
-                      text-align: center;
+                    text-align: center;
+                    width: rem(80);
+                    margin-left: rem(-12);
                     margin-top: rem(40);
                     font-size:rem(16);
-                    line-height:0px;
+                    line-height: 1.5;
                     white-space: nowrap;
                   }
                 }
@@ -455,7 +467,7 @@
             }
             .student_content {
               width: rem(440*3+40);
-              padding: rem(40) rem(20) 0;
+              padding: rem(80) rem(20) 0;
               margin-left: rem(-460+100);
               transform: translateX(0);
               .student_min{
@@ -518,9 +530,9 @@
                 height: rem(554);
                 top: rem(-60);
                 margin-right: rem(40);
-                box-shadow:0px 3px 65px 0px rgba(0, 0, 0, 0.31);
+                box-shadow:0px 3px rem(40) 0px rgba(0, 0, 0, 0.31);
                 &:hover{
-                  box-shadow:0px 3px 85px 0px rgba(0, 0, 0, 0.7);
+                  box-shadow:0px 3px rem(40) 0px rgba(0, 0, 0, 0.7);
                 }
                 img{
                   width: 100%;

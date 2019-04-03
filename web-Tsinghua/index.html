@@ -420,9 +420,16 @@
 				nextEl: '.swiper-button-next',
 				prevEl: '.swiper-button-prev',
 			},
-			speed: 1000,
 			autoplay: {
 				delay: 3000
+			},
+			on: {
+				slideChangeTransitionStart: function(){
+					$('.carousel .center').fadeOut(300);
+				},
+				slideChangeTransitionEnd: function(){
+					$('.carousel .center').fadeIn(500);
+				},
 			}
 		})
 		
@@ -433,7 +440,6 @@
 			},
     	slidesPerView: 'auto',
 			grabCursor: true,
-			speed: 1000,
 			paginationClickable: true,
 			autoplay: {
 				delay: 30000

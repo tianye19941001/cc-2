@@ -486,6 +486,10 @@ body {
       body .nav .brand {
         width: auto;
         height: 100%; }
+        body .nav .brand a {
+          display: block;
+          height: 100%;
+          background: #063456; }
         body .nav .brand:after {
           right: -5rem;
           height: 4rem; }
@@ -504,15 +508,18 @@ body {
         left: 0;
         top: 4rem;
         box-sizing: border-box;
-        padding: 1.5rem 0; }
+        padding: 1.5rem 0;
+        margin-left: 0; }
         body .nav .nav_list a {
+          float: none;
+          width: 100%;
           display: block;
           text-align: center;
           margin: 0 1rem;
           border-bottom: 1px solid #fff;
           font-size: 1.2rem;
           text-align: left;
-          line-height: 4rem;
+          line-height: 3rem;
           color: #fff;
           margin-bottom: 1rem;
           text-indent: 1rem; }
@@ -555,13 +562,15 @@ body {
             display: none; }
       body .carousel .swiper-container .left {
         position: absolute;
-        top: 20.65rem;
+        top: auto;
+        bottom: 0;
         width: 4rem;
         height: 4rem;
         background-size: 100% 100%; }
       body .carousel .swiper-container .right {
         position: absolute;
-        top: 20.65rem;
+        top: auto;
+        bottom: 0;
         width: 4rem;
         height: 4rem;
         background-size: 100% 100%; }
@@ -602,7 +611,8 @@ body {
           display: inline-block;
           width: 2.4rem;
           height: 1rem;
-          margin-top: 1.6rem; }
+          margin-top: 1.6rem;
+          background-size: 100% 100%; }
         body .content .content_left .top span:last-child {
           width: auto;
           height: auto;
@@ -635,6 +645,7 @@ body {
       margin-top: 3rem; }
       body .new .new-item {
         display: block;
+        background-size: 9rem 100%;
         width: 26rem;
         height: 15rem; }
         body .new .new-item .title {
@@ -681,7 +692,7 @@ body {
         body .newList .newText .left {
           width: 2.8rem;
           height: 4rem;
-          background: url(../images/new_bg2.png) no-repeat top left;
+          background: url(../images/new_bg2.png) top left;
           padding: 0.6rem;
           margin-top: 0.25rem;
           text-align: center; }
@@ -693,9 +704,11 @@ body {
             line-height: 1.2rem; }
           body .newList .newText .left span.l_new {
             text-align: center;
+            width: 4rem;
+            margin-left: -0.6rem;
             margin-top: 2rem;
             font-size: 0.8rem;
-            line-height: 0px;
+            line-height: 1.5;
             white-space: nowrap; }
         body .newList .newText .p1 {
           margin-bottom: 0.3rem;
@@ -822,7 +835,7 @@ body {
           padding-left: 0; }
       body .student_life .student_content {
         width: 68rem;
-        padding: 2rem 1rem 0;
+        padding: 4rem 1rem 0;
         margin-left: -18rem;
         transform: translateX(0); }
         body .student_life .student_content .student_min {
@@ -874,9 +887,9 @@ body {
           height: 27.7rem;
           top: -3rem;
           margin-right: 2rem;
-          box-shadow: 0px 3px 65px 0px rgba(0, 0, 0, 0.31); }
+          box-shadow: 0px 3px 2rem 0px rgba(0, 0, 0, 0.31); }
           body .student_life .student_content .student_max .in:hover, body .student_life .student_content .swiper-slide-next .in:hover {
-            box-shadow: 0px 3px 85px 0px rgba(0, 0, 0, 0.7); }
+            box-shadow: 0px 3px 2rem 0px rgba(0, 0, 0, 0.7); }
           body .student_life .student_content .student_max .in img, body .student_life .student_content .swiper-slide-next .in img {
             width: 100%;
             height: 13rem; }
@@ -1079,13 +1092,27 @@ span {
       height: 65px;
       margin-top: 17px; }
   .nav .nav_list {
-    line-height: 93px; }
+    line-height: 93px;
+    margin-left: 14px;
+    position: relative; }
     .nav .nav_list a {
       font-size: 16px;
       color: #131313;
-      margin-left: 28px; }
+      padding: 0 14px;
+      display: inline-block;
+      text-align: center;
+      width: 65px;
+      float: left; }
       .nav .nav_list a:hover {
         font-weight: bold; }
+    .nav .nav_list em {
+      position: absolute;
+      width: 65px;
+      height: 2px;
+      left: 14px;
+      bottom: -1px;
+      background: #ab8455;
+      transition: all .5s; }
   .nav .aside {
     width: 710px;
     height: 80px;
@@ -1560,7 +1587,7 @@ span {
       background: #fff;
       box-shadow: 0px 3px 65px 0px rgba(0, 0, 0, 0.31); }
       .student_life .student_content .student_max .in:hover, .student_life .student_content .swiper-slide-next .in:hover {
-        box-shadow: 0px 3px 85px 0px rgba(0, 0, 0, 0.7); }
+        box-shadow: 0px 3px 65px 0px rgba(0, 0, 0, 0.8); }
       .student_life .student_content .student_max .in img, .student_life .student_content .swiper-slide-next .in img {
         width: 100%;
         display: block;
