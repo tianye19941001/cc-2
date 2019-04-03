@@ -72,16 +72,20 @@
 	})
 
 	$('.menu-and-close').click(function(){
+		var height = $(window).height();
 		if(!$(this).hasClass('close')){
-			$('body').css('overflow','hidden');
+			$('body').css({'overflow':'hidden', 'height': height});
 			$('.nav_list').show(300);
 			$(this).addClass('close');
+			movescroll('body');
+			$('.nav').css({'position': 'fixed', 'top': 0, 'left': 0})
 		} else {
-			$('body').css('overflow','auto');
+			$('body').css({'overflow':'auto', 'height': 'auto'});
 			$('.nav_list').hide(300);
 			$(this).removeClass('close');
+			$('.nav').css({'position': 'relative'});
+			movescroll('body');
 		}
-		
 	})
 
 	// 滚动到指定元素

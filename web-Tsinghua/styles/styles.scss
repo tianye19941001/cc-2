@@ -15,7 +15,7 @@
 body {
   width: 100%;
   min-width: 1260px;
-  font-family: '微软雅黑'
+  font-family: '微软雅黑';
 }
 span{outline: none}
 /*多行溢出*/
@@ -202,7 +202,7 @@ span{outline: none}
     position: absolute;
     top: 95px;
     right: -23px;
-    z-index: 999;
+    z-index: 9;
     img{
       display: block;
       position: absolute;

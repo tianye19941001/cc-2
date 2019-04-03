@@ -1,48 +1,51 @@
 @charset "utf-8";
-// 动画
+
 .content, .title, .newList,.ts-tit,.school_life_list,.school_life_content, .student_life, footer{
-	opacity: 0;
-	filter: alpha(opacity=0);
+	opacity: 1;
 	transition: all .5s;
+	visibility: hidden;
 }
 
+body .an_toTop {
+	opacity: 1;
+	visibility: visible;
+	animation: toTop 0.5s linear 0s;
+	animation-fill-mode : both;
+	-webkit-animation-fill-mode: both;
+}
 
+body .an_toBottom {
+	opacity: 1;
+	visibility: visible;
+	animation: toBottom 0.5s linear 0s;
+	animation-fill-mode : both;
+	-webkit-animation-fill-mode: both;
+}
 
-.an_toTop {
-    animation: toTop 0.5s linear 0s;
-    -webkit-animation: toTop 0.5s linear 0s;
-    -ms-animation: toTop 0.5s linear 0s;
-    animation-fill-mode : both;
-    opacity: 1 !important;
+body .an_show {
+	opacity: 1;
+	visibility: visible;
+	animation: show 0.7s linear 0s;
+	animation-fill-mode : both;
+	-webkit-animation-fill-mode: both;
 }
-.an_toBottom {
-    animation: toBottom 0.5s linear 0s;
-    -webkit-animation: toBottom 0.5s linear 0s;
-    -ms-animation: toBottom 0.5s linear 0s;
-    animation-fill-mode : both;
-    opacity: 1 !important;
+
+body .an_toRight {
+	opacity: 1;
+	visibility: visible;
+	animation: toRight 0.5s linear 0s;
+	animation-fill-mode : both;
+	-webkit-animation-fill-mode: both;
 }
-.an_show {
-    animation: show 0.7s linear 0s;
-    -webkit-animation: show 0.7s linear 0s;
-    -ms-animation: show 0.7s linear 0s;
-    animation-fill-mode : both;
-    opacity: 1 !important;
+
+body .an_toLeft {
+	opacity: 1;
+	visibility: visible;
+	animation: toLeft 0.5s linear 0s;
+	animation-fill-mode : both;
+	-webkit-animation-fill-mode: both;
 }
-.an_toRight {
-    animation: toRight 0.5s linear 0s;
-    -webkit-animation: toRight 0.5s linear 0s;
-    -ms-animation: toRight 0.5s linear 0s;
-    animation-fill-mode : both;
-    opacity: 1 !important;
-}
-.an_toLeft {
-    animation: toLeft 0.5s linear 0s;
-    -webkit-animation: toLeft 0.5s linear 0s;
-    -ms-animation: toLeft 0.5s linear 0s;
-    animation-fill-mode : both;
-    opacity: 1 !important;
-}
+
 @mixin an_delay($num1,$num2){
 	@for $i from $num1 through $num2{
 		.an_delay#{$i}{ animation-delay: 0.1s*$i; }
@@ -51,26 +54,26 @@
 @include an_delay(1,40);
 
 @keyframes toTop{
-	0%{ transform:translate3d(0px,100px,0); opacity: 0;}
+	0%{ transform:translate3d(0px,100px,0); opacity: 0; }
 	100%{ transform:translate3d(0px,0px,0); opacity: 1;}
 }
 
 @keyframes toBottom{
-	0%{ transform:translate3d(0px,-100px,0); opacity: 0;}
+	0%{ transform:translate3d(0px,-100px,0); opacity: 0; }
 	100%{ transform:translate3d(0px,0px,0); opacity: 1;}
 }
 
 @keyframes toRight{
-	0%{ transform:translate3d(-100px,0px,0); opacity: 0;}
+	0%{ transform:translate3d(-100px,0px,0); opacity: 0; }
 	100%{ transform:translate3d(0px,0px,0); opacity: 1;}
 }
 
 @keyframes toLeft{
-	0%{ transform:translate3d(100px,0px,0); opacity: 0;}
+	0%{ transform:translate3d(100px,0px,0); opacity: 0; }
 	100%{ transform:translate3d(0px,0px,0); opacity: 1;}
 }
 
 @keyframes show{
-	0%{  opacity: 0;}
+	0%{ opacity: 0; }
 	100%{ opacity: 1;}
 }
