@@ -32,13 +32,20 @@
     .main input{ outline: none; display: block; margin: 1rem auto; width: 18.8rem; height: 3rem; line-height: 3rem; border: 1px solid rgba(4,127,188,1); text-align: center; background: #fff; border-radius: 2rem; font-size: 1rem}
     .main button { outline: none; border: 0; margin: 0 auto; display: block; width: 19rem; height: 3.2rem; background: url(./images/button-1.png); background-size: 100% auto; margin-bottom: 3rem; }
     .main button.on {background-image: url(./images/button-2.png);}
+    .coupon{position: relative; width: 20rem; margin: 0 auto;}
+    .money{position: absolute; color: rgba(255, 255, 255, .7); font-weight: bold; font-size: 3rem; width: 100%; left: 0; top: 6rem; text-align: center; transform: rotate(-7deg); padding-right: 2rem; box-sizing: border-box;}
+    .rules{position: absolute; color: rgba(255, 255, 255, .9); font-size: 1.2rem; width: 100%; left: 0; top: 10rem; text-align: center; transform: rotate(-7deg); padding-right: 2rem; box-sizing: border-box;}
   </style>
 </head>
 <body>
   <div class="coupon-main">
     <a class="logo" href=""><img src="./images/logo.png" alt=""></a>
     <div class="main">
-      <img src="./images/coupon.png" alt="">
+      <div class="coupon">
+        <span class="money">500</span>
+        <span class="rules">满1000使用</span>
+        <img src="./images/coupon.png" alt="">
+      </div>
       <input id="phone" type="text" placeholder="请输入手机号" />
       <button id="submit"></button>
       <p id="success">您已成功领取，扫描下方二维<br />码进入欧飞商城即可优惠下单</p>
