@@ -445,7 +445,7 @@ $color7: rgba(68,189,207,1);
 			right: 0;
 		}
 	}
-	.third-about p{margin-top: rem(-40)}
+	.third-about p:nth-child(2){margin-top: rem(-40)}
 	.third-rec{
 		>p{margin-bottom: rem(30);}
 		img{width: 100%;}
