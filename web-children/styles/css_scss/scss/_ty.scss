@@ -740,6 +740,7 @@ $color7: rgba(68,189,207,1);
 			box-sizing: border-box;
 			position: relative;
 			margin-right: rem(11);
+			white-space: nowrap;
 			&:nth-child(4n){
 				margin-right: 0;
 			}
