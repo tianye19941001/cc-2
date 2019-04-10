@@ -51,7 +51,7 @@ span{outline: none}
 }
 // 公共版心
 .container {
-  width: 1200px;
+  width: 1190px;
   height: 100%;
   margin: 0 auto;
 }
@@ -59,7 +59,7 @@ span{outline: none}
 .header_top {
   width:100%;
   height:43px;
-  background-image: url(../images/bg-top.jpg);
+  background:linear-gradient(90deg,rgba(146,22,136,1),rgba(146,22,136,1),rgba(0,59,142,1),rgba(0,59,142,1));
   a{
     &:hover{
       font-weight: bold;
@@ -100,36 +100,14 @@ span{outline: none}
       height: 16px;
       line-height: 16px;
       font-size:12px;
-      
-      padding-right: 36px;
+      padding:0 8px;
       color:rgba(255,255,255,1);
       opacity:0.7;
       i {
+        font-style: normal;
         display: inline-block;
-        width: 16px;
-        height: 16px;
-        vertical-align: middle;
+        margin-right: 4px;
       }
-    }
-    a:first-child i {
-      background-image: url(../images/header-right1.png);
-      background-repeat: no-repeat;
-    }
-    a:nth-child(2) i {
-      background-image: url(../images/header-right3.png);
-      background-repeat: no-repeat;
-    }
-    a:nth-child(3) i {
-      background-image: url(../images/header-right2.png);
-      background-repeat: no-repeat;
-    }
-    a:last-child {
-      width: 14px;
-      height: 14px;
-      background-image: url(../images/search.png);
-      background-size: 14px 14px;
-      padding: 0;
-      vertical-align: middle;
     }
   }
 }
@@ -137,77 +115,60 @@ span{outline: none}
 // nav部分
 .nav {
   width: 100%;
-  height: 95px;
-  background-size: 100% 100%;
-  position: relative;
-  &:before{
-    content: '';
-    height: 95px;
-    width: 30%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    background: #063456;
-  }
-  .brand {
-    width: 336px;
-    height: 100%;
-    position: relative;
+  height: 107+42px;
 
-    &:after{
+  .nav-top{
+    width: 100%;
+    height: 107px;
+    background-size: 100% 100%;
+    background: linear-gradient(90deg,rgba(241,240,247,1),rgba(180,176,212,1));
+    position: relative;  
+
+    &:before{
       content: '';
-      position: absolute;
-      top: 0;
-      right: -120px;
-      background-image: url(../images/jiao.png);
-      height: 95px;
-      width: 272px;
-      z-index: -1;
-    }
-    a img {
+      height: 100%;
       width: 100%;
-      height: 65px;
-      margin-top: 17px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background-image: url(../images/top-bar.png);
+      background-size: 100% 100%;
     }
   }
+
   .nav_list {
-    line-height: 93px;
-    margin-left: 14px;
+    line-height: 42px;
+    height: 42px;
     position: relative;
+    background: #063456;
+
+    .in{
+      width: 1190px;
+      margin: 0 auto;
+      @extend .clearfix;
+      position: relative;
+    }
     a {
-      font-size:16px;
-      color:rgba(19,19,19,1);
-      padding: 0 14px;
+      font-size: 16px;
+      color: #fff;
       display: inline-block;
       text-align: center;
-      width: 65px;
       float: left;
+      width: 70px;
+      padding: 0 10px;
       &:hover{
+        color: rgba(171,132,85,1);
         font-weight: bold;
       }
     }
     em{
       position: absolute;
-      width: 65px;
-      height: 2px;
-      left: 14px;
-      bottom: -1px;
+      width: 70px;
+      height: 3px;
+      left: 10px;
+      bottom: 0px;
       background: rgba(171,132,85,1);
       transition: all .5s;
-    }
-  }
-  .aside {
-    width: 710px;
-    height: 80px;
-    position: absolute;
-    top: 95px;
-    right: -23px;
-    z-index: 9;
-    img{
-      display: block;
-      position: absolute;
-      right: 0;
-      top: 0;
     }
   }
 }

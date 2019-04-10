@@ -110,7 +110,7 @@
 		});
 
 		$('.nav_list').on('mouseenter', function(){
-			$('.nav_list').append('<em></em>');
+			$('.nav_list .in').append('<em></em>');
 		})
 
 		$('.nav_list').on('mouseleave', function(){
@@ -119,7 +119,7 @@
 
 		$('.nav_list a').on('mouseenter', function(){
 			var index = $('.nav_list a').index($(this));
-			var left = index * 93 + 14;
+			var left = index * 90 + 10;
 			setTimeout(function(){
 				$('.nav_list em').css('left', left)
 			},0)

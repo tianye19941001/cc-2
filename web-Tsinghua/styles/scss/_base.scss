@@ -52,3 +52,17 @@ a:active{color: #df1830;}
 .abs-left { position: absolute; left: 0 }
 .hidden { visibility: hidden }
 .none { display: none }
+
+.f-ifont{
+  font-family: 'iconfont';
+}
+
+@font-face {
+  font-family: 'iconfont';  /* project id 994519 */
+  src: url('//at.alicdn.com/t/font_994519_wc78r06eri.eot');
+  src: url('//at.alicdn.com/t/font_994519_wc78r06eri.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_994519_wc78r06eri.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_994519_wc78r06eri.woff') format('woff'),
+  url('//at.alicdn.com/t/font_994519_wc78r06eri.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_994519_wc78r06eri.svg#iconfont') format('svg');
+}
