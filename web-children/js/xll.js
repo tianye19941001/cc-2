@@ -48,16 +48,41 @@ $(document).ready(function(){
 
 	//先是leftContent旋转角度从0增加到180度，
 	//然后是rightContent旋转角度从0增加到180度
-	var num = $('#num').text();
-	var angle = num/100*360;
+	if($(leftContent).length > 0){
+		var num = $('#num').text();
+		var angle = num/100*360;
 
-	var timerId = setTimeout(function(){
-		if(angle > 180){
-			leftContent.setAttribute('style', 'transform: rotate(180deg) scale(1.1)');
-			rightContent.setAttribute('style', 'transform: rotate('+(angle-180)+'deg) scale(1.1)');
-		}else{
-			leftContent.setAttribute('style', 'transform: rotate('+angle+'deg) scale(1.1)');
+		var timerId = setTimeout(function(){
+			if(angle > 180){
+				leftContent.setAttribute('style', 'transform: rotate(180deg) scale(1.1)');
+				rightContent.setAttribute('style', 'transform: rotate('+(angle-180)+'deg) scale(1.1)');
+			}else{
+				leftContent.setAttribute('style', 'transform: rotate('+angle+'deg) scale(1.1)');
+			}
+		},0);
+	}
+
+	// 只显示表格前四个
+	if($('.table tr').length && $('.table tr').length > 5){
+		hide();
+		function hide() {
+			$('.table tr,.table .res p').show();
+			$('.table tr').each(function(index){
+				if(index > 4) {
+					$(this).hide();
+					$('.table .res p').eq(index).hide();
+				}
+			})
 		}
-	},0);
 
+		$('.show-all').click(function(){
+			if($(this).hasClass('on')){
+				hide();
+				$(this).removeClass('on')
+			} else {
+				$('.table tr,.table .res p').show();
+				$(this).addClass('on')
+			}
+		})
+	}
 });

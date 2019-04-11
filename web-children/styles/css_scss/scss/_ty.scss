@@ -862,3 +862,21 @@ $color7: rgba(68,189,207,1);
 		box-shadow: inset 0px 0px 10px 0px rgba(92,179,252,1);
 	}
 }
+
+.show-all{
+	text-align: center !important;
+	padding-bottom: rem(20);
+	i{
+		position: relative;
+		top: -0.2rem;
+		vertical-align: middle;
+		margin-left: .5rem;
+    display: inline-block;
+    border-top: 1px solid #000;
+    border-right: 1px solid #000;
+    width: .4rem;
+    height: .4rem;
+    transform: rotate(135deg);
+	}
+	&.on i{transform: rotate(-45deg);top: 0;}
+}

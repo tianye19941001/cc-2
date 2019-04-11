@@ -192,6 +192,7 @@ $tc2-1: #80CE93;
 	.hide-why i {background:rgba(250,189,3,1);}
 	table{th{color: $tc1-1;}}
 	.f-high{color: #FFDF5D;}
+	.show-all i{border-color: $tc1-1};
 }
 
 $tc1-2: #F79518;
@@ -233,6 +234,7 @@ $tc2-2: #FFD31C;
 	}
 	.mg{background: $tc1-2}
 	.f-high{color: #6C5DFF}
+	.show-all i{border-color: $tc1-2};
 }
 
 $tc1-3: #F96795;
@@ -287,6 +289,7 @@ $tc2-3: #FFA6C6;
 			padding-top: rem(35);
 		}
 	}
+	.show-all i{border-color: $tc1-3};
 }
 
 $tc1-4: #5675EB;
@@ -328,6 +331,7 @@ $tc2-4: #88A3FF;
 	}
 	.mg{background: $tc1-4}
 	.f-high{color: #FBC304}
+	.show-all i{border-color: $tc1-4};
 }
 
 $tc1-5: #A44ECD;
@@ -369,6 +373,7 @@ $tc2-5: #DEBBFF;
 	}
 	.mg{background: $tc1-5}
 	.f-high{color: #890CFF}
+	.show-all i{border-color: $tc1-5};
 }
 
 $tc1-6: #E29C17;
@@ -443,6 +448,7 @@ $tc2-6: #FFDB97;
 		p{width: 100%;padding-top: rem(20);}
 		.report-res:nth-child(3){margin-right: rem(70);}
 	}
+	.show-all i{border-color: $tc1-6};
 }
 
 $tc1-7: #19A5BA;
@@ -512,4 +518,5 @@ $tc2-7: #a3d7dc;
 			}
 		}
 	}
+	.show-all i{border-color: $tc1-7};
 }
