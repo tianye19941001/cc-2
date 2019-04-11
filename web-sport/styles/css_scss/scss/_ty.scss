@@ -886,3 +886,15 @@ $color4: rgba(119,201,57,1);
 	}
 	.hide-why i {background:rgba(104,195,35,1);}
 }
+
+// 单独添加表格部分
+.table-public{
+	word-break: break-all;
+	font-size: rem(20);
+	th{text-align: center;}
+	th > span, td > span{
+		display: block;
+		padding: rem(6);
+	}
+	tr th:first-child{  }
+}
