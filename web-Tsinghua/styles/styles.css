@@ -392,13 +392,19 @@ body {
       background: #fff; }
       body .nav:before {
         height: 4rem; }
+      body .nav .nav-top {
+        height: 4rem; }
       body .nav .brand {
         width: auto;
-        height: 100%; }
-        body .nav .brand a {
-          display: block;
-          height: 100%;
-          background: #063456; }
+        height: 4rem;
+        background: #fff; }
+        body .nav .brand .l, body .nav .brand .r {
+          display: none; }
+        body .nav .brand .m {
+          display: block; }
+        body .nav .brand .m {
+          position: static;
+          display: inline-block; }
         body .nav .brand:after {
           right: -5rem;
           height: 4rem; }
@@ -957,6 +963,22 @@ span {
 .nav {
   width: 100%;
   height: 149px; }
+  .nav .brand {
+    width: 1190px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative; }
+    .nav .brand img {
+      position: absolute; }
+    .nav .brand .l {
+      left: 0;
+      top: 26px; }
+    .nav .brand .m {
+      left: 510px;
+      top: 32px; }
+    .nav .brand .r {
+      right: 0;
+      top: 34px; }
   .nav .nav-top {
     width: 100%;
     height: 107px;
