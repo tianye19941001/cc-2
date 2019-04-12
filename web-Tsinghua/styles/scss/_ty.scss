@@ -15,5 +15,46 @@ body{ background-color: #fff; font-family: "黑体"; min-width: 1300px; }
   left: 50%;
   transform: translateX(-50%) !important;
 }
-
+.search-inp{
+	position: absolute;
+	height: 30px;
+  width: 152px;
+  top: 6px;
+  right: 0;
+	input{
+    display: block;
+    float: right;
+		border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.1);
+    height: 28px;
+    line-height: 28px;
+    color: #fff;
+    border-radius: 14px;
+    width: 0px;
+    text-indent: 10px;
+		opacity: 0;
+    transition: all .3s;
+    outline: none;
+	}
+	i{
+		position: absolute;
+		top: 50%;
+    right: 10px;
+    color: #fff;
+    font-style: normal;
+    font-size: 16px;
+    cursor: pointer;
+		transform: translateY(-50%)
+  }
+  .close{display: none;}
+  .search{display: block;}
+	&.active {
+    .close{display: block;}
+    .search{display: none;}
+		input{
+			width: 150px;
+			opacity: 1;
+		}
+	}
+}
 

@@ -185,4 +185,13 @@
 	(function init(){
 		animateInit();
 	})();
+
+	// 事件聚合
+	$('.search-inp .search').click(function(){
+		$('.search-inp').addClass('active');
+	})
+
+	$('.search-inp .close').click(function(){
+		$('.search-inp').removeClass('active');
+	})
 });

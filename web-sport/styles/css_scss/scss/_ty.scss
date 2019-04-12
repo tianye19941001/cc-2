@@ -577,13 +577,14 @@ $color4: rgba(119,201,57,1);
 				transform: rotate(180deg);
 			}
 			p{color:rgba(255,255,240,.7); display: none;}
+			img,table,div{display: none;}
 			&.open {
 				padding-bottom: rem(30);
 				i{transform: rotate(0deg);}
 				p{
 					display: block
 				}
-				
+				img,table,div{display: block;}
 			}
 		}
 	}
@@ -888,13 +889,93 @@ $color4: rgba(119,201,57,1);
 }
 
 // 单独添加表格部分
-.table-public{
-	word-break: break-all;
-	font-size: rem(20);
-	th{text-align: center;}
-	th > span, td > span{
-		display: block;
-		padding: rem(6);
+.table-public-warp{
+	width: 100%;
+	overflow: auto;
+	margin-bottom: rem(12);
+	.left-icons{
+		float: left;
+		width: 13%;
+		text-align: center;
+		div{
+			position: relative;
+			height: 50px;
+		}
+		span{
+			display: block;
+			width: 100%;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			font-size: rem(16);
+			white-space: nowrap;
+		}
+		strong{display: block; line-height: rem(20); white-space: normal; width: 100%}
 	}
-	tr th:first-child{  }
+	img{
+		height: rem(36);
+		width: auto !important;
+		margin: 0 auto;
+		margin-bottom: rem(6);
+	}
+	.table-public{
+		width: 87%;
+		float: left;
+		word-break: break-all;
+		font-size: rem(18);
+		line-height: rem(24);
+		border-color: #000;
+		box-sizing: border-box;
+		border-collapse: inherit;
+		border-spacing: 1px;
+		th{text-align: center;}
+		th,td{width: 50%;border: 2px solid transparent; box-sizing: border-box;}
+		th > span, td > span{
+			display: block;
+		}
+		th > span{
+			padding: 6px 0;
+		}
+		td > span{
+			padding: 6px;
+		}
+		tr th:first-child, tr td:first-child{
+			background: #eeaab3;
+		}
+		tr th:nth-child(2), tr td:nth-child(2){
+			background: #a7caff;
+		}
+		tr th:nth-child(3), tr td:nth-child(3){
+			background: #e3a2ee;
+		}
+	}
+	.tabbel-col-3 th, .tabbel-col-3 td{width: 33.33%;}	
+	.tabbel-col-2-1 {
+		th,td{width: 50%;}
+		tr th:first-child, tr td:first-child{
+			background: #b3d698;
+		}
+		tr th:nth-child(2), tr td:nth-child(2){
+			background: #e0bb96
+		}
+	}
+	.tabbel-col-2-2 {
+		th,td{width: 50%;}
+		tr th:first-child, tr td:first-child{
+			background: #a7caff;
+		}
+		tr th:nth-child(2), tr td:nth-child(2){
+			background: #d0a1ed;
+		}
+	}
+	.tabbel-col-2-3 {
+		th,td{width: 50%;}
+		tr th:first-child, tr td:first-child{
+			background: #a7caff;
+		}
+		tr th:nth-child(2), tr td:nth-child(2){
+			background: #e9a8e1;
+		}
+	}
 }
