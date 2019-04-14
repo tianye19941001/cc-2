@@ -577,14 +577,14 @@ $color4: rgba(119,201,57,1);
 				transform: rotate(180deg);
 			}
 			p{color:rgba(255,255,240,.7); display: none;}
-			img,table,div{display: none;}
+			img,table,div,h1,h2,h3,h4,h5,h6{display: none;}
 			&.open {
 				padding-bottom: rem(30);
 				i{transform: rotate(0deg);}
 				p{
 					display: block
 				}
-				img,table,div{display: block;}
+				img,table,div,h1,h2,h3,h4,h5,h6{display: block;}
 			}
 		}
 	}

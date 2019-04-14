@@ -38,7 +38,6 @@ $(document).ready(function(){
 	})
 
 	$('.table-public tr').each(function(){
-		console.log(1)
 		var index = $(this).parent().find('tr').index($(this));
 		var height = $(this).height();
 
