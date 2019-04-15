@@ -884,3 +884,24 @@ $color7: rgba(68,189,207,1);
 .mt-first{
 	margin-top: -1.333rem;
 }
+
+.new-text-bar{
+	float: right;
+	width: 11.6666666667rem;
+	position: relative;
+	height: 6.333rem;
+	margin-top: 1.333rem;
+	p{
+		position: absolute;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		padding-top: 0;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		-webkit-line-clamp: 3;  
+		-webkit-box-orient: vertical;
+		padding-top: 0 !important;
+	}
+}
