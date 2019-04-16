@@ -31,17 +31,18 @@ $(document).ready(function(){
 
 	$('.case>span').click(function(){
 		$(this).parent('.case').toggleClass('open')
+		setTimeout(function(){
+			$('.table-public tr').each(function(){
+				var index = $(this).parent().find('tr').index($(this));
+				var height = $(this).height();
+		
+				var divs = $(this).parents('.table-public-warp').find('.left-icons > div');
+				divs.eq(index).height(height+ 1)
+			})
+		},0)
 	})
 
 	$('.open-why').click(function(){
-		$(this).parent('.hide-why').toggleClass('open')
-	})
-
-	$('.table-public tr').each(function(){
-		var index = $(this).parent().find('tr').index($(this));
-		var height = $(this).height();
-
-		var divs = $(this).parents('.table-public-warp').find('.left-icons > div');
-		divs.eq(index).height(height+ 1)
+		$(this).parent('.hide-why').toggleClass('open');
 	})
 });
