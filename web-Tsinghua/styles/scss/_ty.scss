@@ -252,6 +252,19 @@ body{ background-color: #fff; font-family: "黑体"; min-width: 1300px; }
   background-size: 100% 100%;
 }
 
+.ty-more-4{
+  width:190px;
+  padding-right: 32px;
+  height:58px;
+  line-height:58px;
+  display: block;
+  font-size:21px;
+  color:rgba(255,255,255,1);
+  text-align: center;
+  background-image: url(../images/new/more.png);
+  background-size: 100% 100%;
+}
+
 .ty-bolls {
   text-align: center;
   margin-top: 27px;
@@ -889,4 +902,45 @@ body{ background-color: #fff; font-family: "黑体"; min-width: 1300px; }
       margin: 10px 0 30px;
     }
   }
+}
+.ty-guidance{
+  padding: 94px 0 134px;
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  .main{
+    padding: 55px 0 90px;
+    img{
+      display: block;
+      height:580px;
+    }
+  }
+  .top{
+    position: relative;
+  }
+  .r{
+    padding: 70px;
+    width: 404px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+    h4{
+      font-size:30px;
+      font-weight:bold;
+      color:rgba(0,0,0,1);
+      line-height:32px;
+      margin-bottom: 30px;
+    }
+    p{
+      font-size:18px;
+      color:rgba(18,18,18,1);
+      line-height:30px;
+      margin-bottom: 60px;
+    }
+  }
+}
+.main{
+
 }
