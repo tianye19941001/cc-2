@@ -42,6 +42,14 @@ $(document).ready(function(){
 		},0)
 	})
 
+	$('.table-public tr').each(function(){
+		var index = $(this).parent().find('tr').index($(this));
+		var height = $(this).height();
+
+		var divs = $(this).parents('.table-public-warp').find('.left-icons > div');
+		divs.eq(index).height(height+ 1)
+	})
+
 	$('.open-why').click(function(){
 		$(this).parent('.hide-why').toggleClass('open');
 	})
