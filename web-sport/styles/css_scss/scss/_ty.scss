@@ -914,7 +914,7 @@ $color4: rgba(119,201,57,1);
 		strong{display: block; line-height: rem(20); white-space: normal; width: 100%}
 	}
 	img{
-		height: rem(36);
+		height: rem(32);
 		width: auto !important;
 		margin: 0 auto;
 		margin-bottom: rem(6);
@@ -938,7 +938,7 @@ $color4: rgba(119,201,57,1);
 			padding: 6px 0;
 		}
 		td > span{
-			padding: 6px;
+			padding: rem(20) rem(12);
 		}
 		tr th:first-child, tr td:first-child{
 			background: #eeaab3;
