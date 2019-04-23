@@ -612,7 +612,8 @@ body {
         top: 50%;
         transform: translateY(-50%); }
     .third-main .third-why th, .third-main .third-why td {
-      padding: 0; }
+      padding: 0;
+      height: 1.7333333333rem; }
   .third-main .hide-why .open-why {
     display: block;
     text-align: center;
