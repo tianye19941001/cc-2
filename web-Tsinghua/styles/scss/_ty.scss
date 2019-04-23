@@ -6,7 +6,7 @@
 
 body {
   background-color: #fff;
-  font-family: "黑体";
+  // font-family: "黑体";
   min-width: 1300px;
 }
 
@@ -91,7 +91,7 @@ body {
 }
 
 .ty-banner {
-  height: 345px;
+  height: 355px;
   width: 100%;
   position: relative;
   overflow: hidden;
@@ -1689,4 +1689,234 @@ body {
   background: #f3f3f6;
   padding: 100px 0;
   margin-bottom: -117px;
+}
+
+// 教师
+.ty-department-list{
+  margin-top: 80px;
+  width: 1200px;
+  height:60px;
+  background:rgba(243,243,246,1);
+  border-top: 2px solid rgba(211,195,162,1);;
+  margin: 0 auto;
+
+  li{
+    float: left;
+    height: 60px;
+    line-height: 60px;
+    font-size:18px;
+    position: relative;
+    padding: 0 35px;
+    
+    a{color:rgba(6,52,86,1); transition: all .3s;}
+    &:after{
+      content: '';
+      display: block;
+      position: absolute;
+      width: 80%;
+      height: 4px;
+      background:rgba(184,154,116,1);
+      bottom: 100%;
+      left: 50%;
+      margin-left: -40%;
+      opacity: 0;
+      transition: all .3s;
+    }
+    &.active,&:hover{
+      a{color: #B89A74}
+      &::after{
+        bottom: 0;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.ty-techers-list{
+  .ty-title{
+    padding: 85px 0 45px;
+  }
+
+  .ty-teachers{
+    width: 1200px;
+    margin: 0 auto;
+    border-bottom: 1px solid #ddd;
+    &:last-child{border-bottom: 0;}
+    .list{
+      width: 1234px;
+      margin-left: -34px;
+      position: relative;
+      @extend .clearfix;
+
+      .teacher {
+        float: left;
+        width: 274px;
+        margin-left: 34px;
+        position: relative;
+        padding-bottom: 26px;
+        margin-bottom: 70px;
+      }
+
+      .img, img{
+        width:139px;
+        height:186px;
+        display: block;
+        position: relative;
+        z-index: 2;
+      }
+
+      .bar{
+        position: absolute;
+        right: 0;
+        top: 26px;
+        width:96px;
+        padding: 0 32px;
+        height:199px;
+        background:rgba(243,243,246,1);
+      }
+
+      h3{
+        font-size:18px;
+        font-weight:bold;
+        color:rgba(6,52,86,1);
+        padding: 20px 0 10px;
+      }
+      p{
+        font-size:12px;
+        color:rgba(151,151,151,1);
+        line-height:18px;
+        margin-bottom: 20px;
+        @extend .four_cut;
+      }
+      .ty-more-1{
+        display: block;
+        font-size: 13px;
+        text-align: right;
+      }
+    }
+  }
+  .quit-teacher{
+    font-size:30px;
+    font-weight:bold;
+    color:rgba(0,0,0,1);
+    padding: 30px 0 20px;
+    
+  }
+}
+
+// 招生
+.ty-zs{
+  text-align: right;
+  min-width: 1300px;
+  overflow: hidden;
+  margin-bottom: 100px;
+  .ty-title{
+    padding: 80px 0 60px;
+  }
+  .bg{
+    width:1364px;
+    height:660px;
+  }
+
+  .in{
+    position: absolute;
+    left: 0;
+    bottom: 100px;
+    width: 320px;
+    padding: 70px 160px 100px 100px;
+    text-align: left;
+    background: #fff;
+  }
+
+  h3{
+    font-size:30px;
+    font-weight:bold;
+    color:rgba(0,0,0,1);
+    line-height:32px;
+    margin-bottom: 40px;
+  }
+
+  li{
+    font-size:18px;
+    font-weight:400;
+    color:rgba(18,18,18,1);
+    line-height:24px;
+    margin-bottom: 24px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+
+  .sp{
+    @extend .clearfix;
+    em{
+      float: left;
+      height: 48px;
+      line-height: 48px;
+    }
+    span{
+      float: left;
+    }
+  }
+
+  em{
+    font-size:30px;
+    font-family:Roboto-LightItalic;
+    font-weight:normal;
+    color:rgba(6,52,86,1);
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 32px;
+    font-style: italic;
+  }
+  .strong{
+    em{font-weight: bold;}
+    font-weight: bold;
+  }
+  .ty-more-4{
+    position: absolute;
+    text-align: center;
+    bottom: -29px;
+    left: 100px;
+  }
+}
+
+.ty-bk{
+  width: 1200px;
+  margin:  0 auto;
+  h3{
+    font-size:30px;
+    font-weight:bold;
+    color:rgba(0,0,0,1);
+    line-height:32px;
+    margin-bottom: 56px;
+  }
+
+  ul{
+    @extend .clearfix;
+  }
+
+  li{
+    float: left;
+    width: 240px;
+    height: 414px;
+    position: relative;
+  }
+
+  img{
+    width:236px;
+    height:236px;
+    display: block;
+  }
+
+  .in{
+    width:236px;
+    height:178px;
+    line-height: 178px;
+    font-size:24px;
+    color:rgba(255,255,255,1);
+    line-height:178px;
+    background: #3E8F9C;
+    text-align: center;
+  }
 }
