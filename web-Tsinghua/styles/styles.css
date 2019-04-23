@@ -161,8 +161,8 @@ a:active {
 @font-face {
   font-family: 'iconfont';
   /* project id 994519 */
-  src: url("//at.alicdn.com/t/font_994519_4gh0qitneei.eot");
-  src: url("//at.alicdn.com/t/font_994519_4gh0qitneei.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_994519_4gh0qitneei.woff2") format("woff2"), url("//at.alicdn.com/t/font_994519_4gh0qitneei.woff") format("woff"), url("//at.alicdn.com/t/font_994519_4gh0qitneei.ttf") format("truetype"), url("//at.alicdn.com/t/font_994519_4gh0qitneei.svg#iconfont") format("svg"); }
+  src: url("//at.alicdn.com/t/font_994519_g0sqmhmuwhq.eot");
+  src: url("//at.alicdn.com/t/font_994519_g0sqmhmuwhq.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_994519_g0sqmhmuwhq.woff2") format("woff2"), url("//at.alicdn.com/t/font_994519_g0sqmhmuwhq.woff") format("woff"), url("//at.alicdn.com/t/font_994519_g0sqmhmuwhq.ttf") format("truetype"), url("//at.alicdn.com/t/font_994519_g0sqmhmuwhq.svg#iconfont") format("svg"); }
 .content, .title, .newList, .ts-tit, .school_life_list, .school_life_content, .student_life, footer {
   opacity: 1;
   transition: all .5s;
@@ -365,7 +365,7 @@ span {
   outline: none; }
 
 /*多行溢出*/
-.one_cut, .ty-ugd-set .zy h3, .ty-ugd-programme .ugd-in .ty-pro-list li, .ty-ugd-course .ugd-in li {
+.one_cut, .ty-ugd-set .zy h3, .ty-ugd-programme .ugd-in .ty-pro-list li, .ty-ugd-course .ugd-in li, .ty-download .in .name {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis; }
@@ -398,6 +398,13 @@ span {
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical; }
+
+.eight_cut {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 8;
   -webkit-box-orient: vertical; }
 
 .container {
@@ -596,6 +603,7 @@ span {
 
 .content {
   margin-top: 66px;
+  padding-top: 10px;
   height: 276px; }
   .content .content_left {
     width: 380px;
@@ -608,21 +616,22 @@ span {
       box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5); }
     .content .content_left:last-child {
       margin-right: 0; }
-    .content .content_left .top span:first-child {
-      display: inline-block;
-      width: 48px;
-      height: 20px;
-      background-image: url(../images/icon.png);
-      margin-top: 33px; }
-    .content .content_left .top span:last-child {
-      width: 264px;
-      height: 23px;
-      font-size: 24px;
-      color: #063456;
-      line-height: 30px;
-      margin-top: 31px; }
+    .content .content_left .top {
+      width: 301px;
+      margin: 0 auto;
+      margin-top: 30px; }
+      .content .content_left .top span:first-child {
+        position: absolute; }
+      .content .content_left .top span:last-child {
+        width: 264px;
+        height: 23px;
+        font-size: 24px;
+        color: #063456;
+        line-height: 30px;
+        margin-top: 31px;
+        font-weight: bold; }
     .content .content_left .center {
-      margin-top: 48px;
+      margin-top: 28px;
       margin-left: 35px;
       width: 301px;
       font-size: 12px;
@@ -697,9 +706,9 @@ span {
       position: relative;
       z-index: 3; }
     .new .new-item .span {
-      padding: 0 365px 0 43px;
+      padding: 20px 365px 0 43px;
       margin-top: 19px;
-      height: 171px;
+      height: 210px;
       position: relative;
       z-index: 3; }
       .new .new-item .span p {
@@ -729,7 +738,7 @@ span {
       color: #063456; }
     .newList .newText .left {
       width: 56px;
-      height: 100%;
+      height: 135px;
       background: url(../images/new_bg2.png) no-repeat top left;
       padding-right: 24px;
       margin-top: 5px;
@@ -2396,7 +2405,8 @@ body {
       position: relative;
       padding-bottom: 26px;
       margin-bottom: 70px; }
-    .ty-techers-list .ty-teachers .list .img, .ty-techers-list .ty-teachers .list img {
+    .ty-techers-list .ty-teachers .list .img,
+    .ty-techers-list .ty-teachers .list img {
       width: 139px;
       height: 186px;
       display: block;
@@ -2489,6 +2499,7 @@ body {
 
 .ty-bk {
   width: 1200px;
+  padding-bottom: 120px;
   margin: 0 auto; }
   .ty-bk h3 {
     font-size: 30px;
@@ -2496,15 +2507,45 @@ body {
     color: black;
     line-height: 32px;
     margin-bottom: 56px; }
+  .ty-bk img {
+    width: 236px;
+    height: 236px;
+    display: block;
+    position: relative;
+    z-index: 1; }
   .ty-bk li {
     float: left;
     width: 240px;
     height: 414px;
     position: relative; }
-  .ty-bk img {
-    width: 236px;
-    height: 236px;
-    display: block; }
+    .ty-bk li:nth-child(2n) img {
+      position: absolute;
+      bottom: 0;
+      left: 0; }
+    .ty-bk li:nth-child(2n) .in {
+      position: absolute;
+      top: 0;
+      left: 0; }
+      .ty-bk li:nth-child(2n) .in:after {
+        top: auto;
+        bottom: -23px;
+        transform: rotate(180deg); }
+    .ty-bk li:nth-child(2) .in {
+      background: #D29C78; }
+    .ty-bk li:nth-child(2) .in:after {
+      border-color: transparent  transparent #D29C78  transparent; }
+    .ty-bk li:nth-child(3) .in {
+      background: #3C5473; }
+    .ty-bk li:nth-child(3) .in:after {
+      border-color: transparent  transparent #3C5473  transparent; }
+    .ty-bk li:nth-child(4) .in {
+      background: #6379C6; }
+    .ty-bk li:nth-child(4) .in:after {
+      border-color: transparent  transparent #6379C6  transparent; }
+    .ty-bk li:nth-child(5) .in {
+      background: #ACAEAB; }
+    .ty-bk li:nth-child(5) .in:after {
+      border-color: transparent  transparent #ACAEAB  transparent; }
   .ty-bk .in {
     width: 236px;
     height: 178px;
@@ -2513,7 +2554,80 @@ body {
     color: white;
     line-height: 178px;
     background: #3E8F9C;
-    text-align: center; }
+    text-align: center;
+    position: relative;
+    z-index: 2; }
+    .ty-bk .in:after {
+      content: '';
+      position: absolute;
+      display: block;
+      top: -23px;
+      float: left;
+      width: 0;
+      height: 0;
+      border-width: 13px;
+      border-style: solid;
+      left: 50%;
+      margin-left: -13px;
+      border-color: transparent  transparent #3E8F9C  transparent; }
+  .ty-bk .ty-more-3 {
+    display: block;
+    margin: 44px auto 0; }
+
+.ty-download {
+  background: #f3f3f6;
+  padding: 84px 0 204px;
+  margin-bottom: -117px; }
+  .ty-download .warp {
+    width: 1260px;
+    margin: 0 auto;
+    margin-top: 52px;
+    position: relative; }
+  .ty-download .img, .ty-download img {
+    width: 664px;
+    height: 476px;
+    display: block; }
+  .ty-download .in {
+    position: absolute;
+    top: 64px;
+    right: 0;
+    background: #fff;
+    padding: 60px 80px;
+    width: 500px;
+    line-height: 80px; }
+    .ty-download .in li {
+      font-size: 18px;
+      height: 80px;
+      color: black;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.15); }
+    .ty-download .in .time {
+      font-size: 18px;
+      color: rgba(0, 0, 0, 0.7);
+      font-style: italic;
+      margin-right: 40px; }
+    .ty-download .in .name {
+      display: inline-block;
+      height: 100%;
+      vertical-align: top;
+      width: 270px; }
+    .ty-download .in .download {
+      float: right;
+      width: 35px;
+      height: 35px;
+      line-height: 35px;
+      text-align: center;
+      margin-top: 22.5px;
+      display: block;
+      background: #C6C6C6;
+      color: #fff;
+      font-size: 24px;
+      transition: all .3s; }
+      .ty-download .in .download:hover {
+        background: #063456; }
+  .ty-download .ty-more-4 {
+    position: absolute;
+    left: 80px;
+    bottom: -29px; }
 
 .phone {
   display: none; }
