@@ -1694,6 +1694,216 @@ body {
   padding: 100px 0;
   margin-bottom: -117px;
 }
+.map{
+  width:1285px;
+  height:718px;
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 50px;
+
+  .map-img{
+    width:1285px;
+    height:718px;
+    display: block;
+  }
+
+  .student{
+    position: absolute;
+    display: block;
+    overflow: hidden;
+    width:173px;
+    height:173px;
+    border-radius:50%;
+    border: 2px solid #fff;
+    z-index: 3;
+  }
+  .st1{
+    top: 33px;
+    left: 283px;
+  }
+  .st2{
+    top: 207px;
+    left: 427px;
+  }
+  .st3{
+    top: 87px;
+    left: 727px;
+  }
+  .st4{
+    top: 256px;
+    left: 824px;
+  }
+
+  .points{
+    i:nth-child(1){
+      width:92px;
+      height:92px;
+      top: 201px;
+      left: 131px;
+      @extend .point-style-1;
+    }
+    i:nth-child(2){
+      width:51px;
+      height:51px;
+      top: 261px;
+      left: 180px;
+      @extend .point-style-2;
+    }
+    i:nth-child(3){
+      width:45px;
+      height:45px;
+      top: 217px;
+      left: 228px;
+      @extend .point-style-3;
+    }
+    i:nth-child(4){
+      width:30px;
+      height:30px;
+      top: 282px;
+      left: 261px;
+      @extend .point-style-2;
+    }
+    i:nth-child(4){
+      width:92px;
+      height:92px;
+      top: 155px;
+      left: 277px;
+      @extend .point-style-2;
+    }
+    i:nth-child(5){
+      width:42px;
+      height:42px;
+      top: 235px;
+      left: 292px;
+      @extend .point-style-1;
+    }
+    i:nth-child(6){
+      width:66px;
+      height:66px;
+      top: 248px;
+      left: 313px;
+      @extend .point-style-3;
+    }
+    i:nth-child(6){
+      width:24px;
+      height:24px;
+      top: 252px;
+      left: 366px;
+      @extend .point-style-4;
+    }
+    i:nth-child(7){
+      width:92px;
+      height:92px;
+      top: 212px;
+      left: 575px;
+      @extend .point-style-2;
+    }
+    i:nth-child(7){
+      width:66px;
+      height:66px;
+      top: 248px;
+      left: 313px;
+      @extend .point-style-3;
+    }
+    i:nth-child(8){
+      width:92px;
+      height:92px;
+      top: 212px;
+      left: 575px;
+      @extend .point-style-2;
+    }
+
+    i:nth-child(9){
+      width:42px;
+      height:42px;
+      top: 190px;
+      left: 629px;
+      @extend .point-style-1;
+    }
+
+    i:nth-child(10){
+      width:66px;
+      height:66px;
+      top: 232px;
+      left: 689px;
+      @extend .point-style-3;
+    }
+    i:nth-child(11){
+      width:92px;
+      height:92px;
+      top: 187px;
+      left: 976px;
+      @extend .point-style-1;
+    }
+    i:nth-child(12){
+      width:70px;
+      height:70px;
+      top: 270px;
+      left: 1041px;
+      @extend .point-style-2;
+    }
+
+    i:nth-child(12){
+      width:66px;
+      height:66px;
+      top: 332px;
+      left: 980px;
+      @extend .point-style-3;
+    }
+    i:nth-child(13){
+      width:21px;
+      height:21px;
+      top: 432px;
+      left: 995px;
+      @extend .point-style-4;
+    }
+    i:nth-child(14){
+      width:45px;
+      height:45px;
+      top: 446px;
+      left: 1052px;
+      @extend .point-style-3;
+    }
+    i:nth-child(15){
+      width:42px;
+      height:42px;
+      top: 520px;
+      left: 1076px;
+      @extend .point-style-1;
+    }
+  }
+  .ty-more-3{display: block; margin: -20px auto 0;}
+}
+
+.point-style-1{
+  position: absolute;
+  background:rgba(204,0,0,1);
+  border:1px solid rgba(243,242,247,1);
+  opacity:0.51;
+  border-radius:50%;
+}
+.point-style-2{
+  position: absolute;
+  background:rgba(185,154,117,1);
+  border:1px solid rgba(243,242,247,1);
+  opacity:0.74;
+  border-radius:50%;
+}
+.point-style-3{
+  position: absolute;
+  background:rgba(147,174,185,1);
+  border:1px solid rgba(243,242,247,1);
+  opacity:0.73;
+  border-radius:50%;
+}
+.point-style-4{
+  position: absolute;
+  background:rgba(204,0,0,1);
+  border:1px solid rgba(243,242,247,1);
+  opacity:0.74;
+  border-radius:50%;
+}
+
 
 // 教师
 .ty-department-list {
