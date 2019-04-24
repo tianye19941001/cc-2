@@ -88,6 +88,13 @@
 		}
 	})
 
+	// 报告切换
+	$('.report-list .tab>span').click(function(){
+		var index = $('.report-list .tab>span').index($(this));
+		$('.report-list .tab>span').removeClass('active').eq(index).addClass('active');
+		$('.report-list .reports>div').removeClass('active').eq(index).addClass('active');
+	})
+
 	// 滚动到指定元素
 	function movescroll(to) {
 		$('html,body').animate({scrollTop: $(to).offset().top-60},600);

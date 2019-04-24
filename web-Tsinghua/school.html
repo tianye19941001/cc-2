@@ -145,8 +145,8 @@
 	<div class="ty-association">
 		<h3 class="ty-title"><i class="prev-icon"></i>专业协会<i class="next-icon"></i></h3>
 		<div class="association-swiper">
-			<div class="association-con">
-				<div class="association">
+			<div class="association-con swiper-wrapper">
+				<div class="association swiper-slide">
 					<div class="img"><img src="./images/new/school-item.png" alt=""></div>
 					<div class="in">
 						<h4>清华大学金融协会</h4>
@@ -156,7 +156,7 @@
 						<a class="ty-more" href="">查看更多 ></a>
 					</div>
 				</div>
-				<div class="association">
+				<div class="association swiper-slide">
 						<img src="./images/new/school-item2.png" alt="">
 					<div class="in">
 						<h4>清华大学金融协会</h4>
@@ -166,7 +166,7 @@
 						<a class="ty-more" href="">查看更多 ></a>
 					</div>
 				</div>
-				<!-- <div class="association">
+				<div class="association swiper-slide">
 						<img src="./images/new/school-item.png" alt="">
 					<div class="in">
 						<h4>清华大学金融协会</h4>
@@ -175,9 +175,9 @@
 						</p>
 						<a class="ty-more" href="">查看更多 ></a>
 					</div>
-				</div> -->
+				</div>
 			</div>
-			<p class="bolls"></p>
+			<p class="ty-bolls"></p>
 		</div>
 	</div>
 
@@ -209,19 +209,24 @@
 	<script src="./js/swiper.min.js"></script>
 	<script src="js/app.js"></script>
 	<script>
-		var swiperStudent = new Swiper('.student-swiper-container', {
+		var swiperAssociation = new Swiper('.association-swiper', {
+			slidesPerView: '2',
+			spaceBetween: 74,
 			pagination: {
-				el: '.student-boll',
+				el: '.ty-association .ty-bolls',
 				clickable: true,
 			},
-			slidesPerView: 'auto',
 			grabCursor: true,
+			speed: 1000,
 			paginationClickable: true,
 			autoplay: {
-				delay: 30000
+				delay: 3000
 			},
-			slidesPerView: '3',
-			loop: true,
+			navigation: {
+				nextEl: '.ty-association .next-icon',
+				prevEl: '.ty-association .prev-icon',
+			},
+			loop: true
 		});
 	</script>
 </body>
