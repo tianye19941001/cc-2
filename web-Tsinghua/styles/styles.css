@@ -163,42 +163,49 @@ a:active {
   /* project id 994519 */
   src: url("//at.alicdn.com/t/font_994519_5k3uesp5uu3.eot");
   src: url("//at.alicdn.com/t/font_994519_5k3uesp5uu3.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_994519_5k3uesp5uu3.woff2") format("woff2"), url("//at.alicdn.com/t/font_994519_5k3uesp5uu3.woff") format("woff"), url("//at.alicdn.com/t/font_994519_5k3uesp5uu3.ttf") format("truetype"), url("//at.alicdn.com/t/font_994519_5k3uesp5uu3.svg#iconfont") format("svg"); }
-.content, .title, .newList, .ts-tit, .school_life_list, .school_life_content, .student_life, footer {
+.content, .title, .newList, .ts-tit, .school_life_list, .school_life_content, .student_life, footer, .ty-title, .project, .ty-more, .ty-more-1, .ty-more-2, .ty-more-3, .ty-more-4, .ty-banner h2, .nav-list, .points i, .map .student, .dean-img, .dean-say, .ty-general .in, .ty-training .in, .ty-connect img, .ty-connect p, .ty-guidance img, .ty-guidance .r, .ty-recruit, .ty-vocation, .ty-how-connect, .report-in .left, .report-in .right, .report-list, .ty-new-list a, .new-main p, .new-main img, .left-bar .time, .left-bar .share, .ty-new-list2 .list a, .ty-new-list3 .list a, .ty-zs img, .ty-zs .in, .ty-bk img, .ty-bk .in, .ty-download img, .ty-download .in, .ty-sport img, .ty-sport .in, .ty-department-list, .teacher, .set-in .img, .set-in .zy, .ty-ugd-programme img, .ty-pro-list, .ty-ugd-course img {
   opacity: 1;
   transition: all .5s;
   visibility: hidden; }
 
 body .an_toTop {
-  opacity: 1;
-  visibility: visible;
+  opacity: 1 !important;
+  visibility: visible !important;
   animation: toTop 0.5s linear 0s;
   animation-fill-mode: both;
   -webkit-animation-fill-mode: both; }
 
 body .an_toBottom {
-  opacity: 1;
-  visibility: visible;
+  opacity: 1 !important;
+  visibility: visible !important;
   animation: toBottom 0.5s linear 0s;
   animation-fill-mode: both;
   -webkit-animation-fill-mode: both; }
 
 body .an_show {
-  opacity: 1;
-  visibility: visible;
+  opacity: 1 !important;
+  visibility: visible !important;
   animation: show 0.7s linear 0s;
   animation-fill-mode: both;
   -webkit-animation-fill-mode: both; }
 
+body .an_toBig {
+  opacity: 1 !important;
+  visibility: visible !important;
+  animation: big 0.7s linear 0s;
+  animation-fill-mode: both;
+  -webkit-animation-fill-mode: both; }
+
 body .an_toRight {
-  opacity: 1;
-  visibility: visible;
+  opacity: 1 !important;
+  visibility: visible !important;
   animation: toRight 0.5s linear 0s;
   animation-fill-mode: both;
   -webkit-animation-fill-mode: both; }
 
 body .an_toLeft {
-  opacity: 1;
-  visibility: visible;
+  opacity: 1 !important;
+  visibility: visible !important;
   animation: toLeft 0.5s linear 0s;
   animation-fill-mode: both;
   -webkit-animation-fill-mode: both; }
@@ -356,6 +363,13 @@ body .an_toLeft {
     opacity: 0; }
   100% {
     opacity: 1; } }
+@keyframes big {
+  0% {
+    opacity: 0;
+    transform: scale(0.7); }
+  100% {
+    opacity: 1;
+    transform: scale(1); } }
 body {
   width: 100%;
   min-width: 1260px;
@@ -1320,7 +1334,7 @@ body .swiper-container-horizontal > .swiper-pagination-bullets .swiper-paginatio
       margin-right: 20px;
       font-size: 21px;
       color: #3f3f3f; }
-      .list-nums .nums a.active {
+      .list-nums .nums a:hover, .list-nums .nums a.active {
         color: #AB8455;
         font-weight: bold; }
       .list-nums .nums a:last-child {
@@ -1468,7 +1482,12 @@ body .swiper-container-horizontal > .swiper-pagination-bullets .swiper-paginatio
       height: 359px;
       padding: 60px 50px 0;
       background: white;
-      float: left; }
+      float: left;
+      transition: all .3s; }
+      .ty-products .ty-products-con .product:hover {
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); }
+        .ty-products .ty-products-con .product:hover h4 {
+          font-weight: bold; }
       .ty-products .ty-products-con .product h4 {
         font-size: 24px;
         color: #063456;
@@ -1480,7 +1499,8 @@ body .swiper-container-horizontal > .swiper-pagination-bullets .swiper-paginatio
         text-overflow: ellipsis;
         text-align: left;
         position: relative;
-        margin-bottom: 28px; }
+        margin-bottom: 28px;
+        transition: all .3s; }
         .ty-products .ty-products-con .product h4:before {
           content: '';
           display: block;
@@ -1752,6 +1772,8 @@ body .swiper-container-horizontal > .swiper-pagination-bullets .swiper-paginatio
   left: 0; }
   .ty-crumbs a {
     color: #063456; }
+    .ty-crumbs a:hover {
+      font-weight: bold; }
     .ty-crumbs a:after {
       content: '';
       display: inline-block;
@@ -1919,7 +1941,10 @@ body .swiper-container-horizontal > .swiper-pagination-bullets .swiper-paginatio
         background: #ccc;
         color: #fff;
         font-size: 25px;
-        text-align: center; }
+        text-align: center;
+        transition: all .3s; }
+        .ty-new-detial .left-bar .share a:hover {
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); }
   .ty-new-detial .new-main {
     float: left;
     width: 1028px;
@@ -1961,8 +1986,8 @@ body .swiper-container-horizontal > .swiper-pagination-bullets .swiper-paginatio
     position: absolute;
     right: 0;
     top: 50%;
-    transform: translateY(-50%);
-    background: #fff; }
+    background: #fff;
+    margin-top: -220px; }
     .ty-guidance .r h4 {
       font-size: 30px;
       font-weight: bold;
@@ -2013,11 +2038,16 @@ body .swiper-container-horizontal > .swiper-pagination-bullets .swiper-paginatio
     color: #121212; }
   .ty-recruit a,
   .ty-vocation a {
+    transition: all .3s;
     color: #121212; }
     .ty-recruit a span,
     .ty-vocation a span {
       color: #063456;
       margin-right: 10px; }
+    .ty-recruit a:hover,
+    .ty-vocation a:hover {
+      color: #063456;
+      font-weight: bold; }
 
 .ty-how-connect {
   border-left: 1px solid #ddd;
@@ -2179,6 +2209,8 @@ body .swiper-container-horizontal > .swiper-pagination-bullets .swiper-paginatio
       margin-right: 10px;
       background-image: url(../images/new/download2.png);
       background-size: 100% 100%; }
+    .ty-report .download:hover {
+      font-weight: bold; }
 
 .ty-practice .img {
   width: 352px;
@@ -2245,7 +2277,11 @@ body .swiper-container-horizontal > .swiper-pagination-bullets .swiper-paginatio
       height: 84px;
       overflow: hidden;
       text-overflow: ellipsis;
-      border-bottom: 1px solid rgba(0, 0, 0, 0.15); }
+      border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+      transition: all .3s; }
+      .ty-sport .main .item:hover {
+        font-weight: bold;
+        color: #063456; }
     .ty-sport .main .time {
       font-size: 18px;
       color: black;
@@ -2271,6 +2307,8 @@ body .swiper-container-horizontal > .swiper-pagination-bullets .swiper-paginatio
       width: 562px;
       height: 374px;
       display: block; }
+    .ty-association .association:hover .in {
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); }
     .ty-association .association .in {
       width: 315px;
       height: 360px;
@@ -2278,7 +2316,8 @@ body .swiper-container-horizontal > .swiper-pagination-bullets .swiper-paginatio
       background: white;
       margin: -180px auto 0;
       position: relative;
-      z-index: 3; }
+      z-index: 3;
+      transition: all .3s; }
       .ty-association .association .in h4 {
         font-size: 24px;
         font-weight: bold;
@@ -2308,11 +2347,19 @@ body .swiper-container-horizontal > .swiper-pagination-bullets .swiper-paginatio
     width: 364px;
     margin-left: 56px;
     float: left; }
+    .ty-ugd-set .zy:hover img {
+      transform: scale(1.1); }
+    .ty-ugd-set .zy:hover .img {
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); }
+    .ty-ugd-set .zy:hover h3 {
+      font-weight: bold; }
     .ty-ugd-set .zy .img,
     .ty-ugd-set .zy img {
       width: 364px;
       height: 240px;
-      display: block; }
+      display: block;
+      overflow: hidden;
+      transition: all .3s; }
     .ty-ugd-set .zy h3 {
       font-size: 24px;
       color: #063456;
@@ -2351,6 +2398,12 @@ body .swiper-container-horizontal > .swiper-pagination-bullets .swiper-paginatio
       margin: -132px auto 0;
       position: relative;
       z-index: 3; }
+      .ty-ugd-programme .ugd-in .ty-pro-list a {
+        transition: all .3s; }
+        .ty-ugd-programme .ugd-in .ty-pro-list a:hover {
+          font-size: 19px;
+          font-weight: bold;
+          color: #063456; }
       .ty-ugd-programme .ugd-in .ty-pro-list li {
         height: 70px;
         line-height: 70px;
@@ -2390,6 +2443,12 @@ body .swiper-container-horizontal > .swiper-pagination-bullets .swiper-paginatio
       line-height: 70px;
       font-size: 18px;
       border-bottom: 1px solid rgba(0, 0, 0, 0.15); }
+      .ty-ugd-course .ugd-in li a {
+        transition: all .3s; }
+        .ty-ugd-course .ugd-in li a:hover {
+          font-size: 19px;
+          font-weight: bold;
+          color: #063456; }
       .ty-ugd-course .ugd-in li .time {
         font-size: 18px;
         color: black;
@@ -2411,19 +2470,26 @@ body .swiper-container-horizontal > .swiper-pagination-bullets .swiper-paginatio
     margin-left: 74px;
     width: 562px;
     float: left; }
+    .ty-cooperation .project:hover .img img {
+      transform: scale(1.1); }
+    .ty-cooperation .project:hover .in {
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); }
     .ty-cooperation .project .img,
     .ty-cooperation .project img {
       width: 562px;
       height: 374px;
-      display: block; }
+      display: block;
+      transition: all .3s;
+      overflow: hidden; }
     .ty-cooperation .project .in {
       width: 315px;
-      height: 360px;
+      height: 330px;
       padding: 0 40px;
       background: white;
-      margin: -180px auto 0;
+      margin: -180px auto 30px;
       position: relative;
-      z-index: 3; }
+      z-index: 3;
+      transition: all .3s; }
       .ty-cooperation .project .in h4 {
         font-size: 24px;
         font-weight: bold;
@@ -2467,6 +2533,13 @@ body .swiper-container-horizontal > .swiper-pagination-bullets .swiper-paginatio
     border-radius: 50%;
     border: 2px solid #fff;
     z-index: 3; }
+    .map .student img {
+      width: 173px;
+      height: 173px;
+      display: block;
+      transition: all .3s; }
+    .map .student:hover img {
+      transform: scale(1.1); }
   .map .st1 {
     top: 33px;
     left: 283px; }
@@ -2580,30 +2653,26 @@ body .swiper-container-horizontal > .swiper-pagination-bullets .swiper-paginatio
 
 .point-style-1, .map .points i:nth-child(1), .map .points i:nth-child(5), .map .points i:nth-child(9), .map .points i:nth-child(11), .map .points i:nth-child(15) {
   position: absolute;
-  background: #cc0000;
+  background: rgba(204, 0, 0, 0.51);
   border: 1px solid #f3f2f7;
-  opacity: 0.51;
   border-radius: 50%; }
 
 .point-style-2, .map .points i:nth-child(2), .map .points i:nth-child(4), .map .points i:nth-child(7), .map .points i:nth-child(8), .map .points i:nth-child(12) {
   position: absolute;
-  background: #b99a75;
+  background: rgba(185, 154, 117, 0.74);
   border: 1px solid #f3f2f7;
-  opacity: 0.74;
   border-radius: 50%; }
 
 .point-style-3, .map .points i:nth-child(3), .map .points i:nth-child(6), .map .points i:nth-child(7), .map .points i:nth-child(10), .map .points i:nth-child(12), .map .points i:nth-child(14) {
   position: absolute;
-  background: #93aeb9;
+  background: rgba(147, 174, 185, 0.73);
   border: 1px solid #f3f2f7;
-  opacity: 0.73;
   border-radius: 50%; }
 
 .point-style-4, .map .points i:nth-child(6), .map .points i:nth-child(13) {
   position: absolute;
-  background: #cc0000;
+  background: rgba(204, 0, 0, 0.74);
   border: 1px solid #f3f2f7;
-  opacity: 0.74;
   border-radius: 50%; }
 
 .ty-department-list {
@@ -2659,13 +2728,21 @@ body .swiper-container-horizontal > .swiper-pagination-bullets .swiper-paginatio
       position: relative;
       padding-bottom: 26px;
       margin-bottom: 70px; }
+      .ty-techers-list .ty-teachers .list .teacher:hover img {
+        transform: scale(1.1); }
+      .ty-techers-list .ty-teachers .list .teacher:hover .img {
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.7); }
+      .ty-techers-list .ty-teachers .list .teacher:hover .ty-more-1 {
+        font-size: 14px; }
     .ty-techers-list .ty-teachers .list .img,
     .ty-techers-list .ty-teachers .list img {
       width: 139px;
       height: 186px;
       display: block;
       position: relative;
-      z-index: 2; }
+      z-index: 2;
+      overflow: hidden;
+      transition: all .3s; }
     .ty-techers-list .ty-teachers .list .bar {
       position: absolute;
       right: 0;
@@ -2766,7 +2843,8 @@ body .swiper-container-horizontal > .swiper-pagination-bullets .swiper-paginatio
     height: 236px;
     display: block;
     position: relative;
-    z-index: 1; }
+    z-index: 1;
+    transition: all .3s; }
   .ty-bk li {
     float: left;
     width: 240px;
@@ -2841,7 +2919,8 @@ body .swiper-container-horizontal > .swiper-pagination-bullets .swiper-paginatio
   .ty-download img {
     width: 664px;
     height: 476px;
-    display: block; }
+    display: block;
+    overflow: hidden; }
   .ty-download .in {
     position: absolute;
     top: 64px;

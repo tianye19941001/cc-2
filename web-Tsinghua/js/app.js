@@ -92,13 +92,18 @@
 	$('.report-list .tab>span').click(function(){
 		var index = $('.report-list .tab>span').index($(this));
 		$('.report-list .tab>span').removeClass('active').eq(index).addClass('active');
-		$('.report-list .reports>div').removeClass('active').eq(index).addClass('active');
+		$('.report-list .reports>div').removeClass('active').hide().eq(index).addClass('active').fadeIn(500);
 	})
 
 	// 滚动到指定元素
 	function movescroll(to) {
 		$('html,body').animate({scrollTop: $(to).offset().top-60},600);
 	}
+
+	$('.nav-list span').click(function(){
+		var toDom = $(this).data('to');
+		movescroll('.' + toDom);
+	})
 	
 	if (document.body.clientWidth >= 1024) {
 		var swiperNews = new Swiper('.news-swiper-container', {
@@ -175,14 +180,16 @@
 
 	// 动画
 	function animateInit(){
-		var toTop = '.content,.student_life,footer';
-		var toLeft = '.title,.ts-tit,.school_life_content';
-		var toRight = '.newList,.school_life_list';
-		var toBottom = '.e';
+		var toTop = '.content,.student_life,footer,.ty-title,.ty-projects .project, .map .student,.ty-general .in,.report-list,.ty-new-list a,.new-main p,.new-main img,.ty-bk img,.ty-department-list,.set-in .zy';
+		var toLeft = '.title,.ts-tit,.school_life_content,.nav-list,.dean-say,.ty-training .in,.ty-connect p,.ty-guidance .r,.ty-recruit,.ty-vocation,.report-in .right,.ty-new-list2 .list a,.ty-new-list3 .list a,.ty-zs img,.ty-download img,.ty-sport .in,.ty-ugd-programme img';
+		var toRight = '.newList,.school_life_list,.ty-more,.ty-more-1,.ty-more-2,.ty-more-3,.ty-more-4,.ty-banner h2,.dean-img,.ty-guidance img,.report-in .left,.left-bar .time,.left-bar .share,.ty-zs .in,.ty-download .in,.ty-sport img,.set-in .img,.ty-pro-list';
+		var toBottom = '.e,.ty-connect img';
+		var toBig = '.points i,.ty-how-connect,.ty-bk .in,.teacher,.ty-ugd-course img';
 		addAnimate($(toTop),'an_toTop');
 		addAnimate($(toLeft),'an_toLeft');
 		addAnimate($(toRight),'an_toRight');
 		addAnimate($(toBottom),'an_toBottom');
+		addAnimate($(toBig),'an_toBig');
 	}
 
 	$(window).scroll(function() {
