@@ -229,11 +229,7 @@
 
         .top {
           span:first-child {
-            display: inline-block;
-            width: rem(48);
-            height: rem(20);
-            margin-top: rem(32);
-            background-size: 100% 100%;
+            display: none;
           }
 
           span:last-child {
@@ -242,6 +238,9 @@
             font-size: rem(24);
             line-height: rem(30);
             margin-top: rem(30);
+            text-align: center;
+            display: block;
+            padding-top: rem(12);
           }
         }
 
@@ -301,7 +300,8 @@
         .span {
           padding: 0 rem(365) 0 rem(43);
           margin-top: rem(19);
-          height: rem(171);
+          line-height: rem(28);
+          height: rem(28*8);
 
           p {
             font-size: rem(16);
@@ -329,7 +329,7 @@
     }
 
     .boll {
-      margin-top: rem(30);
+      margin-top: rem(10);
 
       span {
         width: rem(12);
@@ -764,4 +764,663 @@
       }
     }
   }
+
+  // 公共
+  .container-2 {
+    width: 100%;
+  }
+
+  .ty-banner {
+    height: rem(150);
+
+    img {
+      position: absolute;
+      height: 100%;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    h2 {
+      width: rem(337/1.5);
+      height: rem(74/1.5);
+      line-height: rem(74/1.5);
+      font-size: rem(20);
+      left: rem(50);
+      bottom: rem(80/1.5);
+
+      &:after {
+        width: rem(211/1.5);
+        height: rem(158/1.5);
+        right: rem(-49/1.5);
+      }
+    }
+
+    .nav-list {
+      height: rem(40);
+      line-height: rem(40);
+      font-size: rem(20);
+
+      span {
+        &:before {
+          width: rem(4);
+          height: rem(4);
+          vertical-align: rem(4);
+          margin: 0 rem(10) 0;
+        }
+      }
+    }
+  }
+
+  .ty-title {
+    font-size: rem(42);
+    line-height: rem(80);
+
+    .prev-icon,
+    .next-icon {
+      width: rem(64);
+      height: rem(24);
+      top: rem(28);
+    }
+  }
+
+  .list-nums {
+
+    .prev,
+    .next {
+      width: rem(64);
+      height: rem(24);
+      top: rem(28);
+    }
+
+    .nums {
+      line-height: rem(72);
+
+      a {
+        margin-right: rem(20);
+        font-size: rem(20);
+      }
+    }
+  }
+
+  .ty-more,
+  .ty-more-1 {
+    font-size: rem(16);
+    line-height: rem(20);
+
+    &:hover {
+      font-size: rem(18);
+    }
+  }
+
+  .ty-more-2 {
+    display: block;
+    width: rem(233);
+    height: rem(74-15);
+    font-size: rem(20);
+    padding-top: rem(15);
+    line-height: rem(62);
+    text-indent: rem(50);
+
+    &:hover {
+      font-size: rem(24);
+    }
+  }
+
+  .ty-more-3 {
+    width: rem(233);
+    height: rem(53);
+    font-size: rem(20);
+    line-height: rem(53);
+
+    &:hover {
+      font-size: rem(24);
+    }
+  }
+
+  .ty-more-4 {
+    width: rem(190);
+    padding-right: rem(32);
+    height: rem(58);
+    line-height: rem(58);
+    font-size: rem(20);
+
+    &:hover {
+      font-size: rem(24);
+    }
+  }
+
+  .ty-bolls {
+    margin-top: rem(27);
+
+    span {
+      width: rem(12);
+      height: rem(12);
+      margin: 0 rem(10);
+    }
+  }
+
+  // 关于我们
+  .ty-dean {
+    padding: rem(80) rem(50);
+    width: 100%;
+    box-sizing: border-box;
+
+    .dean-img {
+      width: 100%;
+
+      img {
+        width: 100%;
+      }
+
+      .name {
+        width: rem(407);
+        height: rem(122);
+        bottom: rem(20);
+        right: rem(-16);
+      }
+
+      h3 {
+        font-size: rem(24);
+        padding: rem(12) rem(80) 0 0;
+      }
+
+      p {
+        font-size: rem(18);
+        opacity: .7;
+        padding-right: rem(80);
+      }
+    }
+
+    .dean-say {
+      width: 100%;
+      padding-top: rem(40);
+
+      p {
+        font-size: rem(18);
+        line-height: rem(30);
+        margin-bottom: rem(30);
+      }
+
+      .ty-title {
+        margin-bottom: rem(20);
+      }
+
+      .write-img {
+        padding-top: rem(26);
+        width: rem(166);
+      }
+    }
+  }
+
+  .ty-products {
+    padding: rem(80) 0;
+
+    .ty-products-in {
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .ty-title {
+      width: 90%;
+      margin: 0 auto rem(56);
+    }
+
+    .ty-products-con {
+      width: 80%;
+
+      .products-list {
+        height: 100%;
+      }
+
+      .ty-bolls span {
+        margin: 0 rem(9);
+      }
+
+      .product {
+        width: 100%;
+        box-sizing: border-box;
+        height: auto;
+        padding: rem(60) rem(50) 0;
+        float: none;
+
+        h4 {
+          font-size: rem(24);
+          line-height: rem(36);
+          padding-left: rem(30);
+          height: rem(36);
+          margin-bottom: rem(28);
+
+          &:before {
+            width: rem(28);
+            height: rem(20);
+            top: rem(6);
+          }
+        }
+
+        p {
+          font-size: rem(20);
+          line-height: rem(28);
+          height: rem(28*8);
+        }
+
+        .ty-more {
+          margin: rem(40) 0;
+        }
+      }
+    }
+  }
+
+  .ty-general {
+    padding: rem(70) 0 rem(210);
+
+    .ty-title {
+      margin-bottom: rem(60);
+    }
+
+    .in {
+      width: 100%;
+      height: auto;
+
+      img {
+        width: 100%;
+        height: auto;
+        margin-left: 40%;
+      }
+
+      p {
+        width: 90%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        box-sizing: border-box;
+        padding: rem(60);
+        font-size: rem(20);
+        line-height: rem(36);
+        left: 5%;
+        top: 30%;
+      }
+
+      a {
+        position: absolute;
+        left: rem(0);
+        bottom: rem(-120);
+      }
+    }
+  }
+
+  .ty-training {
+    width: 100%;
+    padding: rem(80) 0;
+
+    img {
+      position: absolute;
+    }
+
+    .in {
+      width: 90%;
+      font-size: rem(20);
+      line-height: rem(30);
+
+      h3 {
+        margin-bottom: rem(30);
+      }
+
+      p {
+        margin-bottom: rem(30);
+      }
+
+      a {
+        margin: rem(65) auto 0;
+      }
+    }
+  }
+
+  .ty-connect {
+    padding: rem(80) 0;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    .in {
+      position: absolute;
+      width: 90%;
+      height: auto;
+      top: rem(100);
+      margin-left: -45%;
+
+      .ty-title {
+        padding-top: rem(30);
+        margin-bottom: rem(20);
+      }
+
+      p {
+        width: 90%;
+        font-size: rem(20);
+      }
+
+      a {
+        position: static;
+        margin-left: rem(-11);
+        width: rem(526);
+
+        &:hover {
+          font-size: rem(21);
+        }
+      }
+    }
+  }
+
+  // 新闻
+  .ty-news-top {
+    width: 100%;
+    height: auto;
+    position: relative;
+
+    .ty-news-swiper {
+      position: absolute;
+      left: 5%;
+      top: rem(26);
+      padding-top: rem(100);
+      width: 90%;
+      height: auto;
+    }
+
+    .new-block {
+      width: 100%;
+      box-sizing: border-box;
+      align-self: auto;
+      padding: rem(70);
+      height: auto;
+
+      span {
+        position: absolute;
+        top: rem(-22);
+        left: rem(70);
+        width: rem(178);
+        height: rem(45);
+        line-height: rem(45);
+        font-size: rem(20);
+      }
+
+      h2 {
+        font-size: rem(24);
+        line-height: rem(32);
+        height: rem(64);
+        margin-bottom: rem(16);
+      }
+
+      p {
+        font-size: rem(20);
+        line-height: rem(30);
+        height: rem(120);
+      }
+    }
+
+    .ty-bolls {
+      left: rem(60) !important;
+      bottom: rem(26) !important;
+    }
+
+    .imgs {
+      .in {
+        width: 100%;
+        height: rem(600);
+      }
+
+      img {
+        display: none;
+        height: rem(600);
+        position: static;
+      }
+
+      .active {
+        display: block;
+      }
+    }
+  }
+
+  .news {
+    height: rem(152);
+
+    h2 {
+      bottom: rem(26);
+      right: rem(65);
+
+      &:after {
+        width: rem(167/1.5);
+        height: rem(114/1.5);
+      }
+    }
+  }
+
+  .ty-new-list {
+    width: 100%;
+
+    .list {
+      padding: rem(50) 0;
+      margin-left: 0;
+
+      >a {
+        display: block;
+        width: rem(456);
+        height: auto;
+        margin-left: 0;
+        float: none;
+        padding: rem(50);
+        margin: 0 auto rem(38);
+
+        &:before {
+          width: rem(600);
+          height: rem(3);
+        }
+
+        &:hover {
+          box-shadow: 0 0 rem(12) rgba(0, 0, 0, .3);
+        }
+      }
+    }
+
+    .time {
+      float: left;
+      font-size: rem(20);
+      line-height: rem(28);
+      width: rem(30);
+
+      strong {
+        font-size: rem(25);
+      }
+    }
+
+    .detial {
+      float: left;
+      width: rem(400);
+      box-sizing: border-box;
+      padding-left: rem(42);
+      margin-left: rem(20);
+
+      h3 {
+        font-size: rem(24);
+        line-height: rem(40);
+        margin-bottom: rem(18);
+        height: rem(80);
+      }
+
+      p {
+        font-size: rem(20);
+        line-height: rem(28);
+        height: rem(28*6);
+      }
+
+      &:before {
+        width: 1px;
+        left: rem(10);
+        height: rem(165);
+      }
+    }
+  }
+
+  .ty-crumbs {
+    position: static;
+    line-height: rem(50);
+    font-size: rem(18);
+    margin-left: rem(30);
+    padding-top: rem(15);
+
+    a {
+      &:after {
+        margin: 0 3px;
+      }
+    }
+  }
+
+  .ty-new-list2,
+  .ty-new-list3 {
+    width: 90%;
+    margin: 0 auto;
+
+    .list {
+      padding-bottom: rem(50);
+
+      a {
+        width: 100%;
+        height: auto;
+        padding-bottom: rem(30);
+        margin-bottom: rem(30);
+      }
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      margin: rem(2);
+      float: none;
+    }
+
+    .time {
+      clear: both;
+      float: left;
+      font-size: rem(18);
+      line-height: rem(24);
+      width: rem(30);
+      margin-left: rem(10);
+      padding-top: rem(45);
+
+      strong {
+        font-size: rem(24);
+        margin-top: rem(6);
+      }
+    }
+
+    .detial {
+      float: left;
+      width: rem(500);
+      box-sizing: border-box;
+      padding-left: rem(42);
+      margin-left: 0;
+      margin-top: rem(20);
+
+      h3 {
+        font-size: rem(24);
+        line-height: rem(30);
+        height: rem(60);
+        margin-bottom: rem(18);
+      }
+
+      p {
+        font-size: rem(20);
+        line-height: rem(30);
+        height: auto;
+        max-height: rem(120);
+        overflow: hidden;
+      }
+
+      &:before {
+        height: rem(165);
+        left: rem(20);
+      }
+    }
+  }
+
+  .ty-new-detial {
+    width: 90%;
+    margin: 0 auto;
+  
+    .ty-title {
+      padding: rem(40) 0;
+      font-size: rem(36);
+      line-height: 1.5;
+      text-align: left;
+      margin-bottom: rem(20);
+    }
+  
+    .left-bar {
+      float: none;
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: rem(50);
+  
+      .time {
+        padding: rem(15);
+        display: inline-block;
+        vertical-align: middle;
+        font-size: rem(18);
+        margin-bottom: rem(0);
+  
+        strong {
+          font-size: rem(28);
+        }
+      }
+  
+      .share {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: rem(30);
+        width: auto;
+  
+        p {
+          display: none;
+        }
+  
+        a {
+          margin-bottom: 0;
+          margin-right: rem(10);
+          width: rem(50);
+          height: rem(50);
+          line-height: rem(50);
+          border-radius: 50%;
+          font-size: rem(25);
+        }
+      }
+    }
+  
+    .new-main {
+      float: none;
+      width: 100%;
+      font-size: rem(20);
+      line-height: rem(30);
+      margin-left: 0;
+  
+      p {
+        text-indent: rem(40);
+        margin-bottom: rem(30);
+      }
+  
+      img {
+        width: 90%;
+      }
+  
+      .img-detial {
+        font-size: rem(18);
+        line-height: rem(30);
+        margin: rem(10) 0 rem(30);
+      }
+    }
+  }
+
 }

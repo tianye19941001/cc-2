@@ -3,8 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport"
-		content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, minimal-ui">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, minimal-ui">
 	<meta name="format-detection" content="telephone=no">
 	<meta name="format-detection" content="address=no">
 	<title>清华经管学院</title>
@@ -371,8 +370,7 @@
 				<div class="line_bottom"></div>
 				<p class="fl">版权所有：清华大学经济管理学院</p>
 				<p class="fr"><a href="javascript:;">网站地图&nbsp;&nbsp;</a>/<a
-						href="javascript:;">&nbsp;&nbsp;联系我们&nbsp;&nbsp;</a>/<a
-						href="javascript:;">&nbsp;&nbsp;清华大学主页</a></p>
+						href="javascript:;">&nbsp;&nbsp;联系我们&nbsp;&nbsp;</a>/<a href="javascript:;">&nbsp;&nbsp;清华大学主页</a></p>
 			</div>
 		</div>
 	</footer>
@@ -419,6 +417,36 @@
 			slidesPerView: '3',
 			loop: true,
 		});
+
+		if (document.body.clientWidth >= 1024) {
+			var swiperNews = new Swiper('.news-swiper-container', {
+				slidesPerView: 2,
+				spaceBetween: 30,
+				pagination: {
+					el: '.news-boll',
+					clickable: true,
+				},
+				grabCursor: true,
+				speed: 1000,
+				paginationClickable: true,
+				autoplay: {
+					delay: 3000
+				}
+			});
+		} else {
+			var swiperNews = new Swiper('.news-swiper-container', {
+				slidesPerView: 1,
+				pagination: {
+					el: '.news-boll',
+					clickable: true,
+				},
+				speed: 1000,
+				paginationClickable: true,
+				autoplay: {
+					delay: 3000
+				}
+			});
+		}
 	</script>
 </body>
 

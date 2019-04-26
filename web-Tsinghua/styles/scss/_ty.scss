@@ -748,6 +748,7 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
     margin-left: -50px;
 
     >a {
+      @extend .clearfix;
       display: block;
       width: 576-120px;
       height: 315-120px;

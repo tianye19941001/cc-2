@@ -64,20 +64,20 @@ sup {
 
 /*CLEARFIX
 -------------------------------------------------------------- */
-.clearfix:after, .nav .nav_list .in:after, .newList:after, .ty-new-list3 .list a:after, .ty-report .report-top:after, .ty-report .report-list .tab:after, .ty-cooperation .ty-projects:after, .ty-techers-list .ty-teachers .list:after, .ty-zs .sp:after, .ty-bk ul:after {
+.clearfix:after, .nav .nav_list .in:after, .newList:after, .ty-new-list .list > a:after, .ty-new-list3 .list a:after, .ty-report .report-top:after, .ty-report .report-list .tab:after, .ty-cooperation .ty-projects:after, .ty-techers-list .ty-teachers .list:after, .ty-zs .sp:after, .ty-bk ul:after {
   content: ".";
   display: block;
   height: 0;
   clear: both;
   visibility: hidden; }
 
-.clearfix, .nav .nav_list .in, .newList, .ty-new-list3 .list a, .ty-report .report-top, .ty-report .report-list .tab, .ty-cooperation .ty-projects, .ty-techers-list .ty-teachers .list, .ty-zs .sp, .ty-bk ul {
+.clearfix, .nav .nav_list .in, .newList, .ty-new-list .list > a, .ty-new-list3 .list a, .ty-report .report-top, .ty-report .report-list .tab, .ty-cooperation .ty-projects, .ty-techers-list .ty-teachers .list, .ty-zs .sp, .ty-bk ul {
   display: inline-block; }
 
-* html .clearfix, * html .nav .nav_list .in, .nav .nav_list * html .in, * html .newList, * html .ty-new-list3 .list a, .ty-new-list3 .list * html a, * html .ty-report .report-top, .ty-report * html .report-top, * html .ty-report .report-list .tab, .ty-report .report-list * html .tab, * html .ty-cooperation .ty-projects, .ty-cooperation * html .ty-projects, * html .ty-techers-list .ty-teachers .list, .ty-techers-list .ty-teachers * html .list, * html .ty-zs .sp, .ty-zs * html .sp, * html .ty-bk ul, .ty-bk * html ul {
+* html .clearfix, * html .nav .nav_list .in, .nav .nav_list * html .in, * html .newList, * html .ty-new-list .list > a, .ty-new-list * html .list > a, * html .ty-new-list3 .list a, .ty-new-list3 .list * html a, * html .ty-report .report-top, .ty-report * html .report-top, * html .ty-report .report-list .tab, .ty-report .report-list * html .tab, * html .ty-cooperation .ty-projects, .ty-cooperation * html .ty-projects, * html .ty-techers-list .ty-teachers .list, .ty-techers-list .ty-teachers * html .list, * html .ty-zs .sp, .ty-zs * html .sp, * html .ty-bk ul, .ty-bk * html ul {
   height: 1%; }
 
-.clearfix, .nav .nav_list .in, .newList, .ty-new-list3 .list a, .ty-report .report-top, .ty-report .report-list .tab, .ty-cooperation .ty-projects, .ty-techers-list .ty-teachers .list, .ty-zs .sp, .ty-bk ul {
+.clearfix, .nav .nav_list .in, .newList, .ty-new-list .list > a, .ty-new-list3 .list a, .ty-report .report-top, .ty-report .report-list .tab, .ty-cooperation .ty-projects, .ty-techers-list .ty-teachers .list, .ty-zs .sp, .ty-bk ul {
   display: block; }
 
 /*FONT
@@ -3115,17 +3115,16 @@ body .swiper-container-horizontal > .swiper-pagination-bullets .swiper-paginatio
         body .content .content_left:last-child {
           margin-right: auto; }
         body .content .content_left .top span:first-child {
-          display: inline-block;
-          width: 2.4rem;
-          height: 1rem;
-          margin-top: 1.6rem;
-          background-size: 100% 100%; }
+          display: none; }
         body .content .content_left .top span:last-child {
           width: auto;
           height: auto;
           font-size: 1.2rem;
           line-height: 1.5rem;
-          margin-top: 1.5rem; }
+          margin-top: 1.5rem;
+          text-align: center;
+          display: block;
+          padding-top: 0.6rem; }
         body .content .content_left .center {
           margin: 1.5rem auto 0;
           width: auto;
@@ -3168,7 +3167,8 @@ body .swiper-container-horizontal > .swiper-pagination-bullets .swiper-paginatio
         body .new .new-item .span {
           padding: 0 18.25rem 0 2.15rem;
           margin-top: 0.95rem;
-          height: 8.55rem; }
+          line-height: 1.4rem;
+          height: 11.2rem; }
           body .new .new-item .span p {
             font-size: 0.8rem; }
         body .new .new-item a {
@@ -3182,7 +3182,7 @@ body .swiper-container-horizontal > .swiper-pagination-bullets .swiper-paginatio
       left: 50%;
       transform: translateX(-50%) !important; }
     body .boll {
-      margin-top: 1.5rem; }
+      margin-top: 0.5rem; }
       body .boll span {
         width: 0.6rem;
         height: 0.6rem;
@@ -3478,6 +3478,462 @@ body .swiper-container-horizontal > .swiper-pagination-bullets .swiper-paginatio
           display: block;
           margin-bottom: 1.5rem; }
         body footer .footer_botttom p {
-          margin-top: 0.3rem; } }
+          margin-top: 0.3rem; }
+
+  .container-2 {
+    width: 100%; }
+
+  .ty-banner {
+    height: 7.5rem; }
+    .ty-banner img {
+      position: absolute;
+      height: 100%;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%); }
+    .ty-banner h2 {
+      width: 11.2333333333rem;
+      height: 2.4666666667rem;
+      line-height: 2.4666666667rem;
+      font-size: 1rem;
+      left: 2.5rem;
+      bottom: 2.6666666667rem; }
+      .ty-banner h2:after {
+        width: 7.0333333333rem;
+        height: 5.2666666667rem;
+        right: -1.6333333333rem; }
+    .ty-banner .nav-list {
+      height: 2rem;
+      line-height: 2rem;
+      font-size: 1rem; }
+      .ty-banner .nav-list span:before {
+        width: 0.2rem;
+        height: 0.2rem;
+        vertical-align: 0.2rem;
+        margin: 0 0.5rem 0; }
+
+  .ty-title {
+    font-size: 2.1rem;
+    line-height: 4rem; }
+    .ty-title .prev-icon,
+    .ty-title .next-icon {
+      width: 3.2rem;
+      height: 1.2rem;
+      top: 1.4rem; }
+
+  .list-nums .prev,
+  .list-nums .next {
+    width: 3.2rem;
+    height: 1.2rem;
+    top: 1.4rem; }
+  .list-nums .nums {
+    line-height: 3.6rem; }
+    .list-nums .nums a {
+      margin-right: 1rem;
+      font-size: 1rem; }
+
+  .ty-more,
+  .ty-more-1 {
+    font-size: 0.8rem;
+    line-height: 1rem; }
+    .ty-more:hover,
+    .ty-more-1:hover {
+      font-size: 0.9rem; }
+
+  .ty-more-2 {
+    display: block;
+    width: 11.65rem;
+    height: 2.95rem;
+    font-size: 1rem;
+    padding-top: 0.75rem;
+    line-height: 3.1rem;
+    text-indent: 2.5rem; }
+    .ty-more-2:hover {
+      font-size: 1.2rem; }
+
+  .ty-more-3 {
+    width: 11.65rem;
+    height: 2.65rem;
+    font-size: 1rem;
+    line-height: 2.65rem; }
+    .ty-more-3:hover {
+      font-size: 1.2rem; }
+
+  .ty-more-4 {
+    width: 9.5rem;
+    padding-right: 1.6rem;
+    height: 2.9rem;
+    line-height: 2.9rem;
+    font-size: 1rem; }
+    .ty-more-4:hover {
+      font-size: 1.2rem; }
+
+  .ty-bolls {
+    margin-top: 1.35rem; }
+    .ty-bolls span {
+      width: 0.6rem;
+      height: 0.6rem;
+      margin: 0 0.5rem; }
+
+  .ty-dean {
+    padding: 4rem 2.5rem;
+    width: 100%;
+    box-sizing: border-box; }
+    .ty-dean .dean-img {
+      width: 100%; }
+      .ty-dean .dean-img img {
+        width: 100%; }
+      .ty-dean .dean-img .name {
+        width: 20.35rem;
+        height: 6.1rem;
+        bottom: 1rem;
+        right: -0.8rem; }
+      .ty-dean .dean-img h3 {
+        font-size: 1.2rem;
+        padding: 0.6rem 4rem 0 0; }
+      .ty-dean .dean-img p {
+        font-size: 0.9rem;
+        opacity: .7;
+        padding-right: 4rem; }
+    .ty-dean .dean-say {
+      width: 100%;
+      padding-top: 2rem; }
+      .ty-dean .dean-say p {
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+        margin-bottom: 1.5rem; }
+      .ty-dean .dean-say .ty-title {
+        margin-bottom: 1rem; }
+      .ty-dean .dean-say .write-img {
+        padding-top: 1.3rem;
+        width: 8.3rem; }
+
+  .ty-products {
+    padding: 4rem 0; }
+    .ty-products .ty-products-in {
+      width: 100%;
+      margin: 0 auto; }
+    .ty-products .ty-title {
+      width: 90%;
+      margin: 0 auto 2.8rem; }
+    .ty-products .ty-products-con {
+      width: 80%; }
+      .ty-products .ty-products-con .products-list {
+        height: 100%; }
+      .ty-products .ty-products-con .ty-bolls span {
+        margin: 0 0.45rem; }
+      .ty-products .ty-products-con .product {
+        width: 100%;
+        box-sizing: border-box;
+        height: auto;
+        padding: 3rem 2.5rem 0;
+        float: none; }
+        .ty-products .ty-products-con .product h4 {
+          font-size: 1.2rem;
+          line-height: 1.8rem;
+          padding-left: 1.5rem;
+          height: 1.8rem;
+          margin-bottom: 1.4rem; }
+          .ty-products .ty-products-con .product h4:before {
+            width: 1.4rem;
+            height: 1rem;
+            top: 0.3rem; }
+        .ty-products .ty-products-con .product p {
+          font-size: 1rem;
+          line-height: 1.4rem;
+          height: 11.2rem; }
+        .ty-products .ty-products-con .product .ty-more {
+          margin: 2rem 0; }
+
+  .ty-general {
+    padding: 3.5rem 0 10.5rem; }
+    .ty-general .ty-title {
+      margin-bottom: 3rem; }
+    .ty-general .in {
+      width: 100%;
+      height: auto; }
+      .ty-general .in img {
+        width: 100%;
+        height: auto;
+        margin-left: 40%; }
+      .ty-general .in p {
+        width: 90%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        box-sizing: border-box;
+        padding: 3rem;
+        font-size: 1rem;
+        line-height: 1.8rem;
+        left: 5%;
+        top: 30%; }
+      .ty-general .in a {
+        position: absolute;
+        left: 0rem;
+        bottom: -6rem; }
+
+  .ty-training {
+    width: 100%;
+    padding: 4rem 0; }
+    .ty-training img {
+      position: absolute; }
+    .ty-training .in {
+      width: 90%;
+      font-size: 1rem;
+      line-height: 1.5rem; }
+      .ty-training .in h3 {
+        margin-bottom: 1.5rem; }
+      .ty-training .in p {
+        margin-bottom: 1.5rem; }
+      .ty-training .in a {
+        margin: 3.25rem auto 0; }
+
+  .ty-connect {
+    padding: 4rem 0;
+    width: 90%;
+    margin: 0 auto;
+    position: relative; }
+    .ty-connect img {
+      width: 100%;
+      height: auto; }
+    .ty-connect .in {
+      position: absolute;
+      width: 90%;
+      height: auto;
+      top: 5rem;
+      margin-left: -45%; }
+      .ty-connect .in .ty-title {
+        padding-top: 1.5rem;
+        margin-bottom: 1rem; }
+      .ty-connect .in p {
+        width: 90%;
+        font-size: 1rem; }
+      .ty-connect .in a {
+        position: static;
+        margin-left: -0.55rem;
+        width: 26.3rem; }
+        .ty-connect .in a:hover {
+          font-size: 1.05rem; }
+
+  .ty-news-top {
+    width: 100%;
+    height: auto;
+    position: relative; }
+    .ty-news-top .ty-news-swiper {
+      position: absolute;
+      left: 5%;
+      top: 1.3rem;
+      padding-top: 5rem;
+      width: 90%;
+      height: auto; }
+    .ty-news-top .new-block {
+      width: 100%;
+      box-sizing: border-box;
+      align-self: auto;
+      padding: 3.5rem;
+      height: auto; }
+      .ty-news-top .new-block span {
+        position: absolute;
+        top: -1.1rem;
+        left: 3.5rem;
+        width: 8.9rem;
+        height: 2.25rem;
+        line-height: 2.25rem;
+        font-size: 1rem; }
+      .ty-news-top .new-block h2 {
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+        height: 3.2rem;
+        margin-bottom: 0.8rem; }
+      .ty-news-top .new-block p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        height: 6rem; }
+    .ty-news-top .ty-bolls {
+      left: 3rem !important;
+      bottom: 1.3rem !important; }
+    .ty-news-top .imgs .in {
+      width: 100%;
+      height: 30rem; }
+    .ty-news-top .imgs img {
+      display: none;
+      height: 30rem;
+      position: static; }
+    .ty-news-top .imgs .active {
+      display: block; }
+
+  .news {
+    height: 7.6rem; }
+    .news h2 {
+      bottom: 1.3rem;
+      right: 3.25rem; }
+      .news h2:after {
+        width: 5.5666666667rem;
+        height: 3.8rem; }
+
+  .ty-new-list {
+    width: 100%; }
+    .ty-new-list .list {
+      padding: 2.5rem 0;
+      margin-left: 0; }
+      .ty-new-list .list > a {
+        display: block;
+        width: 22.8rem;
+        height: auto;
+        margin-left: 0;
+        float: none;
+        padding: 2.5rem;
+        margin: 0 auto 1.9rem; }
+        .ty-new-list .list > a:before {
+          width: 30rem;
+          height: 0.15rem; }
+        .ty-new-list .list > a:hover {
+          box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.3); }
+    .ty-new-list .time {
+      float: left;
+      font-size: 1rem;
+      line-height: 1.4rem;
+      width: 1.5rem; }
+      .ty-new-list .time strong {
+        font-size: 1.25rem; }
+    .ty-new-list .detial {
+      float: left;
+      width: 20rem;
+      box-sizing: border-box;
+      padding-left: 2.1rem;
+      margin-left: 1rem; }
+      .ty-new-list .detial h3 {
+        font-size: 1.2rem;
+        line-height: 2rem;
+        margin-bottom: 0.9rem;
+        height: 4rem; }
+      .ty-new-list .detial p {
+        font-size: 1rem;
+        line-height: 1.4rem;
+        height: 8.4rem; }
+      .ty-new-list .detial:before {
+        width: 1px;
+        left: 0.5rem;
+        height: 8.25rem; }
+
+  .ty-crumbs {
+    position: static;
+    line-height: 2.5rem;
+    font-size: 0.9rem;
+    margin-left: 1.5rem;
+    padding-top: 0.75rem; }
+    .ty-crumbs a:after {
+      margin: 0 3px; }
+
+  .ty-new-list2,
+  .ty-new-list3 {
+    width: 90%;
+    margin: 0 auto; }
+    .ty-new-list2 .list,
+    .ty-new-list3 .list {
+      padding-bottom: 2.5rem; }
+      .ty-new-list2 .list a,
+      .ty-new-list3 .list a {
+        width: 100%;
+        height: auto;
+        padding-bottom: 1.5rem;
+        margin-bottom: 1.5rem; }
+    .ty-new-list2 img,
+    .ty-new-list3 img {
+      width: 100%;
+      height: auto;
+      margin: 0.1rem;
+      float: none; }
+    .ty-new-list2 .time,
+    .ty-new-list3 .time {
+      clear: both;
+      float: left;
+      font-size: 0.9rem;
+      line-height: 1.2rem;
+      width: 1.5rem;
+      margin-left: 0.5rem;
+      padding-top: 2.25rem; }
+      .ty-new-list2 .time strong,
+      .ty-new-list3 .time strong {
+        font-size: 1.2rem;
+        margin-top: 0.3rem; }
+    .ty-new-list2 .detial,
+    .ty-new-list3 .detial {
+      float: left;
+      width: 25rem;
+      box-sizing: border-box;
+      padding-left: 2.1rem;
+      margin-left: 0;
+      margin-top: 1rem; }
+      .ty-new-list2 .detial h3,
+      .ty-new-list3 .detial h3 {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        height: 3rem;
+        margin-bottom: 0.9rem; }
+      .ty-new-list2 .detial p,
+      .ty-new-list3 .detial p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        height: auto;
+        max-height: 6rem;
+        overflow: hidden; }
+      .ty-new-list2 .detial:before,
+      .ty-new-list3 .detial:before {
+        height: 8.25rem;
+        left: 1rem; }
+
+  .ty-new-detial {
+    width: 90%;
+    margin: 0 auto; }
+    .ty-new-detial .ty-title {
+      padding: 2rem 0;
+      font-size: 1.8rem;
+      line-height: 1.5;
+      text-align: left;
+      margin-bottom: 1rem; }
+    .ty-new-detial .left-bar {
+      float: none;
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 2.5rem; }
+      .ty-new-detial .left-bar .time {
+        padding: 0.75rem;
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 0.9rem;
+        margin-bottom: 0rem; }
+        .ty-new-detial .left-bar .time strong {
+          font-size: 1.4rem; }
+      .ty-new-detial .left-bar .share {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 1.5rem;
+        width: auto; }
+        .ty-new-detial .left-bar .share p {
+          display: none; }
+        .ty-new-detial .left-bar .share a {
+          margin-bottom: 0;
+          margin-right: 0.5rem;
+          width: 2.5rem;
+          height: 2.5rem;
+          line-height: 2.5rem;
+          border-radius: 50%;
+          font-size: 1.25rem; }
+    .ty-new-detial .new-main {
+      float: none;
+      width: 100%;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      margin-left: 0; }
+      .ty-new-detial .new-main p {
+        text-indent: 2rem;
+        margin-bottom: 1.5rem; }
+      .ty-new-detial .new-main img {
+        width: 90%; }
+      .ty-new-detial .new-main .img-detial {
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+        margin: 0.5rem 0 1.5rem; } }
 
 /*# sourceMappingURL=styles.css.map */

@@ -218,24 +218,43 @@
 	<script src="./js/swiper.min.js"></script>
 	<script src="js/app.js"></script>
 	<script>
-		var swiperProducts = new Swiper('.ty-products-con', {
-			slidesPerView: 'auto',
-			spaceBetween: 35,
-			pagination: {
-				el: '.ty-bolls',
-				clickable: true,
-			},
-			grabCursor: true,
-			speed: 1000,
-			paginationClickable: true,
-			autoplay: {
-				delay: 3000
-			},
-			navigation: {
-				nextEl: '.ty-products-in .next-icon',
-				prevEl: '.ty-products-in .prev-icon',
-			},
-		});
+		if (document.body.clientWidth >= 1024) {
+			var swiperProducts = new Swiper('.ty-products-con', {
+				slidesPerView: 'auto',
+				spaceBetween: 35,
+				pagination: {
+					el: '.ty-bolls',
+					clickable: true,
+				},
+				grabCursor: true,
+				speed: 1000,
+				paginationClickable: true,
+				autoplay: {
+					delay: 3000
+				},
+				navigation: {
+					nextEl: '.ty-products-in .next-icon',
+					prevEl: '.ty-products-in .prev-icon',
+				}
+			});
+		} else {
+			var swiperProducts = new Swiper('.ty-products-con', {
+				pagination: {
+					el: '.ty-bolls',
+					clickable: true,
+				},
+				grabCursor: true,
+				speed: 1000,
+				paginationClickable: true,
+				autoplay: {
+					delay: 3000
+				},
+				navigation: {
+					nextEl: '.ty-products-in .next-icon',
+					prevEl: '.ty-products-in .prev-icon',
+				}
+			});
+		}
 	</script>
 </body>
 

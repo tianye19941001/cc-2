@@ -106,20 +106,6 @@
 	})
 	
 	if (document.body.clientWidth >= 1024) {
-		var swiperNews = new Swiper('.news-swiper-container', {
-			slidesPerView: 2,
-			spaceBetween: 30,
-			pagination: {
-				el: '.news-boll',
-				clickable: true,
-			},
-			grabCursor: true,
-			speed: 1000,
-			paginationClickable: true,
-			autoplay: {
-				delay: 3000
-			}
-		});
 
 		$('.nav_list').on('mouseenter', function(){
 			$('.nav_list .in').append('<em></em>');
@@ -138,18 +124,7 @@
 		})
 		
 	}else{
-		var swiperNews = new Swiper('.news-swiper-container', {
-			slidesPerView: 1,
-			pagination: {
-				el: '.news-boll',
-				clickable: true,
-			},
-			speed: 1000,
-			paginationClickable: true,
-			autoplay: {
-				delay: 3000
-			}
-		});
+
 	}
 
 	// 动画延时函数
