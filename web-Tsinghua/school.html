@@ -3,7 +3,8 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, minimal-ui">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, minimal-ui">
 	<meta name="format-detection" content="telephone=no">
 	<meta name="format-detection" content="address=no">
 	<title>清华经管学院</title>
@@ -157,7 +158,7 @@
 					</div>
 				</div>
 				<div class="association swiper-slide">
-						<img src="./images/new/school-item2.png" alt="">
+					<img src="./images/new/school-item2.png" alt="">
 					<div class="in">
 						<h4>清华大学金融协会</h4>
 						<p>
@@ -167,7 +168,7 @@
 					</div>
 				</div>
 				<div class="association swiper-slide">
-						<img src="./images/new/school-item.png" alt="">
+					<img src="./images/new/school-item.png" alt="">
 					<div class="in">
 						<h4>清华大学金融协会</h4>
 						<p>
@@ -200,7 +201,8 @@
 				<div class="line_bottom"></div>
 				<p class="fl">版权所有：清华大学经济管理学院</p>
 				<p class="fr"><a href="javascript:;">网站地图&nbsp;&nbsp;</a>/<a
-						href="javascript:;">&nbsp;&nbsp;联系我们&nbsp;&nbsp;</a>/<a href="javascript:;">&nbsp;&nbsp;清华大学主页</a></p>
+						href="javascript:;">&nbsp;&nbsp;联系我们&nbsp;&nbsp;</a>/<a
+						href="javascript:;">&nbsp;&nbsp;清华大学主页</a></p>
 			</div>
 		</div>
 	</footer>
@@ -209,24 +211,60 @@
 	<script src="./js/swiper.min.js"></script>
 	<script src="js/app.js"></script>
 	<script>
-		var swiperAssociation = new Swiper('.association-swiper', {
-			slidesPerView: '2',
-			spaceBetween: 74,
+		if (document.body.clientWidth >= 1024) {
+			var swiperAssociation = new Swiper('.association-swiper', {
+				slidesPerView: '2',
+				spaceBetween: 74,
+				pagination: {
+					el: '.ty-association .ty-bolls',
+					clickable: true,
+				},
+				grabCursor: true,
+				speed: 1000,
+				paginationClickable: true,
+				autoplay: {
+					delay: 3000
+				},
+				navigation: {
+					nextEl: '.ty-association .next-icon',
+					prevEl: '.ty-association .prev-icon',
+				},
+				loop: true
+			});
+
+		} else {
+			var swiperAssociation = new Swiper('.association-swiper', {
+				slidesPerView: '1',
+				pagination: {
+					el: '.ty-association .ty-bolls',
+					clickable: true,
+				},
+				grabCursor: true,
+				speed: 1000,
+				paginationClickable: true,
+				autoplay: {
+					delay: 3000
+				},
+				navigation: {
+					nextEl: '.ty-association .next-icon',
+					prevEl: '.ty-association .prev-icon',
+				},
+				loop: true
+			});
+
+		}
+		var swiperStudent = new Swiper('.student-swiper-container', {
 			pagination: {
-				el: '.ty-association .ty-bolls',
+				el: '.student-boll',
 				clickable: true,
 			},
 			grabCursor: true,
-			speed: 1000,
 			paginationClickable: true,
 			autoplay: {
-				delay: 3000
+				delay: 30000
 			},
-			navigation: {
-				nextEl: '.ty-association .next-icon',
-				prevEl: '.ty-association .prev-icon',
-			},
-			loop: true
+			slidesPerView: '3',
+			loop: true,
 		});
 	</script>
 </body>
