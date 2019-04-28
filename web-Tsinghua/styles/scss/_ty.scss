@@ -13,11 +13,12 @@ body {
 // 首页补充
 body .swiper-pagination-bullet{
   opacity: 1;
-  
 }
+
 body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{
   margin: 0 9px;
 }
+
 .news-warp {
   position: relative;
   width: 1070px;
@@ -1489,6 +1490,14 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
     margin-top: 0;
     position: relative;
     top: -80px;
+
+    .swiper-pagination-bullet{
+      opacity: .5;
+    }
+
+    .swiper-pagination-bullet-active{
+      opacity: 1;
+    }
   }
 
   div.student_content {
