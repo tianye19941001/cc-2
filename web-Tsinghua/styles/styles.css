@@ -161,8 +161,8 @@ a:active {
 @font-face {
   font-family: 'iconfont';
   /* project id 994519 */
-  src: url("//at.alicdn.com/t/font_994519_5k3uesp5uu3.eot");
-  src: url("//at.alicdn.com/t/font_994519_5k3uesp5uu3.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_994519_5k3uesp5uu3.woff2") format("woff2"), url("//at.alicdn.com/t/font_994519_5k3uesp5uu3.woff") format("woff"), url("//at.alicdn.com/t/font_994519_5k3uesp5uu3.ttf") format("truetype"), url("//at.alicdn.com/t/font_994519_5k3uesp5uu3.svg#iconfont") format("svg"); }
+  src: url("//at.alicdn.com/t/font_994519_fr4n2jnteqr.eot");
+  src: url("//at.alicdn.com/t/font_994519_fr4n2jnteqr.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_994519_fr4n2jnteqr.woff2") format("woff2"), url("//at.alicdn.com/t/font_994519_fr4n2jnteqr.woff") format("woff"), url("//at.alicdn.com/t/font_994519_fr4n2jnteqr.ttf") format("truetype"), url("//at.alicdn.com/t/font_994519_fr4n2jnteqr.svg#iconfont") format("svg"); }
 .content, .title, .newList, .ts-tit, .school_life_list, .school_life_content, .student_life, footer, .ty-title, .project, .ty-more, .ty-more-1, .ty-more-2, .ty-more-3, .ty-more-4, .ty-banner h2, .nav-list, .points i, .map .student, .dean-img, .dean-say, .ty-general .in, .ty-training .in, .ty-connect img, .ty-connect p, .ty-guidance img, .ty-guidance .r, .ty-recruit, .ty-vocation, .ty-how-connect, .report-in .left, .report-in .right, .report-list, .ty-new-list a, .new-main p, .new-main img, .left-bar .time, .left-bar .share, .ty-new-list2 .list a, .ty-new-list3 .list a, .ty-zs img, .ty-zs .in, .ty-bk img, .ty-bk .in, .ty-download img, .ty-download .in, .ty-sport img, .ty-sport .in, .ty-department-list, .teacher, .set-in .img, .set-in .zy, .ty-ugd-programme img, .ty-pro-list, .ty-ugd-course img {
   opacity: 1;
   transition: all .5s;
@@ -548,7 +548,10 @@ span {
         left: 50%;
         top: 0;
         height: 100%;
-        transform: translateX(-50%); }
+        transform: translateX(-50%);
+        transition: all .3s; }
+        .carousel .swiper-container .swiper-slide img:hover {
+          transform: scale(1.05) translateX(-50%); }
       .carousel .swiper-container .swiper-slide .center {
         position: absolute;
         text-align: center;
@@ -1200,6 +1203,8 @@ body .swiper-container-horizontal > .swiper-pagination-bullets .swiper-paginatio
   .search-inp .search {
     display: block; }
   .search-inp.active .close {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
     display: block; }
   .search-inp.active .search {
     display: none; }
@@ -1762,6 +1767,9 @@ body .swiper-container-horizontal > .swiper-pagination-bullets .swiper-paginatio
       position: absolute;
       left: -1px;
       top: 0; }
+  .ty-new-list .ty-more-3 {
+    display: block;
+    margin: 0 auto; }
 
 .ty-crumbs {
   line-height: 50px;
@@ -2223,10 +2231,8 @@ body .swiper-container-horizontal > .swiper-pagination-bullets .swiper-paginatio
     height: 100%;
     display: block;
     transition: all .3s; }
-  .ty-practice .img:hover {
-    border-radius: 20px; }
-    .ty-practice .img:hover img {
-      transform: scale(1.1); }
+  .ty-practice .img:hover img {
+    transform: scale(1.1); }
 
 .ty-school-student {
   padding: 70px 0 160px; }
@@ -3622,13 +3628,14 @@ body .swiper-container-horizontal > .swiper-pagination-bullets .swiper-paginatio
       width: 90%;
       margin: 0 auto 2.8rem; }
     .ty-products .ty-products-con {
-      width: 80%; }
+      width: 100%; }
       .ty-products .ty-products-con .products-list {
         height: 100%; }
       .ty-products .ty-products-con .ty-bolls span {
         margin: 0 0.45rem; }
       .ty-products .ty-products-con .product {
-        width: 100%;
+        width: 80%;
+        margin: 0 10%;
         box-sizing: border-box;
         height: auto;
         padding: 3rem 2.5rem 0;

@@ -75,6 +75,8 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
 
   &.active {
     .close {
+      font-size: 16px;
+      color: rgba(255, 255, 255, 0.7);
       display: block;
     }
 
@@ -838,6 +840,11 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
       top: 0;
     }
   }
+
+  .ty-more-3{
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 .ty-crumbs {
@@ -1476,8 +1483,6 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
       img {
         transform: scale(1.1);
       }
-
-      border-radius: 20px;
     }
   }
 }

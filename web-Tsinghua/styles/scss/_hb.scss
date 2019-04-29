@@ -248,6 +248,10 @@ span {
                 top: 0;
                 height: 100%;
                 transform: translateX(-50%);
+                transition: all .3s;
+                &:hover{
+                    transform: scale(1.05) translateX(-50%);
+                }
             }
 
             .center {

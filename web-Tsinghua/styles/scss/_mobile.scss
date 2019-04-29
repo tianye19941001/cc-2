@@ -968,7 +968,8 @@
     }
 
     .ty-products-con {
-      width: 80%;
+      width: 100%;
+      // padding: 0 10%;
 
       .products-list {
         height: 100%;
@@ -979,7 +980,8 @@
       }
 
       .product {
-        width: 100%;
+        width: 80%;
+        margin: 0 10%;
         box-sizing: border-box;
         height: auto;
         padding: rem(60) rem(50) 0;
