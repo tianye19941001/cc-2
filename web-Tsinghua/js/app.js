@@ -71,21 +71,19 @@
 		swiperStudent.slidePrev()
 	})
 
-	$('.menu-and-close').click(function(){
+	$('.menu').click(function(){
 		var height = $(window).height();
-		if(!$(this).hasClass('close')){
-			$('body').css({'overflow':'hidden', 'height': height});
-			$('.nav_list').show(300);
-			$(this).addClass('close');
-			movescroll('body');
-			$('.nav').css({'position': 'fixed', 'top': 0, 'left': 0})
-		} else {
-			$('body').css({'overflow':'auto', 'height': 'auto'});
-			$('.nav_list').hide(300);
-			$(this).removeClass('close');
-			$('.nav').css({'position': 'relative'});
-			movescroll('body');
-		}
+		$('body').css({'overflow':'hidden', 'height': height});
+		$('.nav_list').show(300);
+		movescroll('body');
+		$('.nav').css({'position': 'fixed', 'top': 0, 'left': 0})
+	})
+
+	$('.close').click(function(){
+		$('body').css({'overflow':'auto', 'height': 'auto'});
+		$('.nav_list').hide(300);
+		$('.nav').css({'position': 'relative'});
+		movescroll('body');
 	})
 
 	// 报告切换
@@ -117,7 +115,8 @@
 
 		$('.nav_list a').on('mouseenter', function(){
 			var index = $('.nav_list a').index($(this));
-			var left = index * 90 + 10;
+			var left = $(this).get(0).offsetLeft + 12;
+			if (index == 0) left = -5;
 			setTimeout(function(){
 				$('.nav_list em').css('left', left)
 			},0)

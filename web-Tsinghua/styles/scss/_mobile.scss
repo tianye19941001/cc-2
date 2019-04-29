@@ -71,19 +71,24 @@
           margin: rem(10) 0 0 rem(30);
         }
       }
+      .in{
+        width: 100% !important;
+      }
 
+      
       .nav_list {
         display: none;
         position: fixed;
         width: 100%;
         height: 100%;
-        background: rgba(0, 0, 0, .5);
+        background: rgba(18, 58, 88, .8);
         line-height: rem(50);
         z-index: 11;
         left: 0;
-        top: rem(80);
+        top: 0;
         box-sizing: border-box;
-        padding: rem(30) 0;
+        border-top: 1px solid rgba(224,224,224,1);
+        padding: rem(80) 0 0;
         margin-left: 0;
 
         a {
@@ -91,14 +96,32 @@
           width: 100%;
           display: block;
           text-align: center;
-          margin: 0 rem(20);
-          border-bottom: 1px solid #fff;
+          margin: 0;
+          border-bottom: 1px solid rgba(224,224,224,1);
           font-size: rem(24);
-          text-align: left;
-          line-height: rem(60);
+          text-align: center;
+          line-height: rem(80);
           color: #fff;
-          margin-bottom: rem(20);
           text-indent: 1rem;
+          padding-left: 0;
+
+          &:first-child{
+            padding-left: 0;
+          }
+        }
+
+        .active{
+          background: rgba(184,153,115,1);
+        }
+
+        .close{
+          display: block;
+          position: absolute;
+          right: rem(20);
+          top: rem(-60);
+          font-size: rem(60);
+          color: #E0E0E0;
+          font-style: normal;
         }
       }
 
@@ -113,20 +136,19 @@
         }
       }
 
-      .menu-and-close {
+      .menu {
         display: block;
         position: absolute;
         top: rem(15);
         right: rem(15);
         width: rem(50);
         height: rem(50);
+        line-height: rem(50);
+        font-style: normal;
+        font-size: rem(50);
         box-sizing: border-box;
-        background-image: url(../images/menu.png);
         background-size: 100% 100%;
-      }
-
-      .menu-and-close.close {
-        background-image: url(../images/close.png)
+        color: rgba(171,132,85,1);
       }
     }
 
@@ -229,18 +251,25 @@
 
         .top {
           span:first-child {
-            display: none;
+            // left: rem(6);
+            top: rem(-18);
+            width: rem(123);
+            padding-right: rem(20);
+            height: rem(38);
+            font-size: rem(18);
+            line-height: rem(38);
+            transform: scale(.8);
           }
 
           span:last-child {
-            width: auto;
+            width: 100%;
             height: auto;
             font-size: rem(24);
             line-height: rem(30);
             margin-top: rem(30);
             text-align: center;
             display: block;
-            padding-top: rem(12);
+            padding-top: rem(18);
           }
         }
 
