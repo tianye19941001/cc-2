@@ -113,7 +113,8 @@
 			$('.nav_list em').remove();
 		})
 
-		$('.nav_list a').on('mouseenter', function(){
+		$('.nav_list a').on('mouseenter', function(e){
+
 			var index = $('.nav_list a').index($(this));
 			var left = $(this).get(0).offsetLeft + 12;
 			if (index == 0) left = -5;

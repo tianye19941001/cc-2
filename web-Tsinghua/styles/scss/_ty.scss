@@ -1408,31 +1408,12 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
         font-size: 18px;
         color: rgba(6, 52, 86, 1);
         cursor: pointer;
-        position: relative;
+      }
 
-        &:after {
-          content: '';
-          display: block;
-          position: absolute;
-          width: 80%;
-          height: 4px;
-          background: rgba(184, 154, 116, 1);
-          bottom: 100%;
-          left: 50%;
-          margin-left: -40%;
-          opacity: 0;
-          transition: all .3s;
-        }
-    
-        &.active,
-        &:hover {
-          color: #B89A74;
-    
-          &::after {
-            bottom: 0;
-            opacity: 1;
-          }
-        }
+      .active {
+        color: #AB8455;
+        font-weight: bold;
+        border-bottom: 2px solid #AB8455;
       }
     }
 
@@ -2314,6 +2295,15 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
     padding: 80px 0 60px;
   }
 
+  .img{
+    width: 1190px;
+    height: 660px;
+    margin: 0 auto;
+    img{
+      margin-left: 130px;
+    }
+  }
+
   .bg {
     width: 1364px;
     height: 660px;
@@ -2321,12 +2311,15 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
 
   .in {
     position: absolute;
-    left: 0;
+    left: 10%;
     bottom: 100px;
     width: 320px;
     padding: 70px 160px 100px 100px;
     text-align: left;
     background: #fff;
+  }
+  .container-2{
+    width: 100%;
   }
 
   h3 {
