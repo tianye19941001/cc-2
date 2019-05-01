@@ -98,10 +98,10 @@
           text-align: center;
           margin: 0;
           border-bottom: 1px solid rgba(224,224,224,1);
-          font-size: rem(24);
+          font-size: rem(30);
           text-align: center;
           line-height: rem(80);
-          color: #fff;
+          color: rgba(255, 255, 255, .3);
           text-indent: 1rem;
           padding-left: 0;
 
@@ -112,6 +112,7 @@
 
         .active{
           background: rgba(184,153,115,1);
+          border-bottom: 0;
         }
 
         .close{

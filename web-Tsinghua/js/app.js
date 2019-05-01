@@ -124,7 +124,8 @@
 		})
 		
 	}else{
-
+		var prev = $('.nav_list .active').prev();
+		if(prev.length > 0) prev.css({'border-bottom': 0})
 	}
 
 	// 动画延时函数
