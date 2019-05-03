@@ -6,6 +6,7 @@
 
 @media screen and (min-width:1px) and (max-width:1019px) {
   body {
+    padding-top: rem(80);
     min-width: 100% !important;
 
     .container {
@@ -21,8 +22,9 @@
     }
 
     .nav {
+
       width: 100%;
-      height: rem(80);
+      height: rem(0);
       position: relative;
       z-index: 13;
       background: #fff;
@@ -33,31 +35,25 @@
 
       .nav-top {
         height: rem(80);
+        position: fixed;
+        top: 0;
+        left: 0;
       }
 
       .brand {
         width: auto;
         height: rem(80);
         background: #fff;
+        box-shadow: 0 rem(10) rem(10) rgba(0, 0, 0, 0.1);
 
-        .l,
+        .m,
         .r {
           display: none;
         }
 
-        .m {
-          display: block;
-        }
-
-        .m {
+        .l {
           position: static;
           display: inline-block;
-        }
-
-        a {
-          // display: block;
-          // height: 100%;
-          // background: #063456;
         }
 
         &:after {
@@ -71,11 +67,12 @@
           margin: rem(10) 0 0 rem(30);
         }
       }
-      .in{
+
+      .in {
         width: 100% !important;
       }
 
-      
+
       .nav_list {
         display: none;
         position: fixed;
@@ -87,8 +84,8 @@
         left: 0;
         top: 0;
         box-sizing: border-box;
-        border-top: 1px solid rgba(224,224,224,1);
-        padding: rem(80) 0 0;
+        border-top: 1px solid rgba(224, 224, 224, 1);
+        padding: 5rem 0 0;
         margin-left: 0;
 
         a {
@@ -97,29 +94,29 @@
           display: block;
           text-align: center;
           margin: 0;
-          border-bottom: 1px solid rgba(224,224,224,1);
+          border-bottom: 1px solid rgba(255, 255, 255, .1);
           font-size: rem(30);
           text-align: center;
           line-height: rem(80);
-          color: rgba(255, 255, 255, .3);
+          color: rgba(255, 255, 255, .8);
           text-indent: 1rem;
           padding-left: 0;
 
-          &:first-child{
+          &:first-child {
             padding-left: 0;
           }
         }
 
-        .active{
-          background: rgba(184,153,115,1);
+        .active {
+          background: rgba(184, 153, 115, 1);
           border-bottom: 0;
         }
 
-        .close{
+        .close {
           display: block;
           position: absolute;
           right: rem(20);
-          top: rem(-60);
+          top: -3.6rem;
           font-size: rem(60);
           color: #E0E0E0;
           font-style: normal;
@@ -149,7 +146,7 @@
         font-size: rem(50);
         box-sizing: border-box;
         background-size: 100% 100%;
-        color: rgba(171,132,85,1);
+        color: rgba(171, 132, 85, 1);
       }
     }
 
@@ -175,6 +172,10 @@
 
             &:after {
               display: none;
+            }
+
+            span {
+              width: 100%;
             }
           }
         }
@@ -234,7 +235,8 @@
     }
 
     .content {
-      margin-top: rem(60);
+      margin-top: rem(0);
+      padding-top: 0;
       height: auto;
 
       .content_left {
@@ -245,6 +247,12 @@
         margin-right: auto;
         float: none;
         display: block;
+
+        &:first-child {
+          .top {
+            margin-top: 2rem;
+          }
+        }
 
         &:last-child {
           margin-right: auto;
@@ -285,7 +293,7 @@
         .bottom {
           position: static;
           margin: rem(25) rem(20);
-          padding-bottom: rem(10);
+          padding-bottom: 1rem;
           transform: translateX(0);
           white-space: nowrap;
           text-align: center;
@@ -297,7 +305,7 @@
             font-size: rem(20);
             border-radius: rem(20);
             line-height: rem(40);
-            margin: rem(10);
+            margin: rem(10) rem(10) 0;
           }
         }
       }
@@ -305,7 +313,7 @@
 
     .new {
       height: auto;
-      margin-top: rem(60);
+      margin-top: rem(120);
 
       .new-item {
         display: block;
@@ -351,6 +359,10 @@
       width: rem(520);
       // transform: scale(1.1);
       margin-bottom: rem(20);
+
+      .ty-title {
+        padding-top: 0;
+      }
     }
 
     .news-boll {
@@ -364,15 +376,15 @@
       span {
         width: rem(12);
         height: rem(12);
-        margin: 0 rem(10);
+        margin: 0 0.45rem !important;
       }
     }
 
     .newList {
-      padding-top: rem(30);
+      padding-top: 3rem;
       width: rem(520);
       height: auto;
-      margin: rem(70) auto rem(0);
+      margin: 1rem auto rem(0);
       overflow: hidden;
 
       .newText {
@@ -757,7 +769,7 @@
             padding-bottom: rem(20);
 
             img {
-              width: rem(520);
+              width: 18rem;
               height: auto;
             }
           }
@@ -768,6 +780,30 @@
           float: none;
           padding: rem(20) 0;
           text-align: center;
+          padding-bottom: 140px;
+
+          .socialwraper {
+            position: absolute;
+            background: #fff;
+            width: 130px;
+            height: 130px;
+            top: 55px;
+            left: 50%;
+            margin-left: -34px;
+            border: 1px solid #ccc;
+            display: block;
+            z-index: 1;
+
+            i {
+              display: none;
+            }
+
+            img {
+              width: 100%;
+              height: auto;
+              margin: 0;
+            }
+          }
         }
 
       }
@@ -1045,7 +1081,7 @@
   }
 
   .ty-general {
-    padding: rem(70) 0 rem(210);
+    padding: rem(70) 0 rem(110);
 
     .ty-title {
       margin-bottom: rem(60);
@@ -1055,35 +1091,42 @@
       width: 100%;
       height: auto;
 
+      .img{
+        width: 100%;
+        height: auto;
+      }
+
       img {
         width: 100%;
         height: auto;
-        margin-left: 40%;
       }
 
       p {
+        position: relative;
         width: 90%;
         height: auto;
         display: block;
-        margin: 0 auto;
+        margin: -2rem auto 0;
         box-sizing: border-box;
         padding: rem(60);
         font-size: rem(20);
         line-height: rem(36);
-        left: 5%;
-        top: 30%;
+        height: auto;
+        left: 0%;
+        top: 0%;
       }
 
       a {
         position: absolute;
         left: rem(0);
-        bottom: rem(-120);
+        bottom: -2rem;
       }
     }
   }
 
   .ty-training {
     width: 100%;
+    height: auto;
     padding: rem(80) 0;
 
     img {
@@ -1110,8 +1153,8 @@
   }
 
   .ty-connect {
-    padding: rem(80) 0;
-    width: 90%;
+    padding: rem(80) 0 0;
+    width: 100%;
     margin: 0 auto;
     position: relative;
 
@@ -1121,11 +1164,12 @@
     }
 
     .in {
-      position: absolute;
+      position: relative;
       width: 90%;
       height: auto;
-      top: rem(100);
+      top: 0;
       margin-left: -45%;
+      margin-top: -2rem;
 
       .ty-title {
         padding-top: rem(30);
@@ -1158,7 +1202,7 @@
     .ty-news-swiper {
       position: absolute;
       left: 5%;
-      top: rem(26);
+      top: 23rem;
       padding-top: rem(100);
       width: 90%;
       height: auto;
@@ -1201,6 +1245,8 @@
     }
 
     .imgs {
+      padding-bottom: 15rem;
+
       .in {
         width: 100%;
         height: rem(600);
@@ -1208,8 +1254,10 @@
 
       img {
         display: none;
+        width: auto;
         height: rem(600);
         position: static;
+        margin-top: 0;
       }
 
       .active {
@@ -1281,13 +1329,15 @@
         font-size: rem(24);
         line-height: rem(40);
         margin-bottom: rem(18);
-        height: rem(80);
+        height: auto;
+        -webkit-line-clamp: 100;
       }
 
       p {
         font-size: rem(20);
         line-height: rem(28);
-        height: rem(28*6);
+        height: auto;
+        -webkit-line-clamp: 100;
       }
 
       &:before {
@@ -1708,16 +1758,16 @@
 
     .in {
       padding-top: 0;
-      width: 90%;
+      width: 100%;
       margin: 0 auto;
     }
 
     .main {
       padding: rem(40);
-      width: 100%;
+      width: 90%;
       box-sizing: border-box;
-      margin-left: 0;
-      margin-top: rem(-200);
+      margin: 0 auto;
+      margin-top: -2rem;
 
       .list {
         width: 100%;
@@ -1816,6 +1866,7 @@
         &:before {
           width: rem(48);
           height: rem(20);
+          margin-right: rem(6);
         }
       }
 
@@ -1917,6 +1968,7 @@
     padding: rem(50) 0;
 
     .ty-title {
+      padding-top: 0;
       margin-bottom: rem(0);
     }
 
@@ -2158,9 +2210,12 @@
     width: 100%;
     border-top: 1px solid rgba(211, 195, 162, 1);
     margin: rem(80) auto 0;
+    overflow-x: auto;
+    height: auto;
 
     ul {
       text-align: center;
+      white-space: nowrap;
       background: rgba(243, 243, 246, 1);
     }
 
@@ -2189,14 +2244,13 @@
 
       .list {
         width: rem(274*2+34+34);
-        ;
         margin-left: rem(-34);
 
         .teacher {
           float: left;
-          width: rem(274);
-          margin-left: rem(34);
-          padding-bottom: rem(26);
+          width: rem(274*2);
+          margin-left: rem(34*2);
+          padding-bottom: rem(26*2);
           margin-bottom: rem(70);
 
           &:hover {
@@ -2208,30 +2262,30 @@
 
         .img,
         img {
-          width: rem(139);
-          height: rem(186);
+          width: rem(139*2);
+          height: rem(186*2);
         }
 
         .bar {
-          top: rem(26);
-          width: rem(96);
-          padding: 0 rem(32);
-          height: rem(199);
+          top: rem(26*2);
+          width: rem(96*2);
+          padding: 0 rem(32*2);
+          height: rem(199*2);
         }
 
         h3 {
-          font-size: rem(20);
-          padding: rem(20) 0 rem(10);
+          font-size: rem(20*2);
+          padding: rem(20*2) 0 rem(10*2);
         }
 
         p {
-          font-size: rem(13);
-          line-height: rem(18);
-          margin-bottom: rem(20);
+          font-size: rem(13*2);
+          line-height: rem(18*2);
+          margin-bottom: rem(20*2);
         }
 
         .ty-more-1 {
-          font-size: rem(13);
+          font-size: rem(13*2);
         }
       }
     }
@@ -2248,14 +2302,22 @@
     margin-bottom: rem(50);
 
     .ty-title {
-      padding: rem(40) 0 ;
+      padding: rem(40) 0;
     }
 
-    .img{
+    .img-in{
+      width: 100%;
+      height: auto;
+    } 
+
+    .img {
       width: 100%;
       height: auto;
       margin: 0 auto;
-      img{
+
+      img {
+        width: 100%;
+        margin-top: 0;
         margin-left: 0;
       }
     }
@@ -2308,50 +2370,54 @@
     width: rem(540);
     margin: 0 auto;
     padding-bottom: rem(50);
-  
+
     h3 {
       font-size: rem(30);
       line-height: rem(32);
       margin-bottom: rem(56);
     }
-  
+
     img {
       width: rem(270);
       height: rem(270);
       float: left;
     }
-  
+
     li {
       width: rem(540);
       height: rem(270);
       overflow: hidden;
+
       &:nth-child(2n) {
-        .in{
+        .in {
           float: left;
         }
-        img{
+
+        img {
           left: auto;
           right: 0;
         }
+
         .in:after {
           bottom: rem(-23);
         }
       }
     }
-  
+
     .in {
       float: right;
       width: rem(270);
       height: rem(270);
       line-height: rem(270);
       font-size: rem(24);
+
       &:after {
         top: rem(-23);
         border-width: rem(13);
         margin-left: rem(-13);
       }
     }
-  
+
     .ty-more-3 {
       display: block;
       margin: rem(44) auto 0;

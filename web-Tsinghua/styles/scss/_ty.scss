@@ -24,6 +24,11 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
   width: 1070px;
   margin: 0 auto;
   overflow-x: hidden;
+
+  .ty-title{
+    padding-top: 50px;
+    margin-bottom: -70px;
+  }
 }
 
 .news-boll {
@@ -107,9 +112,10 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
 
   img {
     position: absolute;
-    height: 100%;
+    min-height: 100%;
+    min-width: 100%;
     left: 50%;
-    top: 50%;
+    top: 49.5%;
     transform: translate(-50%, -50%);
   }
 
@@ -524,8 +530,14 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
     margin: 0 auto;
     position: relative;
 
-    img {
+    .img{
+      width: 100000px;
       height: 100%;
+      overflow: hidden;
+    }
+
+    img {
+      height: 120%;
       display: block;
     }
 
@@ -552,6 +564,10 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
 .ty-training {
   width: 100%;
   padding: 130px 0 170px;
+  height: 768-300px;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../images/new/ll.png);
   position: relative;
   overflow: hidden;
 
@@ -713,8 +729,10 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
     }
 
     img {
+      width: 1900px;
       display: none;
-      height: 100%;
+      height: auto;
+      margin-top: -100px;
       position: absolute;
       left: 130px;
       top: 0;
@@ -1215,7 +1233,7 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
     color: rgba(18, 18, 18, 1);
   }
 
-  a {
+  p {
     span {
       color: rgba(6, 52, 86, 1);
       margin-right: 10px;
@@ -1495,14 +1513,6 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
     margin-top: 0;
     position: relative;
     top: -80px;
-
-    .swiper-pagination-bullet{
-      opacity: .5;
-    }
-
-    .swiper-pagination-bullet-active{
-      opacity: 1;
-    }
   }
 
   div.student_content {
@@ -1531,8 +1541,8 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
     height: 506px;
     display: block;
     position: absolute;
-    top: 286px;
-    left: 0;
+    top: 80px;
+    right: 660px;
   }
 
   .in {
@@ -1698,7 +1708,8 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
         height: 20px;
         background-image: url(../images/icon.png);
         background-size: 100% 100%;
-        vertical-align: middle;
+        vertical-align: -2px;
+        margin-right: 6px;
       }
     }
 
@@ -1731,7 +1742,7 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
     .ty-pro-list {
       background: rgba(243, 243, 246, 1);
       width: 658px;
-      padding: 10px 70px 30px;
+      padding: 40px 70px 30px;
       margin: -438+306px auto 0;
       position: relative;
       z-index: 3;
@@ -1831,7 +1842,8 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
   padding: 70px 0 100px;
 
   .ty-title {
-    margin-bottom: 50px;
+    padding-top: 20px;
+    margin-bottom: 1px;
   }
 
   .ty-projects {
@@ -2246,8 +2258,8 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
         position: absolute;
         right: 0;
         top: 26px;
-        width: 96px;
-        padding: 0 32px;
+        width: 95px;
+        padding: 0 20px 0 35px;
         height: 199px;
         background: rgba(243, 243, 246, 1);
       }
@@ -2295,18 +2307,22 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
     padding: 80px 0 60px;
   }
 
+  .img-in{
+    width: 100000px;
+    height: 660px;
+    overflow: hidden;
+  }
+
   .img{
     width: 1190px;
     height: 660px;
     margin: 0 auto;
     img{
+      width: 1900px;
       margin-left: 130px;
+      margin-top: -150px;
+      display: block;
     }
-  }
-
-  .bg {
-    width: 1364px;
-    height: 660px;
   }
 
   .in {

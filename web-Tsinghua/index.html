@@ -79,25 +79,25 @@
 				<div class="swiper-slide">
 					<a href="javascript:;">
 						<img src="./images/swiper1_02.png">
-						<div class="center">清华大学经济管理学院2018级本科生开学典礼暨入学导向举行</div>
+						<div class="center"><span>清华大学经济管理学院2018级本科生开学典礼暨入学导向举行</span></div>
 					</a>
 				</div>
 				<div class="swiper-slide">
 					<a href="javascript:;">
 						<img src="./images/swiper2_02.png">
-						<div class="center">清华大学经济管理学院2018级本科生开学典礼暨入学导向举行</div>
+						<div class="center"><span>清华大学经济管理学院2018级本科生开学典礼暨入学导向举行</span></div>
 					</a>
 				</div>
 				<div class="swiper-slide">
 					<a href="javascript:;">
 						<img src="./images/swiper3_02.png">
-						<div class="center">清华大学经济管理学院2018级本科生开学典礼暨入学导向举行</div>
+						<div class="center"><span>清华大学经济管理学院2018级本科生开学典礼暨入学导向举行</span></div>
 					</a>
 				</div>
 				<div class="swiper-slide">
 					<a href="javascript:;">
 						<img src="./images/swiper4_02.png">
-						<div class="center">清华大学经济管理学院2018级本科生开学典礼暨入学导向举行</div>
+						<div class="center"><span>清华大学经济管理学院2018级本科生开学典礼暨入学导向举行</span></div>
 					</a>
 				</div>
 
@@ -152,6 +152,7 @@
 	</section>
 	<!-- 新闻部分 -->
 	<div class="news-warp">
+		<div class="ty-title">新闻中心</div>
 		<div class="new news-swiper-container">
 			<div class="swiper-wrapper">
 				<div class="swiper-slide new-item">
@@ -364,8 +365,10 @@
 					<p>Email：ugadmit@sem.tsinghua.edu.cn</p>
 				</div>
 				<div class="fr top_right">
-					<a href="javascript:;"><img src="./images/weixin.png" alt=""></a>
-					<a href="javascript:;"><img src="./images/sina.png" alt=""></a>
+					<a class="f-ifont" href="javascript:;">&#xe65d;
+						<div class="socialwraper"><i><em></em></i><img src="./images/weixinma.png"></div>
+					</a>
+					<a class="f-ifont" href="javascript:;">&#xe882;</a>
 				</div>
 
 			</div>
@@ -394,8 +397,10 @@
 				nextEl: '.swiper-button-next',
 				prevEl: '.swiper-button-prev',
 			},
+			autoplayDisableOnInteraction : false,
 			autoplay: {
-				delay: 3000
+				delay: 3000,
+				disableOnInteraction: false
 			},
 			on: {
 				slideChangeTransitionStart: function () {
