@@ -1071,7 +1071,7 @@ footer {
         @extend .clearfix;
 
         .top_left {
-            padding: 44px 0 53px;
+            padding: 44px 0 0;
 
             a {
                 display: block;
@@ -1171,6 +1171,7 @@ footer {
             height: 1px;
             background: rgba(255, 255, 255, 1);
             opacity: 0.19;
+            float: left;
         }
 
         p {

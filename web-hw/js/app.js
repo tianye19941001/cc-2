@@ -56,15 +56,14 @@
 		}
 	}
 
+
+
 	// 滚动到指定元素
 	function movescroll(to) {
 		$('html,body').animate({scrollTop: $(to).offset().top-60},600);
 	}
-	
-	if (document.body.clientWidth >= 1024) {
 
-	}else{
-
-	}
-
+	$('.open-div h2').click(function(){
+		$(this).parent().toggleClass('open');
+	})
 });

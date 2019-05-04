@@ -8,7 +8,12 @@
   body {
     padding-top: rem(80);
     min-width: 100% !important;
-
+    .pc{
+      display: none;
+    }
+    .news-detail .container-2{
+      height: auto;
+    }
     .container {
       width: 100%;
     }
@@ -64,7 +69,7 @@
         a img {
           height: rem(60);
           width: auto;
-          margin: rem(10) 0 0 rem(30);
+          margin: rem(10) 0 0 1rem;
         }
       }
 
@@ -84,7 +89,7 @@
         left: 0;
         top: 0;
         box-sizing: border-box;
-        border-top: 1px solid rgba(224, 224, 224, 1);
+        border-top: 1px solid rgba(224, 224, 224, .95);
         padding: 5rem 0 0;
         margin-left: 0;
 
@@ -153,7 +158,7 @@
     .carousel {
       .swiper-container {
         min-width: 100%;
-        height: rem(456);
+        height: 16rem;
 
         .swiper-slide {
           min-width: 100%;
@@ -240,7 +245,7 @@
       height: auto;
 
       .content_left {
-        width: rem(500);
+        width: 27rem;
         height: auto;
         transition: all .5s;
         margin: 0 auto;
@@ -250,7 +255,7 @@
 
         &:first-child {
           .top {
-            margin-top: 2rem;
+            margin-top: 3rem;
           }
         }
 
@@ -273,17 +278,17 @@
           span:last-child {
             width: 100%;
             height: auto;
-            font-size: rem(24);
+            font-size: 1.4rem;
             line-height: rem(30);
             margin-top: rem(30);
             text-align: center;
             display: block;
-            padding-top: rem(18);
+            padding-top: 2rem;
           }
         }
 
         .center {
-          margin: rem(30) auto 0;
+          margin: 1rem auto 0;
           width: auto;
           font-size: rem(20);
           line-height: 1.5;
@@ -361,7 +366,8 @@
       margin-bottom: rem(20);
 
       .ty-title {
-        padding-top: 0;
+        padding-top: 1rem;
+        margin-bottom: rem(-100)
       }
     }
 
@@ -381,7 +387,7 @@
     }
 
     .newList {
-      padding-top: 3rem;
+      padding-top: 0rem;
       width: rem(520);
       height: auto;
       margin: 1rem auto rem(0);
@@ -473,7 +479,7 @@
       .school_life_list {
         width: 100%;
         text-align: center;
-        margin-bottom: rem(80);
+        margin-bottom: rem(40);
 
         a {
           width: rem(180);
@@ -597,7 +603,7 @@
           line-height: 2.4rem;
           height: auto;
           font-weight: bold;
-          margin-bottom: rem(40);
+          margin-bottom: 0;
         }
 
         .txt {
@@ -609,7 +615,7 @@
 
       .student_content {
         width: rem(440*3+40);
-        padding: rem(80) rem(20) 0;
+        padding: rem(40) rem(20) 0;
         margin-left: rem(-460+100);
         transform: translateX(0);
 
@@ -780,7 +786,11 @@
           float: none;
           padding: rem(20) 0;
           text-align: center;
-          padding-bottom: 140px;
+          padding-bottom: 0;
+
+          &:hover{
+            padding-bottom: 140px;
+          }
 
           .socialwraper {
             position: absolute;
@@ -791,7 +801,7 @@
             left: 50%;
             margin-left: -34px;
             border: 1px solid #ccc;
-            display: block;
+            display: none;
             z-index: 1;
 
             i {
@@ -823,6 +833,7 @@
           margin: 0 auto;
           display: block;
           margin-bottom: rem(30);
+          float: none;
         }
 
         p {
@@ -1202,7 +1213,7 @@
     .ty-news-swiper {
       position: absolute;
       left: 5%;
-      top: 23rem;
+      top: 9rem;
       padding-top: rem(100);
       width: 90%;
       height: auto;
@@ -1218,8 +1229,9 @@
       span {
         position: absolute;
         top: rem(-22);
-        left: rem(70);
+        left: 50%;
         width: rem(178);
+        margin-left: rem(-89);
         height: rem(45);
         line-height: rem(45);
         font-size: rem(20);
@@ -1240,7 +1252,8 @@
     }
 
     .ty-bolls {
-      left: rem(60) !important;
+      text-align: center;
+      left: 0 !important;
       bottom: rem(26) !important;
     }
 
@@ -1249,13 +1262,13 @@
 
       .in {
         width: 100%;
-        height: rem(600);
+        height: 16rem;
       }
 
       img {
         display: none;
         width: auto;
-        height: rem(600);
+        height: 16rem;
         position: static;
         margin-top: 0;
       }
@@ -1368,12 +1381,12 @@
     margin: 0 auto;
 
     .list {
-      padding-bottom: rem(50);
+      padding-bottom: rem(0);
 
       a {
         width: 100%;
         height: auto;
-        padding-bottom: rem(30);
+        padding-bottom: rem(40);
         margin-bottom: rem(30);
       }
     }
@@ -1391,7 +1404,7 @@
       font-size: rem(18);
       line-height: rem(24);
       width: rem(30);
-      margin-left: rem(10);
+      margin-left: rem(40);
       padding-top: rem(45);
 
       strong {
@@ -1402,11 +1415,11 @@
 
     .detial {
       float: left;
-      width: rem(500);
+      width: rem(470);
       box-sizing: border-box;
       padding-left: rem(42);
       margin-left: 0;
-      margin-top: rem(20);
+      margin-top: rem(40);
 
       h3 {
         font-size: rem(24);
@@ -1436,10 +1449,10 @@
 
     .ty-title {
       padding: rem(40) 0;
-      font-size: rem(36);
+      font-size: 26px;
       line-height: 1.5;
       text-align: left;
-      margin-bottom: rem(20);
+      margin-bottom: rem(0);
     }
 
     .left-bar {
@@ -1491,6 +1504,8 @@
 
       p {
         text-indent: rem(40);
+        font-size: 16px;
+        line-height: 1.75;
         margin-bottom: rem(30);
       }
 
@@ -1737,7 +1752,7 @@
     }
 
     div.title {
-      margin-bottom: rem(20);
+      margin-bottom: rem(0);
     }
 
     .ty-more-3 {
@@ -1748,6 +1763,10 @@
   .ty-sport {
     padding: rem(50) 0;
     width: 100%;
+
+    .ty-title{
+      margin-bottom: 2rem;
+    }
 
     .left-img {
       width: 100%;
@@ -2268,31 +2287,31 @@
 
         .bar {
           top: rem(26*2);
-          width: rem(96*2);
-          padding: 0 rem(32*2);
+          width: rem(96*2-10);
+          padding: 0 rem(54) 0 rem(84);
           height: rem(199*2);
         }
 
         h3 {
-          font-size: rem(20*2);
-          padding: rem(20*2) 0 rem(10*2);
+          font-size: rem(30);
+          padding: rem(25*2) 0 rem(10*2);
         }
 
         p {
-          font-size: rem(13*2);
+          font-size: rem(24);
           line-height: rem(18*2);
           margin-bottom: rem(20*2);
         }
 
         .ty-more-1 {
-          font-size: rem(13*2);
+          font-size: rem(24);
         }
       }
     }
 
     .quit-teacher {
       font-size: rem(30);
-      padding: rem(30) 0 rem(20);
+      padding: rem(30) 0 rem(20) 1.7rem;
     }
   }
 
@@ -2330,7 +2349,7 @@
     .in {
       position: static;
       width: 90%;
-      padding: rem(40);
+      padding: 3rem 3rem 3.5rem;
       padding-bottom: rem(100);
       box-sizing: border-box;
       margin: rem(-100) auto 0;
@@ -2373,8 +2392,9 @@
 
     h3 {
       font-size: rem(30);
+      text-align: center;
       line-height: rem(32);
-      margin-bottom: rem(56);
+      margin-bottom: rem(40);
     }
 
     img {
@@ -2426,7 +2446,7 @@
 
   .ty-download {
     padding: rem(60) 0;
-    margin-bottom: 0;
+    margin-bottom: -4rem;
 
     .warp {
       width: 100%;

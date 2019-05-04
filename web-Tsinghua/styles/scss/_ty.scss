@@ -462,6 +462,7 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
       width: 373-100px;
       height: 419-60px;
       padding: 60px 50px 0;
+      margin-right: 35px;
       background: rgba(255, 255, 255, 1);
       float: left;
       transition: all .3s;
@@ -1272,10 +1273,15 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
     margin-top: 30px;
   }
 
-  img {
+  i {
     width: 18px;
     vertical-align: middle;
     margin-right: 12px;
+    display: inline-block;
+    text-align: center;
+    font-size: 18px;
+    color: #3C5473;
+    font-style: normal;
   }
 }
 
