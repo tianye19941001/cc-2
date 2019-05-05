@@ -528,7 +528,21 @@ p.sp-2{
     width: rem(610);
     margin: 0 auto;
 
-    tr{
+    .tr{
+        width: 100%;
+        background:rgba(240,253,255,1);
+        height: rem(40);
+        line-height: rem(40);
+        text-align: center;
+        
+        border-bottom: rem(2) solid #fff;
+
+        &:first-child{
+height:rem(50);
+background:linear-gradient(-90deg,rgba(140,221,255,1) 0%,rgba(113,200,255,1) 100%);
+border-radius:10px 10px 0px 0px;
+        }
+
         background:rgba(240,253,255,1);
         &:first-child{
 
