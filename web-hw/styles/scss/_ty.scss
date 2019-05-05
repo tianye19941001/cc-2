@@ -487,7 +487,7 @@ p.sp-2{
 
 .open-div{
     width:rem(610);
-    margin: 0 auto;
+    margin: rem(20) auto 0;
     h2{    
         height:rem(70);
         line-height: rem(70);
@@ -536,7 +536,7 @@ p.sp-2{
     .tr{
         width: 100%;
         background:rgba(240,253,255,1);
-        height: rem(40);
+        min-height: rem(40);
         line-height: rem(40);
         text-align: center;
         overflow: hidden;
@@ -638,37 +638,6 @@ p.sp-2{
             }
         }
     }
-    .progress-ing{
-        width:rem(490);
-        height:rem(40);
-        background:rgba(240,240,240,1);
-        border-radius:rem(20);
-
-        span{
-            float: left;
-            text-align: center;
-            height: rem(40);
-            line-height: rem(40);
-            font-size:rem(24);
-            color:rgba(255,255,255,1);
-            border-radius: rem(20);
-        }
-
-        .progress-1,.progress-2{
-            background:linear-gradient(90deg,rgba(140,221,255,1) 0%,rgba(113,200,255,1) 100%);
-        }
-        .progress-3{
-            background:linear-gradient(90deg,rgba(193,228,155,1) 0%,rgba(124,213,145,1) 100%);
-        }
-        .progress-4,.progress-5{
-            background:linear-gradient(90deg,rgba(255,165,123,1) 0%,rgba(255,139,123,1) 100%);
-        }
-        .progress-1{width: 20%}
-        .progress-2{width: 40%}
-        .progress-3{width: 60%}
-        .progress-4{width: 80%}
-        .progress-5{width: 100%}
-    }
 
     .sport-progress{
         .self-progress{
@@ -706,6 +675,179 @@ p.sp-2{
             background:rgba(255,249,245,1);
             &:first-child{background:linear-gradient(-90deg,rgba(255,192,162,1) 0%,rgba(255,165,123,1) 100%);}
         }
+    }
+}
+
+.progress-ing{
+    width:rem(490);
+    height:rem(40);
+    background:rgba(240,240,240,1);
+    border-radius:rem(20);
+
+    span{
+        float: left;
+        text-align: center;
+        height: rem(40);
+        line-height: rem(40);
+        font-size:rem(24);
+        color:rgba(255,255,255,1);
+        border-radius: rem(20);
+    }
+
+    .progress-1,.progress-2{
+        background:linear-gradient(90deg,rgba(140,221,255,1) 0%,rgba(113,200,255,1) 100%);
+    }
+    .progress-3{
+        background:linear-gradient(90deg,rgba(193,228,155,1) 0%,rgba(124,213,145,1) 100%);
+    }
+    .progress-4,.progress-5{
+        background:linear-gradient(90deg,rgba(255,165,123,1) 0%,rgba(255,139,123,1) 100%);
+    }
+    .progress-1{width: 20%}
+    .progress-2{width: 40%}
+    .progress-3{width: 60%}
+    .progress-4{width: 80%}
+    .progress-5{width: 100%}
+}
+
+.beauty-report{
+    .report-title{
+        background:linear-gradient(90deg,rgba(255,130,169,.1) 0%,rgba(255,172,130,.1) 100%);
+        span{
+            background:linear-gradient(0deg,rgba(255,81,126,1) 0%, rgba(255,121,161,1) 100%);
+            -webkit-background-clip:text;
+            -webkit-text-fill-color:transparent
+        }
+    }
+
+    .share-in{
+        .tip{
+            background:linear-gradient(-45deg,rgba(255,148,173,.4) 0%,rgba(255,186,194,.4) 100%);
+            border: rem(2) solid rgba(255,121,161,.4);
+            box-shadow:0px 3px 7px 0px rgba(0, 0, 0, 0.35);
+            border-radius:25px 25px 0px 25px;
+
+            span{
+                background:linear-gradient(0deg,rgba(255,81,126,1) 0%, rgba(255,121,161,1) 100%);
+                -webkit-background-clip:text;
+                -webkit-text-fill-color:transparent;
+            }
+        }
+
+        .tip-1{
+            right: rem(255);
+            top: rem(10+24);
+        }
+
+        .tip-2{
+            right: rem(331);
+            top: rem(114+24);
+        }
+
+        .tip-3{
+            right: rem(311);
+            top: rem(217+24);
+        }
+
+        .tip-4{
+            left: rem(310);
+            right: auto;
+            top: rem(62+24);
+            border-radius:rem(25) rem(25)  rem(25) 0;
+        }
+
+        .tip-5{
+            left: rem(332);
+            top: rem(165+24);
+            border-radius:rem(25) rem(25)  rem(25) 0;
+        }
+
+        .in{
+            a{
+                box-shadow:0px 6px 12px 0px rgba(255,211,190,1);
+                background:linear-gradient(-45deg,rgba(255,165,123,1) 0%,rgba(255,175,137,1) 100%);
+                text-shadow:0px 3px 6px rgba(255,132,0,1);
+            }
+        }
+    }
+
+    .sport-table{
+        .tr{
+            background:rgba(255,248,248,1);
+            &:first-child{background:linear-gradient(90deg,rgba(255,148,173,1) 0%,rgba(255,186,194,1) 100%);}
+        }
+    }
+
+    .table-2{
+        .tr{
+            position: relative;
+            .th,.td{
+                width: 50%;
+            }
+            .td:last-child{
+                float: right;
+                padding: rem(12);
+                text-align: justify;
+            }
+            .td:first-child{
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: translate(0 , -50%)
+            }
+        }
+    }
+
+    p.sp-1{color:#FF98B0;text-align: center;}
+    p.sp-2 em{color: rgba(49, 186, 80, .8); text-align: center;}
+}
+
+.mf-list{
+    @extend .clearfix;
+    margin-bottom: rem(-40);
+
+    li{
+        float: left;
+        width: 50%;
+        height: rem(334);
+        box-sizing: border-box;
+        padding-top: rem(38);
+        text-align: center;
+
+        img{
+            display: block;
+            margin: 0 auto;
+            width: rem(198);
+            height: rem(198);
+            margin-bottom: rem(20);
+        }
+
+        border-bottom: 1px solid rgba(115,115,115,0.1);
+        border-right: 1px solid rgba(115,115,115,0.1);
+
+        &:nth-child(2n){
+            border-right: 0;
+        }
+    }
+}
+
+.top-img{
+    line-height: rem(100);
+    height: rem(100);
+    padding: 0 rem(50);
+    font-size:rem(48);
+    font-weight: 600;
+    color:rgba(254,254,254,1);
+    margin: -8rem 0 rem(15);
+
+    img{
+        display: inline-block;
+        height: rem(100);
+        width: rem(100);
+        margin-right: rem(15);
+        vertical-align: middle;
+        box-shadow:0px rem(4) rem(10) 0px rgba(115,115,115,0.1);
+        border-radius: rem(100);
     }
 }
 
