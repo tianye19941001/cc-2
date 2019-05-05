@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 .oh{ overflow: hidden; }
-body{ background-color: #f0f0f0; font-family: "黑体"; }
+body{ background-color: #f0f0f0; font-family: "微软雅黑"; padding-bottom: rem(40);}
 
 .index-header{
     img{width: 100%; display: block;}
@@ -119,7 +119,7 @@ body{ background-color: #f0f0f0; font-family: "黑体"; }
     width: rem(670);
     height: rem(180);
     margin-bottom: rem(30);
-    button{margin-top: rem(20);color: #999}
+    button{margin-top: rem(16);color: #999}
 }
 .index-coming{
     margin-top: rem(40);
@@ -146,6 +146,7 @@ body{ background-color: #f0f0f0; font-family: "黑体"; }
     margin: 0 auto rem(30);
     position: relative;
     z-index: 2;
+    padding-bottom: rem(40);
 
     p{
         font-size:rem(24);
@@ -163,12 +164,14 @@ body{ background-color: #f0f0f0; font-family: "黑体"; }
     line-height: rem(80);
     padding: 0 rem(30);
     background:linear-gradient(150deg,rgba(123,204,255,.15) 0%,rgba(155,240,255,.15) 100%);
+    border-radius:rem(20) rem(20) 0 0;
     span{
         font-size:rem(36);
         font-weight:500;
         color:rgba(1,1,1,1);
         background:linear-gradient(-90deg,rgba(58,168,238,1) 0.9765625%, rgba(43,140,219,1) 100%);
         -webkit-background-clip:text;
+        font-weight: bold;
         -webkit-text-fill-color:transparent;
     }
 }
@@ -177,12 +180,14 @@ body{ background-color: #f0f0f0; font-family: "黑体"; }
     height: rem(80);
     padding: rem(20) rem(30);
     background:linear-gradient(150deg,rgba(123,204,255,.15) 0%,rgba(155,240,255,.15) 100%);
+    border-radius:rem(20) rem(20) 0 0;
     span{
         font-size:rem(36);
         font-weight:500;
         color:rgba(1,1,1,1);
         background:linear-gradient(-90deg,rgba(58,168,238,1) 0.9765625%, rgba(43,140,219,1) 100%);
         -webkit-background-clip:text;
+        font-weight: bold;
         -webkit-text-fill-color:transparent;
         display: block;
     }
@@ -197,7 +202,7 @@ body{ background-color: #f0f0f0; font-family: "黑体"; }
     height: rem(350);
     position: relative;
     padding: rem(24) 0;
-    margin: 0 auto;
+    margin: 0 auto rem(-40);
     .in{
         a{
             display: block;
@@ -292,7 +297,7 @@ body{ background-color: #f0f0f0; font-family: "黑体"; }
 }
 
 .sport-show{
-    padding: rem(30) rem(30) rem(40);
+    padding: rem(30) rem(30) 0;
     li{
         a{
             @extend .clearfix;
@@ -421,7 +426,6 @@ p.sp-2{
     color:rgba(0,0,0,.8);
     line-height:rem(30);
     opacity:0.8;
-    padding-bottom: rem(40);
 
     em{
         color: #31BA50;
@@ -440,6 +444,7 @@ p.sp-2{
 }
 
 .img-advise{
+    margin-bottom: rem(-40);
     @extend .clearfix;
 
     li{
@@ -477,13 +482,12 @@ p.sp-2{
 }
 
 .sport-text{
-    padding: rem(30)
+    padding: rem(30) rem(30) 0;
 }
 
 .open-div{
     width:rem(610);
     margin: 0 auto;
-    padding-bottom: rem(30);
     h2{    
         height:rem(70);
         line-height: rem(70);
@@ -527,6 +531,7 @@ p.sp-2{
 .sport-table{
     width: rem(610);
     margin: 0 auto;
+    padding-top: rem(40);
 
     .tr{
         width: 100%;
@@ -534,18 +539,172 @@ p.sp-2{
         height: rem(40);
         line-height: rem(40);
         text-align: center;
-        
-        border-bottom: rem(2) solid #fff;
+        overflow: hidden;
+        border-bottom: 1px solid #fff;
 
         &:first-child{
-height:rem(50);
-background:linear-gradient(-90deg,rgba(140,221,255,1) 0%,rgba(113,200,255,1) 100%);
-border-radius:10px 10px 0px 0px;
+            height:rem(50);
+            background:linear-gradient(-90deg,rgba(140,221,255,1) 0%,rgba(113,200,255,1) 100%);
+            border-radius:10px 10px 0px 0px;
         }
 
-        background:rgba(240,253,255,1);
-        &:first-child{
+        .th,.td{
+            display: block;
+            float: left;
+            width: 25%;
+            line-height: rem(40);
+            font-size:rem(24);
+            color:rgba(0,0,0,.8);
+            border-right: 1px solid #fff;
+            box-sizing: border-box;
 
+            &:last-child{
+                border-right: 0;
+            }
+        }
+
+        .th{
+            color: #fff;
+            line-height: rem(50);
+        }
+
+        .red{
+            color:rgba(255,103,101,.8);
+            font-weight: 500;
+        }
+        .green{
+            color:rgba(49,186,80,.8);
+            font-weight: 500;
+        }
+    }
+}
+
+// 营养
+.nutrition-report{
+    .report-title{
+        background:linear-gradient(-90deg,rgba(255,192,162,.1) 0%,rgba(255,165,123,.1) 100%);
+        span{
+            background:linear-gradient(-90deg,rgba(255,165,123,1) 0%, rgba(255,127,70,1) 100%);
+            -webkit-background-clip:text;
+            -webkit-text-fill-color:transparent;
+        }
+    }
+
+    .share-in{
+        .tip{
+            background:linear-gradient(-45deg,rgba(255,190,160,.4) 0%,rgba(255,216,188,.4) 100%);
+            border: 0;
+
+            span{
+                background:linear-gradient(-90deg,rgba(255,165,123,1) 0%, rgba(255,127,70,1) 100%);
+                -webkit-background-clip:text;
+                -webkit-text-fill-color:transparent;
+            }
+        }
+
+        .tip-1{
+            right: rem(255);
+            top: rem(10+24);
+        }
+
+        .tip-2{
+            right: rem(331);
+            top: rem(114+24);
+        }
+
+        .tip-3{
+            right: rem(311);
+            top: rem(217+24);
+        }
+
+        .tip-4{
+            left: rem(310);
+            right: auto;
+            top: rem(62+24);
+            border-radius:rem(25) rem(25)  rem(25) 0;
+        }
+
+        .tip-5{
+            left: rem(332);
+            top: rem(165+24);
+            border-radius:rem(25) rem(25)  rem(25) 0;
+        }
+
+        .in{
+            a{
+                box-shadow:0px 6px 12px 0px rgba(255,211,190,1);
+                background:linear-gradient(-45deg,rgba(255,165,123,1) 0%,rgba(255,175,137,1) 100%);
+                text-shadow:0px 3px 6px rgba(255,132,0,1);
+            }
+        }
+    }
+    .progress-ing{
+        width:rem(490);
+        height:rem(40);
+        background:rgba(240,240,240,1);
+        border-radius:rem(20);
+
+        span{
+            float: left;
+            text-align: center;
+            height: rem(40);
+            line-height: rem(40);
+            font-size:rem(24);
+            color:rgba(255,255,255,1);
+            border-radius: rem(20);
+        }
+
+        .progress-1,.progress-2{
+            background:linear-gradient(90deg,rgba(140,221,255,1) 0%,rgba(113,200,255,1) 100%);
+        }
+        .progress-3{
+            background:linear-gradient(90deg,rgba(193,228,155,1) 0%,rgba(124,213,145,1) 100%);
+        }
+        .progress-4,.progress-5{
+            background:linear-gradient(90deg,rgba(255,165,123,1) 0%,rgba(255,139,123,1) 100%);
+        }
+        .progress-1{width: 20%}
+        .progress-2{width: 40%}
+        .progress-3{width: 60%}
+        .progress-4{width: 80%}
+        .progress-5{width: 100%}
+    }
+
+    .sport-progress{
+        .self-progress{
+            background:linear-gradient(90deg,rgba(255,165,123,1) 0%,rgba(255,139,123,1) 100%);
+        }
+    }
+
+    p.sp-1{color:rgba(255,177,140,1);}
+    p.sp-2 em{color: rgba(243, 61, 20, .8)}
+
+    .nutrition-advise{
+        padding-top: rem(35);
+        img{
+            width: rem(250);
+            display: block;
+            margin: 0 auto rem(28);
+        }
+        p{
+            display: block;
+            margin: 0 auto;
+            width:rem(590);
+            font-size:rem(24);
+            color:rgba(0,0,0,.8);
+            line-height:rem(36);
+            word-break: break-all;
+        }
+        strong{
+            font-size: rem(36);
+            font-weight: bold;
+            color: rgba(255, 128, 71, .8)
+        }
+    }
+    .sport-table{
+        .tr{
+            background:rgba(255,249,245,1);
+            &:first-child{background:linear-gradient(-90deg,rgba(255,192,162,1) 0%,rgba(255,165,123,1) 100%);}
         }
     }
 }
