@@ -165,7 +165,9 @@ body{ background-color: #f0f0f0; font-family: "微软雅黑"; padding-bottom: re
     padding: 0 rem(30);
     background:linear-gradient(150deg,rgba(123,204,255,.15) 0%,rgba(155,240,255,.15) 100%);
     border-radius:rem(20) rem(20) 0 0;
+    position: relative;
     span{
+        display: block;
         font-size:rem(36);
         font-weight:500;
         color:rgba(1,1,1,1);
@@ -173,6 +175,26 @@ body{ background-color: #f0f0f0; font-family: "微软雅黑"; padding-bottom: re
         -webkit-background-clip:text;
         font-weight: bold;
         -webkit-text-fill-color:transparent;
+    }
+    i{
+        position: absolute;
+        top: 0;
+        right: rem(30);
+        font-size: rem(18);
+        color: rgba(0, 0, 0, 0.5);
+        font-style: normal;
+    }
+}
+.advice-text{
+    padding-top: rem(30);
+    display: block;
+    width: rem(610);
+    margin: 0 auto;
+
+    strong{
+        font-size: rem(36);
+        font-weight: bold;
+        color: rgba(255, 128, 71, .8)
     }
 }
 
@@ -390,7 +412,9 @@ body{ background-color: #f0f0f0; font-family: "微软雅黑"; padding-bottom: re
     p{
         overflow: hidden;
         font-size: rem(22);
+        position: relative;
         span:first-child{float: left; margin-left: rem(14);}
+        
         span:last-child{float: right; margin-right: rem(14);}
     }
 
@@ -401,6 +425,13 @@ body{ background-color: #f0f0f0; font-family: "微软雅黑"; padding-bottom: re
         border-radius: rem(20);
         margin-bottom: rem(5);
     }
+}
+
+.sport-progress-2{
+    p{
+        color: #aaa;
+    }
+    .middle{ display: block; position: absolute; left: 50%; transform: translateX(-50%); color: #000; }
 }
 
 p.sp-1{
@@ -488,6 +519,11 @@ p.sp-2{
 .open-div{
     width:rem(610);
     margin: rem(20) auto 0;
+
+    &.open{
+        background:rgba(247,247,247,1);
+    }
+
     h2{    
         height:rem(70);
         line-height: rem(70);
@@ -710,6 +746,29 @@ p.sp-2{
     .progress-5{width: 100%}
 }
 
+.style-blue{
+    color: #fff !important;
+    background:linear-gradient(90deg,rgba(140,221,255,1) 0%,rgba(113,200,255,1) 100%) !important;
+}
+
+.style-green{
+    color: #fff !important;
+    background:linear-gradient(90deg,rgba(193,228,155,1) 0%,rgba(124,213,145,1) 100%) !important;
+}
+
+.style-red{
+    color: #fff !important;
+    background:linear-gradient(90deg,rgba(255,165,123,1) 0%,rgba(255,139,123,1) 100%) !important;
+}
+
+.sport-show{
+    
+    .sport-table{
+        float: right;
+        padding-top: rem(20);
+    }
+}
+
 .beauty-report{
     .report-title{
         background:linear-gradient(90deg,rgba(255,130,169,.1) 0%,rgba(255,172,130,.1) 100%);
@@ -724,7 +783,7 @@ p.sp-2{
         .tip{
             background:linear-gradient(-45deg,rgba(255,148,173,.4) 0%,rgba(255,186,194,.4) 100%);
             border: rem(2) solid rgba(255,121,161,.4);
-            box-shadow:0px 3px 7px 0px rgba(0, 0, 0, 0.35);
+            box-shadow:0px 3px 7px 0px rgba(0, 0, 0, 0.15);
             border-radius:25px 25px 0px 25px;
 
             span{
