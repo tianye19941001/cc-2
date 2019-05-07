@@ -24,9 +24,13 @@
         <div class="report-title"><span>综合评分</span></div>
 
         <div class="index-precent">
+            <div class="percent-warp">
+                <canvas data-percent="76" class="circleRun" data-run="0" id="canvasThree" amout="1000"
+                    nowData="1000"></canvas>
+            </div>
             <div class="in">
                 <p class="num"><strong>76</strong><em>.45</em></p>
-                <p>要继续努力哟</p>
+                <p class="add">要继续努力哟</p>
                 <button>分享</button>
             </div>
         </div>
@@ -55,8 +59,9 @@
                     <img src="./images/美肤icon/单项icon/美白淡斑.png" />
                     <span>美白淡斑 ></span>
                     <div class="precent">
+                        <canvas class="circleRun" data-run="0" id="list-1" amout="1000" nowData="1000"></canvas>
                         <div class="in">
-                            <p class="num"><strong>76</strong><em>.45</em></p>
+                            <p class="num"><strong>86</strong><em>.45</em></p>
                             <button>正常</button>
                         </div>
                     </div>
@@ -67,8 +72,9 @@
                     <img src="./images/美肤icon/单项icon/保湿润肤.png" />
                     <span>保湿润肤 ></span>
                     <div class="precent">
+                        <canvas class="circleRun" data-run="0" id="list-2" amout="1000" nowData="1000"></canvas>
                         <div class="in">
-                            <p class="num"><strong>76</strong><em>.45</em></p>
+                            <p class="num"><strong>96</strong><em>.45</em></p>
                             <button>正常</button>
                         </div>
                     </div>
@@ -78,7 +84,8 @@
                 <a href="">
                     <img src="./images/美肤icon/单项icon/淡纹美体.png" />
                     <span>淡纹美体 ></span>
-                    <div class="precent">
+                    <div class="precent precent-red">
+                        <canvas class="circleRun" data-run="0" id="list-3" amout="1000" nowData="1000"></canvas>
                         <div class="in">
                             <p class="num"><strong>54</strong><em>.68</em></p>
                             <button>较低</button>
@@ -90,9 +97,10 @@
                 <a href="">
                     <img src="./images/美肤icon/单项icon/抗衰嫩肤.png" />
                     <span>抗衰嫩肤 ></span>
-                    <div class="precent">
+                    <div class="precent precent-red">
+                        <canvas class="circleRun" data-run="0" id="list-4" amout="1000" nowData="1000"></canvas>
                         <div class="in">
-                            <p class="num"><strong>76</strong><em>.68</em></p>
+                            <p class="num"><strong>20</strong><em>.68</em></p>
                             <button>正常</button>
                         </div>
                     </div>
@@ -103,8 +111,9 @@
                     <img src="./images/美肤icon/单项icon/抗炎防敏.png" />
                     <span>抗炎防敏 ></span>
                     <div class="precent">
+                        <canvas class="circleRun" data-run="0" id="list-5" amout="1000" nowData="1000"></canvas>
                         <div class="in">
-                            <p class="num"><strong>54</strong><em>.68</em></p>
+                            <p class="num"><strong>95</strong><em>.68</em></p>
                             <button>正常</button>
                         </div>
                     </div>
@@ -115,8 +124,9 @@
                     <img src="./images/美肤icon/单项icon/战痘修复.png" />
                     <span>战痘修复 ></span>
                     <div class="precent">
+                        <canvas class="circleRun" data-run="0" id="list-6" amout="1000" nowData="1000"></canvas>
                         <div class="in">
-                            <p class="num"><strong>54</strong><em>.68</em></p>
+                            <p class="num"><strong>66</strong><em>.68</em></p>
                             <button>较低</button>
                         </div>
                     </div>
@@ -127,7 +137,37 @@
 
     <script src="js/jquery.min.js"></script>
     <script src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/zcircleMove.js"></script>
     <script src="js/app.js"></script>
+    <script>
+        // 综合评分最大的圆圈
+        runCircle({
+            obj: 'canvasThree',
+            percent: $('#canvasThree').data('percent') / 100,
+            circleBottomColor: "#F0F0F0", //圆环底色
+            innerColorStart: '#FF94AD', //内部圆环 渐变色
+            innerColorEnd: '#FFBAC2',
+            lineW1: 15
+        });
+
+        $('.beauty-list li').each(function () {
+            var id = $(this).find('canvas').attr('id');
+            var precent = $(this).find('.num strong').text() / 100;
+            var isRed = $(this).find('.precent-red').length > 0;
+            var innerColorEnd = isRed ? '#FFAE9E' : '#FF94AD';
+            var innerColorStart = isRed ? '#FF6161' : '#FFBAC2';
+
+
+            runCircle({
+                obj: id,
+                percent: precent,
+                circleBottomColor: "#F0F0F0", //圆环底色
+                innerColorStart: innerColorStart, //内部圆环 渐变色
+                innerColorEnd: innerColorEnd,
+                lineW1: 3
+            });
+        })
+    </script>
 </body>
 
 </html>

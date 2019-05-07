@@ -20,11 +20,17 @@
     </div>
 
     <div class="report-div second-top-div">
-        <div class="report-title"><span>抗晒黑能力</span><img class="second-top" src="./images/美肤icon/单项icon/战痘修复.png"alt=""></div>
+        <div class="report-title"><span>抗晒黑能力</span><img class="second-top" src="./images/美肤icon/单项icon/战痘修复.png"
+                alt=""></div>
 
-        <div class="beauty-progress">
-            <p class="num"><strong>70</strong><em>.01</em></p>
-            <button>正常</button>
+        <div class="second-precent">
+            <div class="percent-warp">
+                <canvas data-percent="66" class="circleRun" data-run="0" id="canvasThree" amout="1000" nowData="1000"></canvas>
+            </div>
+            <div class="in">
+                <p class="num"><strong>66</strong><em>.45</em></p>
+                <button>正常</button>
+            </div>
         </div>
 
         <p class="sp-2">您该项得分70.00分，中国人群平均得分为70.00分。在日光照射下，您肌肤的黑色素合成的量处于 <em>正常</em> 水平。平时注意防晒，尽量避免长时间暴露于日光下。</p>
@@ -116,7 +122,19 @@
 
     <script src="js/jquery.min.js"></script>
     <script src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/zcircleMove.js"></script>
     <script src="js/app.js"></script>
+    <script>
+        // 综合评分最大的圆圈
+        runCircle({
+            obj: 'canvasThree',
+            percent: $('#canvasThree').data('percent') / 100,
+            circleBottomColor: "#F0F0F0", //圆环底色
+            innerColorStart: '#FF94AD', //内部圆环 渐变色
+            innerColorEnd: '#FFBAC2',
+            lineW1: 8
+        });
+    </script>
 </body>
 
 </html>
