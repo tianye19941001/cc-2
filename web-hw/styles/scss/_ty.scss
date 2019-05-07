@@ -910,5 +910,37 @@ p.sp-2{
     }
 }
 
+.beauty-list{
+    padding: rem(40) rem(30);
+
+    li{
+        a{
+            display: block;
+            width:rem(550);
+            height:rem(150);
+            background:linear-gradient(150deg,rgba(255,197,211,1) 0%,rgba(255,218,218,1) 100%);
+            box-shadow:0px rem(6) rem(12) 0px rgba(255,174,183,0.3);
+            border-radius:rem(75);
+
+            >span{
+                display: block;
+                font-size:rem(36);
+                line-height: rem(150);
+                font-weight:600;
+                color:rgba(255,255,255,1);
+                float: left;
+                text-shadow:0px rem(6) rem(12) 0px rgba(255,174,183,0.3);
+            }
+        }
+
+        img{
+            float: left;
+            margin: rem(15);
+            width: rem(120);
+        }
+
+    }
+}
+
 // 手机
 .phone{ display: none; }
