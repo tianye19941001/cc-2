@@ -761,8 +761,9 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
 }
 
 .ty-new-list {
-  width: 576+576+50px;
+  width: 575+575+50px;
   margin: 0 auto;
+  overflow: hidden;
 
   .list {
     padding: 50px 0;
@@ -771,13 +772,13 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
     >a {
       @extend .clearfix;
       display: block;
-      width: 576-120px;
-      height: 315-120px;
+      width: 575-60px;
+      height: 315-80px;
       background: rgba(255, 255, 255, 1);
       margin-left: 50px;
       float: left;
       box-shadow: 0 0 6px rgba(0, 0, 0, .15);
-      padding: 60px;
+      padding: 40px 30px;
       margin-bottom: 38px;
       position: relative;
       transition: all .3s;
@@ -1898,16 +1899,19 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
 
 .ty-student-say {
   background: #f3f3f6;
-  padding: 100px 0;
+  padding: 70px 0 50px;
   margin-bottom: -117px;
+  overflow: hidden;
 }
 
 .map {
   width: 1285px;
   height: 718px;
   margin: 0 auto;
+  margin-left: -42.5px;
   position: relative;
   padding-bottom: 50px;
+  transform: scale(0.90);
 
   .map-img {
     width: 1285px;
@@ -2285,7 +2289,7 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
 // 招生
 .ty-zs {
   text-align: right;
-  min-width: 1300px;
+  min-width: 1200px;
   overflow: hidden;
   margin-bottom: 100px;
 
@@ -2518,7 +2522,7 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
   margin-bottom: -117px;
 
   .warp {
-    width: 1260px;
+    width: 1200px;
     margin: 0 auto;
     margin-top: 52px;
     position: relative;
