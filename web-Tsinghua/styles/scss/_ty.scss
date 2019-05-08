@@ -6,8 +6,7 @@
 
 body {
   background-color: #fff;
-  // font-family: "黑体";
-  min-width: 1300px;
+  min-width: 1200px;
 }
 
 // 首页补充
@@ -1185,34 +1184,6 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
       line-height: 30px;
       margin-bottom: 60px;
     }
-
-    a{
-      width:350px;
-      height:58px;
-      background-size: auto 100%;
-      background-position: top right;
-      background-repeat: no-repeat;
-      position: relative;
-
-      &:after{
-        content: '';
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 70%;
-        height: 100%;
-        background: #B99A75;
-      }
-      strong{
-        position: relative;
-        z-index: 2;
-      }
-
-      &:hover{
-        strong{font-weight: bold;}
-      }
-    }
   }
 }
 
@@ -1606,20 +1577,27 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
   width: 562*2+74px;
   margin: 0 auto;
   padding: 120px 0 0;
-  overflow: hidden;
 
   .association-swiper {
     padding-top: 60px;
     width: 562*2+74px;
   }
 
+  .ty-more-3{
+    clear: both;
+    margin: 0 auto;
+    display: block;
+  }
+
   .association-con {
-    // width: 562*2+74+74px;
-    // margin-left: -74px;
+    width: 562*2+74+74px;
+    margin-left: -74px;
+    margin-bottom: 40px;
+
   }
 
   .association {
-    // margin-left: 74px;
+    margin-left: 74px;
     width: 562px;
     float: left;
 
@@ -1635,7 +1613,7 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
 
     .in {
       width: 395-80px;
-      height: 360px;
+      height: 260px;
       padding: 0 40px;
       background: rgba(255, 255, 255, 1);
       margin: -180px auto 0;
@@ -1668,20 +1646,21 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
 // 本科教学
 .ty-ugd-set {
   padding: 68px 0 120px;
-  width: 364*3+56*2px;
+  width: 354*3+56*2px;
   margin: 0 auto;
+  overflow: hidden;
 
   .ty-title {
     margin-bottom: 27px;
   }
 
   .set-in {
-    width: 364*3+56*3px;
+    width: 354*3+56*3px;
     margin-left: -56px;
   }
 
   .zy {
-    width: 364px;
+    width: 354px;
     margin-left: 56px;
     float: left;
 
@@ -1735,11 +1714,11 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
   padding: 86px 0 106px;
 
   .ugd-in {
-    width: 1206px;
+    width: 1200px;
     margin: 0 auto;
 
     img {
-      width: 1206px;
+      width: 1200px;
       height: 438px;
       display: block;
       padding-top: 43px;
@@ -1784,7 +1763,7 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
 
 .ty-ugd-course {
   padding: 70px 0 150px;
-  width: 1212px;
+  width: 1200px;
   margin: 0 auto;
   text-align: right;
   position: relative;

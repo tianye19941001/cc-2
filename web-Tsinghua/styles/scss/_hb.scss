@@ -811,6 +811,7 @@ span {
     margin: 0 auto;
     overflow: hidden;
 
+
     .title {
         margin: 100px auto 30px;
         height: 36px;
@@ -865,7 +866,7 @@ span {
         padding: 40px 20px 0;
         margin: 0 auto;
         overflow: hidden;
-        transform: translateX(-50px);
+        transform: translateX(-50px) scale(.95);
 
         .student_min {
             width: 330px !important;

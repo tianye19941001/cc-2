@@ -67,8 +67,10 @@
         }
 
         a img {
-          height: rem(60);
+          height: 75%;
           width: auto;
+          top: 0;
+          left: 0;
           margin: rem(10) 0 0 1rem;
         }
       }
@@ -1561,8 +1563,6 @@
       }
 
       a {
-        width: rem(350);
-        height: rem(58);
       }
     }
   }
@@ -1819,9 +1819,17 @@
       padding-top: rem(40);
       width: 100%;
     }
+    .association-con{
+      width: 100%;
+      margin-left: 0;
+      margin-bottom: rem(30);
+    }
 
     .association {
-      width: 95%;
+      width: 100%;
+      float: none;
+      display: block;
+      margin-left: 0;
 
       .img,
       img {
