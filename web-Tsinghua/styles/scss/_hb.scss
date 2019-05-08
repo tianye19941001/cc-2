@@ -2,7 +2,7 @@
 
 body {
     width: 100%;
-    min-width: 1260px;
+    min-width: 1200px;
     font-family: '微软雅黑';
 }
 
@@ -151,11 +151,12 @@ span {
 
         img {
             position: absolute;
+            zoom: 1;
         }
 
         .l {
-            left: 0;
-            top: 26px;
+            position: relative;
+            margin-top: 26px;
             padding-left: 2px;
         }
 
@@ -388,20 +389,20 @@ span {
         position: relative;
         margin-right: 30px;
         transition: all .5s;
-        overflow: hidden;
 
         &:hover {
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
         }
 
         &:last-child {
-            margin-right: 0;
+            margin-right: 0px;
         }
 
         .top {
             width: 301px;
             margin: 0 auto;
             margin-top: 50px;
+            overflow: hidden;
 
             span:first-child {
                 position: absolute;
@@ -436,14 +437,17 @@ span {
             font-weight: 400;
             color: rgba(153, 153, 153, 1);
             line-height: 22px;
+            overflow: hidden;
         }
 
         .bottom {
             position: absolute;
+            width: 100%;
             bottom: 33px;
-            left: 50%;
-            transform: translateX(-50%);
+            left: 0;
             white-space: nowrap;
+            overflow: hidden;
+            text-align: center;
 
             span {
                 display: inline-block;
