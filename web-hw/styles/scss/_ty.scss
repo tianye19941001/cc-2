@@ -916,6 +916,22 @@ p.sp-2 {
         }
     }
 
+    .progress-ing {
+        span{
+            text-align: center;
+        }
+        .progress-1,
+        .progress-2 {
+            background: linear-gradient(90deg, rgba(255, 165, 123, 1) 0%, rgba(255, 139, 123, 1) 100%);
+        }
+    
+        .progress-4,
+        .progress-5 {
+            
+            background: linear-gradient(90deg, rgba(140, 221, 255, 1) 0%, rgba(113, 200, 255, 1) 100%);
+        }
+    }
+
     .share-in {
         .tip {
             background: linear-gradient(-45deg, rgba(255, 148, 173, .4) 0%, rgba(255, 186, 194, .4) 100%);
@@ -1090,7 +1106,7 @@ p.sp-2 {
                 font-weight: 600;
                 color: rgba(255, 255, 255, 1);
                 float: left;
-                text-shadow: 0px rem(6) rem(12) 0px rgba(255, 174, 183, 0.3);
+                text-shadow: 0px rem(6) rem(12) rgba(255, 174, 183, 0.7);
             }
         }
 
@@ -1137,7 +1153,8 @@ p.sp-2 {
 
             button {
                 border: 0;
-                width: rem(80);
+                padding: 0 rem(12);
+                white-space: nowrap;
                 height: rem(30);
                 line-height: rem(30);
                 background: rgba(255, 155, 179, 1);
@@ -1232,7 +1249,6 @@ p.sp-2 {
     width: 68%;
     margin: 0 auto;
     background: rgba(255, 255, 255, 1);
-    box-shadow: 0px rem(3) rem(12) 0px rgba(115, 115, 115, 0.1);
     border-radius: 50%;
     position: relative;
 
@@ -1262,7 +1278,8 @@ p.sp-2 {
 
         button {
             border: 0;
-            width: rem(100);
+            padding: 0 rem(18);
+            white-space: nowrap;
             height: rem(40);
             line-height: rem(40);
             background: #ff849a;
@@ -1279,6 +1296,84 @@ p.sp-2 {
         padding: 0;
     }
 }
+
+.leida-in{
+    width:rem(324);
+    height: rem(282);
+    background-size: 100% 100%;
+    background-image: url(../images/star.png);
+    margin: rem(70) auto rem(10);
+    position: relative;
+
+    .leida{
+        position: absolute;
+        left: 50%;
+        top: 51%;
+        width: rem(380);
+        transform: translate(-50%, -50%) rotate(-30deg);
+    }
+}
+
+.leida-pic{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+
+    .in > span{
+        position: absolute;
+        display: block;
+        white-space: nowrap;
+        font-size: rem(24);
+        color:rgba(255,255,255,1);
+        padding: 0 rem(18);
+        height: rem(50);
+        line-height: rem(50);
+        text-align: center;
+        border-radius:rem(25) rem(25) 0 rem(25);
+
+        &:nth-child(2n){
+            border-radius:rem(25) rem(25) rem(25) 0;
+        }
+
+        &:nth-child(1), &:nth-child(2){
+            background: #FFAC4E;
+            top: rem(-40);
+        }
+
+        &:nth-child(3), &:nth-child(4){
+            background: #E96F6D;
+            top: rem(96)
+        }
+
+        &:nth-child(5), &:nth-child(6){
+            background: #B181E8;
+            top: rem(232);
+        }
+
+        &:nth-child(1){
+            right: rem(261);
+        }
+        &:nth-child(2){
+            left: rem(261);
+        }
+        &:nth-child(3){
+            right: rem(337);
+        }
+        &:nth-child(4){
+            left: rem(337);
+        }
+        &:nth-child(5){
+            right: rem(274);
+        }
+        &:nth-child(6){
+            left: rem(274);
+        }
+    }
+}
+
 
 
 // 手机
