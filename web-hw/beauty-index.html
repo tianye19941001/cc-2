@@ -45,7 +45,7 @@
                     <span data-num="80" class="tip-2">保湿润肤</span>
                     <span data-num="90" class="tip-3">淡纹美体</span>
                     <span data-num="15" class="tip-4">抗衰嫩肤</span>
-                    <span data-num="25" class="tip-5">抗炎防敏</span>
+                    <span data-num="65" class="tip-5">抗炎防敏</span>
                     <span data-num="47" class="tip-6">战痘修复</span>
                 </div>
             </div>
@@ -173,6 +173,12 @@
             });
         })
 
+        var dataList = [];
+        $('.leida-pic span').each(function(){
+            var data = $(this).data('num');
+            dataList.push(data);
+        })
+        
         var radarChartData = {
 			labels: ["", "", "", "", "", "", ""],
 			datasets: [
@@ -184,7 +190,7 @@
 					pointStrokeColor: "rgba(255,141,139,.7)",
 					pointHighlightFill: "#fff",
 					pointHighlightStroke: "rgba(220,220,220,1)",
-                    data: [90, 10, 50, 70, 66, 34],
+                    data: dataList,
                     scaleShowLine: false
 				}
 			]
