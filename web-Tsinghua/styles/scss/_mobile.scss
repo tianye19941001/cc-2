@@ -48,6 +48,7 @@
       .brand {
         width: auto;
         height: rem(80);
+        line-height: rem(80);
         background: #fff;
         box-shadow: 0 rem(10) rem(10) rgba(0, 0, 0, 0.1);
 
@@ -58,7 +59,7 @@
 
         .l {
           display: inline-block;
-          margin: rem(10) 0 0 1rem;
+          margin: 0 0 0 1rem;
           height: 75%;
           width: auto;
         }
