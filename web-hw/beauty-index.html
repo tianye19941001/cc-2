@@ -8,7 +8,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="format-detection" content="address=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta http-equiv="Cache-Control" content="no-store"/>
+    <meta http-equiv="Cache-Control" content="no-store" />
     <title>Document</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/swiper.min.css">
@@ -25,7 +25,8 @@
 
         <div class="index-precent">
             <div class="percent-warp">
-                <canvas data-percent="76" class="circleRun" data-run="0" id="canvasThree" amout="1000" nowData="1000"></canvas>
+                <canvas data-percent="76" class="circleRun" data-run="0" id="canvasThree" amout="1000"
+                    nowData="1000"></canvas>
             </div>
             <div class="in">
                 <p class="num"><strong>76</strong><em>.45</em></p>
@@ -41,12 +42,12 @@
             <div class="leida-pic">
                 <div class="in">
                     <!-- 各项数据注入到这里 -->
-                    <span data-num="66" class="tip-1">美白淡斑</span>
-                    <span data-num="80" class="tip-2">保湿润肤</span>
-                    <span data-num="90" class="tip-3">淡纹美体</span>
-                    <span data-num="15" class="tip-4">抗衰嫩肤</span>
-                    <span data-num="65" class="tip-5">抗炎防敏</span>
-                    <span data-num="47" class="tip-6">战痘修复</span>
+                    <span class="tip-1" data-num="58">战痘修复</span>
+                    <span class="tip-2" data-num="64">淡纹美体</span>
+                    <span class="tip-3" data-num="66">保湿润肤</span>
+                    <span class="tip-4" data-num="78">抗炎防敏</span>
+                    <span class="tip-5" data-num="78">抗衰嫩肤</span>
+                    <span class="tip-6" data-num="79">美白淡斑</span>
                 </div>
             </div>
             <div class="leida">
@@ -174,33 +175,41 @@
         })
 
         var dataList = [];
-        $('.leida-pic span').each(function(){
+        $('.leida-pic span').each(function () {
             var data = $(this).data('num');
             dataList.push(data);
         })
-        
-        var radarChartData = {
-			labels: ["", "", "", "", "", "", ""],
-			datasets: [
-				{
-					label: "beauty",
-					fillColor: "rgba(255,141,158,.7)",
-					strokeColor: "rgba(255,141,139,.7)",
-					pointColor: "red",
-					pointStrokeColor: "rgba(255,141,139,.7)",
-					pointHighlightFill: "#fff",
-					pointHighlightStroke: "rgba(220,220,220,1)",
-                    data: dataList,
-                    scaleShowLine: false
-				}
-			]
-		};
 
-		window.onload = function () {
-			window.myRadar = new Chart(document.getElementById("leida").getContext("2d")).Radar(radarChartData, {
-				responsive: true
-			});
-		}
+        var radarChartData = {
+            labels: ["", "", "", "", "", "", ""],
+            datasets: [{
+                label: "beauty",
+                fillColor: "rgba(255,141,158,.7)",
+                strokeColor: "rgba(255,141,139,.7)",
+                pointColor: "red",
+                pointStrokeColor: "rgba(255,141,139,.7)",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(220,220,220,1)",
+                data: dataList,
+                scaleShowLine: false
+            },{
+                label: "beauty2",
+                fillColor: "rgba(255,141,158,0)",
+                strokeColor: "rgba(255,141,139,0)",
+                pointColor: "rgba(255,141,139,0)",
+                pointStrokeColor: "rgba(255,141,139,0)",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(220,220,220,0)",
+                data: [100,100,100,100,100,100],
+                scaleShowLine: false
+            }]
+        };
+
+        window.onload = function () {
+            window.myRadar = new Chart(document.getElementById("leida").getContext("2d")).Radar(radarChartData, {
+                responsive: true
+            });
+        }
     </script>
 </body>
 

@@ -1357,9 +1357,9 @@ p.sp-2 {
   position: relative; }
   .leida-in .leida {
     position: absolute;
-    left: 50%;
-    top: 51%;
-    width: 12.6666666667rem;
+    left: 52%;
+    top: 52%;
+    width: 12rem;
     transform: translate(-50%, -50%) rotate(-30deg); }
 
 .leida-pic {
