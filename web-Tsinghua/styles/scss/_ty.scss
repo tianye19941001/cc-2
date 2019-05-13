@@ -2354,6 +2354,7 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
     color: rgba(18, 18, 18, 1);
     line-height: 24px;
     margin-bottom: 24px;
+    cursor: pointer;
 
     &:last-child {
       margin-bottom: 0;
@@ -2385,9 +2386,12 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
     font-style: italic;
   }
 
-  .strong {
+  .strong,li:hover {
     em {
       font-weight: bold;
+    }
+    span{
+      color:rgba(6, 52, 86, 1);
     }
 
     font-weight: bold;
