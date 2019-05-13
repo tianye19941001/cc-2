@@ -2331,8 +2331,8 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
     position: absolute;
     left: 10%;
     bottom: 100px;
-    width: 320px;
-    padding: 70px 160px 100px 100px;
+    width: 380px;
+    padding: 70px 100px 100px 100px;
     text-align: left;
     background: #fff;
   }
@@ -2606,5 +2606,13 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
     position: absolute;
     left: 80px;
     bottom: -29px;
+  }
+}
+
+@media screen and (min-width:1020px) and (max-width:1680px) {
+  .ty-zs .img img{
+      width: auto;
+      height: 100%;
+      margin-top: 0;
   }
 }

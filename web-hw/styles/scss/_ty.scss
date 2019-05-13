@@ -495,12 +495,13 @@ body {
         color: #aaa;
     }
 
-    .middle {
-        display: block;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        color: #000;
+    span {
+        &:nth-child(2) {
+            display: block;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
     }
 }
 
@@ -917,19 +918,20 @@ p.sp-2 {
     }
 
     .progress-ing {
-        span{
+        span {
             text-align: right;
             box-sizing: border-box;
             padding: 0 rem(20);
         }
+
         .progress-1,
         .progress-2 {
             background: linear-gradient(90deg, rgba(255, 165, 123, 1) 0%, rgba(255, 139, 123, 1) 100%);
         }
-    
+
         .progress-4,
         .progress-5 {
-            
+
             background: linear-gradient(90deg, rgba(140, 221, 255, 1) 0%, rgba(113, 200, 255, 1) 100%);
         }
     }
@@ -1033,7 +1035,8 @@ p.sp-2 {
 .mf-list {
     @extend .clearfix;
     margin-bottom: rem(-40);
-    p{
+
+    p {
         font-size: rem(20)
     }
 
@@ -1263,7 +1266,7 @@ p.sp-2 {
         border-radius: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
-        background:linear-gradient(-45deg,rgba(255,148,173,1) 0%,rgba(255,186,194,1) 100%);
+        background: linear-gradient(-45deg, rgba(255, 148, 173, 1) 0%, rgba(255, 186, 194, 1) 100%);
 
         .num {
             padding-top: rem(58);
@@ -1299,15 +1302,15 @@ p.sp-2 {
     }
 }
 
-.leida-in{
-    width:rem(324);
+.leida-in {
+    width: rem(324);
     height: rem(282);
     background-size: 100% 100%;
     background-image: url(../images/star.png);
     margin: rem(70) auto rem(10);
     position: relative;
 
-    .leida{
+    .leida {
         position: absolute;
         left: 52%;
         top: 52%;
@@ -1316,7 +1319,7 @@ p.sp-2 {
     }
 }
 
-.leida-pic{
+.leida-pic {
     display: block;
     position: absolute;
     width: 100%;
@@ -1324,53 +1327,61 @@ p.sp-2 {
     left: 0;
     top: 0;
 
-    .in > span{
+    .in>span {
         position: absolute;
         display: block;
         white-space: nowrap;
         font-size: rem(24);
-        color:rgba(255,255,255,1);
+        color: rgba(255, 255, 255, 1);
         padding: 0 rem(18);
         height: rem(50);
         line-height: rem(50);
         text-align: center;
-        border-radius:rem(25) rem(25) 0 rem(25);
+        border-radius: rem(25) rem(25) 0 rem(25);
 
-        &:nth-child(2n){
-            border-radius:rem(25) rem(25) rem(25) 0;
+        &:nth-child(2n) {
+            border-radius: rem(25) rem(25) rem(25) 0;
         }
 
-        &:nth-child(1), &:nth-child(2){
+        &:nth-child(1),
+        &:nth-child(2) {
             background: #FFAC4E;
             top: rem(-40);
         }
 
-        &:nth-child(3), &:nth-child(4){
+        &:nth-child(3),
+        &:nth-child(4) {
             background: #E96F6D;
             top: rem(96)
         }
 
-        &:nth-child(5), &:nth-child(6){
+        &:nth-child(5),
+        &:nth-child(6) {
             background: #B181E8;
             top: rem(232);
         }
 
-        &:nth-child(1){
+        &:nth-child(1) {
             right: rem(261);
         }
-        &:nth-child(2){
+
+        &:nth-child(2) {
             left: rem(261);
         }
-        &:nth-child(3){
+
+        &:nth-child(3) {
             right: rem(337);
         }
-        &:nth-child(4){
+
+        &:nth-child(4) {
             left: rem(337);
         }
-        &:nth-child(5){
+
+        &:nth-child(5) {
             right: rem(274);
         }
-        &:nth-child(6){
+
+        &:nth-child(6) {
             left: rem(274);
         }
     }
@@ -1381,4 +1392,40 @@ p.sp-2 {
 // 手机
 .phone {
     display: none;
+}
+
+.sport-report {
+    .sport-progress-2.style-1 {
+        p span:first-child {
+            color: #000
+        }
+
+        .line .self-progress {
+            margin-left: 0;
+            @extend .style-red;
+            width: 33.33%;
+        }
+    }
+
+    .sport-progress-2.style-2 {
+        p span:nth-child(2) {
+            color: #000
+        }
+        .line .self-progress {
+            margin-left: 33.33%;
+            @extend .style-green;
+            width: 33.33%;
+        }
+    }
+
+    .sport-progress-2.style-3 {
+        p span:last-child {
+            color: #000
+        }
+        .line .self-progress {
+            margin-left: 66.66%;
+            @extend .style-blue;
+            width: 33.33%;
+        }
+    }
 }
