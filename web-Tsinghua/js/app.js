@@ -184,4 +184,24 @@
 	$('.search-inp .close').click(function(){
 		$('.search-inp').removeClass('active');
 	})
+
+	$('.share .weixin').click(function(){
+		$('.bdsharebuttonbox .bds_weixin')[0].click();
+		return false
+	})
+
+	$('.share .qq').click(function(){
+		$('.bdsharebuttonbox .bds_sqq')[0].click();
+		return false
+	})
+
+	$('.share .qqzone').click(function(){
+		$('.bdsharebuttonbox .bds_qzone')[0].click();
+		return false
+	})
+
+	$('.share .weibo').click(function(){
+		$('.bdsharebuttonbox .bds_tsina')[0].click();
+		return false
+	})
 });

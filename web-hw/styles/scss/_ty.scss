@@ -918,7 +918,9 @@ p.sp-2 {
 
     .progress-ing {
         span{
-            text-align: center;
+            text-align: right;
+            box-sizing: border-box;
+            padding: 0 rem(20);
         }
         .progress-1,
         .progress-2 {
