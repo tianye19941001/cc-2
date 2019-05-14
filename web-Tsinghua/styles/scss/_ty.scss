@@ -2224,6 +2224,32 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
       border-bottom: 0;
     }
 
+    .list-2{
+      width: 1236px;
+      margin-left: -36px;
+      position: relative;
+      @extend .clearfix;
+
+      span{
+        float: left;
+        display: block;
+        width: 170px;
+        height: 58px;
+        margin-left: 36px;
+        line-height: 58px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        color: #063456;
+        white-space: nowrap;
+        padding: 0 5px;
+        text-overflow: ellipsis;
+        margin-bottom: 36px;
+        background: #f3f3f6;
+        overflow: hidden;
+      }
+    }
+
     .list {
       width: 1234px;
       margin-left: -34px;
