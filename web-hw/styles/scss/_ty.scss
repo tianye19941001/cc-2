@@ -883,21 +883,6 @@ p.sp-2 {
     }
 }
 
-.style-blue {
-    color: #fff !important;
-    background: linear-gradient(90deg, rgba(140, 221, 255, 1) 0%, rgba(113, 200, 255, 1) 100%) !important;
-}
-
-.style-green {
-    color: #fff !important;
-    background: linear-gradient(90deg, rgba(193, 228, 155, 1) 0%, rgba(124, 213, 145, 1) 100%) !important;
-}
-
-.style-red {
-    color: #fff !important;
-    background: linear-gradient(90deg, rgba(255, 165, 123, 1) 0%, rgba(255, 139, 123, 1) 100%) !important;
-}
-
 .sport-show {
 
     .sport-table {
@@ -1394,7 +1379,47 @@ p.sp-2 {
     display: none;
 }
 
+.style-blue {
+    color: #fff !important;
+    background: linear-gradient(90deg, rgba(140, 221, 255, 1) 0%, rgba(113, 200, 255, 1) 100%) !important;
+}
+
+.style-green {
+    color: #fff !important;
+    background: linear-gradient(90deg, rgba(193, 228, 155, 1) 0%, rgba(124, 213, 145, 1) 100%) !important;
+}
+
+.style-red {
+    color: #fff !important;
+    background: linear-gradient(90deg, rgba(255, 165, 123, 1) 0%, rgba(255, 139, 123, 1) 100%) !important;
+}
+
 .sport-report {
+    .sport-progress.style-1{
+        p span:first-child {
+            color: #000
+        }
+
+        .line .self-progress {
+            margin-left: 0;
+            color: #fff;
+            background: linear-gradient(90deg, rgba(255, 165, 123, 1) 0%, rgba(255, 139, 123, 1) 100%);
+            width: 50%;
+        }
+    }
+
+    .sport-progress.style-2{
+        p span:nth-child(2) {
+            color: #000
+        }
+
+        .line .self-progress {
+            margin-left: 50%;
+            color: #fff;
+            background: linear-gradient(90deg, rgba(193, 228, 155, 1) 0%, rgba(124, 213, 145, 1) 100%);
+            width: 50%;
+        }
+    }
     .sport-progress-2.style-1 {
         p span:first-child {
             color: #000
@@ -1402,7 +1427,8 @@ p.sp-2 {
 
         .line .self-progress {
             margin-left: 0;
-            @extend .style-red;
+            color: #fff;
+            background: linear-gradient(90deg, rgba(255, 165, 123, 1) 0%, rgba(255, 139, 123, 1) 100%);
             width: 33.33%;
         }
     }
@@ -1411,9 +1437,11 @@ p.sp-2 {
         p span:nth-child(2) {
             color: #000
         }
+
         .line .self-progress {
             margin-left: 33.33%;
-            @extend .style-green;
+            color: #fff;
+            background: linear-gradient(90deg, rgba(193, 228, 155, 1) 0%, rgba(124, 213, 145, 1) 100%);
             width: 33.33%;
         }
     }
@@ -1422,9 +1450,11 @@ p.sp-2 {
         p span:last-child {
             color: #000
         }
+
         .line .self-progress {
             margin-left: 66.66%;
-            @extend .style-blue;
+            color: #fff;
+            background: linear-gradient(90deg, rgba(140, 221, 255, 1) 0%, rgba(113, 200, 255, 1) 100%);
             width: 33.33%;
         }
     }
