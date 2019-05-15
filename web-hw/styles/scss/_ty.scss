@@ -184,6 +184,11 @@ body {
         line-height: rem(36);
         opacity: 0.8;
     }
+    .sport-text img{
+        width: 40%;
+        margin: rem(10) auto;
+        display: block;
+    }
 }
 
 .report-res {
@@ -669,7 +674,7 @@ p.sp-2 {
             width: 25%;
             line-height: rem(40);
             font-size: rem(24);
-            color: rgba(0, 0, 0, .8);
+            color: rgba(0, 0, 0, .64);
             border-right: 1px solid #fff;
             box-sizing: border-box;
 
