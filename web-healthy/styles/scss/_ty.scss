@@ -1,9 +1,330 @@
 @charset "utf-8";
 
-.oh{ overflow: hidden; }
-body{ background-color: #fff; }
+.oh {
+  overflow: hidden;
+}
 
-.index-header{
+body {
+  background-color: #fff;
+}
+
+.index-header {
   width: 100%;
-  height: rem(367);
+  height: rem(367-35);
+  background-image: url(../images/headbg.png);
+  background-size: 100% auto;
+  overflow: hidden;
+}
+
+.control {
+  width: 100%;
+
+  .back {
+    width: rem(130);
+    height: rem(52);
+    background: rgba(37, 207, 228, 1);
+    border-radius: 0 rem(52) rem(52) 0;
+    line-height: rem(52);
+    text-align: left;
+    color: #fff;
+    font-size: rem(30);
+    position: absolute;
+    top: rem(35);
+    left: 0;
+  }
+
+  .person {
+    width: rem(130);
+    height: rem(52);
+    border-radius: rem(52) 0 0 rem(52);
+    line-height: rem(52);
+    text-align: center;
+    color: #fff;
+    font-size: rem(35);
+    position: absolute;
+    top: rem(35);
+    right: 0;
+
+    img {
+      float: right;
+      display: block;
+      height: 100%;
+    }
+  }
+}
+
+.ty-title {
+  width: 100%;
+  font-size: rem(72);
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  background: linear-gradient(-90deg, rgba(64, 118, 255, 1) 0%, rgba(32, 227, 225, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  top: rem(220-50);
+  left: 0;
+
+  h1 {
+    font-weight: bold;
+  }
+}
+
+.ty-about {
+  width: 100%;
+  background: #f7f6f3;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
+  border-radius: rem(11);
+  box-sizing: border-box;
+  padding: rem(15);
+
+  .in {
+    box-sizing: border-box;
+    width: 100%;
+    font-size: rem(25);
+    color: rgba(46, 46, 46, 1);
+    line-height: rem(45);
+    padding: rem(15) rem(20);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: rem(2);
+  }
+}
+
+.ty-important {
+  padding-top: rem(50);
+  margin-bottom: rem(20);
+
+  .ty-title2 {
+    margin-bottom: rem(20);
+  }
+
+  .tabs {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 rem(15);
+    overflow: auto;
+  }
+
+  ul {
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+    padding-bottom: rem(10);
+
+    li {
+      display: inline-block;
+      margin-right: rem(10);
+      width: rem(188);
+      height: rem(232);
+      border-radius: rem(5);
+      overflow: hidden;
+      position: relative;
+
+      // &::after{
+      //   content: '';
+      //   width: 100%;
+      //   height: 100%;
+      //   display: block;
+      //   background:rgba(0,0,0,1);
+      //   position: absolute;
+      //   left: 0;
+      //   top: 0;
+      // }
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+
+      span {
+        display: block;
+        position: absolute;
+        text-align: center;
+        padding: rem(12) rem(30);
+        box-sizing: border-box;
+        width: 100%;
+        bottom: 0;
+        font-size: rem(30);
+        color: rgba(255, 255, 255, 1);
+        line-height: rem(40);
+        white-space: normal;
+      }
+    }
+
+  }
+}
+
+.ty-title2 {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 rem(10);
+  font-size: rem(30);
+  font-weight: 600;
+  color: rgba(33, 154, 216, 1);
+  line-height: rem(40);
+
+  background: linear-gradient(-90deg, rgba(245, 90, 113, 1) 0%, rgba(242, 162, 244, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  img {
+    vertical-align: middle;
+    width: rem(41);
+  }
+}
+
+.ty-search {
+  padding: 0 rem(15);
+  @extend .clearfix;
+
+  .search-in {
+    float: left;
+    width: rem(595);
+    height: rem(67);
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(205, 205, 205, 1);
+    position: relative;
+    border-radius: rem(68);
+    overflow: hidden;
+
+    i {
+      display: block;
+      position: absolute;
+      width: rem(40);
+      height: rem(40);
+      position: absolute;
+      left: rem(25);
+      top: rem(15);
+      background-image: url(../images/search.png);
+      background-size: 100% 100%;
+    }
+
+    input {
+      position: absolute;
+      left: rem(70);
+      top: 0;
+      width: rem(510);
+      height: rem(67);
+      line-height: rem(67);
+      border: 0;
+      outline: none;
+    }
+  }
+
+  button {
+    float: right;
+    width: rem(104);
+    height: rem(58);
+    background: rgba(33, 154, 216, 1);
+    border-radius: rem(58);
+    text-align: center;
+    line-height: rem(58);
+    color: #fff;
+    font-size: rem(32);
+    border: 0;
+    margin-top: rem(7);
+  }
+}
+
+.ty-disease-list {
+  width: 100%;
+  overflow: auto;
+  box-sizing: border-box;
+  padding: 0 rem(15);
+
+  ul {
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+
+    li {
+      height: rem(84);
+      line-height: rem(84);
+      display: inline-block;
+      margin: 0 rem(50);
+      font-size: rem(28);
+      color: rgba(64, 64, 64, 1);
+      position: relative;
+    }
+
+    .active {
+      color: #219AD8;
+
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 50%;
+        bottom: rem(15);
+        margin-left: rem(-60);
+        width: rem(120);
+        height: rem(6);
+        border-radius: rem(6);
+        background: rgba(33, 154, 216, 1);
+      }
+
+    }
+  }
+}
+
+.all-disease {
+  padding-bottom: rem(100);
+  .title {
+    padding: rem(40) rem(44) rem(10);
+    font-size: rem(30);
+    color: rgba(0, 0, 0, 1);
+    overflow: hidden;
+
+    span {
+      float: left;
+    }
+
+    span:last-child {
+      float: right;
+    }
+  }
+
+  >ul {
+    width: rem(720);
+    margin: 0 auto;
+    display: none;
+
+    li {
+      height: rem(80);
+      border-bottom: 1px dashed #eee;
+      font-size: rem(28);
+      color: rgba(77, 77, 77, 1);
+      line-height: rem(30);
+      box-sizing: border-box;
+      padding-top: rem(35);
+      em{
+        float: right;
+        color:rgba(255,97,106,1);
+      }
+      &:before {
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: rem(16);
+        width: rem(14);
+        height: rem(14);
+        background: rgba(255, 97, 106, 1);
+        border-radius: 50%;
+      }
+    }
+
+    .blue{
+      em{
+        color: #219AD8;
+      }
+
+      &::before{
+        background: #219AD8;
+      }
+    }
+  }
+
+  .active {
+    display: block;
+  }
+
 }
