@@ -64,20 +64,20 @@ sup {
 
 /*CLEARFIX
 -------------------------------------------------------------- */
-.clearfix:after, .ty-search:after {
+.clearfix:after, .ty-search:after, .line-div .progesss:after {
   content: ".";
   display: block;
   height: 0;
   clear: both;
   visibility: hidden; }
 
-.clearfix, .ty-search {
+.clearfix, .ty-search, .line-div .progesss {
   display: inline-block; }
 
-* html .clearfix, * html .ty-search {
+* html .clearfix, * html .ty-search, * html .line-div .progesss, .line-div * html .progesss {
   height: 1%; }
 
-.clearfix, .ty-search {
+.clearfix, .ty-search, .line-div .progesss {
   display: block; }
 
 /*FONT
@@ -453,14 +453,16 @@ a:active {
   overflow: hidden; }
 
 body {
-  background-color: #fff; }
+  background-color: #fff;
+  padding-bottom: 2rem; }
 
 .index-header {
   width: 100%;
   height: 13.28rem;
   background-image: url(../images/headbg.png);
   background-size: 100% auto;
-  overflow: hidden; }
+  overflow: hidden;
+  background-color: #fff; }
 
 .control {
   width: 100%; }
@@ -691,5 +693,148 @@ body {
       background: #219AD8; }
   .all-disease .active {
     display: block; }
+
+.second-top {
+  width: 100%;
+  height: 17.04rem;
+  background-image: url(../images/headbg2.png);
+  background-size: cover;
+  position: relative;
+  margin-bottom: 4.8rem; }
+  .second-top .second-back {
+    display: block;
+    position: absolute;
+    top: 2.8rem;
+    left: 0;
+    height: 2.4rem;
+    padding: 0 1.6rem 0 0.8rem;
+    line-height: 2.4rem;
+    background: #a3c9fe;
+    color: white;
+    border-radius: 0 2.4rem 2.4rem 0; }
+    .second-top .second-back i {
+      display: inline-block;
+      width: 0.8rem;
+      height: 0.92rem;
+      vertical-align: middle;
+      background-image: url(../images/title-fh.png);
+      background-size: 100%;
+      margin-right: 0.24rem; }
+  .second-top h2 {
+    width: 100%;
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: white;
+    position: absolute;
+    top: 6rem;
+    left: 0;
+    text-align: center; }
+    .second-top h2 span {
+      background: linear-gradient(-90deg, #3160f8 0%, #20e3e1 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
+  .second-top img {
+    position: absolute;
+    left: 1.8rem;
+    bottom: -6.28rem;
+    width: 26.4rem;
+    height: 12.56rem;
+    border-radius: 0.8rem;
+    z-index: 9; }
+
+.report-div {
+  width: 28.48rem;
+  margin: 0 auto;
+  height: auto;
+  padding: 0.8rem 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0px 0.24rem 0.2rem 0px rgba(0, 0, 0, 0.054);
+  background: rgba(255, 255, 255, 0.01);
+  box-sizing: border-box;
+  margin-bottom: 2rem;
+  border-radius: 0.4rem; }
+
+.line-div {
+  padding-top: 4rem; }
+  .line-div .line {
+    float: left;
+    width: 19.04rem;
+    height: 0.48rem;
+    background: linear-gradient(-90deg, #ff616a, #219ad8);
+    border-radius: 0.6rem;
+    margin-bottom: 1.2rem;
+    position: relative; }
+    .line-div .line i {
+      display: block;
+      width: 0;
+      height: 0;
+      border-left: 0.4rem solid transparent;
+      border-right: 0.4rem solid transparent;
+      border-bottom: 0.64rem solid #907EA1;
+      position: absolute;
+      top: 0.56rem;
+      left: 0;
+      margin-left: -0.24rem; }
+  .line-div .num {
+    float: right;
+    color: #907EA1;
+    font-size: 1.44rem;
+    margin-top: -0.8rem; }
+
+.report-text {
+  width: 24.6rem;
+  font-size: 0.96rem;
+  margin: 0 auto;
+  line-height: 1.8;
+  color: #4d4d4d; }
+  .report-text p em {
+    color: #FF616A; }
+
+.second-bg {
+  background-image: url(../images/bg.png);
+  background-size: 100% auto; }
+
+.second-title {
+  width: 28.48rem;
+  margin: 0 auto;
+  border-bottom: 2px solid #219ad8;
+  margin-bottom: 0.8rem;
+  font-size: 1.4rem;
+  color: #2c2c2c; }
+  .second-title img {
+    vertical-align: middle;
+    height: 1.36rem;
+    margin: 0 0.24rem; }
+
+.report-text-2 {
+  width: 28rem;
+  font-size: 0.96rem;
+  color: #777777;
+  line-height: 1.8;
+  margin: 0 auto;
+  text-align: justify;
+  margin-bottom: 3.2rem; }
+
+.href-btn {
+  width: 28rem;
+  display: block;
+  margin: 0 auto 1.6rem;
+  height: 3.12rem;
+  line-height: 3.12rem;
+  text-align: center;
+  border-radius: 3.12rem;
+  background: #d9ebff;
+  font-size: 1.2rem;
+  color: #2c2c2c; }
+
+.table-header span {
+  display: inline-block;
+  padding: 0 0.4rem;
+  height: 1.36rem;
+  line-height: 1.36rem;
+  background: #219ad8;
+  font-size: 1.12rem;
+  color: #fefefe;
+  border-radius: 1.36rem; }
 
 /*# sourceMappingURL=styles.css.map */

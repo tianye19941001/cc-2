@@ -6,6 +6,7 @@
 
 body {
   background-color: #fff;
+  padding-bottom: rem(50);
 }
 
 .index-header {
@@ -14,6 +15,7 @@ body {
   background-image: url(../images/headbg.png);
   background-size: 100% auto;
   overflow: hidden;
+  background-color: #fff;
 }
 
 .control {
@@ -268,6 +270,7 @@ body {
 
 .all-disease {
   padding-bottom: rem(100);
+
   .title {
     padding: rem(40) rem(44) rem(10);
     font-size: rem(30);
@@ -296,10 +299,12 @@ body {
       line-height: rem(30);
       box-sizing: border-box;
       padding-top: rem(35);
-      em{
+
+      em {
         float: right;
-        color:rgba(255,97,106,1);
+        color: rgba(255, 97, 106, 1);
       }
+
       &:before {
         content: '';
         display: inline-block;
@@ -312,12 +317,12 @@ body {
       }
     }
 
-    .blue{
-      em{
+    .blue {
+      em {
         color: #219AD8;
       }
 
-      &::before{
+      &::before {
         background: #219AD8;
       }
     }
@@ -328,3 +333,193 @@ body {
   }
 
 }
+
+// second
+.second-top {
+  width: 100%;
+  height: rem(426);
+  background-image: url(../images/headbg2.png);
+  background-size: cover;
+  position: relative;
+  margin-bottom: rem(120);
+
+  .second-back {
+    display: block;
+    position: absolute;
+    top: rem(70);
+    left: 0;
+    height: rem(60);
+    padding: 0 rem(40) 0 rem(20);
+    line-height: rem(60);
+    background: rgba(163, 201, 254, 1);
+    color: rgba(255, 255, 255, 1);
+    border-radius: 0 rem(60) rem(60) 0;
+
+    i {
+      display: inline-block;
+      width: rem(20);
+      height: rem(23);
+      vertical-align: middle;
+      background-image: url(../images/title-fh.png);
+      background-size: 100%;
+      margin-right: rem(6);
+    }
+  }
+
+  h2 {
+    width: 100%;
+    font-size: rem(60);
+    font-weight: 600;
+    color: rgba(255, 255, 255, 1);
+    position: absolute;
+    top: rem(150);
+    left: 0;
+    text-align: center;
+
+    span {
+      background: linear-gradient(-90deg, rgba(49, 96, 248, 1) 0%, rgba(32, 227, 225, 1) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+  }
+
+  img {
+    position: absolute;
+    left: rem(45);
+    bottom: rem(-157);
+    width: rem(660);
+    height: rem(314);
+    border-radius: rem(20);
+    z-index: 9;
+  }
+
+}
+
+.report-div {
+  width: rem(712);
+  margin: 0 auto;
+  height: auto;
+  padding: rem(20) rem(50);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0px rem(6) rem(5) 0px rgba(0, 0, 0, 0.054);
+  background: rgba(255, 255, 255, 0.01);
+  box-sizing: border-box;
+  margin-bottom: rem(50);
+  border-radius: rem(10);
+}
+
+.line-div {
+  padding-top: rem(100);
+
+  .progesss {
+    @extend .clearfix;
+  }
+
+  .line {
+    float: left;
+    width: rem(476);
+    height: rem(12);
+    background: linear-gradient(-90deg, rgba(255, 97, 106, 1), rgba(33, 154, 216, 1));
+    border-radius: rem(15);
+    margin-bottom: rem(30);
+    position: relative;
+
+    i {
+      display: block;
+      width: 0;
+      height: 0;
+      border-left: rem(10) solid transparent;
+      border-right: rem(10) solid transparent;
+      border-bottom: rem(16) solid #907EA1;
+      position: absolute;
+      top: rem(14);
+      left: 0;
+      margin-left: rem(-6);
+    }
+  }
+
+  .num {
+    float: right;
+    color: #907EA1;
+    font-size: rem(36);
+    margin-top: rem(-20);
+  }
+}
+
+.report-text {
+  width: rem(615);
+  font-size: rem(24);
+  margin: 0 auto;
+  line-height: 1.8;
+  color: rgba(77, 77, 77, 1);
+
+  p {
+    em {
+      color: #FF616A
+    }
+  }
+}
+
+.second-bg {
+  background-image: url(../images/bg.png);
+  background-size: 100% auto;
+}
+
+.second-title {
+  width: rem(712);
+  margin: 0 auto;
+  border-bottom: 2px solid rgba(33, 154, 216, 1);
+  margin-bottom: rem(20);
+
+  font-size: rem(35);
+  color: rgba(44, 44, 44, 1);
+
+  img {
+    vertical-align: middle;
+    height: rem(34);
+    margin: 0 rem(6);
+  }
+}
+
+.report-text-2 {
+  width: rem(700);
+  font-size: rem(24);
+  color: rgba(119, 119, 119, 1);
+  line-height: 1.8;
+  margin: 0 auto;
+  text-align: justify;
+  margin-bottom: rem(80);
+}
+
+.href-btn {
+  width: rem(700);
+  display: block;
+  margin: 0 auto rem(40);
+  height: rem(78);
+  line-height: rem(78);
+  text-align: center;
+  border-radius: rem(78);
+  background: rgba(217, 235, 255, 1);
+  font-size: rem(30);
+  color: rgba(44, 44, 44, 1);
+}
+
+.table-header {
+  .th {
+
+  }
+
+  span {
+    display: inline-block;
+    padding: 0 rem(10);
+    height: rem(34);
+    line-height: rem(34);
+    background: rgba(33, 154, 216, 1);
+    font-size: rem(28);
+    color: rgba(254, 254, 254, 1);
+    border-radius: rem(34);
+  }
+}
+
+.table-body {}
