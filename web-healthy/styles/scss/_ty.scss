@@ -342,6 +342,7 @@ body {
     width: rem(720);
     margin: 0 auto;
     display: none;
+    min-height: rem(200);
 
     li {
       height: rem(80);
@@ -467,6 +468,99 @@ body {
 
   .progesss {
     @extend .clearfix;
+
+    // 设置为<0.3(10%)，<=0.3-0.6(30%)，0.6-1(40%)，1(50%)，1-1.3(60%)，(1.3-2)70%，>2(90%)，
+    &.style-1 {
+      .line i {
+        left: 10%;
+        border-bottom:rem(16) solid #219AD8;
+      }
+      .num{
+        color: #219AD8;
+      }
+
+      &+.report-text{
+        p em {color: #219AD8;}
+      }
+    }
+
+    &.style-2 {
+      .line i {
+        left: 30%;
+        border-bottom:rem(16) solid #219AD8;
+      }
+      .num{
+        color: #219AD8;
+      }
+      &+.report-text{
+        p em {color: #219AD8;}
+      }
+    }
+
+    &.style-3 {
+      .line i {
+        left: 40%;
+        border-bottom:rem(16) solid #219AD8;
+      }
+      .num{
+        color: #219AD8;
+      }
+      &+.report-text{
+        p em {color: #219AD8;}
+      }
+    }
+
+    &.style-4 {
+      .line i {
+        left: 50%;
+        border-bottom:rem(16) solid #219AD8;
+      }
+      .num{
+        color: #219AD8;
+      }
+      &+.report-text{
+        p em {color: #219AD8;}
+      }
+    }
+
+    &.style-5 {
+      .line i {
+        left: 60%;
+        border-bottom:rem(16) solid #FF616A;
+      }
+      .num{
+        color: #FF616A;
+      }
+      &+.report-text{
+        p em {color: #FF616A;}
+      }
+    }
+
+    &.style-6 {
+      .line i {
+        left: 70%;
+        border-bottom:rem(16) solid #FF616A;
+      }
+      .num{
+        color: #FF616A;
+      }
+      &+.report-text{
+        p em {color: #FF616A;}
+      }
+    }
+
+    &.style-7 {
+      .line i {
+        left: 90%;
+        border-bottom:rem(16) solid #FF616A;
+      }
+      .num{
+        color: #FF616A;
+      }
+      &+.report-text{
+        p em {color: #FF616A;}
+      }
+    }
   }
 
   .line {
@@ -562,7 +656,7 @@ body {
   margin-bottom: rem(55);
 }
 
-.table-div{
+.table-div {
   padding: 0.8rem 1rem 1.2rem 2rem;
 }
 
@@ -601,16 +695,21 @@ body {
   max-height: rem(240);
   overflow: auto;
 
-  li{
+  li {
     @extend .clearfix;
-    span{ float: left; text-align: center; width: 25%;}
+
+    span {
+      float: left;
+      text-align: center;
+      width: 25%;
+    }
   }
 
-  .red{
+  .red {
     color: #FF616A
   }
 
-  .blue{
+  .blue {
     color: #239AD6;
   }
 
@@ -623,7 +722,7 @@ body {
     width: rem(20);
     height: rem(13);
     border-radius: rem(20);
-    background:rgba(225,239,254,1);
+    background: rgba(225, 239, 254, 1);
     overflow: hidden;
   }
 
@@ -652,6 +751,6 @@ body {
   }
 }
 
-.for-search{
+.for-search {
   display: none;
 }
