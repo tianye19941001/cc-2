@@ -89,7 +89,7 @@
 	<div class="ty-search">
 		<div class="search-in">
 			<i></i>
-			<input type="text" placeholder="输入疾病名查询">
+			<input id="search-inp" type="text" placeholder="输入疾病名查询">
 		</div>
 		<button>搜索</button>
 	</div>
@@ -110,65 +110,71 @@
 	</div>
 
 	<!-- 疾病类别下的项目，ul顺序需要对应上面的li -->
-	<div class="all-disease">
+	<div class="all-disease for-onload">
 		<p class="title"><span>项目</span> <span>风险</span></p>
 		<ul class="active">
-			<li class="red"><i></i><span>肿瘤1</span><em>1.06倍 ></em></li>
-			<li class="red"><i></i><span>肿瘤2</span><em>3.06倍 ></em></li>
-			<li class="blue"><i></i><span>肿瘤3</span><em>1.06倍 ></em></li>
-			<li class="red"><i></i><span>肿瘤4</span><em>1.06倍 ></em></li>
+			<li class="red"><i></i><span class="name">肿瘤1</span><em>1.06倍 ></em></li>
+			<li class="red"><i></i><span class="name">肿瘤2</span><em>3.06倍 ></em></li>
+			<li class="blue"><i></i><span class="name">肿瘤3</span><em>1.06倍 ></em></li>
+			<li class="red"><i></i><span class="name">肿瘤4</span><em>1.06倍 ></em></li>
 		</ul>
 		<ul>
-			<li class="red"><i></i><span>神经系统1</span><em>1.06倍 ></em></li>
-			<li class="red"><i></i><span>神经系统2</span><em>3.06倍 ></em></li>
-			<li class="blue"><i></i><span>神经系统3</span><em>1.06倍 ></em></li>
-			<li class="red"><i></i><span>神经系统4</span><em>1.06倍 ></em></li>
+			<li class="red"><i></i><span class="name">神经系统1</span><em>1.06倍 ></em></li>
+			<li class="red"><i></i><span class="name">神经系统2</span><em>3.06倍 ></em></li>
+			<li class="blue"><i></i><span class="name">神经系统3</span><em>1.06倍 ></em></li>
+			<li class="red"><i></i><span class="name">神经系统4</span><em>1.06倍 ></em></li>
 		</ul>
 		<ul>
-			<li class="red"><i></i><span>精神疾病1</span><em>1.06倍 ></em></li>
-			<li class="red"><i></i><span>精神疾病2</span><em>3.06倍 ></em></li>
-			<li class="blue"><i></i><span>精神疾病3</span><em>1.06倍 ></em></li>
-			<li class="red"><i></i><span>精神疾病4</span><em>1.06倍 ></em></li>
+			<li class="red"><i></i><span class="name">精神疾病1</span><em>1.06倍 ></em></li>
+			<li class="red"><i></i><span class="name">精神疾病2</span><em>3.06倍 ></em></li>
+			<li class="blue"><i></i><span class="name">精神疾病3</span><em>1.06倍 ></em></li>
+			<li class="red"><i></i><span class="name">精神疾病4</span><em>1.06倍 ></em></li>
 		</ul>
 		<ul>
-			<li class="red"><i></i><span>五官及皮肤疾病1</span><em>1.06倍 ></em></li>
-			<li class="red"><i></i><span>五官及皮肤疾病2</span><em>3.06倍 ></em></li>
-			<li class="blue"><i></i><span>五官及皮肤疾病3</span><em>1.06倍 ></em></li>
-			<li class="red"><i></i><span>五官及皮肤疾病4</span><em>1.06倍 ></em></li>
+			<li class="red"><i></i><span class="name">五官及皮肤疾病1</span><em>1.06倍 ></em></li>
+			<li class="red"><i></i><span class="name">五官及皮肤疾病2</span><em>3.06倍 ></em></li>
+			<li class="blue"><i></i><span class="name">五官及皮肤疾病3</span><em>1.06倍 ></em></li>
+			<li class="red"><i></i><span class="name">五官及皮肤疾病4</span><em>1.06倍 ></em></li>
 		</ul>
 		<ul>
-			<li class="red"><i></i><span>呼吸系统1</span><em>1.06倍 ></em></li>
-			<li class="red"><i></i><span>呼吸系统2</span><em>3.06倍 ></em></li>
-			<li class="blue"><i></i><span>呼吸系统3</span><em>1.06倍 ></em></li>
-			<li class="red"><i></i><span>呼吸系统4</span><em>1.06倍 ></em></li>
+			<li class="red"><i></i><span class="name">呼吸系统1</span><em>1.06倍 ></em></li>
+			<li class="red"><i></i><span class="name">呼吸系统2</span><em>3.06倍 ></em></li>
+			<li class="blue"><i></i><span class="name">呼吸系统3</span><em>1.06倍 ></em></li>
+			<li class="red"><i></i><span class="name">呼吸系统4</span><em>1.06倍 ></em></li>
 		</ul>
 		<ul>
-			<li class="red"><i></i><span>心脑血管疾病1</span><em>1.06倍 ></em></li>
-			<li class="red"><i></i><span>心脑血管疾病2</span><em>3.06倍 ></em></li>
-			<li class="blue"><i></i><span>心脑血管疾病3</span><em>1.06倍 ></em></li>
-			<li class="red"><i></i><span>心脑血管疾病4</span><em>1.06倍 ></em></li>
+			<li class="red"><i></i><span class="name">心脑血管疾病1</span><em>1.06倍 ></em></li>
+			<li class="red"><i></i><span class="name">心脑血管疾病2</span><em>3.06倍 ></em></li>
+			<li class="blue"><i></i><span class="name">心脑血管疾病3</span><em>1.06倍 ></em></li>
+			<li class="red"><i></i><span class="name">心脑血管疾病4</span><em>1.06倍 ></em></li>
 		</ul>
 		<ul>
-			<li class="red"><i></i><span>免疫系统1</span><em>1.06倍 ></em></li>
-			<li class="red"><i></i><span>免疫系统2</span><em>3.06倍 ></em></li>
-			<li class="blue"><i></i><span>免疫系统3</span><em>1.06倍 ></em></li>
-			<li class="red"><i></i><span>免疫系统4</span><em>1.06倍 ></em></li>
+			<li class="red"><i></i><span class="name">免疫系统1</span><em>1.06倍 ></em></li>
+			<li class="red"><i></i><span class="name">免疫系统2</span><em>3.06倍 ></em></li>
+			<li class="blue"><i></i><span class="name">免疫系统3</span><em>1.06倍 ></em></li>
+			<li class="red"><i></i><span class="name">免疫系统4</span><em>1.06倍 ></em></li>
 		</ul>
 		<ul>
-			<li class="red"><i></i><span>消化系统1</span><em>1.06倍 ></em></li>
-			<li class="red"><i></i><span>消化系统2</span><em>3.06倍 ></em></li>
-			<li class="blue"><i></i><span>消化系统3</span><em>1.06倍 ></em></li>
-			<li class="red"><i></i><span>消化系统4</span><em>1.06倍 ></em></li>
+			<li class="red"><i></i><span class="name">消化系统1</span><em>1.06倍 ></em></li>
+			<li class="red"><i></i><span class="name">消化系统2</span><em>3.06倍 ></em></li>
+			<li class="blue"><i></i><span class="name">消化系统3</span><em>1.06倍 ></em></li>
+			<li class="red"><i></i><span class="name">消化系统4</span><em>1.06倍 ></em></li>
 		</ul>
 		<ul>
-			<li class="red"><i></i><span>内分泌代谢系统1</span><em>1.06倍 ></em></li>
-			<li class="red"><i></i><span>内分泌代谢系统2</span><em>3.06倍 ></em></li>
-			<li class="blue"><i></i><span>内分泌代谢系统3</span><em>1.06倍 ></em></li>
-			<li class="red"><i></i><span>内分泌代谢系统4</span><em>1.06倍 ></em></li>
+			<li class="red"><i></i><span class="name">内分泌代谢系统1</span><em>1.06倍 ></em></li>
+			<li class="red"><i></i><span class="name">内分泌代谢系统2</span><em>3.06倍 ></em></li>
+			<li class="blue"><i></i><span class="name">内分泌代谢系统3</span><em>1.06倍 ></em></li>
+			<li class="red"><i></i><span class="name">内分泌代谢系统4</span><em>1.06倍 ></em></li>
 		</ul>
 	</div>
 
-	<footer></footer>
+
+	<!-- 搜索专用 -->
+	<div class="all-disease for-search">
+		<p class="title"><span>项目</span> <span>风险</span></p>
+		<ul class="active"></ul>
+	</div>
+
 
 	<script src="js/jquery.min.js"></script>
 	<script src="js/idangerous.swiper.min.js"></script>

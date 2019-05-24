@@ -371,6 +371,7 @@
     }
 
     .news-boll {
+      position: relative;
       left: 50%;
       transform: translateX(-50%) !important;
     }
@@ -2525,6 +2526,11 @@
       display: block;
       margin: rem(30) auto 0;
     }
+  }
+
+  .add-more{
+    padding-top: rem(0);
+    padding-bottom: rem(20);
   }
 
 }

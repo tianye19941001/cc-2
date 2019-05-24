@@ -102,10 +102,33 @@ body {
   }
 
   .tabs {
-    width: 100%;
+    width: rem(720);
+    margin: 0 auto;
     box-sizing: border-box;
-    padding: 0 rem(15);
     overflow: auto;
+
+    &::-webkit-scrollbar-track-piece {
+      background-color: rgba(0, 0, 0, 0);
+      border-left: 1px solid rgba(0, 0, 0, 0);
+    }
+
+    &::-webkit-scrollbar {
+      width: rem(316);
+      height: rem(8);
+      border-radius: rem(8);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: rgba(181, 181, 181, 1);
+      background-clip: padding-box;
+      border-radius: rem(8);
+      min-height: rem(28);
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+      background-color: rgba(181, 181, 181, 1);
+      border-radius: rem(8);
+    }
   }
 
   ul {
@@ -121,17 +144,6 @@ body {
       border-radius: rem(5);
       overflow: hidden;
       position: relative;
-
-      // &::after{
-      //   content: '';
-      //   width: 100%;
-      //   height: 100%;
-      //   display: block;
-      //   background:rgba(0,0,0,1);
-      //   position: absolute;
-      //   left: 0;
-      //   top: 0;
-      // }
 
       img {
         width: 100%;
@@ -229,10 +241,50 @@ body {
 }
 
 .ty-disease-list {
-  width: 100%;
+  width: rem(720);
+  margin: 0 auto;
   overflow: auto;
   box-sizing: border-box;
-  padding: 0 rem(15);
+
+  &::-webkit-scrollbar-track-piece {
+    background-color: rgba(0, 0, 0, 0);
+    border-left: 1px solid rgba(0, 0, 0, 0);
+  }
+
+  &::-webkit-scrollbar {
+    width: rem(20);
+    height: rem(6);
+    border-radius: rem(6);
+    background: #f1f1f1;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba(220, 220, 220, 1);
+    ;
+    background-clip: padding-box;
+    border-radius: rem(6);
+    min-height: rem(28);
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(220, 220, 220, 1);
+    ;
+    border-radius: rem(6);
+  }
+
+  &::-webkit-scrollbar-button:horizontal:decrement {
+    background-image: url(../images/gundongtiao2-left.png);
+    background-size: 100%;
+    width: rem(6);
+    height: rem(6);
+  }
+
+  &::-webkit-scrollbar-button:horizontal:increment {
+    background-image: url(../images/gundongtiao2-right.png);
+    background-size: 100%;
+    width: rem(6);
+    height: rem(6);
+  }
 
   ul {
     -webkit-overflow-scrolling: touch;
@@ -407,6 +459,7 @@ body {
   box-sizing: border-box;
   margin-bottom: rem(50);
   border-radius: rem(10);
+  position: relative;
 }
 
 .line-div {
@@ -505,21 +558,100 @@ body {
   color: rgba(44, 44, 44, 1);
 }
 
-.table-header {
-  .th {
+.mb55 {
+  margin-bottom: rem(55);
+}
 
+.table-div{
+  padding: 0.8rem 1rem 1.2rem 2rem;
+}
+
+.table-header {
+  position: absolute;
+  top: -0.68-0.8rem;
+  left: 0;
+  width: 100%;
+  padding: 0.8rem 2rem;
+  box-sizing: border-box;
+
+
+  .th {
+    width: 25%;
+    float: left;
+    text-align: center;
   }
 
   span {
     display: inline-block;
-    padding: 0 rem(10);
+    padding: 0 rem(20);
     height: rem(34);
     line-height: rem(34);
     background: rgba(33, 154, 216, 1);
-    font-size: rem(28);
+    font-size: rem(24);
     color: rgba(254, 254, 254, 1);
     border-radius: rem(34);
   }
 }
 
-.table-body {}
+.table-body {
+  line-height: rem(19+23);
+  font-size: rem(24);
+  color: rgba(44, 48, 92, 1);
+  margin-top: rem(30);
+  max-height: rem(240);
+  overflow: auto;
+
+  li{
+    @extend .clearfix;
+    span{ float: left; text-align: center; width: 25%;}
+  }
+
+  .red{
+    color: #FF616A
+  }
+
+  .blue{
+    color: #239AD6;
+  }
+
+  &::-webkit-scrollbar-track-piece {
+    background-color: rgba(0, 0, 0, 0);
+    border-left: 1px solid rgba(0, 0, 0, 0);
+  }
+
+  &::-webkit-scrollbar {
+    width: rem(20);
+    height: rem(13);
+    border-radius: rem(20);
+    background:rgba(225,239,254,1);
+    overflow: hidden;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #C9E3FF;
+    background-clip: padding-box;
+    min-height: rem(28);
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: #C9E3FF;
+  }
+
+  &::-webkit-scrollbar-button:vertical:decrement {
+    background-image: url(../images/up.png);
+    background-size: 100%;
+    width: rem(20);
+    height: rem(20);
+  }
+
+  &::-webkit-scrollbar-button:vertical:increment {
+    background-image: url(../images/up.png);
+    background-size: 100%;
+    width: rem(20);
+    height: rem(20);
+  }
+}
+
+.for-search{
+  display: none;
+}

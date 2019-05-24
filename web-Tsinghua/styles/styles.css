@@ -943,8 +943,7 @@ span {
 
 .student_life {
   width: 1200px;
-  margin: 0 auto;
-  overflow: hidden; }
+  margin: 0 auto; }
   .student_life .title {
     margin: 100px auto 30px;
     height: 36px; }
@@ -3105,6 +3104,11 @@ body .swiper-container-horizontal > .swiper-pagination-bullets .swiper-paginatio
     left: 80px;
     bottom: -29px; }
 
+.add-more {
+  padding-top: 30px; }
+  .add-more a {
+    margin: 0 auto; }
+
 @media screen and (min-width: 1020px) and (max-width: 1680px) {
   .ty-zs .img img {
     width: auto;
@@ -3365,6 +3369,7 @@ body .swiper-container-horizontal > .swiper-pagination-bullets .swiper-paginatio
         padding-top: 1rem;
         margin-bottom: -5rem; }
     body .news-boll {
+      position: relative;
       left: 50%;
       transform: translateX(-50%) !important; }
     body .boll {
@@ -4827,6 +4832,10 @@ body .swiper-container-horizontal > .swiper-pagination-bullets .swiper-paginatio
     .ty-download .ty-more-4 {
       position: static;
       display: block;
-      margin: 1.5rem auto 0; } }
+      margin: 1.5rem auto 0; }
+
+  .add-more {
+    padding-top: 0rem;
+    padding-bottom: 1rem; } }
 
 /*# sourceMappingURL=styles.css.map */

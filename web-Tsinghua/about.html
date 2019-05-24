@@ -264,6 +264,12 @@
 				}
 			});
 		}
+
+		$(".ty-products-con").mouseenter(function () {
+			swiperProducts.autoplay.stop();
+		}).mouseleave(function () {
+			swiperProducts.autoplay.start();
+		});
 	</script>
 </body>
 
