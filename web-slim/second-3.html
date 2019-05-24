@@ -8,20 +8,19 @@
   <meta name="format-detection" content="address=no">
   <title>Document</title>
   <link rel="stylesheet" href="styles/styles.css">
-  <link rel="stylesheet" href="styles/idangerous.swiper.css">
   <script src="js/fn.js"></script>
 </head>
 
 <body class="second-style-3">
   <header class="second-top">
-    <img src="./images/second/headbg3.png" alt="">
+    <img class="bg" src="./images/second/headbg3.png" alt="">
     <a class="logo" href=""> <img src="./images/second/logo.png" alt=""> </a>
-    <h2><a href=""> &gt; </a>高血压</h2>
-    <img src="./images/second/pic3.png" alt="">
+    <h2><a href=""></a>高血压</h2>
+    <img class="demo" src="./images/second/pic3.png" alt="">
   </header>
 
-  <div class="report-div report-top">
-    <h2>您的结果</h2>
+  <!-- color-red color-blue color-green 来控制选择哪个进度条和文字颜色 -->
+  <div class="report-div report-top color-red">
     <!-- style-1234567 来控制选择哪个状态 -->
     <div class="sport-ing style-1">
       <div class="line">
@@ -29,8 +28,39 @@
       </div>
       <p>1.25倍风险</p>
     </div>
+
     <div class="sport-text">
       <p>据统计，大众人群高血压的累计发病率为18.8%，基因检测结果显示，您的高血压患病风险是<em>1.08倍</em>大众人群的</p>
+    </div>
+  </div>
+
+  <!-- color-red color-blue color-green 来控制选择哪个进度条和文字颜色 -->
+  <div class="report-div color-blue">
+    <!-- style-1234567 来控制选择哪个状态 -->
+    <div class="sport-ing style-1">
+      <div class="line">
+        <div class="self-progress"></div>
+      </div>
+      <p>0.25倍风险</p>
+    </div>
+
+    <div class="sport-text">
+      <p>据统计，大众人群高血压的累计发病率为18.8%，基因检测结果显示，您的高血压患病风险是<em>0.08倍</em>大众人群的</p>
+    </div>
+  </div>
+
+  <!-- color-red color-blue color-green 来控制选择哪个进度条和文字颜色 -->
+  <div class="report-div color-green">
+    <!-- style-1234567 来控制选择哪个状态 -->
+    <div class="sport-ing style-1">
+      <div class="line">
+        <div class="self-progress"></div>
+      </div>
+      <p>1倍风险</p>
+    </div>
+
+    <div class="sport-text">
+      <p>据统计，大众人群高血压的累计发病率为18.8%，基因检测结果显示，您的高血压患病风险是<em>1倍</em>大众人群的</p>
     </div>
   </div>
 
@@ -77,14 +107,19 @@
     <div class="report-title">
       <span><img src="./images/second/icon3-5.png" alt="">你知道吗</span>
     </div>
-    <div class="sport-text reason-text3">
-      <p><i>1.</i>为什么吃盐多会引起血压升高？</p>
-      <p>流行病学调查证实：人群的血压水平和高血压的患病率均与食盐的摄入量密切相关。从食盐对血压的影响机制来看看，高水平食盐在我们体内的所发挥的影响。</p>
-      <p><i>2.</i>食盐的主要成分是氯化钠，氯化钠进入人体中，相当于溶解于水溶液中，会分离出钠离子，钠离子过多会引起水钠潴留，导致血容量增加，血压上升；</p>
-      <p><i>3.</i>引起细胞（包括平滑肌细胞）水肿，使血管腔变窄；</p>
-      <p><i>4.</i>增加血管对儿茶酚胺类缩血管因子的敏感性；</p>
-      <p><i>5.</i>细胞内钠离子增加后会抑制钠-钙交换，使细胞钙排除减少，导致血管平滑肌内钙离子浓度上升而引起血管平滑肌收缩。</p>
-      <p>由此可见,食盐中钠离子对血容量、血管弹性和血压的功能的改变与影响，决定了食盐与高血压的关系。</p>
+    <div class="sport-text reason-text sp">
+      <p><i>1.</i>柔和光线增加食欲</p>
+      <p>柔和的灯光会让人们增加舒适感，从而减少对进餐的控制，延长人们的用餐时间，增加人们的进食量，而刺眼或者过度明亮的照明会减少人们待在餐厅的时间，从而影响进食量。</p>
+      <p><i>2.</i>容易得到的食物吃得更多</p>
+      <p>
+        在自助餐厅的研究显示，人们如果离冰激凌机很近，他们将会食用更多的冰激凌;如果牛奶调剂师在附近的话，他们将会喝更多的牛奶;如果有大水罐在他们桌上的话，他们会喝更多的水。此外，胖人一般喜欢把食物储藏在离自己比较近的冰箱里或者柜子当中，而体重正常或者偏瘦的人喜欢把食物储藏在地下室等较远的地方。
+      </p>
+      <p><i>3.</i>心理因素影响食欲</p>
+      <p>当提供大份的同种食物时，人们会吃得更多。原因是小份的食物会觉得自己是不是该继续吃下去，有提醒作用。心理因素在影响人们食欲的作用上远比物理因素大得多。</p>
+      <p><i>4.</i>增加食物种类会刺激胃口</p>
+      <p>
+        如果同一类别食物提供多种口味，人们就会增加消费量。例如都是10颗糖果，但是含5种口味的10颗糖果人们一般至少会吃5颗，但是如果只含3种口味，就可能只会吃3颗。这种情况发生的一个原因是这种多样性使人觉得自己可能有好多种类的食物还没有食用，或者进食时人们想碰到更多的样子。
+      </p>
     </div>
 
   </div>
@@ -94,19 +129,44 @@
       <span><img src="./images/second/icon3-6.png" alt="">我的基因微位点</span>
     </div>
 
-    <div class="table">
+    <div class="sport-table">
       <div class="tr">
-        <div class="th">基因</div>
-        <div class="th">位点</div>
-        <div class="th">结果</div>
-        <div class="th">结果分析</div>
+        <span class="th">基因</span>
+        <span class="th">位点</span>
+        <span class="th">结果</span>
+        <span class="th">结果分析</span>
       </div>
-
-      <div class="tr">
-        <div class="th">CPM</div>
-        <div class="th">of58745978</div>
-        <div class="th">CC</div>
-        <div class="th"><span class="high">高风险</span></div>
+      <div class="table-bottom">
+        <div class="tr">
+          <span class="td">VDR</span>
+          <span class="td">of6699905</span>
+          <span class="td">CC</span>
+          <span class="td"><span class="high">高风险</span></span>
+        </div>
+        <div class="tr">
+          <span class="td">LRP5</span>
+          <span class="td">of9783346</span>
+          <span class="td">CC</span>
+          <span class="td"><span>正常</span></span>
+        </div>
+        <div class="tr">
+          <span class="td">VDR</span>
+          <span class="td">of6699905</span>
+          <span class="td">CC</span>
+          <span class="td"><span>正常</span></span>
+        </div>
+        <div class="tr">
+          <span class="td">VDR</span>
+          <span class="td">of6699905</span>
+          <span class="td">CC</span>
+          <span class="td"><span>正常</span></span>
+        </div>
+        <div class="tr">
+          <span class="td">VDR</span>
+          <span class="td">of6699905</span>
+          <span class="td">CC</span>
+          <span class="td"><span>正常</span></span>
+        </div>
       </div>
     </div>
   </div>
@@ -131,7 +191,6 @@
   <a href="" class="href-btn">下一项：脂肪增重风险</a>
 
   <script src="js/jquery.min.js"></script>
-  <script src="js/idangerous.swiper.min.js"></script>
   <script src="js/app.js"></script>
 </body>
 
