@@ -64,13 +64,13 @@
 				<a href="recruit.html">招生信息</a>
 				<a href="development.html">职业发展</a>
 			</div>
+			<i class="f-ifont close phone">&#xe62b;</i>
 			<div class="serach-div">
 				<form class="search-inp" action="">
 					<input type="text" value="" />
 					<i class="close f-ifont">&#xe643;</i>
 					<i class="search f-ifont">&#xe656;</i>
 				</form>
-				<i class="f-ifont close phone">&#xe62b;</i>
 			</div>
 		</div>
 	</nav>
@@ -218,6 +218,11 @@
 			<p class="p2 three_cut">2018年11月30日，2018年度“清华经管学院陈小悦奖学金”颁奖仪式举行。6位本科生和4位研究生获得本年度奖学金。</p>
 		</a>
 	</section>
+
+	<p class="add-more">
+		<a class="ty-more-1" href="">查看所有的新闻 ></a>
+	</p>
+
 	<!-- 学校生活 -->
 	<section class="school_life">
 		<div class="container">
@@ -399,7 +404,7 @@
 				nextEl: '.swiper-button-next',
 				prevEl: '.swiper-button-prev',
 			},
-			autoplayDisableOnInteraction : false,
+			autoplayDisableOnInteraction: false,
 			autoplay: {
 				delay: 3000,
 				disableOnInteraction: false
@@ -414,6 +419,12 @@
 			}
 		})
 
+		$(".swiper-container").mouseenter(function () {
+			swiperBannar.autoplay.stop();
+		}).mouseleave(function () {
+			swiperBannar.autoplay.start();
+		});
+
 		var swiperStudent = new Swiper('.student-swiper-container', {
 			pagination: {
 				el: '.student-boll',
@@ -422,14 +433,21 @@
 			grabCursor: true,
 			paginationClickable: true,
 			autoplay: {
-				delay: 30000
+				delay: 3000
 			},
 			slidesPerView: '3',
 			loop: true,
 		});
 
+		$(".student-swiper-container").mouseenter(function () {
+			swiperStudent.autoplay.stop();
+		}).mouseleave(function () {
+			swiperStudent.autoplay.start();
+		});
+
+		var swiperNews;
 		if (document.body.clientWidth >= 1024) {
-			var swiperNews = new Swiper('.news-swiper-container', {
+			swiperNews = new Swiper('.news-swiper-container', {
 				slidesPerView: 2,
 				spaceBetween: 30,
 				pagination: {
@@ -444,7 +462,7 @@
 				}
 			});
 		} else {
-			var swiperNews = new Swiper('.news-swiper-container', {
+			swiperNews = new Swiper('.news-swiper-container', {
 				slidesPerView: 1,
 				pagination: {
 					el: '.news-boll',
@@ -457,6 +475,12 @@
 				}
 			});
 		}
+
+		$(".news-swiper-container").mouseenter(function () {
+			swiperNews.autoplay.stop();
+		}).mouseleave(function () {
+			swiperNews.autoplay.start();
+		});
 	</script>
 </body>
 

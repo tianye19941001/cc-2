@@ -219,10 +219,16 @@
 			grabCursor: true,
 			paginationClickable: true,
 			autoplay: {
-				delay: 30000
+				delay: 3000
 			},
 			slidesPerView: '3',
 			loop: true,
+		});
+
+		$(".student-swiper-container").mouseenter(function () {
+			swiperStudent.autoplay.stop();
+		}).mouseleave(function () {
+			swiperStudent.autoplay.start();
 		});
 	</script>
 </body>

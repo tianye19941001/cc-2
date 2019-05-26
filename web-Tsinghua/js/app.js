@@ -79,7 +79,7 @@
 		$('.nav').css({'position': 'fixed', 'top': 0, 'left': 0})
 	})
 
-	$('.in > .close').click(function(){
+	$('.nav_list > .close').click(function(){
 		$('body').css({'overflow':'auto', 'height': 'auto'});
 		$('.nav_list').hide(300);
 		$('.nav').css({'position': 'relative'});

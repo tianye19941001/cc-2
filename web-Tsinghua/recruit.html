@@ -199,32 +199,6 @@
     <script src="js/jquery.min.js"></script>
     <script src="./js/swiper.min.js"></script>
     <script src="js/app.js"></script>
-    <script>
-        var swiperBannar = new Swiper('.swiper-container', {
-            pagination: {
-                el: '.bannar-swiper-pagination',
-                clickable: true,
-            },
-            loop: true,
-            grabCursor: true,
-            paginationClickable: true,
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            autoplay: {
-                delay: 3000
-            },
-            on: {
-                slideChangeTransitionStart: function () {
-                    $('.carousel .center').hide();
-                },
-                slideChangeTransitionEnd: function () {
-                    $('.carousel .center').fadeIn(500);
-                },
-            }
-        })
-    </script>
 </body>
 
 </html>

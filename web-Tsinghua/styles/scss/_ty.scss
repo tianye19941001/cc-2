@@ -2634,6 +2634,12 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
     bottom: -29px;
   }
 }
+.add-more{
+  padding-top: 30px;
+  a{
+    margin: 0 auto;
+  }
+}
 
 @media screen and (min-width:1020px) and (max-width:1680px) {
   .ty-zs .img img{

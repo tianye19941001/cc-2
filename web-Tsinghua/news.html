@@ -252,6 +252,12 @@
 				}
 			}
 		})
+
+		$(".ty-news-swiper").mouseenter(function () {
+			swiperInNews.autoplay.stop();
+		}).mouseleave(function () {
+			swiperInNews.autoplay.start();
+		});
 	</script>
 </body>
 

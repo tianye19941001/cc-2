@@ -120,7 +120,7 @@
           display: block;
           position: absolute;
           right: rem(20);
-          top: -3.6rem;
+          top: 1.2rem;
           font-size: rem(60);
           color: #E0E0E0;
           font-style: normal;
@@ -371,6 +371,7 @@
     }
 
     .news-boll {
+      position: relative;
       left: 50%;
       transform: translateX(-50%) !important;
     }
@@ -2525,6 +2526,11 @@
       display: block;
       margin: rem(30) auto 0;
     }
+  }
+
+  .add-more{
+    padding-top: rem(0);
+    padding-bottom: rem(20);
   }
 
 }
