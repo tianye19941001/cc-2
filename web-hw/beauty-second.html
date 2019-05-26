@@ -8,7 +8,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="format-detection" content="address=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta http-equiv="Cache-Control" content="no-store"/>
+    <meta http-equiv="Cache-Control" content="no-store" />
     <title>Document</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/swiper.min.css">
@@ -27,7 +27,8 @@
 
         <div class="second-precent">
             <div class="percent-warp">
-                <canvas data-percent="66" class="circleRun" data-run="0" id="canvasThree" amout="1000" nowData="1000"></canvas>
+                <canvas data-percent="66" class="circleRun" data-run="0" id="canvasThree" amout="1000"
+                    nowData="1000"></canvas>
             </div>
             <div class="in">
                 <p class="num"><strong>66</strong><em>.45</em></p>
@@ -120,6 +121,13 @@
         </ul>
     </div>
 
+    <div class="dialog">
+        <div class="bar"></div>
+        <div class="in">
+            <img src="./images/ewm.jpeg" alt="">
+        </div>
+    </div>
+
     <script src="js/jquery.min.js"></script>
     <script src="js/swiper.min.js"></script>
     <script type="text/javascript" src="js/zcircleMove.js"></script>
@@ -134,6 +142,17 @@
             innerColorEnd: '#FFBAC2',
             lineW1: 8
         });
+
+        $('.mf-list li a').click(function () {
+            var dialog = $('.dialog');
+            dialog.removeClass('active').slideDown();
+            return false;
+        })
+
+        $('.dialog .bar').click(function () {
+            var dialog = $('.dialog');
+            dialog.removeClass('active').slideUp();
+        })
     </script>
 </body>
 
