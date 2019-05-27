@@ -26,7 +26,7 @@ body {
     height: rem(52);
     background: rgba(37, 207, 228, 1);
     border-radius: 0 rem(52) rem(52) 0;
-    line-height: rem(52);
+    line-height: rem(56);
     text-align: left;
     color: #fff;
     font-size: rem(30);
@@ -720,7 +720,7 @@ body {
 
   &::-webkit-scrollbar {
     width: rem(20);
-    height: rem(13);
+    height: rem(0);
     border-radius: rem(20);
     background: rgba(225, 239, 254, 1);
     overflow: hidden;
@@ -730,10 +730,12 @@ body {
     background-color: #C9E3FF;
     background-clip: padding-box;
     min-height: rem(28);
+    border-radius: rem(20);
   }
 
   &::-webkit-scrollbar-thumb:hover {
     background-color: #C9E3FF;
+    border-radius: rem(20);
   }
 
   &::-webkit-scrollbar-button:vertical:decrement {
