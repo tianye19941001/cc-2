@@ -964,7 +964,7 @@ body {
 .second-style-2 .inner-title {
   color: #fff;
   background-image: url(../images/second/textbg2.png); }
-.second-style-2 .reason-text i {
+.second-style-2 .reason-text i, .second-style-2 .reason-text em {
   background-image: url(../images/second/icon2-9.png); }
 .second-style-2 .sport-table .tr {
   background: #f4f4f4; }
@@ -979,7 +979,7 @@ body {
     background: linear-gradient(-90deg, #ffa57b 0%, #ff7f46 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
-.second-style-3 .reason-text i {
+.second-style-3 .reason-text i, .second-style-3 .reason-text em {
   background-image: url(../images/second/icon3-9.png); }
 .second-style-3 .sport-table .tr {
   background: #fff9f5; }
