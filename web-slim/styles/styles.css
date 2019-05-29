@@ -807,6 +807,8 @@ body {
       float: right; }
       .food-about li:nth-child(2n-1) .img {
         left: -0.8rem; }
+        .food-about li:nth-child(2n-1) .img p {
+          left: 0; }
       .food-about li:nth-child(2n-1) .text {
         left: auto;
         right: 1.6rem; }
@@ -829,11 +831,13 @@ body {
       .food-about li .img p {
         white-space: nowrap;
         position: absolute;
-        left: 50%;
+        min-width: 100%;
+        max-width: 24rem;
+        overflow: hidden;
+        right: 0;
         top: 4.6rem;
-        transform: translateX(-50%);
         color: #b67827;
-        max-width: 4rem; }
+        text-align: center; }
     .food-about li .text {
       position: absolute;
       width: 18rem;

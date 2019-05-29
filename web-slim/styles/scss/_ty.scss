@@ -536,6 +536,9 @@ body {
 
       .img {
         left: rem(-20);
+        p{
+          left: 0;
+        }
       }
 
       .text {
@@ -566,11 +569,13 @@ body {
       p {
         white-space: nowrap;
         position: absolute;
-        left: 50%;
+        min-width: 100%;
+        max-width: rem(600);
+        overflow: hidden;
+        right: 0;
         top: rem(115);
-        transform: translateX(-50%);
         color: rgba(182, 120, 39, 1);
-        max-width: 4rem;
+        text-align: center;
       }
     }
 
