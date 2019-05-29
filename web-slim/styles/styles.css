@@ -999,7 +999,7 @@ body {
 .second-style-3 .sp {
   padding-top: 0.8rem; }
 
-.reason-text2 i {
+.reason-text2 i, .reason-text2 em {
   display: inline-block;
   width: 1.4rem;
   height: 1.4rem;
