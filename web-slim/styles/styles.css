@@ -540,7 +540,7 @@ body {
     line-height: 1.44rem;
     opacity: 0.8; }
   .report-div .sport-text img {
-    width: 60%;
+    width: 100%;
     margin: 0.4rem auto;
     display: block; }
 
@@ -825,8 +825,8 @@ body {
         position: absolute;
         top: 50%;
         left: 50%;
-        max-height: 80%;
-        max-width: 80%;
+        height: 120%;
+        width: 120%;
         transform: translate(-50%, -50%); }
       .food-about li .img p {
         white-space: nowrap;
