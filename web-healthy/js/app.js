@@ -53,6 +53,4 @@
  	if (number >= 2) {
  		warp.addClass('style-7');
 	 }
- 	
-	 
  });
