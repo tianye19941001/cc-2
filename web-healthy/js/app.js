@@ -35,22 +35,24 @@
  	if (number < 0.3) {
  		warp.addClass('style-1');
  	}
- 	if (0.6 > number >= 0.3) {
+ 	if (0.6 > number && number >= 0.3) {
  		warp.addClass('style-2');
  	}
- 	if (1 > number >= 0.6) {
+ 	if (1 > number && number >= 0.6) {
  		warp.addClass('style-3');
  	}
  	if (number == 1) {
  		warp.addClass('style-4');
  	}
- 	if (1.3 > number >= 1) {
+ 	if (1.3 > number && number >= 1) {
  		warp.addClass('style-5');
  	}
- 	if (2 > number >= 1.3) {
+ 	if (2 > number && number >= 1.3) {
  		warp.addClass('style-6');
  	}
  	if (number >= 2) {
  		warp.addClass('style-7');
- 	}
+	 }
+ 	
+	 
  });

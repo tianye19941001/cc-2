@@ -571,7 +571,6 @@ body {
         position: absolute;
         min-width: 100%;
         max-width: rem(600);
-        overflow: hidden;
         right: 0;
         top: rem(115);
         color: rgba(182, 120, 39, 1);
@@ -600,9 +599,9 @@ body {
 }
 
 .inner-title {
-  width: rem(308);
+  display: inline-block;
   height: rem(55);
-  background-image: url(../images/second/textbg1.png);
+  background-image: url(../images/second/textbg1-2.png);
   background-size: 100% 100%;
 
   font-size: rem(28);
@@ -611,6 +610,25 @@ body {
   line-height: rem(68);
   text-align: center;
   margin: rem(24) auto;
+  position: relative;
+
+  &:before,&:after  {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: rem(-70);
+    width: rem(70);
+    height: rem(55);
+    background-image: url(../images/second/textbg1-3.png);
+    background-size: 100% 100%;
+  }
+
+  &::before{
+    width: rem(55);
+    left: rem(-55);
+    right: auto;
+    background-image: url(../images/second/textbg1-1.png);
+  }
 }
 
 .reason-text {
@@ -752,7 +770,15 @@ body {
 
   .inner-title {
     color: #fff;
-    background-image: url(../images/second/textbg2.png)
+    background-image: url(../images/second/textbg2-2.png);
+
+    &:before,&:after  {
+      background-image: url(../images/second/textbg2-3.png);
+    }
+  
+    &::before{
+      background-image: url(../images/second/textbg2-1.png);
+    }
   }
 
   .reason-text i, .reason-text em{

@@ -833,7 +833,6 @@ body {
         position: absolute;
         min-width: 100%;
         max-width: 24rem;
-        overflow: hidden;
         right: 0;
         top: 4.6rem;
         color: #b67827;
@@ -855,16 +854,31 @@ body {
   border-radius: 0; }
 
 .inner-title {
-  width: 12.32rem;
+  display: inline-block;
   height: 2.2rem;
-  background-image: url(../images/second/textbg1.png);
+  background-image: url(../images/second/textbg1-2.png);
   background-size: 100% 100%;
   font-size: 1.12rem;
   font-weight: 600;
   color: #0e9bfc;
   line-height: 2.72rem;
   text-align: center;
-  margin: 0.96rem auto; }
+  margin: 0.96rem auto;
+  position: relative; }
+  .inner-title:before, .inner-title:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -2.8rem;
+    width: 2.8rem;
+    height: 2.2rem;
+    background-image: url(../images/second/textbg1-3.png);
+    background-size: 100% 100%; }
+  .inner-title::before {
+    width: 2.2rem;
+    left: -2.2rem;
+    right: auto;
+    background-image: url(../images/second/textbg1-1.png); }
 
 .reason-text {
   padding-top: 0; }
@@ -967,7 +981,11 @@ body {
   background: linear-gradient(-45deg, #ffa1b9 0%, #ffc6d5 100%); }
 .second-style-2 .inner-title {
   color: #fff;
-  background-image: url(../images/second/textbg2.png); }
+  background-image: url(../images/second/textbg2-2.png); }
+  .second-style-2 .inner-title:before, .second-style-2 .inner-title:after {
+    background-image: url(../images/second/textbg2-3.png); }
+  .second-style-2 .inner-title::before {
+    background-image: url(../images/second/textbg2-1.png); }
 .second-style-2 .reason-text i, .second-style-2 .reason-text em {
   background-image: url(../images/second/icon2-9.png); }
 .second-style-2 .sport-table .tr {
