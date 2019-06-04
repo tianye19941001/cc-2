@@ -2061,6 +2061,10 @@ body .swiper-container-horizontal > .swiper-pagination-bullets .swiper-paginatio
     color: #343434;
     line-height: 30px;
     margin-left: 60px; }
+    .ty-new-detial .new-main strong, .ty-new-detial .new-main b {
+      font-weight: bold; }
+    .ty-new-detial .new-main i, .ty-new-detial .new-main em {
+      font-style: italic; }
     .ty-new-detial .new-main p {
       text-indent: 36px;
       margin-bottom: 30px; }

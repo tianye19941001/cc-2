@@ -1132,6 +1132,14 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
     line-height: 30px;
     margin-left: 60px;
 
+    strong,b{
+      font-weight: bold;
+    }
+
+    i,em{
+      font-style: italic
+    }
+    
     p {
       text-indent: 36px;
       margin-bottom: 30px;
