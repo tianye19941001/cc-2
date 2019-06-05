@@ -53,4 +53,9 @@
  	if (number >= 2) {
  		warp.addClass('style-7');
 	 }
+
+
+	 if($('.table-body li').length && $('.table-body li').length > 4){
+		$('.table-div').addClass('scroll-add')
+	 }
  });

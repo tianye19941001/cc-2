@@ -635,7 +635,8 @@ body {
     color: #fff;
     font-size: 1.12rem;
     border: 0;
-    margin-top: 0.28rem; }
+    margin-top: 0.28rem;
+    white-space: nowrap; }
 
 .ty-disease-list {
   width: 28.8rem;
@@ -930,8 +931,7 @@ body {
   top: -2.68rem;
   left: 0;
   width: 100%;
-  box-sizing: border-box;
-  padding-right: 0.8rem; }
+  box-sizing: border-box; }
   .table-header .th {
     width: 25%;
     float: left;
@@ -951,8 +951,8 @@ body {
   font-size: 0.96rem;
   color: #2c305c;
   margin-top: 1.2rem;
-  max-height: 9.6rem;
-  overflow: auto;
+  max-height: 8rem;
+  overflow: hidden;
   position: relative; }
   .table-body li span {
     float: left;
@@ -962,28 +962,12 @@ body {
     color: #FF616A; }
   .table-body .blue {
     color: #239AD6; }
-  .table-body::-webkit-scrollbar-track-piece {
-    background-color: rgba(0, 0, 0, 0);
-    border-left: 1px solid rgba(0, 0, 0, 0); }
-  .table-body::-webkit-scrollbar {
-    width: 0.8rem;
-    height: 0rem;
-    border-radius: 0.8rem;
-    background: #e1effe;
-    overflow: hidden; }
-  .table-body::-webkit-scrollbar-thumb {
-    background-color: #C9E3FF;
-    background-clip: padding-box;
-    min-height: 1.12rem; }
-  .table-body::-webkit-scrollbar-thumb:hover {
-    background-color: #C9E3FF;
-    border-radius: 0.8rem; }
 
 .table-div .in {
   position: relative; }
   .table-div .in:before, .table-div .in:after {
     content: '';
-    display: block;
+    display: none;
     position: absolute;
     right: 0;
     top: -0.4rem;
@@ -999,6 +983,31 @@ body {
     transform: rotate(180deg);
     top: auto;
     bottom: -0.4rem; }
+
+.scroll-add .table-header {
+  padding-right: 0.8rem; }
+.scroll-add .table-body {
+  overflow: auto; }
+  .scroll-add .table-body::-webkit-scrollbar-track-piece {
+    background-color: rgba(0, 0, 0, 0);
+    border-left: 1px solid rgba(0, 0, 0, 0); }
+  .scroll-add .table-body::-webkit-scrollbar {
+    width: 0.8rem;
+    height: 0rem;
+    border-radius: 0.8rem;
+    background: #e1effe;
+    overflow: hidden; }
+  .scroll-add .table-body::-webkit-scrollbar-thumb {
+    background-color: #C9E3FF;
+    background-clip: padding-box;
+    min-height: 1.12rem; }
+  .scroll-add .table-body::-webkit-scrollbar-thumb:hover {
+    background-color: #C9E3FF;
+    border-radius: 0.8rem; }
+.scroll-add .in {
+  position: relative; }
+  .scroll-add .in:before, .scroll-add .in:after {
+    display: block; }
 
 .for-search {
   display: none; }

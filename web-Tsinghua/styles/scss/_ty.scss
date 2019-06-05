@@ -1734,6 +1734,7 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
 .ty-ugd-programme {
   background: rgba(243, 243, 246, 1);
   padding: 86px 0 106px;
+  margin-bottom: -110px;
 
   .ugd-in {
     width: 1200px;
@@ -1755,10 +1756,22 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
       z-index: 3;
       a{
         transition:  all .3s;
+        display: block;
+        @extend .one_cut;
+        width: 90%;
         &:hover{
           font-size: 19px;
           font-weight: bold;
           color: #063456;
+        }
+
+        img{
+          position: absolute;
+          width: 31px;
+          right: 24px;
+          top: 18px;
+          height: auto;
+          padding-top: 0;
         }
       }
 
@@ -1768,6 +1781,7 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
         font-size: 18px;
         @extend .one_cut;
         border-bottom: 1px solid rgba($color: #000, $alpha: .15);
+        position: relative;
 
         .time {
           font-size: 18px;
@@ -2169,25 +2183,67 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
 
 
 // 教师
+.ty-honor-list{
+  padding-top: 70px;
+  width: 1200px;
+  margin: 0 auto;
+  @extend .clearfix;
+
+  li{
+    float: left;
+    margin-bottom: 30px;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 32px;
+    font-size: 18px;
+    color: #063456;
+    border-left: 1px solid #d3c3a2;
+    border-right: 1px solid #d3c3a2;
+    margin-left: -1px;
+
+    span{
+      font-size: 14px;
+      color: #b89a74;
+
+      em{
+        font-size: 24px;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
 .ty-department-list {
   width: 1200px;
-  height: 60px;
+  height: 94px;
   background: rgba(243, 243, 246, 1);
   border-top: 2px solid rgba(211, 195, 162, 1);
-  margin: 80px auto 0;
+  margin: 10px auto 0;
+  text-align: center;
+  white-space: nowrap;
 
   li {
-    float: left;
-    height: 60px;
-    line-height: 60px;
+    display: inline-block;
+    height: 94px;
+    line-height: 40px;
     font-size: 18px;
     position: relative;
-    padding: 0 35px;
+    padding: 0 30px;
 
     a {
+      text-align: center;
+      padding-top: 7px;
       display: block;
       color: rgba(6, 52, 86, 1);
       transition: all .3s;
+
+      span{
+        font-size: 14px;
+        color: #b89a74;
+        em{
+          font-size: 22px;
+        }
+      }
     }
 
     &:after {
@@ -2209,6 +2265,9 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
       a {
         color: #B89A74
       }
+      em{
+        font-weight: bold;
+      }
 
       &::after {
         bottom: 0;
@@ -2220,7 +2279,7 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
 
 .ty-techers-list {
   .ty-title {
-    padding: 85px 0 45px;
+    padding: 65px 0 45px;
   }
 
   .ty-teachers {

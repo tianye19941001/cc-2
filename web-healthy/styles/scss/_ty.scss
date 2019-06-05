@@ -237,6 +237,7 @@ body {
     font-size: rem(28);
     border: 0;
     margin-top: rem(7);
+    white-space: nowrap;
   }
 }
 
@@ -473,92 +474,119 @@ body {
     &.style-1 {
       .line i {
         left: 10%;
-        border-bottom:rem(16) solid #219AD8;
+        border-bottom: rem(16) solid #219AD8;
       }
-      .num{
+
+      .num {
         color: #219AD8;
       }
 
-      &+.report-text{
-        p em {color: #219AD8;}
+      &+.report-text {
+        p em {
+          color: #219AD8;
+        }
       }
     }
 
     &.style-2 {
       .line i {
         left: 30%;
-        border-bottom:rem(16) solid #219AD8;
+        border-bottom: rem(16) solid #219AD8;
       }
-      .num{
+
+      .num {
         color: #219AD8;
       }
-      &+.report-text{
-        p em {color: #219AD8;}
+
+      &+.report-text {
+        p em {
+          color: #219AD8;
+        }
       }
     }
 
     &.style-3 {
       .line i {
         left: 40%;
-        border-bottom:rem(16) solid #219AD8;
+        border-bottom: rem(16) solid #219AD8;
       }
-      .num{
+
+      .num {
         color: #219AD8;
       }
-      &+.report-text{
-        p em {color: #219AD8;}
+
+      &+.report-text {
+        p em {
+          color: #219AD8;
+        }
       }
     }
 
     &.style-4 {
       .line i {
         left: 50%;
-        border-bottom:rem(16) solid #219AD8;
+        border-bottom: rem(16) solid #219AD8;
       }
-      .num{
+
+      .num {
         color: #219AD8;
       }
-      &+.report-text{
-        p em {color: #219AD8;}
+
+      &+.report-text {
+        p em {
+          color: #219AD8;
+        }
       }
     }
 
     &.style-5 {
       .line i {
         left: 60%;
-        border-bottom:rem(16) solid #FF616A;
+        border-bottom: rem(16) solid #FF616A;
       }
-      .num{
+
+      .num {
         color: #FF616A;
       }
-      &+.report-text{
-        p em {color: #FF616A;}
+
+      &+.report-text {
+        p em {
+          color: #FF616A;
+        }
       }
     }
 
     &.style-6 {
       .line i {
         left: 70%;
-        border-bottom:rem(16) solid #FF616A;
+        border-bottom: rem(16) solid #FF616A;
       }
-      .num{
+
+      .num {
         color: #FF616A;
       }
-      &+.report-text{
-        p em {color: #FF616A;}
+
+      &+.report-text {
+        p em {
+          color: #FF616A;
+        }
       }
     }
 
     &.style-7 {
       .line i {
         left: 90%;
-        border-bottom:rem(16) solid #FF616A;
+        border-bottom: rem(16) solid #FF616A;
       }
-      .num{
+
+      .num {
         color: #FF616A;
       }
-      &+.report-text{
-        p em {color: #FF616A;}
+
+      &+.report-text {
+        p em {
+          color: #FF616A;
+        }
       }
     }
   }
@@ -666,7 +694,6 @@ body {
   left: 0;
   width: 100%;
   box-sizing: border-box;
-  padding-right: rem(20);
 
   .th {
     width: 25%;
@@ -691,8 +718,8 @@ body {
   font-size: rem(24);
   color: rgba(44, 48, 92, 1);
   margin-top: rem(30);
-  max-height: rem(240);
-  overflow: auto;
+  max-height: rem(200);
+  overflow: hidden;
   position: relative;
 
   li {
@@ -712,39 +739,16 @@ body {
   .blue {
     color: #239AD6;
   }
-
-  &::-webkit-scrollbar-track-piece {
-    background-color: rgba(0, 0, 0, 0);
-    border-left: 1px solid rgba(0, 0, 0, 0);
-  }
-
-  &::-webkit-scrollbar {
-    width: rem(20);
-    height: rem(0);
-    border-radius: rem(20);
-    background: rgba(225, 239, 254, 1);
-    overflow: hidden;
-  }
-
-  &::-webkit-scrollbar-thumb {
-    background-color: #C9E3FF;
-    background-clip: padding-box;
-    min-height: rem(28);
-  }
-
-  &::-webkit-scrollbar-thumb:hover {
-    background-color: #C9E3FF;
-    border-radius: rem(20);
-  }
 }
 
-.table-div{
-  .in{
+.table-div {
+  .in {
     position: relative;
 
-    &:before, &:after{
+    &:before,
+    &:after {
       content: '';
-      display: block;
+      display: none;
       position: absolute;
       right: 0;
       top: rem(-10);
@@ -757,14 +761,57 @@ body {
       z-index: 3;
       pointer-events: none;
     }
-  
-    &:after{
+
+    &:after {
       transform: rotate(180deg);
       top: auto;
       bottom: rem(-10);
     }
   }
 }
+
+.scroll-add {
+  .table-header {
+    padding-right: 0.8rem;
+  }
+
+  .table-body {
+    overflow: auto;
+    &::-webkit-scrollbar-track-piece {
+      background-color: rgba(0, 0, 0, 0);
+      border-left: 1px solid rgba(0, 0, 0, 0);
+    }
+
+    &::-webkit-scrollbar {
+      width: rem(20);
+      height: rem(0);
+      border-radius: rem(20);
+      background: rgba(225, 239, 254, 1);
+      overflow: hidden;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #C9E3FF;
+      background-clip: padding-box;
+      min-height: rem(28);
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+      background-color: #C9E3FF;
+      border-radius: rem(20);
+    }
+  }
+
+  .in {
+    position: relative;
+
+    &:before,
+    &:after {
+      display: block;
+    }
+  }
+}
+
 
 .for-search {
   display: none;

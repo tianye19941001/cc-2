@@ -317,8 +317,8 @@ body {
     width: 100%;
     left: 0;
     height: rem(60);
-    font-size: rem(60);
-    line-height: 1;
+    font-size: rem(50);
+    line-height: rem(60);
     font-weight: 600;
     color: rgba(255, 255, 255, 1);
     text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.3);
@@ -681,6 +681,7 @@ body {
       color: rgba(0, 0, 0, .64);
       border-right: 1px solid #fff;
       box-sizing: border-box;
+      word-break: break-all;
 
       &:last-child {
         border-right: 0;
@@ -693,7 +694,8 @@ body {
     }
 
     .td {
-      line-height: rem(65);
+      line-height: rem(35);
+      padding: rem(15) 0;
     }
 
     .high {

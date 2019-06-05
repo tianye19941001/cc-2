@@ -64,20 +64,20 @@ sup {
 
 /*CLEARFIX
 -------------------------------------------------------------- */
-.clearfix:after, .nav .nav_list .in:after, .newList:after, footer .footer_top:after, .ty-new-list .list > a:after, .ty-new-list3 .list a:after, .ty-report .report-top:after, .ty-report .report-list .tab:after, .ty-cooperation .ty-projects:after, .ty-techers-list .ty-teachers .list-2:after, .ty-techers-list .ty-teachers .list:after, .ty-zs .sp:after, .ty-bk ul:after {
+.clearfix:after, .nav .nav_list .in:after, .newList:after, footer .footer_top:after, .ty-new-list .list > a:after, .ty-new-list3 .list a:after, .ty-report .report-top:after, .ty-report .report-list .tab:after, .ty-cooperation .ty-projects:after, .ty-honor-list:after, .ty-techers-list .ty-teachers .list-2:after, .ty-techers-list .ty-teachers .list:after, .ty-zs .sp:after, .ty-bk ul:after {
   content: ".";
   display: block;
   height: 0;
   clear: both;
   visibility: hidden; }
 
-.clearfix, .nav .nav_list .in, .newList, footer .footer_top, .ty-new-list .list > a, .ty-new-list3 .list a, .ty-report .report-top, .ty-report .report-list .tab, .ty-cooperation .ty-projects, .ty-techers-list .ty-teachers .list-2, .ty-techers-list .ty-teachers .list, .ty-zs .sp, .ty-bk ul {
+.clearfix, .nav .nav_list .in, .newList, footer .footer_top, .ty-new-list .list > a, .ty-new-list3 .list a, .ty-report .report-top, .ty-report .report-list .tab, .ty-cooperation .ty-projects, .ty-honor-list, .ty-techers-list .ty-teachers .list-2, .ty-techers-list .ty-teachers .list, .ty-zs .sp, .ty-bk ul {
   display: inline-block; }
 
-* html .clearfix, * html .nav .nav_list .in, .nav .nav_list * html .in, * html .newList, * html footer .footer_top, footer * html .footer_top, * html .ty-new-list .list > a, .ty-new-list * html .list > a, * html .ty-new-list3 .list a, .ty-new-list3 .list * html a, * html .ty-report .report-top, .ty-report * html .report-top, * html .ty-report .report-list .tab, .ty-report .report-list * html .tab, * html .ty-cooperation .ty-projects, .ty-cooperation * html .ty-projects, * html .ty-techers-list .ty-teachers .list-2, .ty-techers-list .ty-teachers * html .list-2, * html .ty-techers-list .ty-teachers .list, .ty-techers-list .ty-teachers * html .list, * html .ty-zs .sp, .ty-zs * html .sp, * html .ty-bk ul, .ty-bk * html ul {
+* html .clearfix, * html .nav .nav_list .in, .nav .nav_list * html .in, * html .newList, * html footer .footer_top, footer * html .footer_top, * html .ty-new-list .list > a, .ty-new-list * html .list > a, * html .ty-new-list3 .list a, .ty-new-list3 .list * html a, * html .ty-report .report-top, .ty-report * html .report-top, * html .ty-report .report-list .tab, .ty-report .report-list * html .tab, * html .ty-cooperation .ty-projects, .ty-cooperation * html .ty-projects, * html .ty-honor-list, * html .ty-techers-list .ty-teachers .list-2, .ty-techers-list .ty-teachers * html .list-2, * html .ty-techers-list .ty-teachers .list, .ty-techers-list .ty-teachers * html .list, * html .ty-zs .sp, .ty-zs * html .sp, * html .ty-bk ul, .ty-bk * html ul {
   height: 1%; }
 
-.clearfix, .nav .nav_list .in, .newList, footer .footer_top, .ty-new-list .list > a, .ty-new-list3 .list a, .ty-report .report-top, .ty-report .report-list .tab, .ty-cooperation .ty-projects, .ty-techers-list .ty-teachers .list-2, .ty-techers-list .ty-teachers .list, .ty-zs .sp, .ty-bk ul {
+.clearfix, .nav .nav_list .in, .newList, footer .footer_top, .ty-new-list .list > a, .ty-new-list3 .list a, .ty-report .report-top, .ty-report .report-list .tab, .ty-cooperation .ty-projects, .ty-honor-list, .ty-techers-list .ty-teachers .list-2, .ty-techers-list .ty-teachers .list, .ty-zs .sp, .ty-bk ul {
   display: block; }
 
 /*FONT
@@ -379,7 +379,7 @@ span {
   outline: none; }
 
 /*多行溢出*/
-.one_cut, .ty-ugd-set .zy h3, .ty-ugd-programme .ugd-in .ty-pro-list li, .ty-ugd-course .ugd-in li, .ty-download .in .name {
+.one_cut, .ty-ugd-set .zy h3, .ty-ugd-programme .ugd-in .ty-pro-list a, .ty-ugd-programme .ugd-in .ty-pro-list li, .ty-ugd-course .ugd-in li, .ty-download .in .name {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis; }
@@ -2487,7 +2487,8 @@ body .swiper-container-horizontal > .swiper-pagination-bullets .swiper-paginatio
 
 .ty-ugd-programme {
   background: #f3f3f6;
-  padding: 86px 0 106px; }
+  padding: 86px 0 106px;
+  margin-bottom: -110px; }
   .ty-ugd-programme .ugd-in {
     width: 1200px;
     margin: 0 auto; }
@@ -2504,16 +2505,26 @@ body .swiper-container-horizontal > .swiper-pagination-bullets .swiper-paginatio
       position: relative;
       z-index: 3; }
       .ty-ugd-programme .ugd-in .ty-pro-list a {
-        transition: all .3s; }
+        transition: all .3s;
+        display: block;
+        width: 90%; }
         .ty-ugd-programme .ugd-in .ty-pro-list a:hover {
           font-size: 19px;
           font-weight: bold;
           color: #063456; }
+        .ty-ugd-programme .ugd-in .ty-pro-list a img {
+          position: absolute;
+          width: 31px;
+          right: 24px;
+          top: 18px;
+          height: auto;
+          padding-top: 0; }
       .ty-ugd-programme .ugd-in .ty-pro-list li {
         height: 70px;
         line-height: 70px;
         font-size: 18px;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.15); }
+        border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+        position: relative; }
         .ty-ugd-programme .ugd-in .ty-pro-list li .time {
           font-size: 18px;
           color: black;
@@ -2783,23 +2794,54 @@ body .swiper-container-horizontal > .swiper-pagination-bullets .swiper-paginatio
   border: 1px solid #f3f2f7;
   border-radius: 50%; }
 
+.ty-honor-list {
+  padding-top: 70px;
+  width: 1200px;
+  margin: 0 auto; }
+  .ty-honor-list li {
+    float: left;
+    margin-bottom: 30px;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 32px;
+    font-size: 18px;
+    color: #063456;
+    border-left: 1px solid #d3c3a2;
+    border-right: 1px solid #d3c3a2;
+    margin-left: -1px; }
+    .ty-honor-list li span {
+      font-size: 14px;
+      color: #b89a74; }
+      .ty-honor-list li span em {
+        font-size: 24px;
+        font-weight: bold; }
+
 .ty-department-list {
   width: 1200px;
-  height: 60px;
+  height: 94px;
   background: #f3f3f6;
   border-top: 2px solid #d3c3a2;
-  margin: 80px auto 0; }
+  margin: 10px auto 0;
+  text-align: center;
+  white-space: nowrap; }
   .ty-department-list li {
-    float: left;
-    height: 60px;
-    line-height: 60px;
+    display: inline-block;
+    height: 94px;
+    line-height: 40px;
     font-size: 18px;
     position: relative;
-    padding: 0 35px; }
+    padding: 0 30px; }
     .ty-department-list li a {
+      text-align: center;
+      padding-top: 7px;
       display: block;
       color: #063456;
       transition: all .3s; }
+      .ty-department-list li a span {
+        font-size: 14px;
+        color: #b89a74; }
+        .ty-department-list li a span em {
+          font-size: 22px; }
     .ty-department-list li:after {
       content: '';
       display: block;
@@ -2814,12 +2856,14 @@ body .swiper-container-horizontal > .swiper-pagination-bullets .swiper-paginatio
       transition: all .3s; }
     .ty-department-list li.active a, .ty-department-list li:hover a {
       color: #B89A74; }
+    .ty-department-list li.active em, .ty-department-list li:hover em {
+      font-weight: bold; }
     .ty-department-list li.active::after, .ty-department-list li:hover::after {
       bottom: 0;
       opacity: 1; }
 
 .ty-techers-list .ty-title {
-  padding: 85px 0 45px; }
+  padding: 65px 0 45px; }
 .ty-techers-list .ty-teachers {
   width: 1200px;
   margin: 0 auto;
@@ -4425,7 +4469,8 @@ body .swiper-container-horizontal > .swiper-pagination-bullets .swiper-paginatio
         margin-bottom: 1.5rem; }
 
   .ty-ugd-programme {
-    padding: 3rem 0; }
+    padding: 3rem 0;
+    margin-bottom: -4rem; }
     .ty-ugd-programme .ugd-in {
       width: 100%;
       margin: 0 auto; }
@@ -4438,6 +4483,10 @@ body .swiper-container-horizontal > .swiper-pagination-bullets .swiper-paginatio
         padding: 1.5rem;
         box-sizing: border-box;
         margin: -5rem auto 0; }
+        .ty-ugd-programme .ugd-in .ty-pro-list a img {
+          width: 1.5rem;
+          right: 1.2rem;
+          top: 1rem; }
         .ty-ugd-programme .ugd-in .ty-pro-list li {
           height: 3.5rem;
           line-height: 3.5rem;
@@ -4647,10 +4696,25 @@ body .swiper-container-horizontal > .swiper-pagination-bullets .swiper-paginatio
       display: block;
       margin: -1rem auto 0; }
 
+  .ty-honor-list {
+    padding-top: 3.5rem;
+    width: 95%;
+    margin: 0 auto; }
+    .ty-honor-list li {
+      margin-bottom: 1.5rem;
+      height: 1.6rem;
+      line-height: 1.6rem;
+      padding: 0 1.6rem;
+      font-size: 1rem; }
+      .ty-honor-list li span {
+        font-size: 0.8rem; }
+        .ty-honor-list li span em {
+          font-size: 1.1rem; }
+
   .ty-department-list {
     width: 100%;
     border-top: 1px solid #d3c3a2;
-    margin: 4rem auto 0;
+    margin: 0.5rem auto 0;
     overflow-x: auto;
     height: auto; }
     .ty-department-list ul {
@@ -4660,10 +4724,16 @@ body .swiper-container-horizontal > .swiper-pagination-bullets .swiper-paginatio
     .ty-department-list li {
       float: none;
       display: inline-block;
-      height: 3rem;
-      line-height: 3rem;
+      height: auto;
+      line-height: 2rem;
       font-size: 1rem;
       padding: 0 1.5rem; }
+      .ty-department-list li a {
+        padding: 0.35rem 0; }
+        .ty-department-list li a span {
+          font-size: 0.8rem; }
+          .ty-department-list li a span em {
+            font-size: 1.1rem; }
       .ty-department-list li:after {
         height: 0.2rem; }
 
