@@ -933,9 +933,13 @@ body {
   width: 100%;
   box-sizing: border-box; }
   .table-header .th {
-    width: 25%;
+    width: 29%;
     float: left;
     text-align: center; }
+    .table-header .th:nth-child(3) {
+      width: 19%; }
+    .table-header .th:nth-child(4) {
+      width: 23%; }
   .table-header span {
     display: inline-block;
     padding: 0 0.8rem;
@@ -957,7 +961,11 @@ body {
   .table-body li span {
     float: left;
     text-align: center;
-    width: 25%; }
+    width: 29%; }
+    .table-body li span:nth-child(3) {
+      width: 19%; }
+    .table-body li span:nth-child(4) {
+      width: 23%; }
   .table-body .red {
     color: #FF616A; }
   .table-body .blue {

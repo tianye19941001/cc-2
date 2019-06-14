@@ -696,9 +696,16 @@ body {
   box-sizing: border-box;
 
   .th {
-    width: 25%;
+    width: 29%;
     float: left;
     text-align: center;
+
+    &:nth-child(3){
+      width: 19%;
+    }
+    &:nth-child(4){
+      width: 23%;
+    }
   }
 
   span {
@@ -728,7 +735,14 @@ body {
     span {
       float: left;
       text-align: center;
-      width: 25%;
+      width: 29%;
+
+      &:nth-child(3){
+        width: 19%;
+      }
+      &:nth-child(4){
+        width: 23%;
+      }
     }
   }
 

@@ -664,15 +664,15 @@ body {
     text-align: center; }
     .second-top h2 a {
       display: block;
-      width: 0.8rem;
-      height: 0.48rem;
+      width: 1.12rem;
+      height: 0.72rem;
       background-size: 100% 100%;
       background-image: url(../images/up.png);
       transform: rotate(-90deg) translateY(-50%);
       vertical-align: middle;
       position: absolute;
-      top: 50%;
-      left: 1.44rem; }
+      top: 45%;
+      left: 1.28rem; }
   .second-top .demo {
     width: 14.64rem;
     height: 14.64rem;
