@@ -117,7 +117,7 @@ body {
   }
 
   .sport-text img {
-    width: 60%;
+    width: 100%;
     margin: rem(10) auto;
     display: block;
   }
@@ -271,7 +271,7 @@ body {
   }
 
   .line-7 {
-    width: 100%;
+    width: 92%;
   }
 }
 
@@ -317,8 +317,8 @@ body {
     width: 100%;
     left: 0;
     height: rem(60);
-    font-size: rem(60);
-    line-height: 1;
+    font-size: rem(50);
+    line-height: rem(60);
     font-weight: 600;
     color: rgba(255, 255, 255, 1);
     text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.3);
@@ -326,15 +326,15 @@ body {
 
     a {
       display: block;
-      width: rem(20);
-      height: rem(12);
+      width: rem(28);
+      height: rem(18);
       background-size: 100% 100%;
       background-image: url(../images/up.png);
       transform: rotate(-90deg) translateY(-50%);
       vertical-align: middle;
       position: absolute;
-      top: 50%;
-      left: rem(36);
+      top: 45%;
+      left: rem(32);
     }
   }
 
@@ -536,6 +536,9 @@ body {
 
       .img {
         left: rem(-20);
+        p{
+          left: 0;
+        }
       }
 
       .text {
@@ -558,19 +561,20 @@ body {
         position: absolute;
         top: 50%;
         left: 50%;
-        max-height: 80%;
-        max-width: 80%;
+        height: 120%;
+        width: 120%;
         transform: translate(-50%, -50%);
       }
 
       p {
         white-space: nowrap;
         position: absolute;
-        left: 50%;
+        min-width: 100%;
+        max-width: rem(600);
+        right: 0;
         top: rem(115);
-        transform: translateX(-50%);
         color: rgba(182, 120, 39, 1);
-        max-width: 4rem;
+        text-align: center;
       }
     }
 
@@ -678,6 +682,7 @@ body {
       color: rgba(0, 0, 0, .64);
       border-right: 1px solid #fff;
       box-sizing: border-box;
+      word-break: break-all;
 
       &:last-child {
         border-right: 0;
@@ -690,7 +695,8 @@ body {
     }
 
     .td {
-      line-height: rem(65);
+      line-height: rem(35);
+      padding: rem(15) 0;
     }
 
     .high {
@@ -844,7 +850,7 @@ body {
 }
 
 .reason-text2 {
-  i {
+  i,em {
     display: inline-block;
     width: rem(35);
     height: rem(35);
@@ -910,7 +916,7 @@ body {
 }
 
 .style-7 .self-progress {
-  width: 100%;
+  width: 92%;
 }
 
 .color-red {

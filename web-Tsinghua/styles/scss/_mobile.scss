@@ -1911,6 +1911,7 @@
 
   .ty-ugd-programme {
     padding: rem(60) 0;
+    margin-bottom: -4rem;
 
     .ugd-in {
       width: 100%;
@@ -1927,7 +1928,11 @@
         padding: rem(30);
         box-sizing: border-box;
         margin: rem(-100) auto 0;
-
+        a img{
+          width: rem(30);
+          right: rem(24);
+          top: rem(20);
+        }
         li {
           height: rem(70);
           line-height: rem(70);
@@ -2234,10 +2239,32 @@
     }
   }
 
+  .ty-honor-list{
+    padding-top: rem(70);
+    width: 95%;
+    margin: 0 auto;
+  
+    li{
+      margin-bottom: rem(30);
+      height: rem(32);
+      line-height: rem(32);
+      padding: 0 rem(32);
+      font-size: rem(20);
+  
+      span{
+        font-size: rem(16);
+  
+        em{
+          font-size: rem(22);
+        }
+      }
+    }
+  }
+
   .ty-department-list {
     width: 100%;
     border-top: 1px solid rgba(211, 195, 162, 1);
-    margin: rem(80) auto 0;
+    margin: rem(10) auto 0;
     overflow-x: auto;
     height: auto;
 
@@ -2250,12 +2277,20 @@
     li {
       float: none;
       display: inline-block;
-      height: rem(60);
-      line-height: rem(60);
+      height: auto;
+      line-height: rem(40);
       font-size: rem(20);
       padding: 0 rem(30);
 
-
+      a{
+        padding: rem(7) 0;
+        span{
+          font-size: rem(16);
+          em{
+            font-size: rem(22);
+          }
+        }
+      }
       &:after {
         height: rem(4);
       }
