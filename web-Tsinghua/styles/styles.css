@@ -3162,7 +3162,7 @@ body .swiper-container-horizontal > .swiper-pagination-bullets .swiper-paginatio
     width: auto;
     height: 100%;
     margin-top: 0; } }
-.phone {
+.for-mobile {
   display: none; }
 
 @media screen and (min-width: 1px) and (max-width: 1019px) {
